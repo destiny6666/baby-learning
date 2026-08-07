@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>宝贝学习乐园 Pro</title>
+<title>宝贝学习乐园 · 体验版</title>
 <style>
 /* ===== RESET & BASE ===== */
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
@@ -288,12 +288,20 @@ body.night .today-item{background:rgba(255,255,255,.1);}
   .header h1{font-size:1rem;}
   .header h1 .title-text{display:none;}
 }
+/* ===== TRIAL MODE UI ===== */
+.trial-badge{background:#fff;color:var(--pink-d);font-size:.7rem;padding:2px 10px;border-radius:20px;font-weight:700;margin-left:4px;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+.nav-item.locked{opacity:.55;}
+.lock-tag{margin-left:auto;font-size:.85rem;}
+.trial-upgrade-fab{position:fixed;right:16px;bottom:calc(74px + env(safe-area-inset-bottom));z-index:200;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-weight:700;font-size:.95rem;padding:12px 18px;border-radius:30px;box-shadow:0 6px 18px rgba(180,120,200,.45);animation:trialPulse 2s infinite;}
+.trial-upgrade-fab:active{transform:scale(.95);}
+@keyframes trialPulse{0%,100%{box-shadow:0 6px 18px rgba(180,120,200,.45);}50%{box-shadow:0 6px 26px rgba(180,120,200,.7);}}
+@media(max-width:768px){.trial-upgrade-fab{bottom:calc(74px + env(safe-area-inset-bottom));}}
 </style>
 </head>
 <body>
 <div id="app">
   <header class="header">
-    <h1>🌈<span class="title-text">宝贝学习乐园</span> Pro</h1>
+    <h1>🌈<span class="title-text">宝贝学习乐园</span> <span class="trial-badge">体验版</span></h1>
     <div class="audio-control">
       <button class="audio-btn" id="muteBtn" onclick="toggleMute()" aria-label="静音切换">🔊</button>
       <input type="range" min="0" max="100" value="80" id="volRange" oninput="setVolume(this.value)" class="vol-range" aria-label="音量">
@@ -307,6 +315,7 @@ body.night .today-item{background:rgba(255,255,255,.1);}
     <main class="main" id="main"></main>
   </div>
   <nav class="bottom-nav" id="bottomNav"></nav>
+  <button class="trial-upgrade-fab" onclick="showUpgrade()">🌟 升级完整版</button>
 </div>
 <div id="celebrate"><div class="celebrate-text">🎉</div></div>
 <div id="toast"></div>
@@ -314,42 +323,7 @@ body.night .today-item{background:rgba(255,255,255,.1);}
 
 <script>
 // ==================== CONFIG ====================
-var STORAGE_KEY='wb_baole_pro_v1';
-
-// ==================== 解锁码（完整版付费门槛·软防护） ====================
-// 真实解锁码：baobao666（下面做了反转混淆，源码里看不到明文，可自由修改）
-var _unlockRaw='666oaboab';
-var UNLOCK_CODE=_unlockRaw.split('').reverse().join('');
-var UNLOCK_KEY_STORE='wb_baole_pro_unlocked';
-function isUnlocked(){
-  try{return localStorage.getItem(UNLOCK_KEY_STORE)==='1';}catch(e){return false;}
-}
-function tryUnlock(){
-  var el=document.getElementById('unlockInput');
-  var v=el?el.value:'';
-  if(v.trim()===UNLOCK_CODE){
-    try{localStorage.setItem(UNLOCK_KEY_STORE,'1');}catch(e){}
-    closeModal();
-    location.reload();
-  }else{
-    var tip=document.getElementById('unlockTip');
-    if(tip){tip.textContent='❌ 解锁码不正确，请核对后重试';tip.style.color='#e74c3c';}
-  }
-}
-function showUnlockModal(){
-  showModal(
-    '<div style="text-align:center">'+
-    '<div style="font-size:3rem;margin:8px">🔒</div>'+
-    '<h3>完整版需解锁</h3>'+
-    '<p style="margin:10px;color:var(--text-l);line-height:1.7">本完整版为付费内容。<br>购买后客服会提供解锁码，输入一次即可永久使用。</p>'+
-    '<input id="unlockInput" type="text" placeholder="请输入解锁码" style="width:80%;max-width:260px;padding:12px 14px;font-size:16px;border:2px solid var(--pink);border-radius:14px;outline:none;text-align:center;margin:6px 0">'+
-    '<div id="unlockTip" style="font-size:.85rem;min-height:1.2em;margin-top:6px"></div>'+
-    '</div>',
-    '<button class="btn btn-lg btn-pink" onclick="tryUnlock()">解锁</button>'+
-    '<button class="btn btn-sm" onclick="closeModal()">稍后</button>'
-  );
-  setTimeout(function(){var i=document.getElementById('unlockInput');if(i)i.focus();},300);
-}
+var STORAGE_KEY='wb_baole_trial_v1';
 var TABS=[
   {id:'letters',name:'字母乐园',emoji:'🔤',color:'#FFB7C5'},
   {id:'poems',name:'古诗花园',emoji:'🌸',color:'#D4B5FF'},
@@ -500,6 +474,21 @@ for(var i=0;i<26;i++){
 
 // ==================== LOGIC SHAPES ====================
 var LOGIC_SHAPES=['⭐','🔶','🔵','🟢','🔺','🟡','🟣','⚪','🟥','🟦'];
+
+// ==================== TRIAL MODE CONFIG ====================
+var IS_TRIAL=true;
+// 完整版链接：同仓库部署时填 'index.html'；启用 GitHub Pages 后建议改为 'https://destiny6666.github.io/baby-learning/'
+var BUY_URL='https://www.goofish.com/search?q=%E5%AE%9D%E8%B4%9D%E5%AD%A6%E4%B9%A0%E4%B9%90%E5%9B%AD';
+// 体验版锁定的模块（点击弹出升级窗口）
+var TRIAL_LOCKED_TABS=['poems','logic','levels'];
+// 数字认知范围
+var NUMBERS_MAX=5;
+if(IS_TRIAL){
+  STORIES=STORIES.slice(0,3);
+  ENGLISH.themes=ENGLISH.themes.slice(0,1);
+  if(ENGLISH.themes[0])ENGLISH.themes[0].words=ENGLISH.themes[0].words.slice(0,6);
+  LETTERS_DATA=LETTERS_DATA.slice(0,6);
+}
 
 // ==================== STATE ====================
 var state={
@@ -838,21 +827,35 @@ function renderNav(){
   var html='',bhtml='';
   TABS.forEach(function(t){
     var active=state.currentTab===t.id?'active':'';
+    var locked=IS_TRIAL&&TRIAL_LOCKED_TABS.indexOf(t.id)>=0;
     var bg=active?'style="background:'+t.color+';color:#fff"':'';
-    html+='<button class="nav-item '+active+'" '+bg+' onclick="switchTab(\''+t.id+'\')">'+
-      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span></button>';
-    bhtml+='<button class="bottom-nav-item '+active+'" onclick="switchTab(\''+t.id+'\')">'+
-      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span></button>';
+    var lockTag=locked?'<span class="lock-tag">🔒</span>':'';
+    html+='<button class="nav-item '+active+(locked?' locked':'')+'" '+bg+' onclick="switchTab(\''+t.id+'\')">'+
+      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span>'+lockTag+'</button>';
+    bhtml+='<button class="bottom-nav-item '+active+(locked?' locked':'')+'" onclick="switchTab(\''+t.id+'\')">'+
+      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span>'+lockTag+'</button>';
   });
   sidebar.innerHTML=html;
   bottom.innerHTML=bhtml;
 }
 function switchTab(id){
+  if(IS_TRIAL&&TRIAL_LOCKED_TABS.indexOf(id)>=0){showUpgrade();return;}
   state.currentTab=id;
   saveState();
   renderNav();
   renderModule();
   window.scrollTo(0,0);
+}
+function showUpgrade(){
+  showModal(
+    '<div style="text-align:center;padding:8px 4px">'+
+    '<div style="font-size:3rem">🌟</div>'+
+    '<div class="section-title" style="justify-content:center">解锁完整版</div>'+
+    '<p class="subtitle" style="line-height:1.8">体验版仅开放部分内容。<br>完整版包含：26个字母、0-20数字、6大英语主题、50个童话、20首古诗、逻辑闯关、冒险模式……<br><b>付款后客服私发完整版下载链接</b></p>'+
+    '<a href="'+BUY_URL+'" target="_blank" class="btn btn-lg btn-pink" style="text-decoration:none;margin-top:6px">🚀 去闲鱼购买</a>'+
+    '</div>',
+    '<button class="btn btn-sm" onclick="closeModal()">稍后再说</button>'
+  );
 }
 
 // ==================== MODULE RENDER DISPATCHER ====================
@@ -874,13 +877,13 @@ function renderLetters(){
   var html='<div class="section-title">🔤 字母乐园</div>'+
     '<div class="subtitle">点击字母听发音，玩配对游戏得星星！</div>'+
     '<div class="stats-row">'+
-    '<div class="stat-box"><div class="stat-num">'+matchedCount+'/26</div><div class="stat-label">已配对</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+matchedCount+'/'+LETTERS_DATA.length+'</div><div class="stat-label">已配对</div></div>'+
     '<div class="stat-box"><div class="stat-num">'+state.letters.quizDone+'</div><div class="stat-label">配对次数</div></div>'+
     '</div>'+
     '<div class="backup-row">'+
     '<button class="btn btn-blue btn-sm" onclick="startLetterMatch()">🎮 大小写配对游戏</button>'+
     '</div>'+
-    '<div class="card"><div class="card-title">26个英文字母</div><div class="grid grid-5">';
+    '<div class="card"><div class="card-title">'+LETTERS_DATA.length+'个英文字母</div><div class="grid grid-5">';
   LETTERS_DATA.forEach(function(l){
     var done=state.letters.matched.indexOf(l.upper)>=0;
     html+='<div class="char-card'+(done?' done':'')+'" id="lc-'+l.upper+'" onclick="playAudio(\'audio/letter_'+l.upper+'.mp3\',\''+l.upper+'\',\'en\')">'+
@@ -919,7 +922,7 @@ function checkLetterMatch(picked,correct,upper){
     state.letters.quizDone++;
     saveState();
     showToast('答对了！+2⭐');
-    setTimeout(function(){closeModal();if(state.letters.matched.length<26)setTimeout(startLetterMatch,500);else renderModule();},1500);
+    setTimeout(function(){closeModal();if(state.letters.matched.length<LETTERS_DATA.length)setTimeout(startLetterMatch,500);else renderModule();},1500);
   }else{
     playSFX('wrong');showToast('再试一次～');
     setTimeout(function(){btns.forEach(function(b){b.style.pointerEvents='';b.classList.remove('wrong');});},800);
@@ -1034,8 +1037,8 @@ function renderNumbers(){
     '<button class="btn btn-green btn-sm" onclick="startCountGame()">🍎 数数游戏</button>'+
     '<button class="btn btn-yellow btn-sm" onclick="startOrderGame()">🔢 排序游戏</button>'+
     '</div>'+
-    '<div class="card"><div class="card-title">数字认知 0-20</div><div class="grid grid-5">';
-  for(var i=0;i<=20;i++){
+    '<div class="card"><div class="card-title">数字认知 0-'+NUMBERS_MAX+'</div><div class="grid grid-5">';
+  for(var i=0;i<=NUMBERS_MAX;i++){
     html+='<div class="char-card" onclick="playAudio(\'audio/num_'+i+'.mp3\',\''+i+'\',\'child\')"><div class="big-char">'+i+'</div></div>';
   }
   html+='</div></div>';
@@ -2018,7 +2021,6 @@ function doClearData(){
 
 // ==================== INIT ====================
 function init(){
-  if(!isUnlocked()){ showUnlockModal(); return; }
   loadState();
   initRecognition();
   updateStarDisplay();
