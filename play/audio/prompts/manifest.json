@@ -1,0 +1,6807 @@
+[
+  {
+    "text": "小手玩得脏脏的，要吃饭啦，先做什么？",
+    "lang": "zh",
+    "file": "audio/prompts/c18a020f4a728e431eb2.wav"
+  },
+  {
+    "text": "慢慢想，小手干净了，再来吃饭。",
+    "lang": "zh",
+    "file": "audio/prompts/1dbbf9cb435e0e030fcb.wav"
+  },
+  {
+    "text": "对啦，吃饭前洗洗小手，手心手背都洗到。",
+    "lang": "zh",
+    "file": "audio/prompts/ee7cd9b2ae777b3982e6.wav"
+  },
+  {
+    "text": "洗洗小手",
+    "lang": "zh",
+    "file": "audio/prompts/c54149be6e6216f08bcc.wav"
+  },
+  {
+    "text": "继续踢球",
+    "lang": "zh",
+    "file": "audio/prompts/163bbe247f2c1cb2df2b.wav"
+  },
+  {
+    "text": "小牙齿要洗澡啦，用哪个小帮手？",
+    "lang": "zh",
+    "file": "audio/prompts/1541106c26652df5d994.wav"
+  },
+  {
+    "text": "小牙齿有自己的刷子，找找小牙刷。",
+    "lang": "zh",
+    "file": "audio/prompts/c21f5690957eb109c022.wav"
+  },
+  {
+    "text": "找到小牙刷啦！和大人一起，轻轻刷牙。",
+    "lang": "zh",
+    "file": "audio/prompts/db6aa865d418f911fd5d.wav"
+  },
+  {
+    "text": "小牙刷",
+    "lang": "zh",
+    "file": "audio/prompts/28e2e86d6cac5dba6d9c.wav"
+  },
+  {
+    "text": "小蜡笔",
+    "lang": "zh",
+    "file": "audio/prompts/c77bdf86ff1725fe83ff.wav"
+  },
+  {
+    "text": "玩具玩好了，送它们回哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/ea874eaf5ce029b3c1f7.wav"
+  },
+  {
+    "text": "玩具也有小家，看看哪个地方能收好玩具。",
+    "lang": "zh",
+    "file": "audio/prompts/6a25814668b47d27aa4a.wav"
+  },
+  {
+    "text": "送回玩具篮子，下一次就容易找到啦。",
+    "lang": "zh",
+    "file": "audio/prompts/62648cd98cf12b3d3c56.wav"
+  },
+  {
+    "text": "玩具篮子",
+    "lang": "zh",
+    "file": "audio/prompts/ab38580e8d25422851eb.wav"
+  },
+  {
+    "text": "马桶里面",
+    "lang": "zh",
+    "file": "audio/prompts/feb78ecf56eb206bbb53.wav"
+  },
+  {
+    "text": "外面下雨了，和大人出门要带什么挡雨？",
+    "lang": "zh",
+    "file": "audio/prompts/e9fd4cf18f86ce245919.wav"
+  },
+  {
+    "text": "雨滴落下来，撑开哪一样可以挡雨呢？",
+    "lang": "zh",
+    "file": "audio/prompts/9eb0b330de59c0105f4f.wav"
+  },
+  {
+    "text": "雨伞可以挡雨，和大人一起慢慢走。",
+    "lang": "zh",
+    "file": "audio/prompts/108c818e0f2a41e5291d.wav"
+  },
+  {
+    "text": "小雨伞",
+    "lang": "zh",
+    "file": "audio/prompts/9a684a3119801eec2c0c.wav"
+  },
+  {
+    "text": "玩具熊",
+    "lang": "zh",
+    "file": "audio/prompts/dd3a08c1f4775e33bbee.wav"
+  },
+  {
+    "text": "小兔口渴了，找一找它的喝水杯。",
+    "lang": "zh",
+    "file": "audio/prompts/206cabf7c9bd43c03a0f.wav"
+  },
+  {
+    "text": "看看哪个有杯口，可以装水来喝。",
+    "lang": "zh",
+    "file": "audio/prompts/b9d88b55b4381d480dfd.wav"
+  },
+  {
+    "text": "找到水杯啦，坐稳了，慢慢喝水。",
+    "lang": "zh",
+    "file": "audio/prompts/860fa656ad3d2057b1d9.wav"
+  },
+  {
+    "text": "喝水杯",
+    "lang": "zh",
+    "file": "audio/prompts/71e0ae2bedad89db2c46.wav"
+  },
+  {
+    "text": "运动鞋",
+    "lang": "zh",
+    "file": "audio/prompts/22320d002446bcde4bfb.wav"
+  },
+  {
+    "text": "准备出去散步，脚上穿什么？",
+    "lang": "zh",
+    "file": "audio/prompts/15f4992dbaad5c04c078.wav"
+  },
+  {
+    "text": "小脚有自己的衣服，找找鞋子。",
+    "lang": "zh",
+    "file": "audio/prompts/b2c0c29933ff23a6435b.wav"
+  },
+  {
+    "text": "鞋子穿在脚上，请大人帮忙看看穿稳了没有。",
+    "lang": "zh",
+    "file": "audio/prompts/b56b534c16008d103108.wav"
+  },
+  {
+    "text": "小手套",
+    "lang": "zh",
+    "file": "audio/prompts/eccb7973176007936410.wav"
+  },
+  {
+    "text": "小兔流鼻涕了，可以拿什么擦一擦？",
+    "lang": "zh",
+    "file": "audio/prompts/e93d7b76d17c798e3f9e.wav"
+  },
+  {
+    "text": "找柔软的纸巾，请大人帮忙轻轻擦。",
+    "lang": "zh",
+    "file": "audio/prompts/2a1c1cf42d9fecbd2ccd.wav"
+  },
+  {
+    "text": "用干净纸巾轻轻擦，擦好丢进垃圾桶，再洗手。",
+    "lang": "zh",
+    "file": "audio/prompts/57f32c15645c608f4b38.wav"
+  },
+  {
+    "text": "干净纸巾",
+    "lang": "zh",
+    "file": "audio/prompts/d288548acbaa94e36282.wav"
+  },
+  {
+    "text": "故事书",
+    "lang": "zh",
+    "file": "audio/prompts/4677cd48744d0057ea9d.wav"
+  },
+  {
+    "text": "天黑了，小熊困得打哈欠，去哪里休息？",
+    "lang": "zh",
+    "file": "audio/prompts/3a9d704f11e67e5cc778.wav"
+  },
+  {
+    "text": "想一想，家里哪个地方可以舒服地睡觉？",
+    "lang": "zh",
+    "file": "audio/prompts/2b9e01f6a632970e5247.wav"
+  },
+  {
+    "text": "躺到小床上，安静休息，晚安小熊。",
+    "lang": "zh",
+    "file": "audio/prompts/97755e6209cf11da32b9.wav"
+  },
+  {
+    "text": "小床",
+    "lang": "zh",
+    "file": "audio/prompts/38a09ddca6e55efd5388.wav"
+  },
+  {
+    "text": "滑梯",
+    "lang": "zh",
+    "file": "audio/prompts/c67d7a0bc6053b1676a8.wav"
+  },
+  {
+    "text": "香蕉吃完了，香蕉皮放哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/9c78cfcd8e3ab63aaebd.wav"
+  },
+  {
+    "text": "香蕉皮已经不吃了，找找装垃圾的小桶。",
+    "lang": "zh",
+    "file": "audio/prompts/1408a403e9f587412666.wav"
+  },
+  {
+    "text": "请大人帮忙把香蕉皮放进合适的垃圾桶，收拾好啦。",
+    "lang": "zh",
+    "file": "audio/prompts/a5433dc9da971c653334.wav"
+  },
+  {
+    "text": "垃圾桶",
+    "lang": "zh",
+    "file": "audio/prompts/d24c1b7b523d54ef8a05.wav"
+  },
+  {
+    "text": "枕头上",
+    "lang": "zh",
+    "file": "audio/prompts/b71309dd5737d15dd98c.wav"
+  },
+  {
+    "text": "袜子穿脏了，要洗一洗，放到哪里等着洗？",
+    "lang": "zh",
+    "file": "audio/prompts/7a5cc4e6eefd018d76ef.wav"
+  },
+  {
+    "text": "衣服和袜子要一起洗，找找放脏衣服的篮子。",
+    "lang": "zh",
+    "file": "audio/prompts/49a04d54716637ed983f.wav"
+  },
+  {
+    "text": "脏袜子放进脏衣篮，也可以请大人一起帮忙。",
+    "lang": "zh",
+    "file": "audio/prompts/2a38284d64697a019506.wav"
+  },
+  {
+    "text": "脏衣篮",
+    "lang": "zh",
+    "file": "audio/prompts/c4b6b873cffe8b1b58b2.wav"
+  },
+  {
+    "text": "饭盘里",
+    "lang": "zh",
+    "file": "audio/prompts/85d78d7ae0a5adfa1659.wav"
+  },
+  {
+    "text": "小熊笑眯眯的，说今天玩得真开心。找找开心的脸。",
+    "lang": "zh",
+    "file": "audio/prompts/ae8877a9a6e23e67c318.wav"
+  },
+  {
+    "text": "看看嘴角，哪张脸笑起来了？",
+    "lang": "zh",
+    "file": "audio/prompts/c3edce7d8313b2c0831d.wav"
+  },
+  {
+    "text": "这是开心的脸。开心的时候，可以笑一笑，说给家人听。",
+    "lang": "zh",
+    "file": "audio/prompts/efc39c0d56cc1000cced.wav"
+  },
+  {
+    "text": "开心的脸",
+    "lang": "zh",
+    "file": "audio/prompts/6c489566384acdfad597.wav"
+  },
+  {
+    "text": "难过的脸",
+    "lang": "zh",
+    "file": "audio/prompts/0d9b05800f0af8c90952.wav"
+  },
+  {
+    "text": "小兔的气球飞走了，它说我好难过。找找难过的脸。",
+    "lang": "zh",
+    "file": "audio/prompts/f017ab67da51a0996130.wav"
+  },
+  {
+    "text": "听听小兔说了什么，它现在有点想哭。",
+    "lang": "zh",
+    "file": "audio/prompts/2487bb811b4b12e2b305.wav"
+  },
+  {
+    "text": "这是难过的脸。难过、想哭都可以，我们可以陪着它。",
+    "lang": "zh",
+    "file": "audio/prompts/ad472921dff5ffc4df2b.wav"
+  },
+  {
+    "text": "小熊说我现在有点生气。找找生气的脸。",
+    "lang": "zh",
+    "file": "audio/prompts/6b41f7601938922bb28c.wav"
+  },
+  {
+    "text": "找找皱着眉头的脸，也听听小熊说的心情。",
+    "lang": "zh",
+    "file": "audio/prompts/90d224b6ac9687c59892.wav"
+  },
+  {
+    "text": "这是生气的脸。生气也可以，先停一停，保护自己和别人。",
+    "lang": "zh",
+    "file": "audio/prompts/990b6e2114df6138e726.wav"
+  },
+  {
+    "text": "生气的脸",
+    "lang": "zh",
+    "file": "audio/prompts/bc0fa332a5af0700398d.wav"
+  },
+  {
+    "text": "困困的脸",
+    "lang": "zh",
+    "file": "audio/prompts/2aabbeb5ba3359261e24.wav"
+  },
+  {
+    "text": "雷声好响，小兔说我有点害怕。找找害怕的脸。",
+    "lang": "zh",
+    "file": "audio/prompts/d4e0d2931d2bd97b0dc2.wav"
+  },
+  {
+    "text": "小兔听见大声音有点紧张，哪张脸看起来有点怕？",
+    "lang": "zh",
+    "file": "audio/prompts/c2b735e49802cd07f339.wav"
+  },
+  {
+    "text": "这是害怕的脸。害怕时，可以告诉大人，请他们陪一陪。",
+    "lang": "zh",
+    "file": "audio/prompts/2f4d0d6b43e89561c57c.wav"
+  },
+  {
+    "text": "害怕的脸",
+    "lang": "zh",
+    "file": "audio/prompts/9b9549c95d6db886089d.wav"
+  },
+  {
+    "text": "小熊打着哈欠说我困了。找找困困的脸。",
+    "lang": "zh",
+    "file": "audio/prompts/057bb07d4e240f45253a.wav"
+  },
+  {
+    "text": "眼睛快闭上了，找找想睡觉的小脸。",
+    "lang": "zh",
+    "file": "audio/prompts/e581079916a466b6ae6a.wav"
+  },
+  {
+    "text": "这是困困的脸。身体想休息了，可以告诉大人。",
+    "lang": "zh",
+    "file": "audio/prompts/f60d4d2bc22993b07fe6.wav"
+  },
+  {
+    "text": "有点生气，想让身体慢下来。找找轻轻呼气的小嘴。",
+    "lang": "zh",
+    "file": "audio/prompts/9d0a8393b7af38d2f71f.wav"
+  },
+  {
+    "text": "试着和大人一起，慢慢吸气，轻轻呼出来。",
+    "lang": "zh",
+    "file": "audio/prompts/b4dce3fca598e1abe6a3.wav"
+  },
+  {
+    "text": "轻轻呼气，慢慢来。生气的感觉可以在，大人会陪着你。",
+    "lang": "zh",
+    "file": "audio/prompts/7a927d736bac11181a74.wav"
+  },
+  {
+    "text": "轻轻呼气",
+    "lang": "zh",
+    "file": "audio/prompts/8a93497123d1f6e86154.wav"
+  },
+  {
+    "text": "用脚踢东西",
+    "lang": "zh",
+    "file": "audio/prompts/920dfc9c431dd6c4a6b2.wav"
+  },
+  {
+    "text": "小兔难过了，想请家人陪一陪。点点陪伴的大人。",
+    "lang": "zh",
+    "file": "audio/prompts/0a0fc8ac595738091540.wav"
+  },
+  {
+    "text": "想有人听你说，可以找身边照顾你的大人。",
+    "lang": "zh",
+    "file": "audio/prompts/9ca709023898287b01ea.wav"
+  },
+  {
+    "text": "可以说，我有点难过，请陪陪我。想不想抱抱，都可以告诉大人。",
+    "lang": "zh",
+    "file": "audio/prompts/77b96e50a2199bd43bc5.wav"
+  },
+  {
+    "text": "陪伴的大人",
+    "lang": "zh",
+    "file": "audio/prompts/9ab2e87f7048c26f0c02.wav"
+  },
+  {
+    "text": "小汽车",
+    "lang": "zh",
+    "file": "audio/prompts/1a539580d12b762db9d0.wav"
+  },
+  {
+    "text": "朋友哭了，说想要一张纸巾。我们递给它什么？",
+    "lang": "zh",
+    "file": "audio/prompts/3938f3308f9d8f000566.wav"
+  },
+  {
+    "text": "听听朋友需要什么，它想用纸巾擦擦眼泪。",
+    "lang": "zh",
+    "file": "audio/prompts/fbcf59a31c57748c4f85.wav"
+  },
+  {
+    "text": "递一张纸巾，轻轻陪一陪。朋友可以慢慢说，也可以安静一会儿。",
+    "lang": "zh",
+    "file": "audio/prompts/769fb5b24335fb91ba7b.wav"
+  },
+  {
+    "text": "小鼓",
+    "lang": "zh",
+    "file": "audio/prompts/3d97785fa434a4a95d21.wav"
+  },
+  {
+    "text": "小熊说现在不想抱抱。我们怎么回应它？",
+    "lang": "zh",
+    "file": "audio/prompts/dbfa5bbb99b12bc4d405.wav"
+  },
+  {
+    "text": "小熊说了不想抱，听一听它的想法。",
+    "lang": "zh",
+    "file": "audio/prompts/3465dccc35934d01be30.wav"
+  },
+  {
+    "text": "先不抱，挥挥手也很好。每个人都可以说自己想不想抱抱。",
+    "lang": "zh",
+    "file": "audio/prompts/a4522ada1883d83e0409.wav"
+  },
+  {
+    "text": "挥挥手，先不抱",
+    "lang": "zh",
+    "file": "audio/prompts/d83fcfdba4e0b5bf8e23.wav"
+  },
+  {
+    "text": "马上抱住它",
+    "lang": "zh",
+    "file": "audio/prompts/c9cfec0f32943b62cdfd.wav"
+  },
+  {
+    "text": "拼图有点难，小兔想请大人帮忙。可以点哪张图？",
+    "lang": "zh",
+    "file": "audio/prompts/363e0ce11e384ffab817.wav"
+  },
+  {
+    "text": "遇到有点难的事情，可以说，请帮帮我。",
+    "lang": "zh",
+    "file": "audio/prompts/093829aa325e75e15597.wav"
+  },
+  {
+    "text": "举手请帮忙，或者说，请帮帮我。可以慢慢试，也可以先休息。",
+    "lang": "zh",
+    "file": "audio/prompts/6f26ba76456e011f1866.wav"
+  },
+  {
+    "text": "举手请帮忙",
+    "lang": "zh",
+    "file": "audio/prompts/98cfb8250d49aff3f7ab.wav"
+  },
+  {
+    "text": "用脚踢拼图",
+    "lang": "zh",
+    "file": "audio/prompts/9ee4f6e7964a5aa2f4d0.wav"
+  },
+  {
+    "text": "小马要帮妈妈送麦子到磨坊去。",
+    "lang": "zh",
+    "file": "audio/prompts/2c1f4afed83298129256.wav"
+  },
+  {
+    "text": "一条小河挡住了去路。牛伯伯说水很浅，小松鼠说水很深。",
+    "lang": "zh",
+    "file": "audio/prompts/7c5a567f9abc5a8df7ae.wav"
+  },
+  {
+    "text": "小马不知道该怎么办，回家问妈妈。妈妈说：你自己试试就知道了。",
+    "lang": "zh",
+    "file": "audio/prompts/c2fedabc01f929b97e8b.wav"
+  },
+  {
+    "text": "小马小心地过了河，水不深也不浅。它开心地笑了！",
+    "lang": "zh",
+    "file": "audio/prompts/a7c3527e8770bcd774a7.wav"
+  },
+  {
+    "text": "兔子和乌龟比赛跑步。",
+    "lang": "zh",
+    "file": "audio/prompts/b616e6808aa6c98c38dd.wav"
+  },
+  {
+    "text": "兔子跑得很快，把乌龟远远甩在后面。",
+    "lang": "zh",
+    "file": "audio/prompts/cb1073e4823106ad9aed.wav"
+  },
+  {
+    "text": "兔子骄傲地在树下睡了一觉。",
+    "lang": "zh",
+    "file": "audio/prompts/d2558c42b858726021bc.wav"
+  },
+  {
+    "text": "乌龟一步一步坚持爬，最后第一个到达了终点！",
+    "lang": "zh",
+    "file": "audio/prompts/102db9cd62f7992ea90c.wav"
+  },
+  {
+    "text": "一天晚上，小猴子看到井里有一轮圆圆的月亮。",
+    "lang": "zh",
+    "file": "audio/prompts/9b79103f82661512ef99.wav"
+  },
+  {
+    "text": "它喊来小伙伴们：月亮掉进井里啦！",
+    "lang": "zh",
+    "file": "audio/prompts/66a94dce54ac1881959e.wav"
+  },
+  {
+    "text": "猴子们一个接一个倒挂在树上，伸手去捞月亮。",
+    "lang": "zh",
+    "file": "audio/prompts/2069846289cdcec58dd8.wav"
+  },
+  {
+    "text": "手一碰水面，月亮就碎了。老猴子抬头一看，月亮还在天上呢！",
+    "lang": "zh",
+    "file": "audio/prompts/ea87dc5a787eb35e1103.wav"
+  },
+  {
+    "text": "一只乌鸦口渴了，到处找水喝。",
+    "lang": "zh",
+    "file": "audio/prompts/621829eb4da56a936de1.wav"
+  },
+  {
+    "text": "它发现一个瓶子里有水，但瓶口太小，嘴伸不进去。",
+    "lang": "zh",
+    "file": "audio/prompts/f555d5e71ff3146abe9a.wav"
+  },
+  {
+    "text": "乌鸦看到旁边有许多小石子，灵机一动。",
+    "lang": "zh",
+    "file": "audio/prompts/2605297e86e86ce07d2b.wav"
+  },
+  {
+    "text": "它把石子一颗一颗放进瓶子里，水慢慢升高了！乌鸦终于喝到了水。",
+    "lang": "zh",
+    "file": "audio/prompts/dbcc10fad200ef339fbe.wav"
+  },
+  {
+    "text": "一只狐狸饿了，看到架子上挂着紫紫的葡萄。",
+    "lang": "zh",
+    "file": "audio/prompts/ff12def7e20d72cd5ac3.wav"
+  },
+  {
+    "text": "它跳了又跳，怎么也够不到。",
+    "lang": "zh",
+    "file": "audio/prompts/08db7123718e1d53a2a7.wav"
+  },
+  {
+    "text": "狐狸累得满头大汗，最后只好放弃。",
+    "lang": "zh",
+    "file": "audio/prompts/e68c587be8bd432235aa.wav"
+  },
+  {
+    "text": "它说：这葡萄肯定是酸的，不好吃！",
+    "lang": "zh",
+    "file": "audio/prompts/c00bef5fd6bbe7cbbbf6.wav"
+  },
+  {
+    "text": "猪妈妈让三只小猪各自盖房子。",
+    "lang": "zh",
+    "file": "audio/prompts/af2ceb574b10ee790382.wav"
+  },
+  {
+    "text": "老大偷懒盖了草房，老二盖了木房，老三勤劳盖了砖房。",
+    "lang": "zh",
+    "file": "audio/prompts/c71dbd5e167071821782.wav"
+  },
+  {
+    "text": "大灰狼来了，吹倒了草房和木房。",
+    "lang": "zh",
+    "file": "audio/prompts/960262b61b6f6d5b8de5.wav"
+  },
+  {
+    "text": "大灰狼怎么也吹不倒砖房。三只小猪在砖房里安全地躲过了大灰狼。",
+    "lang": "zh",
+    "file": "audio/prompts/7b0eb1c3a60e6975a1a0.wav"
+  },
+  {
+    "text": "小红帽去森林里看外婆。",
+    "lang": "zh",
+    "file": "audio/prompts/ec0abc94bd374ebad3ca.wav"
+  },
+  {
+    "text": "一只大灰狼骗了她，先跑到外婆家把外婆藏了起来。",
+    "lang": "zh",
+    "file": "audio/prompts/5933ae4769bb8ee79433.wav"
+  },
+  {
+    "text": "大灰狼假装外婆躺在床上，想吃掉小红帽。",
+    "lang": "zh",
+    "file": "audio/prompts/f075193d0a5356733672.wav"
+  },
+  {
+    "text": "猎人来了，救出了外婆和小红帽。小红帽再也不跟陌生人说话了。",
+    "lang": "zh",
+    "file": "audio/prompts/a5add1843580bc0d0275.wav"
+  },
+  {
+    "text": "放羊的小孩觉得无聊，大喊：狼来了！狼来了！",
+    "lang": "zh",
+    "file": "audio/prompts/2ad481f20f0791e37810.wav"
+  },
+  {
+    "text": "村民们跑来帮忙，却发现没有狼。",
+    "lang": "zh",
+    "file": "audio/prompts/bfb3dd4bb4ef5e9fff21.wav"
+  },
+  {
+    "text": "小孩又喊了一次狼来了，村民们又上当了。",
+    "lang": "zh",
+    "file": "audio/prompts/9098f950050bc0b532ee.wav"
+  },
+  {
+    "text": "后来狼真的来了，小孩大喊，但没人再来帮他了。",
+    "lang": "zh",
+    "file": "audio/prompts/453d3e51d701fd6b08df.wav"
+  },
+  {
+    "text": "老爷爷种了一个大萝卜，萝卜长得好大好大。",
+    "lang": "zh",
+    "file": "audio/prompts/4cfd165654b901fb686a.wav"
+  },
+  {
+    "text": "老爷爷拔呀拔，拔不动。叫来老奶奶一起拔。",
+    "lang": "zh",
+    "file": "audio/prompts/6e60d46548b085c55519.wav"
+  },
+  {
+    "text": "还是拔不动。小狗、小猫、小老鼠都来帮忙。",
+    "lang": "zh",
+    "file": "audio/prompts/bde9c4fe8e15be8a5112.wav"
+  },
+  {
+    "text": "大家一起用力，终于把大萝卜拔出来了！",
+    "lang": "zh",
+    "file": "audio/prompts/94509e855030a5ce43c0.wav"
+  },
+  {
+    "text": "猫妈妈带小猫去河边钓鱼。",
+    "lang": "zh",
+    "file": "audio/prompts/33195f3e712497d93fc3.wav"
+  },
+  {
+    "text": "一只蜻蜓飞来，小猫去追蜻蜓，没钓到鱼。",
+    "lang": "zh",
+    "file": "audio/prompts/dcf4cca797d995aa50b8.wav"
+  },
+  {
+    "text": "一只蝴蝶飞来，小猫又去追蝴蝶，还是没钓到鱼。",
+    "lang": "zh",
+    "file": "audio/prompts/8047706f3fab29b48c03.wav"
+  },
+  {
+    "text": "小猫学妈妈专心钓鱼，终于钓到了一条大鱼！",
+    "lang": "zh",
+    "file": "audio/prompts/931ef616d5456ce0fed2.wav"
+  },
+  {
+    "text": "小蝌蚪们看到小鸡有妈妈，也想找自己的妈妈。",
+    "lang": "zh",
+    "file": "audio/prompts/f6107c43cb0a4b1e1bfd.wav"
+  },
+  {
+    "text": "它们问鲤鱼妈妈，鲤鱼说：你们的妈妈有四条腿。",
+    "lang": "zh",
+    "file": "audio/prompts/107fcb123d8f3ab94408.wav"
+  },
+  {
+    "text": "它们问乌龟，乌龟说：你们的妈妈肚皮是白的。",
+    "lang": "zh",
+    "file": "audio/prompts/513acfb9732221b831c6.wav"
+  },
+  {
+    "text": "最后它们找到了青蛙妈妈！小蝌蚪也慢慢变成了小青蛙。",
+    "lang": "zh",
+    "file": "audio/prompts/7052367a3dccf6c7c202.wav"
+  },
+  {
+    "text": "一只青蛙住在井里，它觉得井就是整个世界。",
+    "lang": "zh",
+    "file": "audio/prompts/bf18c1984820c6642c44.wav"
+  },
+  {
+    "text": "一只海龟告诉它：大海很大很大，一眼望不到边。",
+    "lang": "zh",
+    "file": "audio/prompts/b78a12037f83d6e12fb9.wav"
+  },
+  {
+    "text": "青蛙听了非常惊讶，原来世界这么大！",
+    "lang": "zh",
+    "file": "audio/prompts/9e3f8c9c51c213c70b26.wav"
+  },
+  {
+    "text": "青蛙决定跳出井口，去看看外面的大世界。",
+    "lang": "zh",
+    "file": "audio/prompts/12cbb080d764093e15ac.wav"
+  },
+  {
+    "text": "一个农夫在田里干活，一只兔子撞到树桩上死了。",
+    "lang": "zh",
+    "file": "audio/prompts/7f5097a205f8be5e51b5.wav"
+  },
+  {
+    "text": "农夫捡到兔子，觉得太幸运了。",
+    "lang": "zh",
+    "file": "audio/prompts/d81e1213176bce4bbf82.wav"
+  },
+  {
+    "text": "从此他每天守在树桩旁，等着兔子来撞。",
+    "lang": "zh",
+    "file": "audio/prompts/7f289ff715917d498e37.wav"
+  },
+  {
+    "text": "田里的庄稼都枯死了，再也没有兔子来过。",
+    "lang": "zh",
+    "file": "audio/prompts/37cd193c3a9d77004b0a.wav"
+  },
+  {
+    "text": "一个小偷想去偷别人家的门铃。",
+    "lang": "zh",
+    "file": "audio/prompts/48b12c8af3460e470b92.wav"
+  },
+  {
+    "text": "他想：如果我碰门铃，会被听到。",
+    "lang": "zh",
+    "file": "audio/prompts/e7f76c5c46388ec56cd5.wav"
+  },
+  {
+    "text": "于是他捂住自己的耳朵，去偷门铃。",
+    "lang": "zh",
+    "file": "audio/prompts/5fb8c7d7ef7ea6d31c2c.wav"
+  },
+  {
+    "text": "结果门铃响了，主人跑出来把他抓住了。",
+    "lang": "zh",
+    "file": "audio/prompts/a377cd9675f1c541c691.wav"
+  },
+  {
+    "text": "几个人画蛇比赛，谁先画完谁喝酒。",
+    "lang": "zh",
+    "file": "audio/prompts/2e96da68c071f06faf2f.wav"
+  },
+  {
+    "text": "一个人先画完了，得意地说：我还能给蛇画上脚呢！",
+    "lang": "zh",
+    "file": "audio/prompts/07a2112e37b3c59e51b1.wav"
+  },
+  {
+    "text": "他正在画脚的时候，另一个人画完了。",
+    "lang": "zh",
+    "file": "audio/prompts/02c5ca03e8b034bb510a.wav"
+  },
+  {
+    "text": "那人说：蛇本来就没有脚，你画的不是蛇！赢走了酒。",
+    "lang": "zh",
+    "file": "audio/prompts/02cbdc1e1e9a13fc89a3.wav"
+  },
+  {
+    "text": "白雪公主的继母嫉妒她的美丽。",
+    "lang": "zh",
+    "file": "audio/prompts/07358bdc46d4aba3a5dd.wav"
+  },
+  {
+    "text": "白雪公主逃到森林里，和七个小矮人住在一起。",
+    "lang": "zh",
+    "file": "audio/prompts/aa3517722637bef0f7ef.wav"
+  },
+  {
+    "text": "恶毒的王后变成老婆婆，给白雪公主吃了毒苹果。",
+    "lang": "zh",
+    "file": "audio/prompts/97a297f2771d0f4018c1.wav"
+  },
+  {
+    "text": "王子路过，吻了白雪公主，她醒了过来。从此幸福地生活在一起。",
+    "lang": "zh",
+    "file": "audio/prompts/c411ededce98cccc79c5.wav"
+  },
+  {
+    "text": "灰姑娘的继母和姐姐们对她很不好。",
+    "lang": "zh",
+    "file": "audio/prompts/03d32aa23f34546a2d1c.wav"
+  },
+  {
+    "text": "仙女的魔法让她穿上了漂亮的裙子去参加舞会。",
+    "lang": "zh",
+    "file": "audio/prompts/3f673f2e58bad9a9020d.wav"
+  },
+  {
+    "text": "灰姑娘在舞会上和王子跳舞，但魔法在午夜消失。",
+    "lang": "zh",
+    "file": "audio/prompts/7d3a140963933cf217f9.wav"
+  },
+  {
+    "text": "她留下了一只水晶鞋。王子凭着鞋子找到了她，从此幸福生活。",
+    "lang": "zh",
+    "file": "audio/prompts/be5035cab4bdef9401ba.wav"
+  },
+  {
+    "text": "公主出生时被坏仙女施了魔法。",
+    "lang": "zh",
+    "file": "audio/prompts/e23ee427e0f1b18255ec.wav"
+  },
+  {
+    "text": "公主十六岁时手指被纺锤扎伤，沉睡了一百年。",
+    "lang": "zh",
+    "file": "audio/prompts/1a8cf50c7ea10151e52f.wav"
+  },
+  {
+    "text": "整个城堡都沉睡了，长满了玫瑰藤。",
+    "lang": "zh",
+    "file": "audio/prompts/c5dbcea1062b90c111e0.wav"
+  },
+  {
+    "text": "一百年后，勇敢的王子穿过玫瑰藤，吻醒了公主。",
+    "lang": "zh",
+    "file": "audio/prompts/cb6a8ef0349b9b4ba17c.wav"
+  },
+  {
+    "text": "小公主的金球掉进了井里，一只青蛙帮她捡了回来。",
+    "lang": "zh",
+    "file": "audio/prompts/a526e604fa1d91c571c8.wav"
+  },
+  {
+    "text": "青蛙要求做公主的朋友，公主答应了。",
+    "lang": "zh",
+    "file": "audio/prompts/1c3a244b35b103d2e7cd.wav"
+  },
+  {
+    "text": "公主起初不想和青蛙做朋友，但父亲说要守信。",
+    "lang": "zh",
+    "file": "audio/prompts/45fe282b1ccf992d7ed0.wav"
+  },
+  {
+    "text": "公主亲吻了青蛙，青蛙变成了英俊的王子！",
+    "lang": "zh",
+    "file": "audio/prompts/4015218babd9247823a5.wav"
+  },
+  {
+    "text": "一个女人种了一朵花，花里长出了一个小小的女孩，叫拇指姑娘。",
+    "lang": "zh",
+    "file": "audio/prompts/835edc46b004e4dd9af4.wav"
+  },
+  {
+    "text": "拇指姑娘只有拇指那么大，非常可爱。",
+    "lang": "zh",
+    "file": "audio/prompts/86c7a3e633433d5a4525.wav"
+  },
+  {
+    "text": "她被癞蛤蟆抓走，又逃了出来。",
+    "lang": "zh",
+    "file": "audio/prompts/82b460ed61a70a1c9513.wav"
+  },
+  {
+    "text": "最后，燕子带她飞到了温暖的花国，她嫁给了花国的王子。",
+    "lang": "zh",
+    "file": "audio/prompts/3cc385cee48185d7a486.wav"
+  },
+  {
+    "text": "大年夜，一个小女孩在街上卖火柴。",
+    "lang": "zh",
+    "file": "audio/prompts/815bb6183c523d8a26c1.wav"
+  },
+  {
+    "text": "她又冷又饿，没有人买她的火柴。",
+    "lang": "zh",
+    "file": "audio/prompts/b3b36fffd036d4c9d15f.wav"
+  },
+  {
+    "text": "她擦亮火柴，看到了温暖的火炉和美味的食物。",
+    "lang": "zh",
+    "file": "audio/prompts/0e899f44eb2f53bccc2c.wav"
+  },
+  {
+    "text": "最后一根火柴熄灭了，小女孩跟着奶奶飞向了天堂。",
+    "lang": "zh",
+    "file": "audio/prompts/8974393c63730d469981.wav"
+  },
+  {
+    "text": "两个骗子说能织出世界上最美的衣服，笨人看不见。",
+    "lang": "zh",
+    "file": "audio/prompts/7fceb25d441e92370cc3.wav"
+  },
+  {
+    "text": "皇帝穿着看不见的衣服游行，大家都说好看。",
+    "lang": "zh",
+    "file": "audio/prompts/f78a011dd26cd6c50855.wav"
+  },
+  {
+    "text": "一个小孩说：他什么也没穿呀！",
+    "lang": "zh",
+    "file": "audio/prompts/285bef5bdec410eb853d.wav"
+  },
+  {
+    "text": "大家恍然大悟，皇帝才知道自己被骗了。",
+    "lang": "zh",
+    "file": "audio/prompts/03110ccccf4415b1ded8.wav"
+  },
+  {
+    "text": "一只丑小鸭到处被人欺负和嘲笑。",
+    "lang": "zh",
+    "file": "audio/prompts/368628139cf9d8403412.wav"
+  },
+  {
+    "text": "它离开了家，经历了许多困难和孤独。",
+    "lang": "zh",
+    "file": "audio/prompts/e0cd413bfc01fe5864b1.wav"
+  },
+  {
+    "text": "春天来了，丑小鸭看到水中的倒影——它变成了美丽的白天鹅！",
+    "lang": "zh",
+    "file": "audio/prompts/2c1cc342015ce6ba6598.wav"
+  },
+  {
+    "text": "其他天鹅欢迎它，丑小鸭终于找到了属于自己的地方。",
+    "lang": "zh",
+    "file": "audio/prompts/48c5bc0a1fa48debd702.wav"
+  },
+  {
+    "text": "美人鱼救了一个王子，爱上了他。",
+    "lang": "zh",
+    "file": "audio/prompts/f77ecce05bdf45115b3b.wav"
+  },
+  {
+    "text": "她用声音换了双腿，去找王子。",
+    "lang": "zh",
+    "file": "audio/prompts/c19c5bc0498ad6e1c5f4.wav"
+  },
+  {
+    "text": "王子却以为是另一个公主救了他。",
+    "lang": "zh",
+    "file": "audio/prompts/1b5085f4b2411cdd02cc.wav"
+  },
+  {
+    "text": "美人鱼不愿伤害王子，化成了海上的泡沫。",
+    "lang": "zh",
+    "file": "audio/prompts/d28e1fccd3ce821b3c2f.wav"
+  },
+  {
+    "text": "老木匠做了一个木偶男孩，叫匹诺曹。",
+    "lang": "zh",
+    "file": "audio/prompts/4ae3da1a8f7907136ada.wav"
+  },
+  {
+    "text": "匹诺曹爱说谎，一说谎鼻子就会变长。",
+    "lang": "zh",
+    "file": "audio/prompts/3cc877ab3341941b0e6c.wav"
+  },
+  {
+    "text": "他经历了许多冒险，吃了不少苦头。",
+    "lang": "zh",
+    "file": "audio/prompts/5adec643f2d6a2ea4681.wav"
+  },
+  {
+    "text": "最后他变得诚实善良，变成了一个真正的男孩。",
+    "lang": "zh",
+    "file": "audio/prompts/0d7f5c7ea6907e02b221.wav"
+  },
+  {
+    "text": "爱丽丝追着一只白兔，掉进了一个兔子洞。",
+    "lang": "zh",
+    "file": "audio/prompts/0e30ef4cad57c75ee995.wav"
+  },
+  {
+    "text": "她来到了一个奇妙的世界，东西忽大忽小。",
+    "lang": "zh",
+    "file": "audio/prompts/06154160db1e3d15c874.wav"
+  },
+  {
+    "text": "她遇到了会笑的猫、疯帽子和红心皇后。",
+    "lang": "zh",
+    "file": "audio/prompts/a066a7f4319b0d072fb7.wav"
+  },
+  {
+    "text": "最后爱丽丝醒了过来，原来是一场梦。",
+    "lang": "zh",
+    "file": "audio/prompts/2592b51550156b4f42dc.wav"
+  },
+  {
+    "text": "彼得潘是一个永远长不大的男孩。",
+    "lang": "zh",
+    "file": "audio/prompts/ff39465a80f899809289.wav"
+  },
+  {
+    "text": "他带着温蒂和弟弟们飞到了梦幻岛。",
+    "lang": "zh",
+    "file": "audio/prompts/69487a34bfd929da6840.wav"
+  },
+  {
+    "text": "他们和海盗胡克船长斗智斗勇。",
+    "lang": "zh",
+    "file": "audio/prompts/a6107b6338fa14af81c4.wav"
+  },
+  {
+    "text": "温蒂想家了，彼得潘送他们回了家，自己继续在梦幻岛冒险。",
+    "lang": "zh",
+    "file": "audio/prompts/e54026105c5c2838ff9f.wav"
+  },
+  {
+    "text": "龙卷风把多萝西吹到了奥兹国。",
+    "lang": "zh",
+    "file": "audio/prompts/72270f885126c873507e.wav"
+  },
+  {
+    "text": "她遇到了想要脑子的稻草人、想要心的铁皮人和想要勇气的狮子。",
+    "lang": "zh",
+    "file": "audio/prompts/929ec1d74defcef8f783.wav"
+  },
+  {
+    "text": "他们一起冒险去找奥兹大法师。",
+    "lang": "zh",
+    "file": "audio/prompts/e51483c2fe671b2da01c.wav"
+  },
+  {
+    "text": "最后发现，他们想要的东西其实一直都在自己身上。",
+    "lang": "zh",
+    "file": "audio/prompts/bfa862cc4dd78977436f.wav"
+  },
+  {
+    "text": "小木偶匹诺曹不想上学，去玩具国玩耍。",
+    "lang": "zh",
+    "file": "audio/prompts/9e2a9b63764a375d8879.wav"
+  },
+  {
+    "text": "他变成了一头驴子，被卖到了马戏团。",
+    "lang": "zh",
+    "file": "audio/prompts/c5db3f85ab3bfd9258ef.wav"
+  },
+  {
+    "text": "他在海里被鱼吃掉了，在鱼肚子里找到了老木匠。",
+    "lang": "zh",
+    "file": "audio/prompts/49bb8198a52389975dc9.wav"
+  },
+  {
+    "text": "他勇敢地救出老木匠，仙女把他变成了真正的男孩。",
+    "lang": "zh",
+    "file": "audio/prompts/4ae2877d7801be275f16.wav"
+  },
+  {
+    "text": "阿里巴巴发现强盗的宝库，说了咒语芝麻开门。",
+    "lang": "zh",
+    "file": "audio/prompts/6518bf9183742f997d3a.wav"
+  },
+  {
+    "text": "他拿了一些金币回家，过上了好日子。",
+    "lang": "zh",
+    "file": "audio/prompts/cc2f89d6110d0d52eff5.wav"
+  },
+  {
+    "text": "强盗发现了阿里巴巴，想要害他。",
+    "lang": "zh",
+    "file": "audio/prompts/8712d73b2eb2b6e2f05f.wav"
+  },
+  {
+    "text": "聪明的女仆马尔基娜用计谋赶走了强盗。",
+    "lang": "zh",
+    "file": "audio/prompts/7dde2adaf2e06ae7aacd.wav"
+  },
+  {
+    "text": "冬天，一个农夫在路上看到一条冻僵的蛇。",
+    "lang": "zh",
+    "file": "audio/prompts/1c8efb9cf27f12060f88.wav"
+  },
+  {
+    "text": "农夫可怜它，把蛇放进怀里取暖。",
+    "lang": "zh",
+    "file": "audio/prompts/38781af038773cabd7b8.wav"
+  },
+  {
+    "text": "蛇暖和过来，醒来就咬了农夫一口。",
+    "lang": "zh",
+    "file": "audio/prompts/f31d49ae17e2b63a9394.wav"
+  },
+  {
+    "text": "农夫临死前说：我可怜恶人，活该受害。",
+    "lang": "zh",
+    "file": "audio/prompts/c40045f8f04745ba6996.wav"
+  },
+  {
+    "text": "夏天，蚂蚁们忙着储存粮食，蚱蜢却一直唱歌玩耍。",
+    "lang": "zh",
+    "file": "audio/prompts/0bcbed689816e86060ba.wav"
+  },
+  {
+    "text": "蚱蜢笑蚂蚁：这么热还干活，多傻呀！",
+    "lang": "zh",
+    "file": "audio/prompts/326dae603ddfe7b18256.wav"
+  },
+  {
+    "text": "冬天来了，大雪覆盖大地，蚱蜢又冷又饿。",
+    "lang": "zh",
+    "file": "audio/prompts/3c0a1c48a500f7b08cec.wav"
+  },
+  {
+    "text": "它只好去求蚂蚁，蚂蚁说：夏天你唱歌，冬天你就挨饿吧。",
+    "lang": "zh",
+    "file": "audio/prompts/a41fbe209e48efdcd3be.wav"
+  },
+  {
+    "text": "一个小女孩走进森林，来到了三只熊的家。",
+    "lang": "zh",
+    "file": "audio/prompts/aec73da60c3d1276a67f.wav"
+  },
+  {
+    "text": "她喝了小熊的粥，坐了小熊的椅子，还睡了小熊的床。",
+    "lang": "zh",
+    "file": "audio/prompts/888b542906da37a89e1d.wav"
+  },
+  {
+    "text": "三只熊回来，发现东西被动过了。",
+    "lang": "zh",
+    "file": "audio/prompts/3e24144dd670bc105fe5.wav"
+  },
+  {
+    "text": "小熊说：有人睡过我的床！小女孩醒来吓跑了。",
+    "lang": "zh",
+    "file": "audio/prompts/422ac536677ddc96e750.wav"
+  },
+  {
+    "text": "北风和太阳争论谁更厉害。",
+    "lang": "zh",
+    "file": "audio/prompts/a5ad0116f05a1600ae43.wav"
+  },
+  {
+    "text": "它们打赌：谁能让人脱下外套，谁就赢。",
+    "lang": "zh",
+    "file": "audio/prompts/c524d73475d239c9d8b3.wav"
+  },
+  {
+    "text": "北风拼命吹，人却把外套裹得更紧。",
+    "lang": "zh",
+    "file": "audio/prompts/2ea9e437659f56424cdb.wav"
+  },
+  {
+    "text": "太阳温暖地照着，人觉得热，主动脱下了外套。",
+    "lang": "zh",
+    "file": "audio/prompts/428eef3563ef045278b0.wav"
+  },
+  {
+    "text": "乌鸦叼着一块奶酪站在树上。",
+    "lang": "zh",
+    "file": "audio/prompts/d2ef1956e2897df2d13b.wav"
+  },
+  {
+    "text": "狐狸看见了，夸乌鸦：你的歌声真好听！",
+    "lang": "zh",
+    "file": "audio/prompts/9d79830a09d8cb0b699b.wav"
+  },
+  {
+    "text": "乌鸦听了很得意，张开嘴唱歌。",
+    "lang": "zh",
+    "file": "audio/prompts/89be23200417889c71f3.wav"
+  },
+  {
+    "text": "奶酪掉下来，狐狸叼起就跑：下次别被人奉承骗了。",
+    "lang": "zh",
+    "file": "audio/prompts/b51794754903db8b7481.wav"
+  },
+  {
+    "text": "穷孩子阿拉丁得到了一盏旧油灯。",
+    "lang": "zh",
+    "file": "audio/prompts/aabee18c43da91fd5228.wav"
+  },
+  {
+    "text": "他擦了擦灯，出来一个神通广大的灯神。",
+    "lang": "zh",
+    "file": "audio/prompts/78fe93e613a829809785.wav"
+  },
+  {
+    "text": "灯神帮阿拉丁建成了宫殿，娶到了公主。",
+    "lang": "zh",
+    "file": "audio/prompts/272f03e2f1fd6245f53c.wav"
+  },
+  {
+    "text": "邪恶的巫师想抢神灯，阿拉丁用智慧夺了回来。",
+    "lang": "zh",
+    "file": "audio/prompts/d5533e8e7d797932d3d1.wav"
+  },
+  {
+    "text": "皇帝听说花园里有一只歌声美妙的夜莺。",
+    "lang": "zh",
+    "file": "audio/prompts/03434479d5810b5aee86.wav"
+  },
+  {
+    "text": "他派人请夜莺来唱歌，被深深打动。",
+    "lang": "zh",
+    "file": "audio/prompts/78caa424fcfefd031d32.wav"
+  },
+  {
+    "text": "后来有人送来一只镶宝石的机械鸟，夜莺悄悄飞走了。",
+    "lang": "zh",
+    "file": "audio/prompts/837e1ab0ac89a21fc124.wav"
+  },
+  {
+    "text": "皇帝病重时，真夜莺回来唱歌，治好了他。",
+    "lang": "zh",
+    "file": "audio/prompts/f6b78b7e95955527f70d.wav"
+  },
+  {
+    "text": "狮子睡着时，被一只小老鼠吵醒了。",
+    "lang": "zh",
+    "file": "audio/prompts/d9c302d38b30b1458d32.wav"
+  },
+  {
+    "text": "狮子正要吃它，老鼠求饶：说不定哪天我能帮您。",
+    "lang": "zh",
+    "file": "audio/prompts/66f9ad7265603ac51863.wav"
+  },
+  {
+    "text": "狮子笑了，放了它。",
+    "lang": "zh",
+    "file": "audio/prompts/afd390e3d77f04b08e57.wav"
+  },
+  {
+    "text": "后来狮子被猎人的网困住，老鼠咬断绳子救了它。",
+    "lang": "zh",
+    "file": "audio/prompts/0d160d0bd8d2aafcb1bf.wav"
+  },
+  {
+    "text": "乡下老鼠请城里老鼠来家里吃粗粮。",
+    "lang": "zh",
+    "file": "audio/prompts/da6664798c34ffa05eed.wav"
+  },
+  {
+    "text": "城里老鼠说：跟我回城，吃山珍海味吧！",
+    "lang": "zh",
+    "file": "audio/prompts/9a76cd49c3591ec819cc.wav"
+  },
+  {
+    "text": "它们溜进城里的仓库大吃大喝。",
+    "lang": "zh",
+    "file": "audio/prompts/2205fd1c88341dd5fe11.wav"
+  },
+  {
+    "text": "突然猫来了，两只老鼠吓得逃命。乡下老鼠说：还是家里平安。",
+    "lang": "zh",
+    "file": "audio/prompts/a96f53d188e589899fd7.wav"
+  },
+  {
+    "text": "驴、狗、猫和公鸡老了，被主人赶出家门。",
+    "lang": "zh",
+    "file": "audio/prompts/e225f778de354a91016f.wav"
+  },
+  {
+    "text": "它们决定去不来梅当音乐家。",
+    "lang": "zh",
+    "file": "audio/prompts/7750a1704f61bf61963b.wav"
+  },
+  {
+    "text": "晚上，它们合伙吓跑了抢东西的强盗。",
+    "lang": "zh",
+    "file": "audio/prompts/80d7ec8610108314e2a1.wav"
+  },
+  {
+    "text": "四个伙伴住在强盗的房子里，快乐地生活。",
+    "lang": "zh",
+    "file": "audio/prompts/5e7f856bb08b35f4428c.wav"
+  },
+  {
+    "text": "小裁缝一下打死七只苍蝇，自豪地缝在腰带上。",
+    "lang": "zh",
+    "file": "audio/prompts/ca31a47312c7e108f731.wav"
+  },
+  {
+    "text": "他出门闯荡，凭着聪明战胜了巨人。",
+    "lang": "zh",
+    "file": "audio/prompts/e385cbeb7a8b942c1d79.wav"
+  },
+  {
+    "text": "他又用计谋抓到了凶猛的独角兽。",
+    "lang": "zh",
+    "file": "audio/prompts/3e23f8aa9c4831f91346.wav"
+  },
+  {
+    "text": "最后小裁缝成了国王，大家都佩服他的勇敢。",
+    "lang": "zh",
+    "file": "audio/prompts/4480300beb70f10e4223.wav"
+  },
+  {
+    "text": "老渔夫放生了一条会说话的金鱼。",
+    "lang": "zh",
+    "file": "audio/prompts/c0915a3f403206ffdf15.wav"
+  },
+  {
+    "text": "金鱼说：我可以满足你的愿望。",
+    "lang": "zh",
+    "file": "audio/prompts/64748bcb94e9da36d7cc.wav"
+  },
+  {
+    "text": "老太婆先要新木盆，又要房子，越来越贪心。",
+    "lang": "zh",
+    "file": "audio/prompts/7fd6f0ef6916935a4c7e.wav"
+  },
+  {
+    "text": "最后她要当女王，金鱼生气了，把一切变回原样。",
+    "lang": "zh",
+    "file": "audio/prompts/5d96e794f4fd8504217c.wav"
+  },
+  {
+    "text": "洪水泛滥，大禹的父亲治水失败被罚。",
+    "lang": "zh",
+    "file": "audio/prompts/3806bc81b1b30f4d4f4c.wav"
+  },
+  {
+    "text": "大禹接着治水，三过家门而不入。",
+    "lang": "zh",
+    "file": "audio/prompts/1ffaa9cbbfaf6c21465c.wav"
+  },
+  {
+    "text": "他开凿河道，把洪水引向大海。",
+    "lang": "zh",
+    "file": "audio/prompts/cdee28caa41eb69c9ef1.wav"
+  },
+  {
+    "text": "十三年后洪水退去，百姓安居乐业。",
+    "lang": "zh",
+    "file": "audio/prompts/0e52fb31ff2f2ff5f0cd.wav"
+  },
+  {
+    "text": "蝙蝠掉在地上，被黄鼠狼捉住。",
+    "lang": "zh",
+    "file": "audio/prompts/2be374dd07df0ee3d1d7.wav"
+  },
+  {
+    "text": "蝙蝠说：我是老鼠，不是鸟。黄鼠狼放了它。",
+    "lang": "zh",
+    "file": "audio/prompts/cc7ac6576f6530e91c1d.wav"
+  },
+  {
+    "text": "后来蝙蝠又被另一只黄鼠狼捉住。",
+    "lang": "zh",
+    "file": "audio/prompts/5c8432b4db8e54aa8b4c.wav"
+  },
+  {
+    "text": "蝙蝠说：我是鸟，不是老鼠。又逃过一劫。",
+    "lang": "zh",
+    "file": "audio/prompts/0c75ed0e7db44c260c19.wav"
+  },
+  {
+    "text": "巨人的花园很美，但他不让孩子们进去。",
+    "lang": "zh",
+    "file": "audio/prompts/a26ee2ad2b4f50ec7d5a.wav"
+  },
+  {
+    "text": "花园从此永远是冬天。",
+    "lang": "zh",
+    "file": "audio/prompts/c26d13de1da00e249016.wav"
+  },
+  {
+    "text": "一天，孩子们从墙洞钻进来，春天也回来了。",
+    "lang": "zh",
+    "file": "audio/prompts/b3775cdc853ab9df15a3.wav"
+  },
+  {
+    "text": "巨人明白了，拆掉围墙和孩子们一起玩。",
+    "lang": "zh",
+    "file": "audio/prompts/d496e97604968bcde579.wav"
+  },
+  {
+    "text": "快乐王子的雕像满身黄金，看到城市里的穷苦。",
+    "lang": "zh",
+    "file": "audio/prompts/50a1599ec3371e66f3ef.wav"
+  },
+  {
+    "text": "他请小燕子把身上的宝石和金片送给穷人。",
+    "lang": "zh",
+    "file": "audio/prompts/d0faf54d203deecd56ff.wav"
+  },
+  {
+    "text": "燕子一片片送走，自己冻死在王子脚下。",
+    "lang": "zh",
+    "file": "audio/prompts/772e6215a56cc1b7bd64.wav"
+  },
+  {
+    "text": "天使说：这只小鸟和这座心善的雕像最珍贵。",
+    "lang": "zh",
+    "file": "audio/prompts/a40c2a0d8bd7df2e7a53.wav"
+  },
+  {
+    "text": "磨坊主的小儿子只分到一只猫。",
+    "lang": "zh",
+    "file": "audio/prompts/cf963f8826fce5551ff9.wav"
+  },
+  {
+    "text": "猫穿上靴子，自称伯爵的使者去见国王。",
+    "lang": "zh",
+    "file": "audio/prompts/0aaaaa72ce1d917e1ff5.wav"
+  },
+  {
+    "text": "它用计谋帮主人得到公主的青睐和巨人的财产。",
+    "lang": "zh",
+    "file": "audio/prompts/696bd3f9db4695f2b9c4.wav"
+  },
+  {
+    "text": "小儿子成了王子，猫也过上了好日子。",
+    "lang": "zh",
+    "file": "audio/prompts/143dd4ecbfb9276082d1.wav"
+  },
+  {
+    "text": "商人摘了野兽花园的玫瑰，被要求用女儿抵债。",
+    "lang": "zh",
+    "file": "audio/prompts/c69dc0c803e26cda3749.wav"
+  },
+  {
+    "text": "贝尔来到城堡，和野兽一起生活。",
+    "lang": "zh",
+    "file": "audio/prompts/d7a65ad4d7abe3f56ade.wav"
+  },
+  {
+    "text": "她看到野兽善良的心，真心爱上了它。",
+    "lang": "zh",
+    "file": "audio/prompts/e7087c3e8ebedceba040.wav"
+  },
+  {
+    "text": "魔法解除，野兽变回了英俊的王子。",
+    "lang": "zh",
+    "file": "audio/prompts/d791f1a119bad5118f05.wav"
+  },
+  {
+    "text": "一个锡兵只有一条腿，却站得笔直。",
+    "lang": "zh",
+    "file": "audio/prompts/b433dd6b5dc0a5842476.wav"
+  },
+  {
+    "text": "他爱上了纸做的小舞蹈家。",
+    "lang": "zh",
+    "file": "audio/prompts/5b2e42f4e78f94537051.wav"
+  },
+  {
+    "text": "一阵风吹来，锡兵经历了许多惊险旅行。",
+    "lang": "zh",
+    "file": "audio/prompts/b254cc81327da8d40431.wav"
+  },
+  {
+    "text": "最后锡兵被扔进火里，和小舞蹈家一起化成了心形。",
+    "lang": "zh",
+    "file": "audio/prompts/f940b36991df92709b9f.wav"
+  },
+  {
+    "text": "魔鬼的镜子碎片飞进男孩加伊的眼睛，他变得冷酷。",
+    "lang": "zh",
+    "file": "audio/prompts/45c884cadbe526488318.wav"
+  },
+  {
+    "text": "雪皇后把他带去了冰冷的北方。",
+    "lang": "zh",
+    "file": "audio/prompts/25f8d0c89fdda3cd2a4e.wav"
+  },
+  {
+    "text": "女孩格尔达不怕艰难，一路寻找好朋友。",
+    "lang": "zh",
+    "file": "audio/prompts/3a0d98d82784dc5a062d.wav"
+  },
+  {
+    "text": "她的眼泪融化了加伊心里的冰块，两人一起回家了。",
+    "lang": "zh",
+    "file": "audio/prompts/7c62747decb892bbdc46.wav"
+  },
+  {
+    "text": "静夜思，唐，李白。床前明月光，疑是地上霜，举头望明月，低头思故乡",
+    "lang": "zh",
+    "file": "audio/prompts/d0c64ffeb34323f2b11e.wav"
+  },
+  {
+    "text": "床前明月光",
+    "lang": "zh",
+    "file": "audio/prompts/1f28b613bd5c6b5bd91c.wav"
+  },
+  {
+    "text": "光",
+    "lang": "zh",
+    "file": "audio/prompts/bc4f673dbd2c0558262f.wav"
+  },
+  {
+    "text": "疑是地上霜",
+    "lang": "zh",
+    "file": "audio/prompts/cc1d37a0395f81d4140e.wav"
+  },
+  {
+    "text": "霜",
+    "lang": "zh",
+    "file": "audio/prompts/810fada045b40e483a82.wav"
+  },
+  {
+    "text": "举头望明月",
+    "lang": "zh",
+    "file": "audio/prompts/998332e359988c6fad25.wav"
+  },
+  {
+    "text": "月",
+    "lang": "zh",
+    "file": "audio/prompts/f4d691548212a5fa6cf7.wav"
+  },
+  {
+    "text": "低头思故乡",
+    "lang": "zh",
+    "file": "audio/prompts/69f49258f7ae5b5008d4.wav"
+  },
+  {
+    "text": "乡",
+    "lang": "zh",
+    "file": "audio/prompts/100c87d8a754d508cc8d.wav"
+  },
+  {
+    "text": "春晓，唐，孟浩然。春眠不觉晓，处处闻啼鸟，夜来风雨声，花落知多少",
+    "lang": "zh",
+    "file": "audio/prompts/adba004d72b14eba1c8d.wav"
+  },
+  {
+    "text": "春眠不觉晓",
+    "lang": "zh",
+    "file": "audio/prompts/1ae2e949e197181a568d.wav"
+  },
+  {
+    "text": "晓",
+    "lang": "zh",
+    "file": "audio/prompts/231a4db75ae5a1d523c4.wav"
+  },
+  {
+    "text": "处处闻啼鸟",
+    "lang": "zh",
+    "file": "audio/prompts/0bc4ecd2292bf862bae1.wav"
+  },
+  {
+    "text": "鸟",
+    "lang": "zh",
+    "file": "audio/prompts/7acb729dea76d208a470.wav"
+  },
+  {
+    "text": "夜来风雨声",
+    "lang": "zh",
+    "file": "audio/prompts/b4d39d8b6a3b9415f0ff.wav"
+  },
+  {
+    "text": "声",
+    "lang": "zh",
+    "file": "audio/prompts/d004ad4fb57c1f821c62.wav"
+  },
+  {
+    "text": "花落知多少",
+    "lang": "zh",
+    "file": "audio/prompts/e83f269c8a3f3c30eacc.wav"
+  },
+  {
+    "text": "少",
+    "lang": "zh",
+    "file": "audio/prompts/2e2dfa85d0361893ffec.wav"
+  },
+  {
+    "text": "咏鹅，唐，骆宾王。鹅鹅鹅，曲项向天歌，白毛浮绿水，红掌拨清波",
+    "lang": "zh",
+    "file": "audio/prompts/9cd8873a289a5244d785.wav"
+  },
+  {
+    "text": "鹅鹅鹅",
+    "lang": "zh",
+    "file": "audio/prompts/8ccaea126170e7802238.wav"
+  },
+  {
+    "text": "鹅",
+    "lang": "zh",
+    "file": "audio/prompts/b6eb1896b5a1b5ab8f2b.wav"
+  },
+  {
+    "text": "曲项向天歌",
+    "lang": "zh",
+    "file": "audio/prompts/ad1f5a65a2b21c15ab7b.wav"
+  },
+  {
+    "text": "歌",
+    "lang": "zh",
+    "file": "audio/prompts/12d246ffdd22f78d6a92.wav"
+  },
+  {
+    "text": "白毛浮绿水",
+    "lang": "zh",
+    "file": "audio/prompts/57454c73a1db4cfeaaf1.wav"
+  },
+  {
+    "text": "水",
+    "lang": "zh",
+    "file": "audio/prompts/681dd3a7ec2f981c3192.wav"
+  },
+  {
+    "text": "红掌拨清波",
+    "lang": "zh",
+    "file": "audio/prompts/30752ff2ca88c7956112.wav"
+  },
+  {
+    "text": "波",
+    "lang": "zh",
+    "file": "audio/prompts/4b91e4bb9a465786d6d0.wav"
+  },
+  {
+    "text": "悯农，唐，李绅。锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦",
+    "lang": "zh",
+    "file": "audio/prompts/d0011b2daaabc51cbe63.wav"
+  },
+  {
+    "text": "锄禾日当午",
+    "lang": "zh",
+    "file": "audio/prompts/56e26c5b0a0d38e0e763.wav"
+  },
+  {
+    "text": "午",
+    "lang": "zh",
+    "file": "audio/prompts/0110328a5cc63e156760.wav"
+  },
+  {
+    "text": "汗滴禾下土",
+    "lang": "zh",
+    "file": "audio/prompts/82f8734297062ee7b2d3.wav"
+  },
+  {
+    "text": "土",
+    "lang": "zh",
+    "file": "audio/prompts/ddece27229b9258e2348.wav"
+  },
+  {
+    "text": "谁知盘中餐",
+    "lang": "zh",
+    "file": "audio/prompts/2af3a9659d8fc97ecff3.wav"
+  },
+  {
+    "text": "餐",
+    "lang": "zh",
+    "file": "audio/prompts/0eedc43e4aa1ad3bb21d.wav"
+  },
+  {
+    "text": "粒粒皆辛苦",
+    "lang": "zh",
+    "file": "audio/prompts/18a7db8478fb8e1e918d.wav"
+  },
+  {
+    "text": "苦",
+    "lang": "zh",
+    "file": "audio/prompts/e9252c1b0c7bcd283b57.wav"
+  },
+  {
+    "text": "登鹳雀楼，唐，王之涣。白日依山尽，黄河入海流，欲穷千里目，更上一层楼",
+    "lang": "zh",
+    "file": "audio/prompts/aab3d6f41b04090e4454.wav"
+  },
+  {
+    "text": "白日依山尽",
+    "lang": "zh",
+    "file": "audio/prompts/427b83e38a23ddd54cb7.wav"
+  },
+  {
+    "text": "尽",
+    "lang": "zh",
+    "file": "audio/prompts/ebfbdd8d442c31f0aa09.wav"
+  },
+  {
+    "text": "黄河入海流",
+    "lang": "zh",
+    "file": "audio/prompts/a57906e51905de1f9707.wav"
+  },
+  {
+    "text": "流",
+    "lang": "zh",
+    "file": "audio/prompts/3e2307e091b30f0cea6c.wav"
+  },
+  {
+    "text": "欲穷千里目",
+    "lang": "zh",
+    "file": "audio/prompts/71f7f5e24de00c06732c.wav"
+  },
+  {
+    "text": "目",
+    "lang": "zh",
+    "file": "audio/prompts/b93d502174911b609b7b.wav"
+  },
+  {
+    "text": "更上一层楼",
+    "lang": "zh",
+    "file": "audio/prompts/9fabe9e07845626b5fad.wav"
+  },
+  {
+    "text": "楼",
+    "lang": "zh",
+    "file": "audio/prompts/ba87342573b02de270ee.wav"
+  },
+  {
+    "text": "相思，唐，王维。红豆生南国，春来发几枝，愿君多采撷，此物最相思",
+    "lang": "zh",
+    "file": "audio/prompts/f5dcd713d09c9bc97d5c.wav"
+  },
+  {
+    "text": "红豆生南国",
+    "lang": "zh",
+    "file": "audio/prompts/3fe5f27b414ea14208dc.wav"
+  },
+  {
+    "text": "国",
+    "lang": "zh",
+    "file": "audio/prompts/a83ff82c277f24288eb6.wav"
+  },
+  {
+    "text": "春来发几枝",
+    "lang": "zh",
+    "file": "audio/prompts/f17f8502db786109af00.wav"
+  },
+  {
+    "text": "枝",
+    "lang": "zh",
+    "file": "audio/prompts/3bc7077f4ac62dd5db00.wav"
+  },
+  {
+    "text": "愿君多采撷",
+    "lang": "zh",
+    "file": "audio/prompts/c7ef334c10ebc95c435a.wav"
+  },
+  {
+    "text": "撷",
+    "lang": "zh",
+    "file": "audio/prompts/1dc72e204f1beb2d8dd5.wav"
+  },
+  {
+    "text": "此物最相思",
+    "lang": "zh",
+    "file": "audio/prompts/067626991466aca5c5fc.wav"
+  },
+  {
+    "text": "思",
+    "lang": "zh",
+    "file": "audio/prompts/b5ccc25cf4b9d6a4e187.wav"
+  },
+  {
+    "text": "江雪，唐，柳宗元。千山鸟飞绝，万径人踪灭，孤舟蓑笠翁，独钓寒江雪",
+    "lang": "zh",
+    "file": "audio/prompts/4c5e058044482cc5f0c4.wav"
+  },
+  {
+    "text": "千山鸟飞绝",
+    "lang": "zh",
+    "file": "audio/prompts/7278254c11a5e57c7425.wav"
+  },
+  {
+    "text": "绝",
+    "lang": "zh",
+    "file": "audio/prompts/4b2848743a088af1c08d.wav"
+  },
+  {
+    "text": "万径人踪灭",
+    "lang": "zh",
+    "file": "audio/prompts/6a359600681959fde6a5.wav"
+  },
+  {
+    "text": "灭",
+    "lang": "zh",
+    "file": "audio/prompts/031b2a4f8d1a69ebb2fa.wav"
+  },
+  {
+    "text": "孤舟蓑笠翁",
+    "lang": "zh",
+    "file": "audio/prompts/26143356415b2999a0f7.wav"
+  },
+  {
+    "text": "翁",
+    "lang": "zh",
+    "file": "audio/prompts/bf15f72643cd3f2e35d6.wav"
+  },
+  {
+    "text": "独钓寒江雪",
+    "lang": "zh",
+    "file": "audio/prompts/c68455bbc2b1899f2fd2.wav"
+  },
+  {
+    "text": "雪",
+    "lang": "zh",
+    "file": "audio/prompts/d1d12382c9eaeac1b718.wav"
+  },
+  {
+    "text": "赋得古原草送别，唐，白居易。离离原上草，一岁一枯荣，野火烧不尽，春风吹又生",
+    "lang": "zh",
+    "file": "audio/prompts/c5180845b7d3ce4d039e.wav"
+  },
+  {
+    "text": "离离原上草",
+    "lang": "zh",
+    "file": "audio/prompts/5b0a24ce85878368c379.wav"
+  },
+  {
+    "text": "草",
+    "lang": "zh",
+    "file": "audio/prompts/b3357e2f357240039932.wav"
+  },
+  {
+    "text": "一岁一枯荣",
+    "lang": "zh",
+    "file": "audio/prompts/e85ee496a6de19755112.wav"
+  },
+  {
+    "text": "荣",
+    "lang": "zh",
+    "file": "audio/prompts/37065da77bf856bf5103.wav"
+  },
+  {
+    "text": "野火烧不尽",
+    "lang": "zh",
+    "file": "audio/prompts/7aee04e45f251000b83e.wav"
+  },
+  {
+    "text": "春风吹又生",
+    "lang": "zh",
+    "file": "audio/prompts/04c2a8f6017bf60ecbfc.wav"
+  },
+  {
+    "text": "生",
+    "lang": "zh",
+    "file": "audio/prompts/48fc7ed499266749277c.wav"
+  },
+  {
+    "text": "望庐山瀑布，唐，李白。日照香炉生紫烟，遥看瀑布挂前川，飞流直下三千尺，疑是银河落九天",
+    "lang": "zh",
+    "file": "audio/prompts/117d849ee7f69da9f9a4.wav"
+  },
+  {
+    "text": "日照香炉生紫烟",
+    "lang": "zh",
+    "file": "audio/prompts/98aa5c8b55d3a4853397.wav"
+  },
+  {
+    "text": "烟",
+    "lang": "zh",
+    "file": "audio/prompts/3f81522297d5e1f499e7.wav"
+  },
+  {
+    "text": "遥看瀑布挂前川",
+    "lang": "zh",
+    "file": "audio/prompts/35f7c685b03a6e5b7b50.wav"
+  },
+  {
+    "text": "川",
+    "lang": "zh",
+    "file": "audio/prompts/7293e2c1503c49c479cb.wav"
+  },
+  {
+    "text": "飞流直下三千尺",
+    "lang": "zh",
+    "file": "audio/prompts/384a4577980b49d6ea1f.wav"
+  },
+  {
+    "text": "尺",
+    "lang": "zh",
+    "file": "audio/prompts/e371a1e95566acb00a7f.wav"
+  },
+  {
+    "text": "疑是银河落九天",
+    "lang": "zh",
+    "file": "audio/prompts/6375bf8cb6ea6b222e2e.wav"
+  },
+  {
+    "text": "天",
+    "lang": "zh",
+    "file": "audio/prompts/2218b2d0d31aeeaa42ca.wav"
+  },
+  {
+    "text": "绝句，唐，杜甫。两个黄鹂鸣翠柳，一行白鹭上青天，窗含西岭千秋雪，门泊东吴万里船",
+    "lang": "zh",
+    "file": "audio/prompts/7cd86a9a25b028d70d6b.wav"
+  },
+  {
+    "text": "两个黄鹂鸣翠柳",
+    "lang": "zh",
+    "file": "audio/prompts/bf9576a181e4e6376de6.wav"
+  },
+  {
+    "text": "柳",
+    "lang": "zh",
+    "file": "audio/prompts/bb64de675d9b565556b8.wav"
+  },
+  {
+    "text": "一行白鹭上青天",
+    "lang": "zh",
+    "file": "audio/prompts/cd6e29ce174bcfb51f0c.wav"
+  },
+  {
+    "text": "窗含西岭千秋雪",
+    "lang": "zh",
+    "file": "audio/prompts/c24eaee52304bf16d582.wav"
+  },
+  {
+    "text": "门泊东吴万里船",
+    "lang": "zh",
+    "file": "audio/prompts/9a667a5ccc18b4da9737.wav"
+  },
+  {
+    "text": "船",
+    "lang": "zh",
+    "file": "audio/prompts/b73ac05b0120ad528f71.wav"
+  },
+  {
+    "text": "鹿柴，唐，王维。空山不见人，但闻人语响，返景入深林，复照青苔上",
+    "lang": "zh",
+    "file": "audio/prompts/1ce780aba928ac2f725a.wav"
+  },
+  {
+    "text": "空山不见人",
+    "lang": "zh",
+    "file": "audio/prompts/8dd3be01bc14ad3e5645.wav"
+  },
+  {
+    "text": "人",
+    "lang": "zh",
+    "file": "audio/prompts/eaf862f96a070206b1d2.wav"
+  },
+  {
+    "text": "但闻人语响",
+    "lang": "zh",
+    "file": "audio/prompts/d035d6a641f89f0c6ec0.wav"
+  },
+  {
+    "text": "响",
+    "lang": "zh",
+    "file": "audio/prompts/e94198bce364a5a43c11.wav"
+  },
+  {
+    "text": "返景入深林",
+    "lang": "zh",
+    "file": "audio/prompts/f4d1c4ed572ba20fe6bc.wav"
+  },
+  {
+    "text": "林",
+    "lang": "zh",
+    "file": "audio/prompts/168d8622e180db0c387e.wav"
+  },
+  {
+    "text": "复照青苔上",
+    "lang": "zh",
+    "file": "audio/prompts/e7ba3b46b29e19b6b106.wav"
+  },
+  {
+    "text": "上",
+    "lang": "zh",
+    "file": "audio/prompts/55e1a3dfc819d3866edc.wav"
+  },
+  {
+    "text": "游子吟，唐，孟郊。慈母手中线，游子身上衣，临行密密缝，意恐迟迟归",
+    "lang": "zh",
+    "file": "audio/prompts/9f92b58bfe4927043c6a.wav"
+  },
+  {
+    "text": "慈母手中线",
+    "lang": "zh",
+    "file": "audio/prompts/0834b4deb40b57f3bb4d.wav"
+  },
+  {
+    "text": "线",
+    "lang": "zh",
+    "file": "audio/prompts/32758962ee9c877e4a37.wav"
+  },
+  {
+    "text": "游子身上衣",
+    "lang": "zh",
+    "file": "audio/prompts/e3b5220953e9857add44.wav"
+  },
+  {
+    "text": "衣",
+    "lang": "zh",
+    "file": "audio/prompts/a72633256174d3fc6bfe.wav"
+  },
+  {
+    "text": "临行密密缝",
+    "lang": "zh",
+    "file": "audio/prompts/b6555a26f3ffbc031a53.wav"
+  },
+  {
+    "text": "缝",
+    "lang": "zh",
+    "file": "audio/prompts/e4cdee685e233a6ae767.wav"
+  },
+  {
+    "text": "意恐迟迟归",
+    "lang": "zh",
+    "file": "audio/prompts/17ed2fddde7e06eee210.wav"
+  },
+  {
+    "text": "归",
+    "lang": "zh",
+    "file": "audio/prompts/30127eeb1ba7ed8a80c7.wav"
+  },
+  {
+    "text": "忆江南，唐，白居易。江南好，风景旧曾谙，日出江花红胜火，春来江水绿如蓝",
+    "lang": "zh",
+    "file": "audio/prompts/9572a119609bf01b27a0.wav"
+  },
+  {
+    "text": "江南好",
+    "lang": "zh",
+    "file": "audio/prompts/aa035cd74266ecccf183.wav"
+  },
+  {
+    "text": "好",
+    "lang": "zh",
+    "file": "audio/prompts/c0e8479621d0bebf1663.wav"
+  },
+  {
+    "text": "风景旧曾谙",
+    "lang": "zh",
+    "file": "audio/prompts/95749bab3f603ff7d5c5.wav"
+  },
+  {
+    "text": "谙",
+    "lang": "zh",
+    "file": "audio/prompts/f571e00e3bb9475063fb.wav"
+  },
+  {
+    "text": "日出江花红胜火",
+    "lang": "zh",
+    "file": "audio/prompts/1fe380ddeefeead9f3d4.wav"
+  },
+  {
+    "text": "火",
+    "lang": "zh",
+    "file": "audio/prompts/a8437002bc559e823507.wav"
+  },
+  {
+    "text": "春来江水绿如蓝",
+    "lang": "zh",
+    "file": "audio/prompts/67de3f00dc3272d06825.wav"
+  },
+  {
+    "text": "蓝",
+    "lang": "zh",
+    "file": "audio/prompts/452a495cc7587f2bcbb1.wav"
+  },
+  {
+    "text": "小儿垂钓，唐，胡令能。蓬头稚子学垂纶，侧坐莓苔草映身，路人借问遥招手，怕得鱼惊不应人",
+    "lang": "zh",
+    "file": "audio/prompts/f0c61e44afbb80507fdd.wav"
+  },
+  {
+    "text": "蓬头稚子学垂纶",
+    "lang": "zh",
+    "file": "audio/prompts/d14ea1434563e4caad44.wav"
+  },
+  {
+    "text": "纶",
+    "lang": "zh",
+    "file": "audio/prompts/15d3d275f5414c271056.wav"
+  },
+  {
+    "text": "侧坐莓苔草映身",
+    "lang": "zh",
+    "file": "audio/prompts/cf4f434d461e38d2307a.wav"
+  },
+  {
+    "text": "身",
+    "lang": "zh",
+    "file": "audio/prompts/bffd54c1989eaacf00a1.wav"
+  },
+  {
+    "text": "路人借问遥招手",
+    "lang": "zh",
+    "file": "audio/prompts/5377177f22e81a7f4648.wav"
+  },
+  {
+    "text": "手",
+    "lang": "zh",
+    "file": "audio/prompts/531fddb2fd70f62e7019.wav"
+  },
+  {
+    "text": "怕得鱼惊不应人",
+    "lang": "zh",
+    "file": "audio/prompts/77150b4057ab46a838cb.wav"
+  },
+  {
+    "text": "池上，唐，白居易。小娃撑小艇，偷采白莲回，不解藏踪迹，浮萍一道开",
+    "lang": "zh",
+    "file": "audio/prompts/699d2c812524a0aeebd2.wav"
+  },
+  {
+    "text": "小娃撑小艇",
+    "lang": "zh",
+    "file": "audio/prompts/1c548aff392082801c2b.wav"
+  },
+  {
+    "text": "艇",
+    "lang": "zh",
+    "file": "audio/prompts/34e7a7555e35c46b08e4.wav"
+  },
+  {
+    "text": "偷采白莲回",
+    "lang": "zh",
+    "file": "audio/prompts/1268be8e4a836cdaebc1.wav"
+  },
+  {
+    "text": "回",
+    "lang": "zh",
+    "file": "audio/prompts/409416fb4126b0ed9879.wav"
+  },
+  {
+    "text": "不解藏踪迹",
+    "lang": "zh",
+    "file": "audio/prompts/19c107fd1637c2f6cfd0.wav"
+  },
+  {
+    "text": "迹",
+    "lang": "zh",
+    "file": "audio/prompts/6a9e009c4e3c8faa7e7d.wav"
+  },
+  {
+    "text": "浮萍一道开",
+    "lang": "zh",
+    "file": "audio/prompts/93eb6a324d44b368a75b.wav"
+  },
+  {
+    "text": "开",
+    "lang": "zh",
+    "file": "audio/prompts/e2e9912f66d3c623adb4.wav"
+  },
+  {
+    "text": "小池，宋，杨万里。泉眼无声惜细流，树阴照水爱晴柔，小荷才露尖尖角，早有蜻蜓立上头",
+    "lang": "zh",
+    "file": "audio/prompts/fb4b4396069c7005cf6a.wav"
+  },
+  {
+    "text": "泉眼无声惜细流",
+    "lang": "zh",
+    "file": "audio/prompts/3ee01cea6b9dd2f591f3.wav"
+  },
+  {
+    "text": "树阴照水爱晴柔",
+    "lang": "zh",
+    "file": "audio/prompts/7742c688218abdd26002.wav"
+  },
+  {
+    "text": "柔",
+    "lang": "zh",
+    "file": "audio/prompts/53a3cb7ea21a8c593e82.wav"
+  },
+  {
+    "text": "小荷才露尖尖角",
+    "lang": "zh",
+    "file": "audio/prompts/356e08f4d43ffe3cb0aa.wav"
+  },
+  {
+    "text": "角",
+    "lang": "zh",
+    "file": "audio/prompts/cff687a5ca5bb697945c.wav"
+  },
+  {
+    "text": "早有蜻蜓立上头",
+    "lang": "zh",
+    "file": "audio/prompts/c7d71998f2196412574f.wav"
+  },
+  {
+    "text": "头",
+    "lang": "zh",
+    "file": "audio/prompts/fd8a2bc107043831f210.wav"
+  },
+  {
+    "text": "画，唐，王维。远看山有色，近听水无声，春去花还在，人来鸟不惊",
+    "lang": "zh",
+    "file": "audio/prompts/accf2c29760731f95714.wav"
+  },
+  {
+    "text": "远看山有色",
+    "lang": "zh",
+    "file": "audio/prompts/30143e9694ea43a5e916.wav"
+  },
+  {
+    "text": "色",
+    "lang": "zh",
+    "file": "audio/prompts/48abf2d0150c9a486ef9.wav"
+  },
+  {
+    "text": "近听水无声",
+    "lang": "zh",
+    "file": "audio/prompts/421cd3bae75e3a226ce3.wav"
+  },
+  {
+    "text": "春去花还在",
+    "lang": "zh",
+    "file": "audio/prompts/9b15b35f1b9690987076.wav"
+  },
+  {
+    "text": "在",
+    "lang": "zh",
+    "file": "audio/prompts/bfb15e94b6ae1887ec33.wav"
+  },
+  {
+    "text": "人来鸟不惊",
+    "lang": "zh",
+    "file": "audio/prompts/c0586531ed50d80386f1.wav"
+  },
+  {
+    "text": "惊",
+    "lang": "zh",
+    "file": "audio/prompts/aebd2079ff4df8f6dfac.wav"
+  },
+  {
+    "text": "山村，宋，邵雍。一去二三里，烟村四五家，亭台六七座，八九十枝花",
+    "lang": "zh",
+    "file": "audio/prompts/e4b47efb8c6011e2af51.wav"
+  },
+  {
+    "text": "一去二三里",
+    "lang": "zh",
+    "file": "audio/prompts/3d4eeff9bd1436d47efb.wav"
+  },
+  {
+    "text": "里",
+    "lang": "zh",
+    "file": "audio/prompts/227ff72d587752c37d75.wav"
+  },
+  {
+    "text": "烟村四五家",
+    "lang": "zh",
+    "file": "audio/prompts/152ebb58dc64bc9e702c.wav"
+  },
+  {
+    "text": "家",
+    "lang": "zh",
+    "file": "audio/prompts/42e9b1720b05ea40db03.wav"
+  },
+  {
+    "text": "亭台六七座",
+    "lang": "zh",
+    "file": "audio/prompts/3d31bbf7ff43e52e5dd9.wav"
+  },
+  {
+    "text": "座",
+    "lang": "zh",
+    "file": "audio/prompts/12f6b801bf230371c2ce.wav"
+  },
+  {
+    "text": "八九十枝花",
+    "lang": "zh",
+    "file": "audio/prompts/604c24e2713d34136e2e.wav"
+  },
+  {
+    "text": "花",
+    "lang": "zh",
+    "file": "audio/prompts/a478b45054c3b913db42.wav"
+  },
+  {
+    "text": "梅花，宋，王安石。墙角数枝梅，凌寒独自开，遥知不是雪，为有暗香来",
+    "lang": "zh",
+    "file": "audio/prompts/6643f925c6a5981bceb4.wav"
+  },
+  {
+    "text": "墙角数枝梅",
+    "lang": "zh",
+    "file": "audio/prompts/880e6cdaa630f3145027.wav"
+  },
+  {
+    "text": "梅",
+    "lang": "zh",
+    "file": "audio/prompts/0ab7899ea6cd6794ad9b.wav"
+  },
+  {
+    "text": "凌寒独自开",
+    "lang": "zh",
+    "file": "audio/prompts/7cb3a3e3b44288876f8f.wav"
+  },
+  {
+    "text": "遥知不是雪",
+    "lang": "zh",
+    "file": "audio/prompts/0720dba9d07312d4dcee.wav"
+  },
+  {
+    "text": "为有暗香来",
+    "lang": "zh",
+    "file": "audio/prompts/b44aa5a3023e7f006cb8.wav"
+  },
+  {
+    "text": "来",
+    "lang": "zh",
+    "file": "audio/prompts/6ffc4387dc760bd75651.wav"
+  },
+  {
+    "text": "寻隐者不遇，唐，贾岛。松下问童子，言师采药去，只在此山中，云深不知处",
+    "lang": "zh",
+    "file": "audio/prompts/d37ac777abe0f8622b0f.wav"
+  },
+  {
+    "text": "松下问童子",
+    "lang": "zh",
+    "file": "audio/prompts/05e49e8e6b887e367c5b.wav"
+  },
+  {
+    "text": "子",
+    "lang": "zh",
+    "file": "audio/prompts/a13f566a7bb14abe87ca.wav"
+  },
+  {
+    "text": "言师采药去",
+    "lang": "zh",
+    "file": "audio/prompts/2d400f1167179f197ef0.wav"
+  },
+  {
+    "text": "去",
+    "lang": "zh",
+    "file": "audio/prompts/1a4c91683992638cff0c.wav"
+  },
+  {
+    "text": "只在此山中",
+    "lang": "zh",
+    "file": "audio/prompts/bd97328d070db1c67159.wav"
+  },
+  {
+    "text": "中",
+    "lang": "zh",
+    "file": "audio/prompts/82b41c49731a1a55c754.wav"
+  },
+  {
+    "text": "云深不知处",
+    "lang": "zh",
+    "file": "audio/prompts/3ee36ffccef0168d75de.wav"
+  },
+  {
+    "text": "处",
+    "lang": "zh",
+    "file": "audio/prompts/51df24cd5addf4ad7e0f.wav"
+  },
+  {
+    "text": "山",
+    "lang": "zh",
+    "file": "audio/prompts/db8904595e4ae2144b55.wav"
+  },
+  {
+    "text": "听一听，这句最后一个字是什么？",
+    "lang": "zh",
+    "file": "audio/prompts/6d1846abafb532156e7e.wav"
+  },
+  {
+    "text": "诗人抬头看到了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/c426f21dec12e0176312.wav"
+  },
+  {
+    "text": "月亮",
+    "lang": "zh",
+    "file": "audio/prompts/c1afc88a9a746bad92f1.wav"
+  },
+  {
+    "text": "彩虹",
+    "lang": "zh",
+    "file": "audio/prompts/b4b9977ea6e59270de79.wav"
+  },
+  {
+    "text": "风筝",
+    "lang": "zh",
+    "file": "audio/prompts/0c310db20b5b14298dfe.wav"
+  },
+  {
+    "text": "诗人在想念哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/b3d44d9bb9dc68de3aa1.wav"
+  },
+  {
+    "text": "家乡",
+    "lang": "zh",
+    "file": "audio/prompts/bbbfe396f0ca0b899240.wav"
+  },
+  {
+    "text": "火车站",
+    "lang": "zh",
+    "file": "audio/prompts/7d6dc7c0cf74de294a62.wav"
+  },
+  {
+    "text": "游乐园",
+    "lang": "zh",
+    "file": "audio/prompts/0893e073a3b3d277c74f.wav"
+  },
+  {
+    "text": "诗人听见什么动物的叫声？",
+    "lang": "zh",
+    "file": "audio/prompts/994e2fb684f2a28ea8b0.wav"
+  },
+  {
+    "text": "小鸟",
+    "lang": "zh",
+    "file": "audio/prompts/3d9a37feefdb6823a1f6.wav"
+  },
+  {
+    "text": "小猫",
+    "lang": "zh",
+    "file": "audio/prompts/aa1eff8492a4e538db9e.wav"
+  },
+  {
+    "text": "小狗",
+    "lang": "zh",
+    "file": "audio/prompts/13fa4e19a91537d2d175.wav"
+  },
+  {
+    "text": "夜里传来了什么声音？",
+    "lang": "zh",
+    "file": "audio/prompts/bb750603ab78f724c3b2.wav"
+  },
+  {
+    "text": "风雨声",
+    "lang": "zh",
+    "file": "audio/prompts/e2cc8b9396c99f44d09f.wav"
+  },
+  {
+    "text": "鼓声",
+    "lang": "zh",
+    "file": "audio/prompts/d4e3d3dd849fe2c4b85c.wav"
+  },
+  {
+    "text": "汽车声",
+    "lang": "zh",
+    "file": "audio/prompts/427eb2cb51e5b426ce14.wav"
+  },
+  {
+    "text": "诗里说的是哪种动物？",
+    "lang": "zh",
+    "file": "audio/prompts/466e2af120d9db82b7c5.wav"
+  },
+  {
+    "text": "兔子",
+    "lang": "zh",
+    "file": "audio/prompts/0b22abd1a6b0ca617125.wav"
+  },
+  {
+    "text": "鹅的羽毛是什么颜色？",
+    "lang": "zh",
+    "file": "audio/prompts/8368a4099a1396a870cb.wav"
+  },
+  {
+    "text": "白色",
+    "lang": "zh",
+    "file": "audio/prompts/2bd7ca58368203518ff5.wav"
+  },
+  {
+    "text": "红色",
+    "lang": "zh",
+    "file": "audio/prompts/ef8de85f3477e49c696e.wav"
+  },
+  {
+    "text": "蓝色",
+    "lang": "zh",
+    "file": "audio/prompts/884e46aea62e0653a1be.wav"
+  },
+  {
+    "text": "是谁在辛苦种粮食？",
+    "lang": "zh",
+    "file": "audio/prompts/d601acce5f66a26ffc50.wav"
+  },
+  {
+    "text": "农民",
+    "lang": "zh",
+    "file": "audio/prompts/f515da17584086c17151.wav"
+  },
+  {
+    "text": "宇航员",
+    "lang": "zh",
+    "file": "audio/prompts/72a320d5800ea8d56420.wav"
+  },
+  {
+    "text": "消防员",
+    "lang": "zh",
+    "file": "audio/prompts/bddbe4e2de063a5457a3.wav"
+  },
+  {
+    "text": "我们应该珍惜什么？",
+    "lang": "zh",
+    "file": "audio/prompts/2d8896e77bca4a74efc1.wav"
+  },
+  {
+    "text": "粮食",
+    "lang": "zh",
+    "file": "audio/prompts/a4e88dcb296c6414256f.wav"
+  },
+  {
+    "text": "气球",
+    "lang": "zh",
+    "file": "audio/prompts/86d71d567714d3272fce.wav"
+  },
+  {
+    "text": "黄河的水流向哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/f85a8dec3442cac190da.wav"
+  },
+  {
+    "text": "大海",
+    "lang": "zh",
+    "file": "audio/prompts/f3908ff8facd56c60a2e.wav"
+  },
+  {
+    "text": "白云",
+    "lang": "zh",
+    "file": "audio/prompts/e82232b7414547cef821.wav"
+  },
+  {
+    "text": "想看得更远，可以怎么做？",
+    "lang": "zh",
+    "file": "audio/prompts/d69f30712e80f8d149fa.wav"
+  },
+  {
+    "text": "再上一层楼",
+    "lang": "zh",
+    "file": "audio/prompts/5d79bb4ce413ad77afa7.wav"
+  },
+  {
+    "text": "睡觉",
+    "lang": "zh",
+    "file": "audio/prompts/4e50b123d81199979046.wav"
+  },
+  {
+    "text": "闭眼睛",
+    "lang": "zh",
+    "file": "audio/prompts/3e69a5384d05aec000e6.wav"
+  },
+  {
+    "text": "诗里写到哪一种豆子？",
+    "lang": "zh",
+    "file": "audio/prompts/bef9a3436054973b387e.wav"
+  },
+  {
+    "text": "红豆",
+    "lang": "zh",
+    "file": "audio/prompts/3bc2b97c2335225691ad.wav"
+  },
+  {
+    "text": "绿豆",
+    "lang": "zh",
+    "file": "audio/prompts/9c38de92da55ea1b1439.wav"
+  },
+  {
+    "text": "黄豆",
+    "lang": "zh",
+    "file": "audio/prompts/625323f14aed31f6d428.wav"
+  },
+  {
+    "text": "红豆在什么季节长新枝？",
+    "lang": "zh",
+    "file": "audio/prompts/5ad7c404e70a782ceac7.wav"
+  },
+  {
+    "text": "春天",
+    "lang": "zh",
+    "file": "audio/prompts/11b0c81f2b105f8aa9dd.wav"
+  },
+  {
+    "text": "冬天",
+    "lang": "zh",
+    "file": "audio/prompts/ccfa6d7185822a835d19.wav"
+  },
+  {
+    "text": "秋天",
+    "lang": "zh",
+    "file": "audio/prompts/4ff60f14bfcd84b9d808.wav"
+  },
+  {
+    "text": "老爷爷正在做什么？",
+    "lang": "zh",
+    "file": "audio/prompts/33241bf6882a3aae20cf.wav"
+  },
+  {
+    "text": "钓鱼",
+    "lang": "zh",
+    "file": "audio/prompts/f6debf2c965a4d72f6be.wav"
+  },
+  {
+    "text": "放风筝",
+    "lang": "zh",
+    "file": "audio/prompts/286689810ede15f893f3.wav"
+  },
+  {
+    "text": "踢球",
+    "lang": "zh",
+    "file": "audio/prompts/995da8b876028caf344d.wav"
+  },
+  {
+    "text": "江上是什么天气？",
+    "lang": "zh",
+    "file": "audio/prompts/adb9e063c1fe3e35c3db.wav"
+  },
+  {
+    "text": "下雪",
+    "lang": "zh",
+    "file": "audio/prompts/5f94d7d6e113b737a77a.wav"
+  },
+  {
+    "text": "雨后彩虹",
+    "lang": "zh",
+    "file": "audio/prompts/2e3585a10c5d964e93e5.wav"
+  },
+  {
+    "text": "烈日炎炎",
+    "lang": "zh",
+    "file": "audio/prompts/425df1b9d45100aee38e.wav"
+  },
+  {
+    "text": "春风吹来，什么又长出来？",
+    "lang": "zh",
+    "file": "audio/prompts/0cdafd9249ae0c49a666.wav"
+  },
+  {
+    "text": "小草",
+    "lang": "zh",
+    "file": "audio/prompts/bb86f34f0a38cadc75a7.wav"
+  },
+  {
+    "text": "蘑菇",
+    "lang": "zh",
+    "file": "audio/prompts/d98ca2645738d097e637.wav"
+  },
+  {
+    "text": "小草长在哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/0e26e9b2f92e323cf86b.wav"
+  },
+  {
+    "text": "原野上",
+    "lang": "zh",
+    "file": "audio/prompts/d9fa0b0dd0ce75b2f6dc.wav"
+  },
+  {
+    "text": "床上",
+    "lang": "zh",
+    "file": "audio/prompts/d1130e398bee24db4dbe.wav"
+  },
+  {
+    "text": "汽车里",
+    "lang": "zh",
+    "file": "audio/prompts/b6533ffcc492986304b9.wav"
+  },
+  {
+    "text": "诗人看见了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/b2f7d9c6e5069201d4dd.wav"
+  },
+  {
+    "text": "瀑布",
+    "lang": "zh",
+    "file": "audio/prompts/817e24d0951224e1e81e.wav"
+  },
+  {
+    "text": "沙漠",
+    "lang": "zh",
+    "file": "audio/prompts/cbc50dfe089c0853c6ab.wav"
+  },
+  {
+    "text": "瀑布的水往哪边流？",
+    "lang": "zh",
+    "file": "audio/prompts/ab7b9b01a1ec8e8c1c9f.wav"
+  },
+  {
+    "text": "往下",
+    "lang": "zh",
+    "file": "audio/prompts/4a7d0862ae405e967aaa.wav"
+  },
+  {
+    "text": "往上",
+    "lang": "zh",
+    "file": "audio/prompts/13d8b51503eb1b025e53.wav"
+  },
+  {
+    "text": "停住不动",
+    "lang": "zh",
+    "file": "audio/prompts/bf2f3b8ecef3666fb3ba.wav"
+  },
+  {
+    "text": "两只黄鹂在哪里叫？",
+    "lang": "zh",
+    "file": "audio/prompts/8c44ae2956dd395bbe39.wav"
+  },
+  {
+    "text": "柳树间",
+    "lang": "zh",
+    "file": "audio/prompts/dc52381a7e82d58b432c.wav"
+  },
+  {
+    "text": "屋子里",
+    "lang": "zh",
+    "file": "audio/prompts/03df234c1042ea789e97.wav"
+  },
+  {
+    "text": "海里面",
+    "lang": "zh",
+    "file": "audio/prompts/5c655cfb353e9b37e94a.wav"
+  },
+  {
+    "text": "白鹭飞向哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/06977be9a254f37a707c.wav"
+  },
+  {
+    "text": "蓝天",
+    "lang": "zh",
+    "file": "audio/prompts/c303c2ae9c51fad810f6.wav"
+  },
+  {
+    "text": "地洞",
+    "lang": "zh",
+    "file": "audio/prompts/14471556d905f48432c4.wav"
+  },
+  {
+    "text": "床底下",
+    "lang": "zh",
+    "file": "audio/prompts/e008463eca0482d1b0fd.wav"
+  },
+  {
+    "text": "诗人听见了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/727c91a12379e055fc38.wav"
+  },
+  {
+    "text": "说话声",
+    "lang": "zh",
+    "file": "audio/prompts/3a1979e8a1e1c64939fe.wav"
+  },
+  {
+    "text": "夕阳的光照进了哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/5baf2a6b95e96bd7622b.wav"
+  },
+  {
+    "text": "树林",
+    "lang": "zh",
+    "file": "audio/prompts/ad0a6be3891752d3a902.wav"
+  },
+  {
+    "text": "地铁",
+    "lang": "zh",
+    "file": "audio/prompts/5442ebf0588737432ec6.wav"
+  },
+  {
+    "text": "冰箱",
+    "lang": "zh",
+    "file": "audio/prompts/bd30bdd4cf6411d7bd03.wav"
+  },
+  {
+    "text": "妈妈在为孩子做什么？",
+    "lang": "zh",
+    "file": "audio/prompts/5403ac32c8b159c84e9a.wav"
+  },
+  {
+    "text": "缝衣服",
+    "lang": "zh",
+    "file": "audio/prompts/604ed33027ca801c1859.wav"
+  },
+  {
+    "text": "妈妈手中拿着什么？",
+    "lang": "zh",
+    "file": "audio/prompts/f136f61e9aad071e1e07.wav"
+  },
+  {
+    "text": "针线",
+    "lang": "zh",
+    "file": "audio/prompts/f6c79c304dfe1e97fc3d.wav"
+  },
+  {
+    "text": "江边的花像火一样是什么颜色？",
+    "lang": "zh",
+    "file": "audio/prompts/98f7ce23eafd8617c9e4.wav"
+  },
+  {
+    "text": "春天的江水是什么颜色？",
+    "lang": "zh",
+    "file": "audio/prompts/58bf2aa98138a80ba8cb.wav"
+  },
+  {
+    "text": "绿色",
+    "lang": "zh",
+    "file": "audio/prompts/10d90ce6f7bcf8f9ab87.wav"
+  },
+  {
+    "text": "紫色",
+    "lang": "zh",
+    "file": "audio/prompts/078ad9663dfb057e1191.wav"
+  },
+  {
+    "text": "黑色",
+    "lang": "zh",
+    "file": "audio/prompts/a13dd9f92ee048c7c814.wav"
+  },
+  {
+    "text": "小孩正在学什么？",
+    "lang": "zh",
+    "file": "audio/prompts/20e39f17e735762cf21f.wav"
+  },
+  {
+    "text": "骑车",
+    "lang": "zh",
+    "file": "audio/prompts/6a889613704fe4984d24.wav"
+  },
+  {
+    "text": "游泳",
+    "lang": "zh",
+    "file": "audio/prompts/3e31cbc062e5b87c6a4e.wav"
+  },
+  {
+    "text": "小孩不说话，是怕吓到谁？",
+    "lang": "zh",
+    "file": "audio/prompts/5a2268bb0763e0b539c3.wav"
+  },
+  {
+    "text": "鱼儿",
+    "lang": "zh",
+    "file": "audio/prompts/5bf0620344a8eb9fbefa.wav"
+  },
+  {
+    "text": "小娃撑着什么？",
+    "lang": "zh",
+    "file": "audio/prompts/3b77cb947157d4aacc84.wav"
+  },
+  {
+    "text": "小船",
+    "lang": "zh",
+    "file": "audio/prompts/2db4364c91e50caacf5d.wav"
+  },
+  {
+    "text": "雨伞",
+    "lang": "zh",
+    "file": "audio/prompts/ecdf490ec501ab103e2c.wav"
+  },
+  {
+    "text": "小娃采了什么回来？",
+    "lang": "zh",
+    "file": "audio/prompts/853254f151b6bc95e873.wav"
+  },
+  {
+    "text": "白莲",
+    "lang": "zh",
+    "file": "audio/prompts/a2096570af4f00e336c6.wav"
+  },
+  {
+    "text": "苹果",
+    "lang": "zh",
+    "file": "audio/prompts/0df51db799b2aa5ac3dd.wav"
+  },
+  {
+    "text": "葡萄",
+    "lang": "zh",
+    "file": "audio/prompts/700aa6aef5ae4c459ef3.wav"
+  },
+  {
+    "text": "停在小荷上的是谁？",
+    "lang": "zh",
+    "file": "audio/prompts/42bf4c8f47aff9c6dc1a.wav"
+  },
+  {
+    "text": "蜻蜓",
+    "lang": "zh",
+    "file": "audio/prompts/e18c7bd39d915430b44d.wav"
+  },
+  {
+    "text": "蝴蝶",
+    "lang": "zh",
+    "file": "audio/prompts/a1b7517f9b34257f4f0e.wav"
+  },
+  {
+    "text": "瓢虫",
+    "lang": "zh",
+    "file": "audio/prompts/95adfe13ec9c8a2a28ee.wav"
+  },
+  {
+    "text": "小荷刚露出的角是什么样的？",
+    "lang": "zh",
+    "file": "audio/prompts/9ff29a9c272d68e181e8.wav"
+  },
+  {
+    "text": "尖尖的",
+    "lang": "zh",
+    "file": "audio/prompts/a34acb28f7b7d2faf852.wav"
+  },
+  {
+    "text": "圆圆的",
+    "lang": "zh",
+    "file": "audio/prompts/51b54723a8b4aff4e61c.wav"
+  },
+  {
+    "text": "方方的",
+    "lang": "zh",
+    "file": "audio/prompts/9b5c1422d8925c87c49a.wav"
+  },
+  {
+    "text": "人来了，画里的鸟怎么样？",
+    "lang": "zh",
+    "file": "audio/prompts/74d7056abec83942d61f.wav"
+  },
+  {
+    "text": "不飞走",
+    "lang": "zh",
+    "file": "audio/prompts/b9fa0d0e52c2ebd51b11.wav"
+  },
+  {
+    "text": "飞走了",
+    "lang": "zh",
+    "file": "audio/prompts/7ac3dbcdf3799f07493c.wav"
+  },
+  {
+    "text": "跑走了",
+    "lang": "zh",
+    "file": "audio/prompts/0dfae64a435e700d31c4.wav"
+  },
+  {
+    "text": "走近画里的水，能听见水声吗？",
+    "lang": "zh",
+    "file": "audio/prompts/c6d6dda2cdcdf6a254b2.wav"
+  },
+  {
+    "text": "听不见",
+    "lang": "zh",
+    "file": "audio/prompts/ff64b2c1b19cc1afae0b.wav"
+  },
+  {
+    "text": "很大声",
+    "lang": "zh",
+    "file": "audio/prompts/faed8ea3f4382319517f.wav"
+  },
+  {
+    "text": "在唱歌",
+    "lang": "zh",
+    "file": "audio/prompts/453324f9605f336c715a.wav"
+  },
+  {
+    "text": "诗里看见了什么地方？",
+    "lang": "zh",
+    "file": "audio/prompts/0a256b3ea927dd236f9d.wav"
+  },
+  {
+    "text": "小村庄",
+    "lang": "zh",
+    "file": "audio/prompts/ca82a40390cd2f25d91f.wav"
+  },
+  {
+    "text": "太空",
+    "lang": "zh",
+    "file": "audio/prompts/4ac19f182fa6424f468d.wav"
+  },
+  {
+    "text": "地铁站",
+    "lang": "zh",
+    "file": "audio/prompts/7cbb0e2c174c7a95d474.wav"
+  },
+  {
+    "text": "诗里有哪些漂亮的植物？",
+    "lang": "zh",
+    "file": "audio/prompts/2657b24e8c7f844a46c6.wav"
+  },
+  {
+    "text": "仙人掌",
+    "lang": "zh",
+    "file": "audio/prompts/59dba4951cf8cbc58d53.wav"
+  },
+  {
+    "text": "香蕉树",
+    "lang": "zh",
+    "file": "audio/prompts/3673a1def803f23f576f.wav"
+  },
+  {
+    "text": "墙角开着什么花？",
+    "lang": "zh",
+    "file": "audio/prompts/67f6832024a5e8142c06.wav"
+  },
+  {
+    "text": "梅花",
+    "lang": "zh",
+    "file": "audio/prompts/9c41b8324bfd632f5e89.wav"
+  },
+  {
+    "text": "向日葵",
+    "lang": "zh",
+    "file": "audio/prompts/91a70dedd9e76d12b956.wav"
+  },
+  {
+    "text": "荷花",
+    "lang": "zh",
+    "file": "audio/prompts/3535254e0719d2e80f72.wav"
+  },
+  {
+    "text": "怎么知道看到的是梅花？",
+    "lang": "zh",
+    "file": "audio/prompts/7659aa0475cff142b03f.wav"
+  },
+  {
+    "text": "闻到香气",
+    "lang": "zh",
+    "file": "audio/prompts/9194864b813f885ed9f3.wav"
+  },
+  {
+    "text": "听见唱歌",
+    "lang": "zh",
+    "file": "audio/prompts/388508c163f4ae2cd488.wav"
+  },
+  {
+    "text": "摸到羽毛",
+    "lang": "zh",
+    "file": "audio/prompts/f01953c90da6d90da531.wav"
+  },
+  {
+    "text": "师傅上山做什么去了？",
+    "lang": "zh",
+    "file": "audio/prompts/90e5ba05043cc5d55a21.wav"
+  },
+  {
+    "text": "采药",
+    "lang": "zh",
+    "file": "audio/prompts/cb8ea24bdb63cd790678.wav"
+  },
+  {
+    "text": "买玩具",
+    "lang": "zh",
+    "file": "audio/prompts/cbbf66d1156b7a9f0e68.wav"
+  },
+  {
+    "text": "山里什么很浓，看不清在哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/76adf34586ec0ab765e6.wav"
+  },
+  {
+    "text": "云雾",
+    "lang": "zh",
+    "file": "audio/prompts/5359c1a2269f6f06a923.wav"
+  },
+  {
+    "text": "星星",
+    "lang": "zh",
+    "file": "audio/prompts/02a7ed46682f92496d58.wav"
+  },
+  {
+    "text": "静夜思。诗人抬头看到了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/a2646aa59ab156f5d486.wav"
+  },
+  {
+    "text": "静夜思。诗人在想念哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/29337c15c7a79c768b95.wav"
+  },
+  {
+    "text": "春晓。诗人听见什么动物的叫声？",
+    "lang": "zh",
+    "file": "audio/prompts/b350665fb34899eacf85.wav"
+  },
+  {
+    "text": "春晓。夜里传来了什么声音？",
+    "lang": "zh",
+    "file": "audio/prompts/f920a59b8425ded5c23f.wav"
+  },
+  {
+    "text": "咏鹅。诗里说的是哪种动物？",
+    "lang": "zh",
+    "file": "audio/prompts/57fced5a047b3aff0e5b.wav"
+  },
+  {
+    "text": "咏鹅。鹅的羽毛是什么颜色？",
+    "lang": "zh",
+    "file": "audio/prompts/4183c1f51e4c9d36a3b3.wav"
+  },
+  {
+    "text": "悯农。是谁在辛苦种粮食？",
+    "lang": "zh",
+    "file": "audio/prompts/9a16acbb164ca38bbef6.wav"
+  },
+  {
+    "text": "悯农。我们应该珍惜什么？",
+    "lang": "zh",
+    "file": "audio/prompts/0e1d30dffd52e21f6332.wav"
+  },
+  {
+    "text": "登鹳雀楼。黄河的水流向哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/8bc0d47924854eb5e344.wav"
+  },
+  {
+    "text": "登鹳雀楼。想看得更远，可以怎么做？",
+    "lang": "zh",
+    "file": "audio/prompts/1ef45a571845bbf6aef2.wav"
+  },
+  {
+    "text": "相思。诗里写到哪一种豆子？",
+    "lang": "zh",
+    "file": "audio/prompts/9d7085cbcdce01b57d97.wav"
+  },
+  {
+    "text": "相思。红豆在什么季节长新枝？",
+    "lang": "zh",
+    "file": "audio/prompts/13c1ddebeeed8f4bffd6.wav"
+  },
+  {
+    "text": "江雪。老爷爷正在做什么？",
+    "lang": "zh",
+    "file": "audio/prompts/194cb2f0f4b101230594.wav"
+  },
+  {
+    "text": "江雪。江上是什么天气？",
+    "lang": "zh",
+    "file": "audio/prompts/39ca86691e752f52954f.wav"
+  },
+  {
+    "text": "赋得古原草送别。春风吹来，什么又长出来？",
+    "lang": "zh",
+    "file": "audio/prompts/02fc8acf82ddd1cb9aa8.wav"
+  },
+  {
+    "text": "赋得古原草送别。小草长在哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/bf3bb8571f1f128873e2.wav"
+  },
+  {
+    "text": "望庐山瀑布。诗人看见了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/b3e2fcfb43f9b89a9972.wav"
+  },
+  {
+    "text": "望庐山瀑布。瀑布的水往哪边流？",
+    "lang": "zh",
+    "file": "audio/prompts/0735b53931ba8b80cd45.wav"
+  },
+  {
+    "text": "绝句。两只黄鹂在哪里叫？",
+    "lang": "zh",
+    "file": "audio/prompts/c45dcd7a9db518d835dd.wav"
+  },
+  {
+    "text": "绝句。白鹭飞向哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/d01f121db9acb8bd7348.wav"
+  },
+  {
+    "text": "鹿柴。诗人听见了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/2d56defe678a39b0f2ee.wav"
+  },
+  {
+    "text": "鹿柴。夕阳的光照进了哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/2e6de40cfba3d6f53d09.wav"
+  },
+  {
+    "text": "游子吟。妈妈在为孩子做什么？",
+    "lang": "zh",
+    "file": "audio/prompts/f1a64d42b0b1afb3bc5d.wav"
+  },
+  {
+    "text": "游子吟。妈妈手中拿着什么？",
+    "lang": "zh",
+    "file": "audio/prompts/41d5459b93d3509dc840.wav"
+  },
+  {
+    "text": "忆江南。江边的花像火一样是什么颜色？",
+    "lang": "zh",
+    "file": "audio/prompts/8454509d0e692cecba00.wav"
+  },
+  {
+    "text": "忆江南。春天的江水是什么颜色？",
+    "lang": "zh",
+    "file": "audio/prompts/d3f955b2e39c276d94d1.wav"
+  },
+  {
+    "text": "小儿垂钓。小孩正在学什么？",
+    "lang": "zh",
+    "file": "audio/prompts/c6733b4df1452484e62f.wav"
+  },
+  {
+    "text": "小儿垂钓。小孩不说话，是怕吓到谁？",
+    "lang": "zh",
+    "file": "audio/prompts/c0f8c42c6e8daf800921.wav"
+  },
+  {
+    "text": "池上。小娃撑着什么？",
+    "lang": "zh",
+    "file": "audio/prompts/e59f23280934c7012c11.wav"
+  },
+  {
+    "text": "池上。小娃采了什么回来？",
+    "lang": "zh",
+    "file": "audio/prompts/49dcc5803087777c1902.wav"
+  },
+  {
+    "text": "小池。停在小荷上的是谁？",
+    "lang": "zh",
+    "file": "audio/prompts/65100f77024fea5b8b9d.wav"
+  },
+  {
+    "text": "小池。小荷刚露出的角是什么样的？",
+    "lang": "zh",
+    "file": "audio/prompts/03de5d14f484c7f732bf.wav"
+  },
+  {
+    "text": "画。人来了，画里的鸟怎么样？",
+    "lang": "zh",
+    "file": "audio/prompts/c2b893c7a06c3932c6c8.wav"
+  },
+  {
+    "text": "画。走近画里的水，能听见水声吗？",
+    "lang": "zh",
+    "file": "audio/prompts/e80f3b2d5c01af5d1f49.wav"
+  },
+  {
+    "text": "山村。诗里看见了什么地方？",
+    "lang": "zh",
+    "file": "audio/prompts/a152563ce171fa966c71.wav"
+  },
+  {
+    "text": "山村。诗里有哪些漂亮的植物？",
+    "lang": "zh",
+    "file": "audio/prompts/545be028dccdb5d02b0a.wav"
+  },
+  {
+    "text": "梅花。墙角开着什么花？",
+    "lang": "zh",
+    "file": "audio/prompts/151e79a7224762699df3.wav"
+  },
+  {
+    "text": "梅花。怎么知道看到的是梅花？",
+    "lang": "zh",
+    "file": "audio/prompts/5627b203623b6d71835e.wav"
+  },
+  {
+    "text": "寻隐者不遇。师傅上山做什么去了？",
+    "lang": "zh",
+    "file": "audio/prompts/533ca15a2584c04b65cb.wav"
+  },
+  {
+    "text": "寻隐者不遇。山里什么很浓，看不清在哪里？",
+    "lang": "zh",
+    "file": "audio/prompts/a99dde0d117b1bce9507.wav"
+  },
+  {
+    "text": "大写 A 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/6aba3cceaa198548f349.wav"
+  },
+  {
+    "text": "大写 B 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/c9f5607dc282763fcc0f.wav"
+  },
+  {
+    "text": "大写 C 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/0793e1523dd63489587b.wav"
+  },
+  {
+    "text": "大写 D 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/f82e0fe43b3170e87e34.wav"
+  },
+  {
+    "text": "大写 E 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/05b141850e94c0f5694a.wav"
+  },
+  {
+    "text": "大写 F 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/35b15dffbd4699757c89.wav"
+  },
+  {
+    "text": "大写 G 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/a349e4d5658e02f6bb02.wav"
+  },
+  {
+    "text": "大写 H 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/037f773c748b5c87f335.wav"
+  },
+  {
+    "text": "大写 I 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/9b8e57575c81f64ad869.wav"
+  },
+  {
+    "text": "大写 J 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/13028b7ecc54499cdb8c.wav"
+  },
+  {
+    "text": "大写 K 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/1b85d2e8b58229c9d5bc.wav"
+  },
+  {
+    "text": "大写 L 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/fb87bd7c2d66a84ec4de.wav"
+  },
+  {
+    "text": "大写 M 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/07924e41c954e6be7de4.wav"
+  },
+  {
+    "text": "大写 N 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/510c1162d197581a1bd6.wav"
+  },
+  {
+    "text": "大写 O 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/6efec06d95cd02cf3ccf.wav"
+  },
+  {
+    "text": "大写 P 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/f543ea11e1e2d5f4def6.wav"
+  },
+  {
+    "text": "大写 Q 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/e4808cd9d6ca272f8255.wav"
+  },
+  {
+    "text": "大写 R 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/a59e9c5e99d371bf30e7.wav"
+  },
+  {
+    "text": "大写 S 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/0e9f05f6074933750d8a.wav"
+  },
+  {
+    "text": "大写 T 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/93540ecef9f1b8e7f5e5.wav"
+  },
+  {
+    "text": "大写 U 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/d5c99fdef4fc3dd6d190.wav"
+  },
+  {
+    "text": "大写 V 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/dbe90a3b2caf317e60e6.wav"
+  },
+  {
+    "text": "大写 W 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/bcbb0bea2ea1cb7d39d9.wav"
+  },
+  {
+    "text": "大写 X 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/489a25d01de13be08d7a.wav"
+  },
+  {
+    "text": "大写 Y 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/9f497f0ec812c1ca51e9.wav"
+  },
+  {
+    "text": "大写 Z 的小写是？",
+    "lang": "zh",
+    "file": "audio/prompts/03431e68fe5c0d54d886.wav"
+  },
+  {
+    "text": "数一数有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/4bacfb13a02978e9a722.wav"
+  },
+  {
+    "text": "有1个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0458269ff8dcbed52552.wav"
+  },
+  {
+    "text": "把两组苹果放在一起，从1开始慢慢数。",
+    "lang": "zh",
+    "file": "audio/prompts/e6ec539ec9926f31a3cd.wav"
+  },
+  {
+    "text": "1 加 1，一共 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/1eb9b89af4e175debafd.wav"
+  },
+  {
+    "text": "有2个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/db2d52560f6346bdd4f7.wav"
+  },
+  {
+    "text": "用手遮住要拿走的苹果，再数一数剩下的。",
+    "lang": "zh",
+    "file": "audio/prompts/f1b9bb8a14d7c1435306.wav"
+  },
+  {
+    "text": "2 拿走 1，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/40557c208c5e8ba33b56.wav"
+  },
+  {
+    "text": "有1个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/2d40c9aa9ee54a2c70df.wav"
+  },
+  {
+    "text": "1 加 2，一共 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/55d9dc932de98fd25dbc.wav"
+  },
+  {
+    "text": "有3个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9cd670ce3324ca9e0567.wav"
+  },
+  {
+    "text": "3 拿走 2，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/9e91e67c2e0bc43234d9.wav"
+  },
+  {
+    "text": "有1个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/6e24977dcbe0f08290c4.wav"
+  },
+  {
+    "text": "1 加 3，一共 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/512344d6ff27aa4f2cfc.wav"
+  },
+  {
+    "text": "有4个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/8e9961281bea7aab32f6.wav"
+  },
+  {
+    "text": "4 拿走 3，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/b71249d3e6ecc8c06bec.wav"
+  },
+  {
+    "text": "有1个苹果，又来了4个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3ea64c1e045b47a342ce.wav"
+  },
+  {
+    "text": "1 加 4，一共 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/66b6c20a2829f3dae634.wav"
+  },
+  {
+    "text": "有5个苹果，拿走4个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/37d73085511aa1e37eab.wav"
+  },
+  {
+    "text": "5 拿走 4，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c000ea7b61e8374b7358.wav"
+  },
+  {
+    "text": "有2个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/d58a260d7dc56a3ee613.wav"
+  },
+  {
+    "text": "2 加 1，一共 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/e6a86a7e667786760e23.wav"
+  },
+  {
+    "text": "有3个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9baf30bf77d69da5afc7.wav"
+  },
+  {
+    "text": "3 拿走 1，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/40bfbaab9c71a7fadec7.wav"
+  },
+  {
+    "text": "有2个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/69597876f2891bd2d3f3.wav"
+  },
+  {
+    "text": "2 加 2，一共 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c3bd0bc5263db8429db4.wav"
+  },
+  {
+    "text": "有4个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3c5786a85b96b428b736.wav"
+  },
+  {
+    "text": "4 拿走 2，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/0a9cb4dda70217a3c4bc.wav"
+  },
+  {
+    "text": "有2个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/6796417a5d763e7b96b7.wav"
+  },
+  {
+    "text": "2 加 3，一共 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/b68bcbd3a1f15097b6c8.wav"
+  },
+  {
+    "text": "有5个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/a3a6272fc17be8637749.wav"
+  },
+  {
+    "text": "5 拿走 3，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/6240d1b8c5a6028e5c6b.wav"
+  },
+  {
+    "text": "有3个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/23dadd24a2af478fc2de.wav"
+  },
+  {
+    "text": "3 加 1，一共 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d7a2506bef540f9bbe0a.wav"
+  },
+  {
+    "text": "有4个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/8d32e10575650daf791d.wav"
+  },
+  {
+    "text": "4 拿走 1，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/cc3a5527a039e60b72c2.wav"
+  },
+  {
+    "text": "有3个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9c213b607d862dfa38c9.wav"
+  },
+  {
+    "text": "3 加 2，一共 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/f9d82eea4be077cb2056.wav"
+  },
+  {
+    "text": "有5个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/4d6314a2b2dca85042db.wav"
+  },
+  {
+    "text": "5 拿走 2，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/4c88f3ccc8b80da576bc.wav"
+  },
+  {
+    "text": "有4个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0bd93fa4f7474cf87b22.wav"
+  },
+  {
+    "text": "4 加 1，一共 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d177c386dd3fc8738359.wav"
+  },
+  {
+    "text": "有5个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/8280dffe8738e074212b.wav"
+  },
+  {
+    "text": "5 拿走 1，还剩 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/0c2287bcda703420f9d5.wav"
+  },
+  {
+    "text": "有1个苹果，又来了5个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/a9dc72bf97f4d3ffa218.wav"
+  },
+  {
+    "text": "1 加 5，一共 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/876fd6d54c9059cb820a.wav"
+  },
+  {
+    "text": "有6个苹果，拿走5个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/642e84dc4144138444ff.wav"
+  },
+  {
+    "text": "6 拿走 5，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d981533d540bf3750637.wav"
+  },
+  {
+    "text": "有1个苹果，又来了6个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/b01b1a803b4f72ab1dbe.wav"
+  },
+  {
+    "text": "1 加 6，一共 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/cbe52f466acdfb6b561d.wav"
+  },
+  {
+    "text": "有7个苹果，拿走6个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/d151bd1e723b02ecd11e.wav"
+  },
+  {
+    "text": "7 拿走 6，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/edebebd1daf5d9072f22.wav"
+  },
+  {
+    "text": "有1个苹果，又来了7个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/f5495dd2099850f42d76.wav"
+  },
+  {
+    "text": "1 加 7，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/78377149d3aad40e1a5e.wav"
+  },
+  {
+    "text": "有8个苹果，拿走7个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/f821f277f444f9e7b39a.wav"
+  },
+  {
+    "text": "8 拿走 7，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/128176298d46c5b101ba.wav"
+  },
+  {
+    "text": "有1个苹果，又来了8个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/171a65a69b78bae94881.wav"
+  },
+  {
+    "text": "1 加 8，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d59afce63e5c4e3f9c7a.wav"
+  },
+  {
+    "text": "有9个苹果，拿走8个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/448561dfd93d0fe842d4.wav"
+  },
+  {
+    "text": "9 拿走 8，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/2bfba1c0cbef2d1cff6b.wav"
+  },
+  {
+    "text": "有1个苹果，又来了9个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/b68f3f2abe5d868a06c3.wav"
+  },
+  {
+    "text": "1 加 9，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/f17cec883cb46d6d61ea.wav"
+  },
+  {
+    "text": "有10个苹果，拿走9个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/83de00c64f97982e753e.wav"
+  },
+  {
+    "text": "10 拿走 9，还剩 1 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ab43e0d5d939b81f57c0.wav"
+  },
+  {
+    "text": "有2个苹果，又来了4个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/06f2416587380b034a7e.wav"
+  },
+  {
+    "text": "2 加 4，一共 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/8da1c84d1341610f5d45.wav"
+  },
+  {
+    "text": "有6个苹果，拿走4个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1cefa73fe89ede82fddf.wav"
+  },
+  {
+    "text": "6 拿走 4，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/5dab7dcd33f331d3bb27.wav"
+  },
+  {
+    "text": "有2个苹果，又来了5个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/47eb805cb476433e2d1b.wav"
+  },
+  {
+    "text": "2 加 5，一共 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/2cada249f6383d0f70c2.wav"
+  },
+  {
+    "text": "有7个苹果，拿走5个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0854d1407897425d171c.wav"
+  },
+  {
+    "text": "7 拿走 5，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/077e8d5134fbf4c9717e.wav"
+  },
+  {
+    "text": "有2个苹果，又来了6个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/b6cb25c068699cbec4b4.wav"
+  },
+  {
+    "text": "2 加 6，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/02a27c20d7ad1ab250dd.wav"
+  },
+  {
+    "text": "有8个苹果，拿走6个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/84853e53886d50535e37.wav"
+  },
+  {
+    "text": "8 拿走 6，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/9b4f2385ae5d6bdfcf2f.wav"
+  },
+  {
+    "text": "有2个苹果，又来了7个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0423f6cda48265aa3cd6.wav"
+  },
+  {
+    "text": "2 加 7，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/7ff30fada0930022a4e8.wav"
+  },
+  {
+    "text": "有9个苹果，拿走7个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0be4fa60b8bc5b60f3f0.wav"
+  },
+  {
+    "text": "9 拿走 7，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c688f871026046b5fda1.wav"
+  },
+  {
+    "text": "有2个苹果，又来了8个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3196b1a535906c60a38f.wav"
+  },
+  {
+    "text": "2 加 8，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/9369ab6e4426105b3a27.wav"
+  },
+  {
+    "text": "有10个苹果，拿走8个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/80187ba437ff1772e460.wav"
+  },
+  {
+    "text": "10 拿走 8，还剩 2 个。",
+    "lang": "zh",
+    "file": "audio/prompts/8dd97be8199f17096bdb.wav"
+  },
+  {
+    "text": "有3个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/645ef4524be1d74d5312.wav"
+  },
+  {
+    "text": "3 加 3，一共 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/bf6a19bba9d21bda9f0a.wav"
+  },
+  {
+    "text": "有6个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/d2bf00d64ec596c3b276.wav"
+  },
+  {
+    "text": "6 拿走 3，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/0df062297966b1969657.wav"
+  },
+  {
+    "text": "有3个苹果，又来了4个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/06762dee5560680fabdd.wav"
+  },
+  {
+    "text": "3 加 4，一共 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/f555612ce65e31f33efa.wav"
+  },
+  {
+    "text": "有7个苹果，拿走4个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/5c39bdfde0b4fe3aa18c.wav"
+  },
+  {
+    "text": "7 拿走 4，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/076b78c725125c5faf1a.wav"
+  },
+  {
+    "text": "有3个苹果，又来了5个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/c7c27883387a6a705f3a.wav"
+  },
+  {
+    "text": "3 加 5，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/1d476216f591087f538b.wav"
+  },
+  {
+    "text": "有8个苹果，拿走5个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/7e434b00b18bd2974616.wav"
+  },
+  {
+    "text": "8 拿走 5，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/b842872610aeec0878eb.wav"
+  },
+  {
+    "text": "有3个苹果，又来了6个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/8446da23fb9559694f5d.wav"
+  },
+  {
+    "text": "3 加 6，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/46a3aab19b0a591eaea0.wav"
+  },
+  {
+    "text": "有9个苹果，拿走6个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/7360e0744600b4e6a174.wav"
+  },
+  {
+    "text": "9 拿走 6，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/8659feb3a693a5b91b68.wav"
+  },
+  {
+    "text": "有3个苹果，又来了7个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/ba36d986f3a2c07ec7b8.wav"
+  },
+  {
+    "text": "3 加 7，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c11ada4a948643bb962b.wav"
+  },
+  {
+    "text": "有10个苹果，拿走7个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3c85597cdd86cb49819d.wav"
+  },
+  {
+    "text": "10 拿走 7，还剩 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/3148cadc06bd45db401f.wav"
+  },
+  {
+    "text": "有4个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/4f9a10b8ec1bd9ab0462.wav"
+  },
+  {
+    "text": "4 加 2，一共 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/5c4730a7c013a2d0d6aa.wav"
+  },
+  {
+    "text": "有6个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/54e2f283be7482730c40.wav"
+  },
+  {
+    "text": "6 拿走 2，还剩 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/307a1bd31821642153af.wav"
+  },
+  {
+    "text": "有4个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/d08f5e7c5ca2b39a6d40.wav"
+  },
+  {
+    "text": "4 加 3，一共 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/8f8d39aaf8d8656ded8b.wav"
+  },
+  {
+    "text": "有7个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/bb9cdeba6f6713104b4e.wav"
+  },
+  {
+    "text": "7 拿走 3，还剩 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/91e6875cd08d3ab4094a.wav"
+  },
+  {
+    "text": "有4个苹果，又来了4个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/69f054ee664c89348388.wav"
+  },
+  {
+    "text": "4 加 4，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/b30d3be74d0f7158f7e8.wav"
+  },
+  {
+    "text": "有8个苹果，拿走4个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/7e9541ad095817ff738d.wav"
+  },
+  {
+    "text": "8 拿走 4，还剩 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/cebcfc859be7374b60e5.wav"
+  },
+  {
+    "text": "有4个苹果，又来了5个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/42c264265651a59ccc46.wav"
+  },
+  {
+    "text": "4 加 5，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/fc178b13a5ace628f0af.wav"
+  },
+  {
+    "text": "有9个苹果，拿走5个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/560a6c8325c706decf3c.wav"
+  },
+  {
+    "text": "9 拿走 5，还剩 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/955a5909edcdde1853e0.wav"
+  },
+  {
+    "text": "有4个苹果，又来了6个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/45ac574aa8b094e34505.wav"
+  },
+  {
+    "text": "4 加 6，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/0cbb50fb5cbf1c1df6c7.wav"
+  },
+  {
+    "text": "有10个苹果，拿走6个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/c30e346067866bb4fafb.wav"
+  },
+  {
+    "text": "10 拿走 6，还剩 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/394c29f702f4e1a2a9e4.wav"
+  },
+  {
+    "text": "有5个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/48e3f8b2b4ccfb1d923f.wav"
+  },
+  {
+    "text": "5 加 1，一共 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/a07e9fbec2181fca2786.wav"
+  },
+  {
+    "text": "有6个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/98f8193a3ee0a296e76b.wav"
+  },
+  {
+    "text": "6 拿走 1，还剩 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ddfa680f7cb46d718557.wav"
+  },
+  {
+    "text": "有5个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/cb8d43d7d14e1a5c6765.wav"
+  },
+  {
+    "text": "5 加 2，一共 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/4f77aa69c44d543d1f05.wav"
+  },
+  {
+    "text": "有7个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/ee7b8b26f7b191aec2f9.wav"
+  },
+  {
+    "text": "7 拿走 2，还剩 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d69d12e12ff87d218070.wav"
+  },
+  {
+    "text": "有5个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/a20fdc7535cb4b4183f2.wav"
+  },
+  {
+    "text": "5 加 3，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/fffc6929e3a2c43d791b.wav"
+  },
+  {
+    "text": "有8个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1d657abb54d096422366.wav"
+  },
+  {
+    "text": "8 拿走 3，还剩 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/49488737152399654412.wav"
+  },
+  {
+    "text": "有5个苹果，又来了4个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/bd7c9a4673ce2b3b6eb5.wav"
+  },
+  {
+    "text": "5 加 4，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/03ae63d8daf72c810781.wav"
+  },
+  {
+    "text": "有9个苹果，拿走4个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/baa1587644e89177beeb.wav"
+  },
+  {
+    "text": "9 拿走 4，还剩 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/b627a2ba1199a94e3714.wav"
+  },
+  {
+    "text": "有5个苹果，又来了5个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/79d1a38ba5c094051558.wav"
+  },
+  {
+    "text": "5 加 5，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/dfc7d7cd33833058964e.wav"
+  },
+  {
+    "text": "有10个苹果，拿走5个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/913331494fa20cee2f4a.wav"
+  },
+  {
+    "text": "10 拿走 5，还剩 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/72d9551d21e0fa334222.wav"
+  },
+  {
+    "text": "有6个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/5480cbba387be568b628.wav"
+  },
+  {
+    "text": "6 加 1，一共 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/20f198447b9941c7bc70.wav"
+  },
+  {
+    "text": "有7个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0c4eca1cfd5384d14ecd.wav"
+  },
+  {
+    "text": "7 拿走 1，还剩 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ed6fdbdb93efdc1dbefc.wav"
+  },
+  {
+    "text": "有6个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/34fec4eec3f425f032e5.wav"
+  },
+  {
+    "text": "6 加 2，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/0e430025d56a29bd7605.wav"
+  },
+  {
+    "text": "有8个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/80e533379202b7d9dbe1.wav"
+  },
+  {
+    "text": "8 拿走 2，还剩 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/953d8e9d39bee0d8d40c.wav"
+  },
+  {
+    "text": "有6个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/2e1e13a3034cd6ec0a39.wav"
+  },
+  {
+    "text": "6 加 3，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c4740090bd0477ca64cc.wav"
+  },
+  {
+    "text": "有9个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/62402f8da21a43c309a2.wav"
+  },
+  {
+    "text": "9 拿走 3，还剩 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/1e4c312b407d70a9f59c.wav"
+  },
+  {
+    "text": "有6个苹果，又来了4个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1049e82cf1923ada1862.wav"
+  },
+  {
+    "text": "6 加 4，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/4eed88b19824067b3b9f.wav"
+  },
+  {
+    "text": "有10个苹果，拿走4个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/c833fc9578c697a266a6.wav"
+  },
+  {
+    "text": "10 拿走 4，还剩 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/053c2f64b510e6cfee3f.wav"
+  },
+  {
+    "text": "有7个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/a9dc36fff997d167a2b7.wav"
+  },
+  {
+    "text": "7 加 1，一共 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/7881d0ca1114b4f0d18d.wav"
+  },
+  {
+    "text": "有8个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9d38b037c630235dcd39.wav"
+  },
+  {
+    "text": "8 拿走 1，还剩 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/2a9fa15a58d67e5d784e.wav"
+  },
+  {
+    "text": "有7个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/f3e327f2b9d86535443f.wav"
+  },
+  {
+    "text": "7 加 2，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/7a3a15076ba2ff30f241.wav"
+  },
+  {
+    "text": "有9个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1de236eca8b053fe4688.wav"
+  },
+  {
+    "text": "9 拿走 2，还剩 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/f14efbc297dfbf28c8bb.wav"
+  },
+  {
+    "text": "有7个苹果，又来了3个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/82a7d916c3e1ba7ca217.wav"
+  },
+  {
+    "text": "7 加 3，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/9c2ce07307769fd6e7e4.wav"
+  },
+  {
+    "text": "有10个苹果，拿走3个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/ed96d9a488a47ecc6e67.wav"
+  },
+  {
+    "text": "10 拿走 3，还剩 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/62dc4d7925215e58461f.wav"
+  },
+  {
+    "text": "有8个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/acb8f2d6548d0aac6499.wav"
+  },
+  {
+    "text": "8 加 1，一共 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ca9a67578eec3ae2dfdf.wav"
+  },
+  {
+    "text": "有9个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/19d39cf326ebfcf5cad1.wav"
+  },
+  {
+    "text": "9 拿走 1，还剩 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/e4b02f38d3047a665fbc.wav"
+  },
+  {
+    "text": "有8个苹果，又来了2个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9451bf3885db7894bdd0.wav"
+  },
+  {
+    "text": "8 加 2，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/03ce40c86efd181a9261.wav"
+  },
+  {
+    "text": "有10个苹果，拿走2个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/899831db73cb6f30af25.wav"
+  },
+  {
+    "text": "10 拿走 2，还剩 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/dbf1485fc8893250feb7.wav"
+  },
+  {
+    "text": "有9个苹果，又来了1个。一共有几个？",
+    "lang": "zh",
+    "file": "audio/prompts/10632027461162a441c6.wav"
+  },
+  {
+    "text": "9 加 1，一共 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/a58b2270f4efc36178c5.wav"
+  },
+  {
+    "text": "有10个苹果，拿走1个。还剩几个？",
+    "lang": "zh",
+    "file": "audio/prompts/28a5fd793158b5e2d0e1.wav"
+  },
+  {
+    "text": "10 拿走 1，还剩 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/a691d7f77793f8ac3d2f.wav"
+  },
+  {
+    "text": "篮子要装5个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9165ae0bfcc5830d357d.wav"
+  },
+  {
+    "text": "一个空位放一个苹果，数一数还有几个空位。",
+    "lang": "zh",
+    "file": "audio/prompts/bfcf8b3ed43b369a057e.wav"
+  },
+  {
+    "text": "1 个苹果，再放 4 个，就有 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/acea263fce356ee57b78.wav"
+  },
+  {
+    "text": "篮子要装5个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/d155f2fa5aee5c4fd8f4.wav"
+  },
+  {
+    "text": "2 个苹果，再放 3 个，就有 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c8151c1ed759786f1363.wav"
+  },
+  {
+    "text": "篮子要装5个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/5fe079a4150927cce3cf.wav"
+  },
+  {
+    "text": "3 个苹果，再放 2 个，就有 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/077fc8b57b361c603700.wav"
+  },
+  {
+    "text": "篮子要装5个苹果，已经有4个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/03e7aca2c96aaabec367.wav"
+  },
+  {
+    "text": "4 个苹果，再放 1 个，就有 5 个。",
+    "lang": "zh",
+    "file": "audio/prompts/bb9fc3945c1a0bcf0ae2.wav"
+  },
+  {
+    "text": "篮子要装6个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/b0e2ed00dfb7cf529fd4.wav"
+  },
+  {
+    "text": "1 个苹果，再放 5 个，就有 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/17001c486f6688b4db3e.wav"
+  },
+  {
+    "text": "篮子要装6个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/2e45152a41a030ffc84a.wav"
+  },
+  {
+    "text": "2 个苹果，再放 4 个，就有 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/abd61c73d6a26409ce25.wav"
+  },
+  {
+    "text": "篮子要装6个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/5594d702d9d2a83a9ae6.wav"
+  },
+  {
+    "text": "3 个苹果，再放 3 个，就有 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/3e3c1b3b40d170c21c76.wav"
+  },
+  {
+    "text": "篮子要装6个苹果，已经有4个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/72d1b57e74c82f03bc7e.wav"
+  },
+  {
+    "text": "4 个苹果，再放 2 个，就有 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d28c0bac72ea2a6426ec.wav"
+  },
+  {
+    "text": "篮子要装6个苹果，已经有5个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/644e00f15e625a1a864e.wav"
+  },
+  {
+    "text": "5 个苹果，再放 1 个，就有 6 个。",
+    "lang": "zh",
+    "file": "audio/prompts/6ac4bdf5127eb40bb901.wav"
+  },
+  {
+    "text": "篮子要装7个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/eacbc3931579ed4cab22.wav"
+  },
+  {
+    "text": "1 个苹果，再放 6 个，就有 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/681b09af265746e97abb.wav"
+  },
+  {
+    "text": "篮子要装7个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/5cc05073c868032686d0.wav"
+  },
+  {
+    "text": "2 个苹果，再放 5 个，就有 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/9e9ea52e0a50baaf517c.wav"
+  },
+  {
+    "text": "篮子要装7个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/e6928907aba5872ff6b7.wav"
+  },
+  {
+    "text": "3 个苹果，再放 4 个，就有 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/9aff0a01ba16741d90d4.wav"
+  },
+  {
+    "text": "篮子要装7个苹果，已经有4个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/54de972b0a7a8b465382.wav"
+  },
+  {
+    "text": "4 个苹果，再放 3 个，就有 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/7b8a1f3fc24cf419b3ba.wav"
+  },
+  {
+    "text": "篮子要装7个苹果，已经有5个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/b05594386f0e1007c1df.wav"
+  },
+  {
+    "text": "5 个苹果，再放 2 个，就有 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/8c97d81febf75c2f396d.wav"
+  },
+  {
+    "text": "篮子要装7个苹果，已经有6个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/145f0c2d64ab4451eae3.wav"
+  },
+  {
+    "text": "6 个苹果，再放 1 个，就有 7 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ee736609bbbbcd3db35c.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3cbc06df7293ec3b740b.wav"
+  },
+  {
+    "text": "1 个苹果，再放 7 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/43c3fc2b47022bf273b3.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/0cb8f5c613eb3d9f11f6.wav"
+  },
+  {
+    "text": "2 个苹果，再放 6 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/24241c02fc06da9ba799.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/6bf5d95d5d4b371a215d.wav"
+  },
+  {
+    "text": "3 个苹果，再放 5 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ce49cd2ebfd9bf0cff68.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有4个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/c64404e110283306712c.wav"
+  },
+  {
+    "text": "4 个苹果，再放 4 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/43512b2b74bb112bc929.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有5个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1c5ed23ec78d0337cda2.wav"
+  },
+  {
+    "text": "5 个苹果，再放 3 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/afc4a00316abe1a96b44.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有6个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/54fe978f3c9bdec4b4dd.wav"
+  },
+  {
+    "text": "6 个苹果，再放 2 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/49e8f0d8f4e0d09b89d9.wav"
+  },
+  {
+    "text": "篮子要装8个苹果，已经有7个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/cef26e31b0aefad27450.wav"
+  },
+  {
+    "text": "7 个苹果，再放 1 个，就有 8 个。",
+    "lang": "zh",
+    "file": "audio/prompts/6e4f49e864bcaa845543.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/b3709ca645c2441360e2.wav"
+  },
+  {
+    "text": "1 个苹果，再放 8 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/67100ef9ee04168ab764.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/735540ed18a3619fcc9c.wav"
+  },
+  {
+    "text": "2 个苹果，再放 7 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/5e4c44626c92e8bebee8.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/fc2007e729ee731c31df.wav"
+  },
+  {
+    "text": "3 个苹果，再放 6 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/504933f2598b51314a5d.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有4个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/e633877e97852b9cc64c.wav"
+  },
+  {
+    "text": "4 个苹果，再放 5 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d1e3784a6acbb242f0cf.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有5个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/834dabbd4efa89098d4f.wav"
+  },
+  {
+    "text": "5 个苹果，再放 4 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/99129f97dd227a537f11.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有6个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/c65e2cfba54c793cc6c5.wav"
+  },
+  {
+    "text": "6 个苹果，再放 3 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/26af6026f13a93d11ad4.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有7个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/ad78943dcd39956d8b06.wav"
+  },
+  {
+    "text": "7 个苹果，再放 2 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/c7edab66e804f752e289.wav"
+  },
+  {
+    "text": "篮子要装9个苹果，已经有8个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3789d51386bb7d1f4885.wav"
+  },
+  {
+    "text": "8 个苹果，再放 1 个，就有 9 个。",
+    "lang": "zh",
+    "file": "audio/prompts/2e23a801b230792475c5.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/949294899e44230ec5c9.wav"
+  },
+  {
+    "text": "1 个苹果，再放 9 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/101f2a990c0392104eb3.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/00eaf3403133742f1c41.wav"
+  },
+  {
+    "text": "2 个苹果，再放 8 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/e2a82f3c32a38870314d.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1361810852ed337e873e.wav"
+  },
+  {
+    "text": "3 个苹果，再放 7 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/7dc914c658f75b16607e.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有4个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/12e7822ca49144ecb7c1.wav"
+  },
+  {
+    "text": "4 个苹果，再放 6 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/448f7ee00cf73a142709.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有5个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/1b1061326b3d1bc1d278.wav"
+  },
+  {
+    "text": "5 个苹果，再放 5 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/6c5b25a182eebd5f8ff7.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有6个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/51e290023b96bcc946a2.wav"
+  },
+  {
+    "text": "6 个苹果，再放 4 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/92572964c16d8af218c4.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有7个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/3f658f54ed74c80dfc2c.wav"
+  },
+  {
+    "text": "7 个苹果，再放 3 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/ce792beaaa1785c9cf01.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有8个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/336de2d3285193bd9054.wav"
+  },
+  {
+    "text": "8 个苹果，再放 2 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/dc23834a4fdf33c5e39e.wav"
+  },
+  {
+    "text": "篮子要装10个苹果，已经有9个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/c530abea226b623ef61b.wav"
+  },
+  {
+    "text": "9 个苹果，再放 1 个，就有 10 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d41d41f4bced889c2313.wav"
+  },
+  {
+    "text": "哪一边的小动物更多？如果两边相同，就选“一样多”。",
+    "lang": "zh",
+    "file": "audio/prompts/9f29e2767726d929c4c1.wav"
+  },
+  {
+    "text": "一只小兔配一只小熊，看看有没有多出来的；都能配成对，就是一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/17101f642be0103d57d1.wav"
+  },
+  {
+    "text": "两边都是 1 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/9fcf7299d47aabed7195.wav"
+  },
+  {
+    "text": "两边都是 2 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/0376305e7108cbab914e.wav"
+  },
+  {
+    "text": "两边都是 3 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/60cb3861373bfaa6f613.wav"
+  },
+  {
+    "text": "两边都是 4 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/55099b382fec80eae6bf.wav"
+  },
+  {
+    "text": "两边都是 5 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/c6921715c62b38eed05e.wav"
+  },
+  {
+    "text": "小兔这边有 2 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/947eb23dc15fd434ba52.wav"
+  },
+  {
+    "text": "小熊这边有 2 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/0e178406b1993f8e244a.wav"
+  },
+  {
+    "text": "小兔这边有 3 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/bd054402e29a71e62199.wav"
+  },
+  {
+    "text": "小熊这边有 3 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/5745367bb0847aa37817.wav"
+  },
+  {
+    "text": "小兔这边有 4 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/105cf13bdb5346a9eb59.wav"
+  },
+  {
+    "text": "小熊这边有 4 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/e602b3523f9301d04f25.wav"
+  },
+  {
+    "text": "小兔这边有 5 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/2ad1d6d58dab37e1e47b.wav"
+  },
+  {
+    "text": "小熊这边有 5 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/57075ee284cbe901ecc2.wav"
+  },
+  {
+    "text": "两边都是 6 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/1ca48256d6f46fd1b313.wav"
+  },
+  {
+    "text": "两边都是 7 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/735680ee85f3040b5cee.wav"
+  },
+  {
+    "text": "两边都是 8 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/fa2bee03920cf0ef4b6c.wav"
+  },
+  {
+    "text": "两边都是 9 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/cfce70d97bf69b60d9bb.wav"
+  },
+  {
+    "text": "两边都是 10 只，一样多。",
+    "lang": "zh",
+    "file": "audio/prompts/ad4d6e04daa00b2feeb8.wav"
+  },
+  {
+    "text": "小兔这边有 6 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/0458784b176df9b4d73d.wav"
+  },
+  {
+    "text": "小熊这边有 6 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/5d6e2df8982603508550.wav"
+  },
+  {
+    "text": "小兔这边有 7 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/c80c924a92c31958e25d.wav"
+  },
+  {
+    "text": "小熊这边有 7 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/611c0d79769eb9d151a5.wav"
+  },
+  {
+    "text": "小兔这边有 8 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/246f00f45063f625e25d.wav"
+  },
+  {
+    "text": "小熊这边有 8 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/5bda8308deabf406eee9.wav"
+  },
+  {
+    "text": "小兔这边有 9 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/61e256b990516ad83572.wav"
+  },
+  {
+    "text": "小熊这边有 9 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/cc768d2e7f72cb13bacf.wav"
+  },
+  {
+    "text": "小兔这边有 10 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/8e953f1b2e277c570a96.wav"
+  },
+  {
+    "text": "小熊这边有 10 只，比另一边多 1 只。",
+    "lang": "zh",
+    "file": "audio/prompts/dcb1b2ef395d4e1aa6ab.wav"
+  },
+  {
+    "text": "找找规律，下一个应该放哪个？",
+    "lang": "zh",
+    "file": "audio/prompts/0bc1ed1ff1193cfd2793.wav"
+  },
+  {
+    "text": "一个黄色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/788d6236236ff557f1e9.wav"
+  },
+  {
+    "text": "下一颗是黄色。一个黄色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/c706f27b9099d2148d2b.wav"
+  },
+  {
+    "text": "下一颗是蓝色。一个黄色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/375d694a0e83a9dbd638.wav"
+  },
+  {
+    "text": "一个蓝色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/c08ff6fe83a6c26c4de6.wav"
+  },
+  {
+    "text": "下一颗是蓝色。一个蓝色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/e91487d356f1e40423ec.wav"
+  },
+  {
+    "text": "下一颗是黄色。一个蓝色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/dc71c416b35cbc675622.wav"
+  },
+  {
+    "text": "一个蓝色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/3f00a9e8b8e2d8041c0c.wav"
+  },
+  {
+    "text": "下一颗是蓝色。一个蓝色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/3f9afd8a01288a339e2d.wav"
+  },
+  {
+    "text": "下一颗是红色。一个蓝色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/b3d94a68e40229f3935f.wav"
+  },
+  {
+    "text": "一个红色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/41dde10c56fd0262480f.wav"
+  },
+  {
+    "text": "下一颗是红色。一个红色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/6730311b51e0e147cf06.wav"
+  },
+  {
+    "text": "下一颗是蓝色。一个红色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/54f57a60903a6896edbc.wav"
+  },
+  {
+    "text": "一个黄色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/eab234459ea6e89c661b.wav"
+  },
+  {
+    "text": "下一颗是黄色。一个黄色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/0bddd0751cb714f94858.wav"
+  },
+  {
+    "text": "下一颗是红色。一个黄色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/e61807a46bcb85843dd1.wav"
+  },
+  {
+    "text": "一个红色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/3f7f6c0adef7a110f332.wav"
+  },
+  {
+    "text": "下一颗是红色。一个红色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/b85019ee72368cd26267.wav"
+  },
+  {
+    "text": "下一颗是黄色。一个红色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/8d17d4144e8f098c34d7.wav"
+  },
+  {
+    "text": "两个黄色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/f8cec3aff25b0c24e3ad.wav"
+  },
+  {
+    "text": "下一颗是黄色。两个黄色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/c488da6afb9c0c69d374.wav"
+  },
+  {
+    "text": "下一颗是蓝色。两个黄色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/3bae34ea44ac6948035e.wav"
+  },
+  {
+    "text": "两个蓝色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/3beae62103648bac3c41.wav"
+  },
+  {
+    "text": "下一颗是蓝色。两个蓝色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/e2ea942ebe8278b52ffd.wav"
+  },
+  {
+    "text": "下一颗是黄色。两个蓝色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/311db2cafa20188cf0c5.wav"
+  },
+  {
+    "text": "两个蓝色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/4d5630a75d64339e9224.wav"
+  },
+  {
+    "text": "下一颗是蓝色。两个蓝色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/c24231cf0bd810896108.wav"
+  },
+  {
+    "text": "下一颗是红色。两个蓝色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/71877df7ab6e730ef6a6.wav"
+  },
+  {
+    "text": "两个红色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/8a7ad317cc0122791473.wav"
+  },
+  {
+    "text": "下一颗是红色。两个红色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/45590091ff4e37c2733b.wav"
+  },
+  {
+    "text": "下一颗是蓝色。两个红色、一个蓝色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/c987e2bc7b308b37894f.wav"
+  },
+  {
+    "text": "两个黄色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/b59cb20d63fcbcc4bd08.wav"
+  },
+  {
+    "text": "下一颗是黄色。两个黄色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/6f55739c7abae1e57f2e.wav"
+  },
+  {
+    "text": "下一颗是红色。两个黄色、一个红色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/7b466a769230728964f0.wav"
+  },
+  {
+    "text": "两个红色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/27a8678c812295919ae8.wav"
+  },
+  {
+    "text": "下一颗是红色。两个红色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/a1328f83215db542b0c8.wav"
+  },
+  {
+    "text": "下一颗是黄色。两个红色、一个黄色，照着这个顺序继续排。",
+    "lang": "zh",
+    "file": "audio/prompts/69a365d6dd7a7965600e.wav"
+  },
+  {
+    "text": "看看颜色的规律，接下来轮到谁？",
+    "lang": "zh",
+    "file": "audio/prompts/4fd7af916e0ead1c6908.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c5305da96438712808dc.wav"
+  },
+  {
+    "text": "找到啦！接下来是黄圆。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/5a914c750760e9601d01.wav"
+  },
+  {
+    "text": "找到啦！接下来是蓝圆。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/aac03d0265ebe6024736.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/f3f0904d62860969f9c5.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/6e3097434f1c4790ed0b.wav"
+  },
+  {
+    "text": "找到啦！接下来是红圆。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/98fa2fd604223853d65a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/9579fff14932e2fd4d57.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/9ec86ecb8618dcebe093.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/d181eb87eed0fa4237e8.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、黄圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/11d560a058c144c8c382.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、蓝圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/ef1cf1253bdeec5deca4.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、蓝圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c2976a54681f17b51f59.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、黄圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c8f665e5073f37fbc89e.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、蓝圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/3af59e7d171dcf9eaffb.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、红圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/a99dc0ac4be1b80d0bc7.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、红圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/12f7f95dc151180c7530.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、蓝圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c618915a95467cd55189.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、黄圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c90633f321e3665e6705.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、红圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/df7be6e431ab225bdfc2.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、红圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/85b0dc71e0dc70dbb6a0.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、黄圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/de04f0c6efa0e939a034.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、蓝圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c7cbfcd3bb101cdc311b.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、黄圆、红圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/820140f995cb951e5cb7.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：蓝圆、红圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/ef1982289685d6ab8c88.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、蓝圆、黄圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/2803820b0dca25d92908.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：黄圆、红圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/a60db0d8282f9de86f40.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：红圆、黄圆、蓝圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/1c2224e1b65d972d319a.wav"
+  },
+  {
+    "text": "看看形状的规律，接下来轮到谁？",
+    "lang": "zh",
+    "file": "audio/prompts/b5f5f5263f8d95a17b3a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/4dc4ce9faad68fd86c24.wav"
+  },
+  {
+    "text": "找到啦！接下来是方形。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/ef6daf7072f9a7a69a5f.wav"
+  },
+  {
+    "text": "找到啦！接下来是三角形。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/141aba48db2fde0c7d86.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/bbb7f9d95fd4e80809b9.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/79b51455428a6e9e4e83.wav"
+  },
+  {
+    "text": "找到啦！接下来是圆形。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/63aaf921f72e7f4f68fe.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/f018973e586cd0c8181a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/a3e989e8580f64e17fa0.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/d6d5ec8306da26aa8698.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、方形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/6c764f7444c2332e9ad9.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、三角形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/0527a1c9bd82457d7970.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、三角形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/b75bfc77a1a6a28d3885.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、方形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/455848475c6b545848c4.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、三角形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/6a696b04bdc94863089a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、圆形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/315cbe672ad90ffb2405.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、圆形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/79793b273369e695cbba.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、三角形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/2a47e93600386164d79b.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、方形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/1af28c41d704b46a32c9.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、圆形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/b8fdfb9acf6fe2785fd5.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、圆形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/655653b5a5fee675b6ce.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、方形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c9a63aca1fed1cadd347.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、三角形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/22b17fb05eaf9c27bae6.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、方形、圆形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/d8f86b300577ecc2415a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：三角形、圆形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/41e2899c3d167440d25a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、三角形、方形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/f3a20c18ca693cb19b17.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：方形、圆形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/e94563f09c32403519e9.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：圆形、方形、三角形。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/71020b61903eaab1d745.wav"
+  },
+  {
+    "text": "看看大小的规律，接下来轮到谁？",
+    "lang": "zh",
+    "file": "audio/prompts/c7b681e1c9646c17f91d.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/554107aaf0a10aac861c.wav"
+  },
+  {
+    "text": "找到啦！接下来是中圆。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/64b9a382411e2be50421.wav"
+  },
+  {
+    "text": "找到啦！接下来是大圆。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/6bf1b8e8aba933a153a1.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/4577f341a6f65db898d8.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/b6a4ec2d5161f5d50217.wav"
+  },
+  {
+    "text": "找到啦！接下来是小圆。获得2颗星星。",
+    "lang": "zh",
+    "file": "audio/prompts/69da25bb311cc74058b6.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/209055d1c2cdac71128f.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/e2d85b984ac81627187c.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/0df3ea869c27f9996860.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、中圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/bd8996353497551f327b.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、大圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/a2d5d196fa671b3a05a0.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、大圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/97c6400910287dda96d7.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、中圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/5aac0ae4277b331beed5.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、大圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/1e437ebae03315e3bf13.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、小圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/63643868e52d29007f33.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、小圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/a28485b9d42f748676ac.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、大圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/5dcb39128c3e4b94119d.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、中圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/d7106c0dda6ad9ad2202.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、小圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/a0e80a52e03b9c5ea076.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、小圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/1eada6cc819d3747d670.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、中圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/070bf4aa109e31c3aea3.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、大圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/51a52529a4902925e42a.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、中圆、小圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/c658bad04386ea8bbce9.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：大圆、小圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/3103c1ef100676327682.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、大圆、中圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/e9ad828518a331ba1b5e.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：中圆、小圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/b0329bef62464ff282bf.wav"
+  },
+  {
+    "text": "圈起来的是重复的一组：小圆、中圆、大圆。再照着排一遍。",
+    "lang": "zh",
+    "file": "audio/prompts/750f3f59e7b575bb4845.wav"
+  },
+  {
+    "text": "从小到大。先找最小的圆，再找大一点的圆。",
+    "lang": "zh",
+    "file": "audio/prompts/89b8c32d9b6d704fa5d1.wav"
+  },
+  {
+    "text": "先找最小的圆，再找大一点的圆。",
+    "lang": "zh",
+    "file": "audio/prompts/0500f87c684b9ee6c016.wav"
+  },
+  {
+    "text": "排好啦！圆一个比一个大。",
+    "lang": "zh",
+    "file": "audio/prompts/34c44e6858d3008fa018.wav"
+  },
+  {
+    "text": "从短到长。小棒的左边已经对齐，先找最短的一根。",
+    "lang": "zh",
+    "file": "audio/prompts/fd43fd887334f0e67b96.wav"
+  },
+  {
+    "text": "小棒的左边已经对齐，先找最短的一根。",
+    "lang": "zh",
+    "file": "audio/prompts/2c479e0331b4c77f1f7f.wav"
+  },
+  {
+    "text": "排好啦！小棒一根比一根长。",
+    "lang": "zh",
+    "file": "audio/prompts/dfbefdb9b752d5ae4509.wav"
+  },
+  {
+    "text": "从矮到高。积木都站在同一条线上，先找最矮的一座。",
+    "lang": "zh",
+    "file": "audio/prompts/f64adf6518a4f044aefb.wav"
+  },
+  {
+    "text": "积木都站在同一条线上，先找最矮的一座。",
+    "lang": "zh",
+    "file": "audio/prompts/c3e96edb8c644aa3c807.wav"
+  },
+  {
+    "text": "排好啦！积木一座比一座高。",
+    "lang": "zh",
+    "file": "audio/prompts/6f92aa590e0f5b45d22d.wav"
+  },
+  {
+    "text": "从少到多。每颗圆点一样大，数一数，先选圆点最少的一张。",
+    "lang": "zh",
+    "file": "audio/prompts/40c7777713ef3579b26e.wav"
+  },
+  {
+    "text": "每颗圆点一样大，数一数，先选圆点最少的一张。",
+    "lang": "zh",
+    "file": "audio/prompts/320cbd57364d47234ec8.wav"
+  },
+  {
+    "text": "排好啦！圆点一组比一组多。",
+    "lang": "zh",
+    "file": "audio/prompts/df799ecc0fe7faabd7d4.wav"
+  },
+  {
+    "text": "Hello, dog!",
+    "lang": "en",
+    "file": "audio/prompts/9e10b55f3fe9ca2c552c.wav"
+  },
+  {
+    "text": "I like bananas.",
+    "lang": "en",
+    "file": "audio/prompts/4ec83745e62ac9ddd4f2.wav"
+  },
+  {
+    "text": "It is yellow.",
+    "lang": "en",
+    "file": "audio/prompts/acf06aa2866d7766c1e3.wav"
+  },
+  {
+    "text": "Touch your nose.",
+    "lang": "en",
+    "file": "audio/prompts/905a9473b38a7b593acc.wav"
+  },
+  {
+    "text": "Milk, please.",
+    "lang": "en",
+    "file": "audio/prompts/a8552de45cf67bca9f10.wav"
+  },
+  {
+    "text": "A car, please.",
+    "lang": "en",
+    "file": "audio/prompts/98efd35d4303322e2b40.wav"
+  },
+  {
+    "text": "Hello, cat!",
+    "lang": "en",
+    "file": "audio/prompts/d3ec1e1105df67e7f46b.wav"
+  },
+  {
+    "text": "Hello, rabbit!",
+    "lang": "en",
+    "file": "audio/prompts/265accc6b9fc3adc0c91.wav"
+  },
+  {
+    "text": "I like oranges.",
+    "lang": "en",
+    "file": "audio/prompts/d5df8c80c0ffee32d279.wav"
+  },
+  {
+    "text": "It is red.",
+    "lang": "en",
+    "file": "audio/prompts/43dfe8bb3f0933c6a93c.wav"
+  },
+  {
+    "text": "It is blue.",
+    "lang": "en",
+    "file": "audio/prompts/d66188c11adbf0509665.wav"
+  },
+  {
+    "text": "Touch your eye.",
+    "lang": "en",
+    "file": "audio/prompts/23b8f2015b7e54647c2e.wav"
+  },
+  {
+    "text": "Touch your mouth.",
+    "lang": "en",
+    "file": "audio/prompts/376da4499aac98938a6d.wav"
+  },
+  {
+    "text": "Bread, please.",
+    "lang": "en",
+    "file": "audio/prompts/ad8fd9a228765b8c6689.wav"
+  },
+  {
+    "text": "An egg, please.",
+    "lang": "en",
+    "file": "audio/prompts/f31766da45930a8a7425.wav"
+  },
+  {
+    "text": "A ball, please.",
+    "lang": "en",
+    "file": "audio/prompts/84f247a1737e9010c673.wav"
+  },
+  {
+    "text": "A teddy, please.",
+    "lang": "en",
+    "file": "audio/prompts/2fe99cbd28edf9f1a624.wav"
+  },
+  {
+    "text": "Hello, fish!",
+    "lang": "en",
+    "file": "audio/prompts/ea4f55d48f4a8adf9cab.wav"
+  },
+  {
+    "text": "Hello, bird!",
+    "lang": "en",
+    "file": "audio/prompts/16be8313746e7c77b95e.wav"
+  },
+  {
+    "text": "Hello, bear!",
+    "lang": "en",
+    "file": "audio/prompts/2e5f34e3f5bf0ec7c1a2.wav"
+  },
+  {
+    "text": "Hello, lion!",
+    "lang": "en",
+    "file": "audio/prompts/62c562e6de417269a918.wav"
+  },
+  {
+    "text": "Hello, tiger!",
+    "lang": "en",
+    "file": "audio/prompts/b9dc0decf22df3c7503d.wav"
+  },
+  {
+    "text": "Hello, elephant!",
+    "lang": "en",
+    "file": "audio/prompts/bcc2df5a32b1c6fc4d1a.wav"
+  },
+  {
+    "text": "Hello, monkey!",
+    "lang": "en",
+    "file": "audio/prompts/8798b735b61e3de8d6c6.wav"
+  },
+  {
+    "text": "Hello, duck!",
+    "lang": "en",
+    "file": "audio/prompts/afdc9c1b33e49a17730a.wav"
+  },
+  {
+    "text": "Hello, pig!",
+    "lang": "en",
+    "file": "audio/prompts/2e890255cc31ac488f81.wav"
+  },
+  {
+    "text": "Hello, cow!",
+    "lang": "en",
+    "file": "audio/prompts/b2723487c4e72c44de12.wav"
+  },
+  {
+    "text": "Hello, sheep!",
+    "lang": "en",
+    "file": "audio/prompts/3d7543f4dadbdff5ef6f.wav"
+  },
+  {
+    "text": "Hello, horse!",
+    "lang": "en",
+    "file": "audio/prompts/8f9110f6d286666b6f1c.wav"
+  },
+  {
+    "text": "It is green.",
+    "lang": "en",
+    "file": "audio/prompts/b88e97488810542b073b.wav"
+  },
+  {
+    "text": "It is orange.",
+    "lang": "en",
+    "file": "audio/prompts/3cb396db72987cc67127.wav"
+  },
+  {
+    "text": "It is purple.",
+    "lang": "en",
+    "file": "audio/prompts/a5e261e624052bd7f514.wav"
+  },
+  {
+    "text": "It is pink.",
+    "lang": "en",
+    "file": "audio/prompts/07bdfc4eb651fbaa13da.wav"
+  },
+  {
+    "text": "It is white.",
+    "lang": "en",
+    "file": "audio/prompts/967a64e3cf6dd03ef925.wav"
+  },
+  {
+    "text": "It is black.",
+    "lang": "en",
+    "file": "audio/prompts/0052a34f5fa9bffd9be7.wav"
+  },
+  {
+    "text": "It is brown.",
+    "lang": "en",
+    "file": "audio/prompts/cc2d4a6cbae06abbca9f.wav"
+  },
+  {
+    "text": "It is gray.",
+    "lang": "en",
+    "file": "audio/prompts/1a0df9c2699cfd8b0d22.wav"
+  },
+  {
+    "text": "It is gold.",
+    "lang": "en",
+    "file": "audio/prompts/cc9e695027edf4e7f735.wav"
+  },
+  {
+    "text": "It is silver.",
+    "lang": "en",
+    "file": "audio/prompts/4760c8ed627fe91d24af.wav"
+  },
+  {
+    "text": "A rainbow!",
+    "lang": "en",
+    "file": "audio/prompts/1a946787ef81d75e1701.wav"
+  },
+  {
+    "text": "It is colorful.",
+    "lang": "en",
+    "file": "audio/prompts/7dae4a6181aa56efb958.wav"
+  },
+  {
+    "text": "I like grapes.",
+    "lang": "en",
+    "file": "audio/prompts/fabbbe4110b3b2c8afdd.wav"
+  },
+  {
+    "text": "I like strawberries.",
+    "lang": "en",
+    "file": "audio/prompts/ccfc0fb4d0a9e580c151.wav"
+  },
+  {
+    "text": "I like watermelons.",
+    "lang": "en",
+    "file": "audio/prompts/a5296acb030923be9cb4.wav"
+  },
+  {
+    "text": "I like pears.",
+    "lang": "en",
+    "file": "audio/prompts/bd73b13b7ac73d5638ad.wav"
+  },
+  {
+    "text": "I like peaches.",
+    "lang": "en",
+    "file": "audio/prompts/d05b7fd03016f40c6b70.wav"
+  },
+  {
+    "text": "I like cherries.",
+    "lang": "en",
+    "file": "audio/prompts/374293902e03432f5a51.wav"
+  },
+  {
+    "text": "I like lemons.",
+    "lang": "en",
+    "file": "audio/prompts/6f310eede76fceeffc29.wav"
+  },
+  {
+    "text": "I like mangoes.",
+    "lang": "en",
+    "file": "audio/prompts/eb050ce0c88b60437e7f.wav"
+  },
+  {
+    "text": "I like kiwis.",
+    "lang": "en",
+    "file": "audio/prompts/a5e9d33909ca6676da5c.wav"
+  },
+  {
+    "text": "I like pineapples.",
+    "lang": "en",
+    "file": "audio/prompts/ee68f0ca93f0684f189a.wav"
+  },
+  {
+    "text": "I like coconuts.",
+    "lang": "en",
+    "file": "audio/prompts/b435296d47a29f32f1b8.wav"
+  },
+  {
+    "text": "I like blueberries.",
+    "lang": "en",
+    "file": "audio/prompts/4cb354a0b3f4ffd93974.wav"
+  },
+  {
+    "text": "Point to your head.",
+    "lang": "en",
+    "file": "audio/prompts/e85d26e71974cedc6581.wav"
+  },
+  {
+    "text": "Point to your eye.",
+    "lang": "en",
+    "file": "audio/prompts/320cca943d1c06d3b038.wav"
+  },
+  {
+    "text": "Point to your nose.",
+    "lang": "en",
+    "file": "audio/prompts/e79aff684145ad374766.wav"
+  },
+  {
+    "text": "Point to your mouth.",
+    "lang": "en",
+    "file": "audio/prompts/d4502433108dd54114bf.wav"
+  },
+  {
+    "text": "Point to your ear.",
+    "lang": "en",
+    "file": "audio/prompts/eca1b451430d2f6f6e66.wav"
+  },
+  {
+    "text": "Point to your hand.",
+    "lang": "en",
+    "file": "audio/prompts/fe0c79aa9f20537e43d2.wav"
+  },
+  {
+    "text": "Point to your foot.",
+    "lang": "en",
+    "file": "audio/prompts/1acc0f0e5702386e637a.wav"
+  },
+  {
+    "text": "Point to your arm.",
+    "lang": "en",
+    "file": "audio/prompts/6cecd496d6728fd19951.wav"
+  },
+  {
+    "text": "Point to your leg.",
+    "lang": "en",
+    "file": "audio/prompts/928f42e40e60e77d0337.wav"
+  },
+  {
+    "text": "Point to your finger.",
+    "lang": "en",
+    "file": "audio/prompts/07bfa3d7af10ccbfebdc.wav"
+  },
+  {
+    "text": "Point to your tooth.",
+    "lang": "en",
+    "file": "audio/prompts/aada98cdd8fc6e9d65a8.wav"
+  },
+  {
+    "text": "Point to your hair.",
+    "lang": "en",
+    "file": "audio/prompts/1aeb8cc9d59c5e77d37f.wav"
+  },
+  {
+    "text": "Point to your face.",
+    "lang": "en",
+    "file": "audio/prompts/a92fef629261862874f6.wav"
+  },
+  {
+    "text": "Point to your shoulder.",
+    "lang": "en",
+    "file": "audio/prompts/4edb77f54c5c9351bca3.wav"
+  },
+  {
+    "text": "Point to your knee.",
+    "lang": "en",
+    "file": "audio/prompts/0ae2c8b7e99086d114bb.wav"
+  },
+  {
+    "text": "Rice, please.",
+    "lang": "en",
+    "file": "audio/prompts/de5ba3de50d9e38fe44b.wav"
+  },
+  {
+    "text": "Cake, please.",
+    "lang": "en",
+    "file": "audio/prompts/f8d222cffa0ad2c22415.wav"
+  },
+  {
+    "text": "A cookie, please.",
+    "lang": "en",
+    "file": "audio/prompts/92db61f0c808367344fe.wav"
+  },
+  {
+    "text": "Candy, please.",
+    "lang": "en",
+    "file": "audio/prompts/dd71c1db7cb169828291.wav"
+  },
+  {
+    "text": "Ice cream, please.",
+    "lang": "en",
+    "file": "audio/prompts/9ea83b28844e9dedefdf.wav"
+  },
+  {
+    "text": "Pizza, please.",
+    "lang": "en",
+    "file": "audio/prompts/a38c280483e782cbf669.wav"
+  },
+  {
+    "text": "A hamburger, please.",
+    "lang": "en",
+    "file": "audio/prompts/5f353a223fb750f1f34a.wav"
+  },
+  {
+    "text": "Noodles, please.",
+    "lang": "en",
+    "file": "audio/prompts/17f36a3df01d2a84d0e2.wav"
+  },
+  {
+    "text": "Soup, please.",
+    "lang": "en",
+    "file": "audio/prompts/c8a7d808668cd4aff6ce.wav"
+  },
+  {
+    "text": "Cheese, please.",
+    "lang": "en",
+    "file": "audio/prompts/d04324fc8fcb2b8057ec.wav"
+  },
+  {
+    "text": "Juice, please.",
+    "lang": "en",
+    "file": "audio/prompts/e59df268be86e89e33ba.wav"
+  },
+  {
+    "text": "Chocolate, please.",
+    "lang": "en",
+    "file": "audio/prompts/923580c4972b9d3eb25e.wav"
+  },
+  {
+    "text": "A doll, please.",
+    "lang": "en",
+    "file": "audio/prompts/6addbc1a9a2411ceb2ba.wav"
+  },
+  {
+    "text": "A train, please.",
+    "lang": "en",
+    "file": "audio/prompts/4ea1be2139ce6dff6110.wav"
+  },
+  {
+    "text": "Blocks, please.",
+    "lang": "en",
+    "file": "audio/prompts/30f4c76e104f093eb905.wav"
+  },
+  {
+    "text": "A puzzle, please.",
+    "lang": "en",
+    "file": "audio/prompts/4e5a8abd1da5a05411a2.wav"
+  },
+  {
+    "text": "A robot, please.",
+    "lang": "en",
+    "file": "audio/prompts/08fe781ffca44eedf968.wav"
+  },
+  {
+    "text": "A kite, please.",
+    "lang": "en",
+    "file": "audio/prompts/123721b5d9dd3320a4cd.wav"
+  },
+  {
+    "text": "A drum, please.",
+    "lang": "en",
+    "file": "audio/prompts/1c1b805ba900dd76f1d6.wav"
+  },
+  {
+    "text": "A balloon, please.",
+    "lang": "en",
+    "file": "audio/prompts/ce08426b8fe8df34de21.wav"
+  },
+  {
+    "text": "A book, please.",
+    "lang": "en",
+    "file": "audio/prompts/5a30a1403293875584b5.wav"
+  },
+  {
+    "text": "A crayon, please.",
+    "lang": "en",
+    "file": "audio/prompts/706d397d332dd1b1e633.wav"
+  },
+  {
+    "text": "A bubble, please.",
+    "lang": "en",
+    "file": "audio/prompts/931052ac37c882cf8f72.wav"
+  },
+  {
+    "text": "A swing, please.",
+    "lang": "en",
+    "file": "audio/prompts/cb99ef794fdbc006717a.wav"
+  },
+  {
+    "text": "是谁要去帮妈妈送麦子？",
+    "lang": "zh",
+    "file": "audio/prompts/a12ca4c932f22114750b.wav"
+  },
+  {
+    "text": "找对啦！小马",
+    "lang": "zh",
+    "file": "audio/prompts/389d75a32d32598f2a2e.wav"
+  },
+  {
+    "text": "小马去送麦子",
+    "lang": "zh",
+    "file": "audio/prompts/8e5c22576ee55c3796e4.wav"
+  },
+  {
+    "text": "小河挡住了去路",
+    "lang": "zh",
+    "file": "audio/prompts/4554b97c1e7d84fc42aa.wav"
+  },
+  {
+    "text": "小马小心地过了河",
+    "lang": "zh",
+    "file": "audio/prompts/da409e03eec17aac2157.wav"
+  },
+  {
+    "text": "小马",
+    "lang": "zh",
+    "file": "audio/prompts/dd047a171dc64108661a.wav"
+  },
+  {
+    "text": "小兔",
+    "lang": "zh",
+    "file": "audio/prompts/067d8963955eb822fdd0.wav"
+  },
+  {
+    "text": "谁先到达了终点？",
+    "lang": "zh",
+    "file": "audio/prompts/7448bfd13262906960b1.wav"
+  },
+  {
+    "text": "找对啦！乌龟",
+    "lang": "zh",
+    "file": "audio/prompts/b1356299d02edd567153.wav"
+  },
+  {
+    "text": "兔子和乌龟开始比赛",
+    "lang": "zh",
+    "file": "audio/prompts/9711240102b207582900.wav"
+  },
+  {
+    "text": "兔子在树下睡着了",
+    "lang": "zh",
+    "file": "audio/prompts/e39a3d762d9429f7945d.wav"
+  },
+  {
+    "text": "乌龟先到了终点",
+    "lang": "zh",
+    "file": "audio/prompts/8b50ebdb4b6aa7463d21.wav"
+  },
+  {
+    "text": "乌龟",
+    "lang": "zh",
+    "file": "audio/prompts/1de1d3f668f80cef8881.wav"
+  },
+  {
+    "text": "小熊",
+    "lang": "zh",
+    "file": "audio/prompts/331c8a2d1e1cf1b793c9.wav"
+  },
+  {
+    "text": "哪个故事是我们刚刚听过的？",
+    "lang": "zh",
+    "file": "audio/prompts/afbea66d9edaf3239453.wav"
+  },
+  {
+    "text": "找对啦！猴子捞月",
+    "lang": "zh",
+    "file": "audio/prompts/50903b751692d61c23c3.wav"
+  },
+  {
+    "text": "猴子捞月",
+    "lang": "zh",
+    "file": "audio/prompts/54e8526a0183578b9fbf.wav"
+  },
+  {
+    "text": "小马过河",
+    "lang": "zh",
+    "file": "audio/prompts/6c0f984164bd87dba7cf.wav"
+  },
+  {
+    "text": "龟兔赛跑",
+    "lang": "zh",
+    "file": "audio/prompts/041266397d6fc0a182d6.wav"
+  },
+  {
+    "text": "乌鸦往瓶子里放了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/102ddaa0b7cdbaaa575a.wav"
+  },
+  {
+    "text": "找对啦！小石子",
+    "lang": "zh",
+    "file": "audio/prompts/2e9dc9beeb28ffb882d4.wav"
+  },
+  {
+    "text": "乌鸦口渴，找水喝",
+    "lang": "zh",
+    "file": "audio/prompts/489aa7b94ecba2056890.wav"
+  },
+  {
+    "text": "把小石子放进瓶子",
+    "lang": "zh",
+    "file": "audio/prompts/cac7daa104c609599f31.wav"
+  },
+  {
+    "text": "水升高，喝到水了",
+    "lang": "zh",
+    "file": "audio/prompts/c540917d859e6daad738.wav"
+  },
+  {
+    "text": "小石子",
+    "lang": "zh",
+    "file": "audio/prompts/cee3f949c733cccbfb37.wav"
+  },
+  {
+    "text": "树叶",
+    "lang": "zh",
+    "file": "audio/prompts/e05b84035d6d03430c54.wav"
+  },
+  {
+    "text": "找对啦！狐狸和葡萄",
+    "lang": "zh",
+    "file": "audio/prompts/6f8c100c15807bb1e605.wav"
+  },
+  {
+    "text": "狐狸和葡萄",
+    "lang": "zh",
+    "file": "audio/prompts/b6084fd90376343f113f.wav"
+  },
+  {
+    "text": "找对啦！三只小猪",
+    "lang": "zh",
+    "file": "audio/prompts/7fe4283fca3dc150f9af.wav"
+  },
+  {
+    "text": "三只小猪",
+    "lang": "zh",
+    "file": "audio/prompts/d01ca52e684d224d6c0c.wav"
+  },
+  {
+    "text": "找对啦！小红帽",
+    "lang": "zh",
+    "file": "audio/prompts/05a08599dedacf9b3316.wav"
+  },
+  {
+    "text": "小红帽",
+    "lang": "zh",
+    "file": "audio/prompts/79480c88d6a57d115573.wav"
+  },
+  {
+    "text": "找对啦！狼来了",
+    "lang": "zh",
+    "file": "audio/prompts/1376e0da4f32504c238a.wav"
+  },
+  {
+    "text": "狼来了",
+    "lang": "zh",
+    "file": "audio/prompts/7fd37151659b3920a4f3.wav"
+  },
+  {
+    "text": "大家一起拔的是什么？",
+    "lang": "zh",
+    "file": "audio/prompts/60e536edbe82304afc8c.wav"
+  },
+  {
+    "text": "找对啦！大萝卜",
+    "lang": "zh",
+    "file": "audio/prompts/676d070b4cc2fca64d11.wav"
+  },
+  {
+    "text": "老爷爷一个人拔不动",
+    "lang": "zh",
+    "file": "audio/prompts/0b9253393f08a3d0e320.wav"
+  },
+  {
+    "text": "大家都来帮忙了",
+    "lang": "zh",
+    "file": "audio/prompts/4777da9faf1ec50c87a3.wav"
+  },
+  {
+    "text": "一起拔出了大萝卜",
+    "lang": "zh",
+    "file": "audio/prompts/ac553623b19b97b2bffb.wav"
+  },
+  {
+    "text": "大萝卜",
+    "lang": "zh",
+    "file": "audio/prompts/04ef980a323b44e4e1c3.wav"
+  },
+  {
+    "text": "大树",
+    "lang": "zh",
+    "file": "audio/prompts/c4544984023ad31d1703.wav"
+  },
+  {
+    "text": "小花",
+    "lang": "zh",
+    "file": "audio/prompts/f27ef3512aeb6137a55a.wav"
+  },
+  {
+    "text": "小猫最后钓到了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/d2ac7e5391855cca67c4.wav"
+  },
+  {
+    "text": "找对啦！一条鱼",
+    "lang": "zh",
+    "file": "audio/prompts/5764026413c59c08fbe9.wav"
+  },
+  {
+    "text": "小猫和妈妈去钓鱼",
+    "lang": "zh",
+    "file": "audio/prompts/2930bb77053c91b7031f.wav"
+  },
+  {
+    "text": "小猫跑去追蝴蝶",
+    "lang": "zh",
+    "file": "audio/prompts/fc965257625c99b14ef2.wav"
+  },
+  {
+    "text": "专心钓鱼，钓到了鱼",
+    "lang": "zh",
+    "file": "audio/prompts/cf00edf536946c11490c.wav"
+  },
+  {
+    "text": "一条鱼",
+    "lang": "zh",
+    "file": "audio/prompts/daf03f04b2d4dec5fefc.wav"
+  },
+  {
+    "text": "小蝌蚪找到的妈妈是谁？",
+    "lang": "zh",
+    "file": "audio/prompts/d1f1011281331b0b52fd.wav"
+  },
+  {
+    "text": "找对啦！青蛙",
+    "lang": "zh",
+    "file": "audio/prompts/7e64f09cf81a99c2bb58.wav"
+  },
+  {
+    "text": "小蝌蚪想找妈妈",
+    "lang": "zh",
+    "file": "audio/prompts/a59ff10461f3d4c9bcad.wav"
+  },
+  {
+    "text": "向其他动物问一问",
+    "lang": "zh",
+    "file": "audio/prompts/3031853205e40542780b.wav"
+  },
+  {
+    "text": "找到了青蛙妈妈",
+    "lang": "zh",
+    "file": "audio/prompts/cab18aca54e519e50c91.wav"
+  },
+  {
+    "text": "青蛙",
+    "lang": "zh",
+    "file": "audio/prompts/c2da8452c9fbb42d31c0.wav"
+  },
+  {
+    "text": "母鸡",
+    "lang": "zh",
+    "file": "audio/prompts/db9f8675e93a4b19f954.wav"
+  },
+  {
+    "text": "找对啦！井底之蛙",
+    "lang": "zh",
+    "file": "audio/prompts/8275a9532e0a7028f88d.wav"
+  },
+  {
+    "text": "井底之蛙",
+    "lang": "zh",
+    "file": "audio/prompts/34d00ddf27efda4815d2.wav"
+  },
+  {
+    "text": "找对啦！守株待兔",
+    "lang": "zh",
+    "file": "audio/prompts/25ae9e5f03f95427a32f.wav"
+  },
+  {
+    "text": "守株待兔",
+    "lang": "zh",
+    "file": "audio/prompts/d42eb9343772c7d75192.wav"
+  },
+  {
+    "text": "找对啦！掩耳盗铃",
+    "lang": "zh",
+    "file": "audio/prompts/92781e087bb8f91906bf.wav"
+  },
+  {
+    "text": "掩耳盗铃",
+    "lang": "zh",
+    "file": "audio/prompts/8356feb5cf14cdf906d7.wav"
+  },
+  {
+    "text": "找对啦！画蛇添足",
+    "lang": "zh",
+    "file": "audio/prompts/f554768dd4ffe2fc4dc2.wav"
+  },
+  {
+    "text": "画蛇添足",
+    "lang": "zh",
+    "file": "audio/prompts/5c5bef1439b8a679e75b.wav"
+  },
+  {
+    "text": "找对啦！白雪公主",
+    "lang": "zh",
+    "file": "audio/prompts/da84d5dee690af75fd79.wav"
+  },
+  {
+    "text": "白雪公主",
+    "lang": "zh",
+    "file": "audio/prompts/0ff5a8d738876ecc7ef1.wav"
+  },
+  {
+    "text": "找对啦！灰姑娘",
+    "lang": "zh",
+    "file": "audio/prompts/c20cf62e8a02fd419e76.wav"
+  },
+  {
+    "text": "灰姑娘",
+    "lang": "zh",
+    "file": "audio/prompts/c20c2a84df4f20b412d0.wav"
+  },
+  {
+    "text": "找对啦！睡美人",
+    "lang": "zh",
+    "file": "audio/prompts/1327ca8a75712587ce67.wav"
+  },
+  {
+    "text": "睡美人",
+    "lang": "zh",
+    "file": "audio/prompts/fb5eae40ced46789a809.wav"
+  },
+  {
+    "text": "找对啦！青蛙王子",
+    "lang": "zh",
+    "file": "audio/prompts/2511e32f8275c8317901.wav"
+  },
+  {
+    "text": "青蛙王子",
+    "lang": "zh",
+    "file": "audio/prompts/4f1307ecd77f49289b18.wav"
+  },
+  {
+    "text": "找对啦！拇指姑娘",
+    "lang": "zh",
+    "file": "audio/prompts/a807b3afc6272ed52b4d.wav"
+  },
+  {
+    "text": "拇指姑娘",
+    "lang": "zh",
+    "file": "audio/prompts/638a841090e9b7620467.wav"
+  },
+  {
+    "text": "找对啦！卖火柴的小女孩",
+    "lang": "zh",
+    "file": "audio/prompts/48273fa98d39fa9d30a4.wav"
+  },
+  {
+    "text": "卖火柴的小女孩",
+    "lang": "zh",
+    "file": "audio/prompts/09c67f771786a8cfa17b.wav"
+  },
+  {
+    "text": "找对啦！皇帝的新装",
+    "lang": "zh",
+    "file": "audio/prompts/2036719285945f56e581.wav"
+  },
+  {
+    "text": "皇帝的新装",
+    "lang": "zh",
+    "file": "audio/prompts/271b3e3ba695bd13a32a.wav"
+  },
+  {
+    "text": "找对啦！丑小鸭",
+    "lang": "zh",
+    "file": "audio/prompts/fe2cb7e447b7b611f2e8.wav"
+  },
+  {
+    "text": "丑小鸭",
+    "lang": "zh",
+    "file": "audio/prompts/19014ea3cdc580c43a71.wav"
+  },
+  {
+    "text": "找对啦！海的女儿",
+    "lang": "zh",
+    "file": "audio/prompts/b810a18b18a692d05beb.wav"
+  },
+  {
+    "text": "海的女儿",
+    "lang": "zh",
+    "file": "audio/prompts/b79b257258836063372b.wav"
+  },
+  {
+    "text": "找对啦！匹诺曹",
+    "lang": "zh",
+    "file": "audio/prompts/a046cd485f691d0cb66b.wav"
+  },
+  {
+    "text": "匹诺曹",
+    "lang": "zh",
+    "file": "audio/prompts/65e0ae180f14bd4098bb.wav"
+  },
+  {
+    "text": "找对啦！爱丽丝梦游仙境",
+    "lang": "zh",
+    "file": "audio/prompts/12df773659690ef882f8.wav"
+  },
+  {
+    "text": "爱丽丝梦游仙境",
+    "lang": "zh",
+    "file": "audio/prompts/5b366d47b6eadb820e92.wav"
+  },
+  {
+    "text": "找对啦！彼得潘",
+    "lang": "zh",
+    "file": "audio/prompts/e5123b0d9441625c0b77.wav"
+  },
+  {
+    "text": "彼得潘",
+    "lang": "zh",
+    "file": "audio/prompts/2caedccc41bcd6010865.wav"
+  },
+  {
+    "text": "找对啦！绿野仙踪",
+    "lang": "zh",
+    "file": "audio/prompts/323daae60e061a569de1.wav"
+  },
+  {
+    "text": "绿野仙踪",
+    "lang": "zh",
+    "file": "audio/prompts/7018a0fde5d3fb163004.wav"
+  },
+  {
+    "text": "找对啦！木偶奇遇记",
+    "lang": "zh",
+    "file": "audio/prompts/bc3f60196e0ccc2fa42a.wav"
+  },
+  {
+    "text": "木偶奇遇记",
+    "lang": "zh",
+    "file": "audio/prompts/33161d2a0ed5759a2641.wav"
+  },
+  {
+    "text": "找对啦！阿里巴巴和四十大盗",
+    "lang": "zh",
+    "file": "audio/prompts/34c0d226a4f1b791bbef.wav"
+  },
+  {
+    "text": "阿里巴巴和四十大盗",
+    "lang": "zh",
+    "file": "audio/prompts/50ddc4fc6e891f37f7a4.wav"
+  },
+  {
+    "text": "找对啦！农夫和蛇",
+    "lang": "zh",
+    "file": "audio/prompts/5cd316aff727f92aa9f3.wav"
+  },
+  {
+    "text": "农夫和蛇",
+    "lang": "zh",
+    "file": "audio/prompts/86479d66a04c1501e3af.wav"
+  },
+  {
+    "text": "找对啦！蚂蚁和蚱蜢",
+    "lang": "zh",
+    "file": "audio/prompts/aeb57f87ab1dc6ebec4a.wav"
+  },
+  {
+    "text": "蚂蚁和蚱蜢",
+    "lang": "zh",
+    "file": "audio/prompts/7769518b595bcf85854a.wav"
+  },
+  {
+    "text": "找对啦！三只熊",
+    "lang": "zh",
+    "file": "audio/prompts/6b99efa9425a0fc4741a.wav"
+  },
+  {
+    "text": "三只熊",
+    "lang": "zh",
+    "file": "audio/prompts/b30704fc11531e2f6c73.wav"
+  },
+  {
+    "text": "找对啦！北风与太阳",
+    "lang": "zh",
+    "file": "audio/prompts/ff162b436309bb92e5a2.wav"
+  },
+  {
+    "text": "北风与太阳",
+    "lang": "zh",
+    "file": "audio/prompts/85e120c74633bd117d2e.wav"
+  },
+  {
+    "text": "找对啦！狐狸和乌鸦",
+    "lang": "zh",
+    "file": "audio/prompts/a079f1532f67a9cc2477.wav"
+  },
+  {
+    "text": "狐狸和乌鸦",
+    "lang": "zh",
+    "file": "audio/prompts/ea6c1b645c35b9ecebdb.wav"
+  },
+  {
+    "text": "找对啦！阿拉丁神灯",
+    "lang": "zh",
+    "file": "audio/prompts/df7480a6e05b9957757e.wav"
+  },
+  {
+    "text": "阿拉丁神灯",
+    "lang": "zh",
+    "file": "audio/prompts/2191b6d688c49b2e25a8.wav"
+  },
+  {
+    "text": "找对啦！夜莺",
+    "lang": "zh",
+    "file": "audio/prompts/7630d3a2ad4b0e5d9f2b.wav"
+  },
+  {
+    "text": "夜莺",
+    "lang": "zh",
+    "file": "audio/prompts/06e156f2a702a19b9bac.wav"
+  },
+  {
+    "text": "找对啦！狮子与老鼠",
+    "lang": "zh",
+    "file": "audio/prompts/44947e4c43be362ca3eb.wav"
+  },
+  {
+    "text": "狮子与老鼠",
+    "lang": "zh",
+    "file": "audio/prompts/7276c8b72b39a04019a1.wav"
+  },
+  {
+    "text": "找对啦！城里老鼠和乡下老鼠",
+    "lang": "zh",
+    "file": "audio/prompts/31d3a2c87e62eea2e8f5.wav"
+  },
+  {
+    "text": "城里老鼠和乡下老鼠",
+    "lang": "zh",
+    "file": "audio/prompts/70f0abbc49046f84ecd2.wav"
+  },
+  {
+    "text": "找对啦！不来梅的音乐家",
+    "lang": "zh",
+    "file": "audio/prompts/a070d6d55b89c7d8dcfd.wav"
+  },
+  {
+    "text": "不来梅的音乐家",
+    "lang": "zh",
+    "file": "audio/prompts/09b0c52dad9cc9be6940.wav"
+  },
+  {
+    "text": "找对啦！勇敢的小裁缝",
+    "lang": "zh",
+    "file": "audio/prompts/63dcada8e0e8168d79fd.wav"
+  },
+  {
+    "text": "勇敢的小裁缝",
+    "lang": "zh",
+    "file": "audio/prompts/019e7b8cc413dce974e2.wav"
+  },
+  {
+    "text": "找对啦！渔夫和金鱼",
+    "lang": "zh",
+    "file": "audio/prompts/c492ab9da567c2599e9f.wav"
+  },
+  {
+    "text": "渔夫和金鱼",
+    "lang": "zh",
+    "file": "audio/prompts/7f5ee9dcdfaf2b82b79b.wav"
+  },
+  {
+    "text": "找对啦！大禹治水",
+    "lang": "zh",
+    "file": "audio/prompts/23fb108143f82e365798.wav"
+  },
+  {
+    "text": "大禹治水",
+    "lang": "zh",
+    "file": "audio/prompts/78aa87f1d0f1ca2c2a78.wav"
+  },
+  {
+    "text": "找对啦！蝙蝠和黄鼠狼",
+    "lang": "zh",
+    "file": "audio/prompts/6b8f51c61513b1dd61cf.wav"
+  },
+  {
+    "text": "蝙蝠和黄鼠狼",
+    "lang": "zh",
+    "file": "audio/prompts/135aa0f28cebab7735ba.wav"
+  },
+  {
+    "text": "找对啦！自私的巨人",
+    "lang": "zh",
+    "file": "audio/prompts/419c571a349377a97516.wav"
+  },
+  {
+    "text": "自私的巨人",
+    "lang": "zh",
+    "file": "audio/prompts/366e27ce7b0cefd2b044.wav"
+  },
+  {
+    "text": "找对啦！快乐王子",
+    "lang": "zh",
+    "file": "audio/prompts/7676f793ee0e6a24e624.wav"
+  },
+  {
+    "text": "快乐王子",
+    "lang": "zh",
+    "file": "audio/prompts/b157ca58bd0e02a35b16.wav"
+  },
+  {
+    "text": "找对啦！穿靴子的猫",
+    "lang": "zh",
+    "file": "audio/prompts/7c3145e6d4a477ec5b0d.wav"
+  },
+  {
+    "text": "穿靴子的猫",
+    "lang": "zh",
+    "file": "audio/prompts/851fdb3bc9d02ed5696e.wav"
+  },
+  {
+    "text": "找对啦！美女与野兽",
+    "lang": "zh",
+    "file": "audio/prompts/2382518234a92699ceee.wav"
+  },
+  {
+    "text": "美女与野兽",
+    "lang": "zh",
+    "file": "audio/prompts/93ccf685ab96fd3b59b4.wav"
+  },
+  {
+    "text": "找对啦！坚定的锡兵",
+    "lang": "zh",
+    "file": "audio/prompts/9869e2e5022bd8a7d025.wav"
+  },
+  {
+    "text": "坚定的锡兵",
+    "lang": "zh",
+    "file": "audio/prompts/725d8845ac0b38988e4f.wav"
+  },
+  {
+    "text": "找对啦！雪皇后",
+    "lang": "zh",
+    "file": "audio/prompts/818e890b30d831dd3dfa.wav"
+  },
+  {
+    "text": "雪皇后",
+    "lang": "zh",
+    "file": "audio/prompts/43a2039350767b0c341f.wav"
+  },
+  {
+    "text": "再想一想，也可以再听一遍故事。",
+    "lang": "zh",
+    "file": "audio/prompts/7457a78b23bd8de14638.wav"
+  },
+  {
+    "text": "找对啦！",
+    "lang": "zh",
+    "file": "audio/prompts/3e4efb7f93529926617e.wav"
+  },
+  {
+    "text": "再试一次，想想最先发生了什么。",
+    "lang": "zh",
+    "file": "audio/prompts/d5b890a8fb1e619231b5.wav"
+  },
+  {
+    "text": "再看一看，前面哪一小组在重复？",
+    "lang": "zh",
+    "file": "audio/prompts/8a5ef2591f51c8c92fd1.wav"
+  },
+  {
+    "text": "先发生什么？再发生什么？请按顺序点图片。",
+    "lang": "zh",
+    "file": "audio/prompts/03279b0c024738b78688.wav"
+  },
+  {
+    "text": "把故事讲给家长听吧。说一句自己的话就很好。",
+    "lang": "zh",
+    "file": "audio/prompts/142528c5203392e329a7.wav"
+  },
+  {
+    "text": "故事一开始发生了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/2f7180f59347aa600a20.wav"
+  },
+  {
+    "text": "故事最后发生了什么？",
+    "lang": "zh",
+    "file": "audio/prompts/565a178549d03ecd4a37.wav"
+  },
+  {
+    "text": "哪件事在这个故事里发生过？",
+    "lang": "zh",
+    "file": "audio/prompts/544832d7dbbc8d8fa940.wav"
+  },
+  {
+    "text": "故事里有谁？告诉家长一个角色。",
+    "lang": "zh",
+    "file": "audio/prompts/b71d478bd21967ed8339.wav"
+  },
+  {
+    "text": "你最喜欢故事里的谁？说一句自己的想法。",
+    "lang": "zh",
+    "file": "audio/prompts/ba0d6bca8d17a554ab44.wav"
+  },
+  {
+    "text": "太棒了",
+    "lang": "zh",
+    "file": "audio/prompts/52cc7da5209223b39e0f.wav"
+  },
+  {
+    "text": "真聪明",
+    "lang": "zh",
+    "file": "audio/prompts/79501b3c45f9717a439e.wav"
+  },
+  {
+    "text": "好厉害",
+    "lang": "zh",
+    "file": "audio/prompts/64ae65677415b1ae16c5.wav"
+  },
+  {
+    "text": "做得好",
+    "lang": "zh",
+    "file": "audio/prompts/4dd4edb5f4b3865455c2.wav"
+  },
+  {
+    "text": "你真棒",
+    "lang": "zh",
+    "file": "audio/prompts/99b94271f894b0fa2958.wav"
+  },
+  {
+    "text": "继续加油",
+    "lang": "zh",
+    "file": "audio/prompts/cf48953ff92e4bb65bbe.wav"
+  },
+  {
+    "text": "你有",
+    "lang": "zh",
+    "file": "audio/prompts/828fbcc6c75b110506d6.wav"
+  },
+  {
+    "text": "颗星星",
+    "lang": "zh",
+    "file": "audio/prompts/11f674476c9fd24db20b.wav"
+  },
+  {
+    "text": "零",
+    "lang": "zh",
+    "file": "audio/prompts/fbea48a9d2bbe4a30b45.wav"
+  },
+  {
+    "text": "一",
+    "lang": "zh",
+    "file": "audio/prompts/8e543476734684cfb25b.wav"
+  },
+  {
+    "text": "二",
+    "lang": "zh",
+    "file": "audio/prompts/d17c0f44a36bc9c71216.wav"
+  },
+  {
+    "text": "三",
+    "lang": "zh",
+    "file": "audio/prompts/bd121ec8b4318302f94c.wav"
+  },
+  {
+    "text": "四",
+    "lang": "zh",
+    "file": "audio/prompts/f44e2dc2dcc9c53031d7.wav"
+  },
+  {
+    "text": "五",
+    "lang": "zh",
+    "file": "audio/prompts/2578253d6809c840fce8.wav"
+  },
+  {
+    "text": "六",
+    "lang": "zh",
+    "file": "audio/prompts/a5802072fa71df943c11.wav"
+  },
+  {
+    "text": "七",
+    "lang": "zh",
+    "file": "audio/prompts/2cc81c65a7a24b42ca93.wav"
+  },
+  {
+    "text": "八",
+    "lang": "zh",
+    "file": "audio/prompts/9eef034da0d3583c222e.wav"
+  },
+  {
+    "text": "九",
+    "lang": "zh",
+    "file": "audio/prompts/d6d4b6a33156591ed764.wav"
+  },
+  {
+    "text": "十",
+    "lang": "zh",
+    "file": "audio/prompts/5f5c2e9c6f1ae2af5cb2.wav"
+  },
+  {
+    "text": "百",
+    "lang": "zh",
+    "file": "audio/prompts/0fd5da2e16179c2d6542.wav"
+  },
+  {
+    "text": "千",
+    "lang": "zh",
+    "file": "audio/prompts/1cd14bc6f1cd93880486.wav"
+  },
+  {
+    "text": "万",
+    "lang": "zh",
+    "file": "audio/prompts/facd036af00a3cd4152b.wav"
+  },
+  {
+    "text": "亿",
+    "lang": "zh",
+    "file": "audio/prompts/bea9013ecd2467c11b71.wav"
+  },
+  {
+    "text": "点",
+    "lang": "zh",
+    "file": "audio/prompts/c0e69a392d4874d4c892.wav"
+  },
+  {
+    "text": "太棒了！",
+    "lang": "zh",
+    "file": "audio/prompts/64a233d48134fe2d693c.wav"
+  },
+  {
+    "text": "你真厉害！",
+    "lang": "zh",
+    "file": "audio/prompts/104bfb0c8e97b6ebce1a.wav"
+  },
+  {
+    "text": "答对啦，好聪明！",
+    "lang": "zh",
+    "file": "audio/prompts/d7e9a20491c799624e28.wav"
+  },
+  {
+    "text": "真棒呀！",
+    "lang": "zh",
+    "file": "audio/prompts/150f31e41b62c932469e.wav"
+  },
+  {
+    "text": "干得漂亮！",
+    "lang": "zh",
+    "file": "audio/prompts/d07e3fc402038ac45b04.wav"
+  }
+]

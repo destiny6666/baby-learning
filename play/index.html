@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>宝贝学习乐园 Pro</title>
+<link rel="stylesheet" href="learning.css">
+<link rel="stylesheet" href="life-play.css">
+<style>
+/* ===== RESET & BASE ===== */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+:root{
+  --pink:#FFB7C5;--blue:#A7D8FF;--yellow:#FFF3A1;--green:#B5EAD7;--purple:#D4B5FF;
+  --pink-d:#FF9BB0;--blue-d:#7FC0F5;--yellow-d:#FFE85C;--green-d:#8FDDBF;--purple-d:#B894FF;
+  --bg:#FFF9FC;--card:#fff;--text:#4A3B52;--text-l:#8A7A92;--shadow:0 4px 16px rgba(180,120,200,.15);
+  --radius:16px;--radius-s:10px;--radius-l:24px;
+}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  font-family:"Comic Sans MS","Chalkboard SE","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;
+}
+body.night{background:#2a2235;color:#e8dff0;--card:#3a3045;--text:#e8dff0;--text-l:#b0a0bc;--shadow:0 4px 16px rgba(0,0,0,.3);}
+input,button,select{font-family:inherit;font-size:inherit;}
+button{cursor:pointer;border:none;outline:none;background:none;}
+img{max-width:100%;}
+
+/* ===== LAYOUT ===== */
+#app{display:flex;flex-direction:column;min-height:100vh;}
+.app-body{display:flex;flex:1;}
+
+/* Header */
+.header{
+  background:linear-gradient(135deg,var(--pink),var(--purple) 50%,var(--blue));
+  color:#fff;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(180,120,200,.2);
+}
+.header h1{font-size:1.3rem;display:flex;align-items:center;gap:8px;white-space:nowrap;}
+.star-counter{
+  background:rgba(255,255,255,.25);backdrop-filter:blur(4px);
+  padding:6px 16px;border-radius:30px;font-size:1.1rem;font-weight:bold;
+  display:flex;align-items:center;gap:6px;white-space:nowrap;
+}
+.star-counter .star-icon{font-size:1.3rem;}
+.audio-control{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.25);padding:4px 10px;border-radius:30px;}
+.audio-btn{background:transparent;border:none;font-size:1.3rem;cursor:pointer;padding:0;line-height:1;}
+.vol-range{-webkit-appearance:none;appearance:none;width:90px;height:8px;border-radius:5px;background:rgba(255,255,255,.5);outline:none;}
+.vol-range::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--pink-d);cursor:pointer;}
+.vol-range::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--pink-d);cursor:pointer;}
+
+/* Sidebar (PC) */
+.sidebar{
+  width:180px;background:var(--card);box-shadow:2px 0 12px rgba(180,120,200,.1);
+  display:flex;flex-direction:column;padding:16px 10px;gap:6px;position:sticky;top:60px;
+  height:calc(100vh - 60px);overflow-y:auto;flex-shrink:0;
+}
+.nav-item{
+  display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:var(--radius-s);
+  font-size:1rem;font-weight:600;color:var(--text-l);transition:all .2s;min-height:48px;
+}
+.nav-item:hover{background:#f5edf8;}
+.nav-item.active{color:#fff;font-weight:700;transform:scale(1.02);}
+.nav-item .nav-emoji{font-size:1.3rem;}
+
+/* Main */
+.main{min-width:0;flex:1;padding:16px;max-width:900px;margin:0 auto;width:100%;padding-bottom:80px;}
+.module-view{display:none;animation:fadeIn .3s ease;}
+.module-view.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+/* Bottom Tab (Mobile) */
+.bottom-nav{display:none;}
+
+/* ===== COMPONENTS ===== */
+.card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);margin-bottom:16px;}
+.card-title{font-size:1.2rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.btn{
+  padding:12px 24px;border-radius:var(--radius-s);font-size:1rem;font-weight:600;
+  background:var(--purple);color:#fff;transition:all .15s;min-height:44px;display:inline-flex;
+  align-items:center;justify-content:center;gap:6px;
+}
+.btn:hover{filter:brightness(1.05);transform:translateY(-1px);}
+.btn:active{transform:scale(.96);}
+.btn-pink{background:var(--pink);color:#8B3A52;}
+.btn-blue{background:var(--blue);color:#1a5a8a;}
+.btn-green{background:var(--green);color:#2a6b4f;}
+.btn-yellow{background:var(--yellow);color:#7a6500;}
+.btn-lg{padding:16px 32px;font-size:1.1rem;min-height:52px;border-radius:var(--radius);}
+.btn-sm{padding:8px 14px;font-size:.9rem;min-height:36px;border-radius:8px;}
+.btn:disabled{opacity:.5;cursor:not-allowed;}
+
+.section-title{
+  font-size:1.4rem;font-weight:700;margin:8px 0 16px;display:flex;align-items:center;gap:8px;
+}
+.subtitle{font-size:.9rem;color:var(--text-l);margin-bottom:12px;}
+
+/* Grid */
+.grid{display:grid;gap:12px;}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.grid-4{grid-template-columns:repeat(4,minmax(0,1fr));}
+.grid-5{grid-template-columns:repeat(5,minmax(0,1fr));}
+
+/* Letter/Number Cards */
+.char-card{
+  background:var(--card);border-radius:var(--radius);padding:16px 8px;text-align:center;
+  box-shadow:var(--shadow);cursor:pointer;transition:all .2s;min-height:80px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.char-card:hover{transform:translateY(-3px) scale(1.03);}
+.char-card:active{transform:scale(.95);}
+.char-card .big-char{font-size:2rem;font-weight:700;line-height:1.2;}
+.char-card .small-char{font-size:1rem;color:var(--text-l);}
+.char-card.done{opacity:.4;background:#e8e0ec;}
+.char-card.done .big-char{text-decoration:line-through;}
+
+/* Game Options */
+.option-btn{
+  padding:16px;border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow);
+  font-size:1.5rem;font-weight:700;text-align:center;transition:all .15s;min-height:56px;
+  border:3px solid transparent;
+}
+.option-btn:hover{border-color:var(--purple);}
+.option-btn:active{transform:scale(.96);}
+.option-btn.correct{background:var(--green);color:#2a6b4f;animation:pop .4s;}
+.option-btn.wrong{background:#FFCCCC;color:#c33;animation:shake .4s;}
+@keyframes pop{0%{transform:scale(1);}50%{transform:scale(1.15);}100%{transform:scale(1);}}
+@keyframes shake{0%,100%{transform:translateX(0);}25%{transform:translateX(-6px);}75%{transform:translateX(6px);}}
+
+/* Progress */
+.progress-bar{background:#e8e0ec;border-radius:20px;height:12px;overflow:hidden;margin:8px 0;}
+.progress-fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--pink),var(--purple),var(--blue));transition:width .5s;}
+
+/* Badge */
+.badge{display:inline-flex;flex-direction:column;align-items:center;gap:4px;padding:12px;border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow);min-width:80px;}
+.badge .badge-icon{font-size:2.2rem;}
+.badge.locked{opacity:.3;filter:grayscale(1);}
+.badge .badge-name{font-size:.75rem;color:var(--text-l);text-align:center;}
+
+/* Story/Poem Cards */
+.story-card,.poem-card{
+  min-width:0;
+  background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);
+  cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:12px;
+}
+.story-card:hover,.poem-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(180,120,200,.2);}
+.story-card .story-emoji,.poem-card .poem-emoji{font-size:2rem;flex-shrink:0;}
+.story-card .story-info,.poem-card .poem-info{flex:1;min-width:0;}
+.story-card .story-title,.poem-card .poem-title{font-size:1rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.story-card .story-meta,.poem-card .poem-meta{font-size:.8rem;color:var(--text-l);}
+.fav-star{font-size:1.2rem;flex-shrink:0;cursor:pointer;}
+.fav-star.active{color:var(--yellow-d);}
+
+/* Category Pills */
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.pill{padding:8px 16px;border-radius:20px;background:var(--card);box-shadow:var(--shadow);font-size:.9rem;font-weight:600;color:var(--text-l);cursor:pointer;transition:all .15s;min-height:36px;display:flex;align-items:center;}
+.pill.active{background:var(--purple);color:#fff;}
+
+/* English Theme */
+.theme-card{
+  background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);
+  cursor:pointer;transition:all .2s;text-align:center;
+}
+.theme-card:hover{transform:translateY(-3px);}
+.theme-card .theme-emoji{font-size:2.5rem;}
+.theme-card .theme-name{font-size:1.1rem;font-weight:700;margin:8px 0 4px;}
+.theme-card .theme-progress{font-size:.8rem;color:var(--text-l);}
+.theme-card .theme-bar{height:6px;background:#e8e0ec;border-radius:3px;margin-top:8px;overflow:hidden;}
+.theme-card .theme-bar-fill{height:100%;border-radius:3px;transition:width .5s;}
+
+/* Word Card */
+.word-card{
+  background:var(--card);border-radius:var(--radius);padding:16px 8px;text-align:center;
+  box-shadow:var(--shadow);cursor:pointer;transition:all .2s;min-height:100px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+}
+.word-card:hover{transform:translateY(-2px) scale(1.03);}
+.word-card .word-emoji{font-size:2rem;}
+.word-card .word-en{font-size:1rem;font-weight:700;}
+.word-card .word-cn{font-size:.8rem;color:var(--text-l);}
+.word-card.learned{background:linear-gradient(135deg,var(--green),#d0f0e0);}
+
+/* Flashcard */
+.flashcard{
+  background:var(--card);border-radius:var(--radius-l);padding:40px 24px;text-align:center;
+  box-shadow:var(--shadow);min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+}
+.flashcard .fc-emoji{font-size:4rem;animation:bounceIn .5s;}
+.flashcard .fc-en{font-size:1.8rem;font-weight:700;}
+.flashcard .fc-cn{font-size:1.1rem;color:var(--text-l);}
+@keyframes bounceIn{0%{transform:scale(0);}60%{transform:scale(1.2);}100%{transform:scale(1);}}
+
+/* Story Reader */
+.story-reader{
+  background:var(--card);border-radius:var(--radius-l);padding:24px;box-shadow:var(--shadow);
+  text-align:center;
+}
+.story-reader .sr-emoji{font-size:3rem;margin-bottom:12px;}
+.story-reader .sr-text{font-size:1.15rem;line-height:1.8;margin:16px 0;min-height:60px;}
+.story-reader .sr-moral{background:var(--yellow);border-radius:var(--radius-s);padding:12px 16px;font-size:.95rem;color:#7a6500;margin-top:16px;text-align:left;}
+.sr-nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:12px;}
+
+/* Celebration Overlay */
+#celebrate{
+  position:fixed;inset:0;z-index:9999;pointer-events:none;display:none;
+  align-items:center;justify-content:center;
+}
+#celebrate.show{display:flex;}
+.celebrate-text{font-size:3rem;animation:celebratePop .8s ease;}
+@keyframes celebratePop{0%{transform:scale(0) rotate(-180deg);}50%{transform:scale(1.3) rotate(10deg);}100%{transform:scale(1) rotate(0);}}
+.confetti{position:absolute;font-size:1.5rem;animation:confettiFall 1.5s linear forwards;}
+@keyframes confettiFall{0%{transform:translateY(-100px) rotate(0);opacity:1;}100%{transform:translateY(100vh) rotate(720deg);opacity:0;}}
+
+/* Toast */
+#toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.7);color:#fff;padding:12px 24px;border-radius:30px;font-size:.95rem;z-index:9998;opacity:0;transition:opacity .3s;pointer-events:none;}
+#toast.show{opacity:1;}
+
+/* Modal */
+#modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:999;display:none;align-items:center;justify-content:center;padding:20px;}
+#modal-overlay.show{display:flex;}
+.modal{background:var(--card);border-radius:var(--radius-l);padding:24px;max-width:400px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+.modal h3{font-size:1.2rem;margin-bottom:16px;text-align:center;}
+.modal-actions{display:flex;gap:12px;justify-content:center;margin-top:20px;}
+
+/* Level Map */
+.level-map{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:12px;}
+.level-node{
+  aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-size:1.3rem;font-weight:700;cursor:pointer;transition:all .2s;box-shadow:var(--shadow);
+}
+.level-node:hover{transform:scale(1.1);}
+.level-node.locked{background:#e0d8e5;color:#b0a0bc;cursor:not-allowed;}
+.level-node.available{background:var(--yellow);color:#7a6500;}
+.level-node.completed{background:var(--green);color:#2a6b4f;}
+.level-node .level-medal{font-size:.8rem;}
+.level-path{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;}
+
+/* Quiz Area */
+.quiz-area{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);}
+.quiz-question{font-size:1.3rem;font-weight:700;text-align:center;margin-bottom:20px;min-height:50px;display:flex;align-items:center;justify-content:center;gap:8px;}
+.quiz-visual{font-size:3rem;text-align:center;margin:12px 0;}
+
+/* Stats Row */
+.stats-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
+.stat-box{background:var(--card);border-radius:var(--radius-s);padding:12px 16px;box-shadow:var(--shadow);text-align:center;flex:1;min-width:80px;}
+.stat-box .stat-num{font-size:1.6rem;font-weight:700;color:var(--purple-d);}
+.stat-box .stat-label{font-size:.75rem;color:var(--text-l);}
+
+/* Backup buttons */
+.backup-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+
+/* Today section */
+.today-section{background:linear-gradient(135deg,#fff3cd,#ffe0ec);border-radius:var(--radius);padding:16px;margin-bottom:16px;border:2px solid var(--yellow-d);}
+body.night .today-section{background:linear-gradient(135deg,#3a3045,#3a2838);border-color:var(--purple-d);}
+.today-section h3{font-size:1rem;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.today-item{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:8px;margin-bottom:6px;font-size:.9rem;}
+body.night .today-item{background:rgba(255,255,255,.1);}
+.today-item.overdue{background:rgba(255,180,180,.4);}
+
+/* Responsive */
+@media(max-width:768px){
+  .sidebar{display:none;}
+  .bottom-nav{
+    display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--card);
+    box-shadow:0 -2px 12px rgba(180,120,200,.15);z-index:100;
+    padding:4px;padding-bottom:env(safe-area-inset-bottom);overflow-x:auto;
+  }
+  .bottom-nav-item{
+    flex:1 0 54px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;
+    font-size:.65rem;color:var(--text-l);transition:all .15s;min-height:52px;justify-content:center;
+  }
+  .bottom-nav-item.active{color:var(--purple-d);font-weight:700;}
+  .bottom-nav-item .nav-emoji{font-size:1.3rem;}
+  .main{padding:12px;padding-bottom:90px;}
+  .header{padding:10px 14px;}
+  .header h1{font-size:1.1rem;}
+  .star-counter{padding:5px 12px;font-size:.95rem;}
+  .grid-5{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .grid-4{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .char-card .big-char{font-size:1.6rem;}
+  .section-title{font-size:1.2rem;}
+  .quiz-question{font-size:1.1rem;}
+}
+@media(max-width:480px){
+  #poemList,#storyList{grid-template-columns:minmax(0,1fr);}
+  .word-en{overflow-wrap:anywhere;}
+  .grid-5{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .grid-4{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .header h1{font-size:1rem;}
+  .header h1 .title-text{display:none;}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="header">
+    <h1>🌈<span class="title-text">宝贝学习乐园</span> Pro</h1>
+    <div class="audio-control">
+      <button class="audio-btn" id="muteBtn" onclick="toggleMute()" aria-label="静音切换">🔊</button>
+      <input type="range" min="0" max="100" value="80" id="volRange" oninput="setVolume(this.value)" class="vol-range" aria-label="音量">
+    </div>
+    <div class="star-counter" onclick="speak('你有'+state.stars+'颗星星','child')">
+      <span class="star-icon">⭐</span><span id="starCount">0</span>
+    </div>
+  </header>
+  <div class="app-body">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="main" id="main"></main>
+  </div>
+  <nav class="bottom-nav" id="bottomNav"></nav>
+</div>
+<div id="celebrate"><div class="celebrate-text">🎉</div></div>
+<div id="toast"></div>
+<div id="audioStatus" class="audio-status" role="status" aria-live="polite" hidden></div>
+<div id="modal-overlay"><div class="modal" id="modal"></div></div>
+
+<script>
+// ==================== CONFIG ====================
+var STORAGE_KEY='wb_baole_pro_v2';
+var LEGACY_STORAGE_KEY='wb_baole_pro_v1';
+var TABS=[
+  {id:'letters',name:'字母乐园',emoji:'🔤',color:'#FFB7C5'},
+  {id:'poems',name:'古诗花园',emoji:'🌸',color:'#D4B5FF'},
+  {id:'numbers',name:'数字王国',emoji:'🔢',color:'#A7D8FF'},
+  {id:'logic',name:'逻辑挑战',emoji:'🧩',color:'#B5EAD7'},
+  {id:'levels',name:'闯关冒险',emoji:'🗺️',color:'#FFF3A1'},
+  {id:'english',name:'英语小镇',emoji:'🌍',color:'#FFB7C5'},
+  {id:'stories',name:'故事屋',emoji:'📚',color:'#A7D8FF'},
+  {id:'growth',name:'成长乐园',emoji:'🌱',color:'#B5EAD7'},
+];
+
+// ==================== POEMS DATA (20首) ====================
+var POEMS=[
+  {id:1,t:"静夜思",a:"李白",e:"🌙",d:"唐",py:["chuáng qián míng yuè guāng","yí shì dì shàng shuāng","jǔ tóu wàng míng yuè","dī tóu sī gù xiāng"],l:["床前明月光","疑是地上霜","举头望明月","低头思故乡"],tr:"明亮的月光照在床前，好像地上铺了一层霜。抬头望着明月，低头想念故乡。"},
+  {id:2,t:"春晓",a:"孟浩然",e:"🌸",d:"唐",py:["chūn mián bù jué xiǎo","chù chù wén tí niǎo","yè lái fēng yǔ shēng","huā luò zhī duō shǎo"],l:["春眠不觉晓","处处闻啼鸟","夜来风雨声","花落知多少"],tr:"春天的夜晚睡得香甜不知不觉就到了早晨，到处都能听到鸟儿啼叫的声音。夜里传来风吹雨打的声音，不知花被吹落了多少。"},
+  {id:3,t:"咏鹅",a:"骆宾王",e:"🦢",d:"唐",py:["é é é","qū xiàng xiàng tiān gē","bái máo fú lǜ shuǐ","hóng zhǎng bō qīng bō"],l:["鹅鹅鹅","曲项向天歌","白毛浮绿水","红掌拨清波"],tr:"鹅啊鹅啊鹅，弯曲着脖子对着天空唱歌。白色的羽毛浮在绿水上，红色的脚掌拨动着清澈的水波。"},
+  {id:4,t:"悯农",a:"李绅",e:"🌾",d:"唐",py:["chú hé rì dāng wǔ","hàn dī hé xià tǔ","shuí zhī pán zhōng cān","lì lì jiē xīn kǔ"],l:["锄禾日当午","汗滴禾下土","谁知盘中餐","粒粒皆辛苦"],tr:"农民在正午烈日下锄地，汗水滴入泥土里。谁知道盘中的饭食，每一粒都是辛苦劳动换来的。"},
+  {id:5,t:"登鹳雀楼",a:"王之涣",e:"🏯",d:"唐",py:["bái rì yī shān jìn","huáng hé rù hǎi liú","yù qióng qiān lǐ mù","gèng shàng yī céng lóu"],l:["白日依山尽","黄河入海流","欲穷千里目","更上一层楼"],tr:"夕阳依着山峦慢慢落下，黄河水滚滚流入大海。想要看到更远的风景，就要再登上一层楼。"},
+  {id:6,t:"相思",a:"王维",e:"🫘",d:"唐",py:["hóng dòu shēng nán guó","chūn lái fā jǐ zhī","yuàn jūn duō cǎi xié","cǐ wù zuì xiāng sī"],l:["红豆生南国","春来发几枝","愿君多采撷","此物最相思"],tr:"红豆生长在南方，春天来了发出几根新枝。希望你多采摘一些，这东西最能表达思念之情。"},
+  {id:7,t:"江雪",a:"柳宗元",e:"❄️",d:"唐",py:["qiān shān niǎo fēi jué","wàn jìng rén zōng miè","gū zhōu suō lì wēng","dú diào hán jiāng xuě"],l:["千山鸟飞绝","万径人踪灭","孤舟蓑笠翁","独钓寒江雪"],tr:"千山万岭不见飞鸟的踪影，千路万径不见行人的足迹。只有一条小船上，披蓑戴笠的老翁，独自在寒冷的江雪中垂钓。"},
+  {id:8,t:"赋得古原草送别",a:"白居易",e:"🌱",d:"唐",py:["lí lí yuán shàng cǎo","yī suì yī kū róng","yě huǒ shāo bù jìn","chūn fēng chuī yòu shēng"],l:["离离原上草","一岁一枯荣","野火烧不尽","春风吹又生"],tr:"原野上的草长得很茂盛，每年都会枯萎和繁茂一次。野火也烧不尽它们，春风一吹又重新生长出来。"},
+  {id:9,t:"望庐山瀑布",a:"李白",e:"瀑布",d:"唐",py:["rì zhào xiāng lú shēng zǐ yān","yáo kàn pù bù guà qián chuān","fēi liú zhí xià sān qiān chǐ","yí shì yín hé luò jiǔ tiān"],l:["日照香炉生紫烟","遥看瀑布挂前川","飞流直下三千尺","疑是银河落九天"],tr:"阳光照在香炉峰上生出紫色烟霞，远远望去瀑布像白绢挂在山前。水流飞奔直下三千尺，好像是银河从九天落下。"},
+  {id:10,t:"绝句",a:"杜甫",e:"🐦",d:"唐",py:["liǎng gè huáng lí míng cuì liǔ","yī háng bái lù shàng qīng tiān","chuāng hán xī lǐng qiān qiū xuě","mén bó dōng wú wàn lǐ chuán"],l:["两个黄鹂鸣翠柳","一行白鹭上青天","窗含西岭千秋雪","门泊东吴万里船"],tr:"两只黄鹂在翠绿的柳树间鸣叫，一行白鹭飞向蓝天。窗外能看到西岭长年不化的雪，门前停着从远方驶来的船。"},
+  {id:11,t:"鹿柴",a:"王维",e:"🌲",d:"唐",py:["kōng shān bú jiàn rén","dàn wén rén yǔ xiǎng","fǎn jǐng rù shēn lín","fù zhào qīng tái shàng"],l:["空山不见人","但闻人语响","返景入深林","复照青苔上"],tr:"空山里看不见人，只听见说话的回声。夕阳的光照进树林，又照到了青苔上。"},
+  {id:12,t:"游子吟",a:"孟郊",e:"🧵",d:"唐",py:["cí mǔ shǒu zhōng xiàn","yóu zǐ shēn shàng yī","lín xíng mì mì féng","yì kǒng chí chí guī"],l:["慈母手中线","游子身上衣","临行密密缝","意恐迟迟归"],tr:"慈爱的母亲手中的针线，为出门在外的孩子缝制衣裳。临行前密密地缝着，生怕孩子迟迟不能回来。"},
+  {id:13,t:"忆江南",a:"白居易",e:"🌅",d:"唐",py:["jiāng nán hǎo","fēng jǐng jiù céng ān","rì chū jiāng huā hóng shèng huǒ","chūn lái jiāng shuǐ lǜ rú lán"],l:["江南好","风景旧曾谙","日出江花红胜火","春来江水绿如蓝"],tr:"江南的风景多么美好，那里的风光我曾经很熟悉。日出时江边的花比火还红，春天来了江水像蓝草一样碧绿。"},
+  {id:14,t:"小儿垂钓",a:"胡令能",e:"🎣",d:"唐",py:["péng tóu zhì zǐ xué chuí lún","cè zuò méi tái cǎo yìng shēn","lù rén jiè wèn yáo zhāo shǒu","pà dé yú jīng bù yìng rén"],l:["蓬头稚子学垂纶","侧坐莓苔草映身","路人借问遥招手","怕得鱼惊不应人"],tr:"一个头发蓬乱的小孩在学钓鱼，侧身坐在青苔上，草丛遮住了身体。过路人问路，他远远地摆手，怕吓跑了鱼儿不敢出声。"},
+  {id:15,t:"池上",a:"白居易",e:"🪷",d:"唐",py:["xiǎo wá chēng xiǎo tǐng","tōu cǎi bái lián huí","bù jiě cáng zōng jì","fú píng yī dào kāi"],l:["小娃撑小艇","偷采白莲回","不解藏踪迹","浮萍一道开"],tr:"一个小孩子撑着小船，偷偷采了白莲花回来。他不懂得隐藏踪迹，水面上的浮萍被船划开了一道长长的口子。"},
+  {id:16,t:"小池",a:"杨万里",e:"🌳",d:"宋",py:["quán yǎn wú shēng xī xì liú","shù yīn zhào shuǐ ài qíng róu","xiǎo hé cái lù jiān jiān jiǎo","zǎo yǒu qīng tíng lì shàng tóu"],l:["泉眼无声惜细流","树阴照水爱晴柔","小荷才露尖尖角","早有蜻蜓立上头"],tr:"泉眼悄无声息地流淌着细水，树荫倒映在水面喜爱这柔和的晴天。小小的荷叶刚露出尖尖的角，早有蜻蜓停在上面了。"},
+  {id:17,t:"画",a:"王维",e:"🖼️",d:"唐",py:["yuǎn kàn shān yǒu sè","jìn tīng shuǐ wú shēng","chūn qù huā hái zài","rén lái niǎo bù jīng"],l:["远看山有色","近听水无声","春去花还在","人来鸟不惊"],tr:"远处看山有美丽的颜色，走近听水却听不到声音。春天过去了花还开着，人来了鸟也不会被惊飞。这是一首描写画的诗。"},
+  {id:18,t:"山村",a:"邵雍",e:"🏡",d:"宋",py:["yī qù èr sān lǐ","yān cūn sì wǔ jiā","tíng tái liù qī zuò","bā jiǔ shí zhī huā"],l:["一去二三里","烟村四五家","亭台六七座","八九十枝花"],tr:"走出去两三里路，看见炊烟袅袅的村庄有四五户人家。亭台楼阁有六七座，八九十枝花正在开放。"},
+  {id:19,t:"梅花",a:"王安石",e:"🌺",d:"宋",py:["qiáng jiǎo shù zhī méi","líng hán dú zì kāi","yáo zhī bù shì xuě","wèi yǒu àn xiāng lái"],l:["墙角数枝梅","凌寒独自开","遥知不是雪","为有暗香来"],tr:"墙角有几枝梅花，冒着严寒独自开放。远远望去知道那不是雪，因为有阵阵清香飘来。"},
+  {id:20,t:"寻隐者不遇",a:"贾岛",e:"⛰️",d:"唐",py:["sōng xià wèn tóng zǐ","yán shī cǎi yào qù","zhī zài cǐ shān zhōng","yún shēn bù zhī chù"],l:["松下问童子","言师采药去","只在此山中","云深不知处"],tr:"在松树下问小徒弟，师傅去哪里了？他说师傅采药去了。只知道就在这座山里，但云雾很深不知道在哪里。"}
+];
+
+// ==================== STORIES DATA (50个) ====================
+var STORIES=[
+  // 中国经典（古籍寓言/民间故事）
+  {id:1,t:"小马过河",c:"中国经典",e:"🐎",p:["小马要帮妈妈送麦子到磨坊去。","一条小河挡住了去路。牛伯伯说水很浅，小松鼠说水很深。","小马不知道该怎么办，回家问妈妈。妈妈说：你自己试试就知道了。","小马小心地过了河，水不深也不浅。它开心地笑了！"],m:"遇到事情要自己动脑筋，勇敢尝试。"},
+  {id:2,t:"龟兔赛跑",c:"中国经典",e:"🐢",p:["兔子和乌龟比赛跑步。","兔子跑得很快，把乌龟远远甩在后面。","兔子骄傲地在树下睡了一觉。","乌龟一步一步坚持爬，最后第一个到达了终点！"],m:"坚持不懈就能成功，骄傲会让人落后。"},
+  {id:3,t:"猴子捞月",c:"中国经典",e:"🐵",p:["一天晚上，小猴子看到井里有一轮圆圆的月亮。","它喊来小伙伴们：月亮掉进井里啦！","猴子们一个接一个倒挂在树上，伸手去捞月亮。","手一碰水面，月亮就碎了。老猴子抬头一看，月亮还在天上呢！"],m:"要仔细观察，分清真实和倒影。"},
+  {id:4,t:"乌鸦喝水",c:"中国经典",e:"🐦",p:["一只乌鸦口渴了，到处找水喝。","它发现一个瓶子里有水，但瓶口太小，嘴伸不进去。","乌鸦看到旁边有许多小石子，灵机一动。","它把石子一颗一颗放进瓶子里，水慢慢升高了！乌鸦终于喝到了水。"],m:"遇到困难要动脑筋，想办法解决。"},
+  {id:5,t:"狐狸和葡萄",c:"中国经典",e:"🦊",p:["一只狐狸饿了，看到架子上挂着紫紫的葡萄。","它跳了又跳，怎么也够不到。","狐狸累得满头大汗，最后只好放弃。","它说：这葡萄肯定是酸的，不好吃！"],m:"得不到东西就说不好，是自欺欺人。"},
+  {id:6,t:"三只小猪",c:"中国经典",e:"🐷",p:["猪妈妈让三只小猪各自盖房子。","老大偷懒盖了草房，老二盖了木房，老三勤劳盖了砖房。","大灰狼来了，吹倒了草房和木房。","大灰狼怎么也吹不倒砖房。三只小猪在砖房里安全地躲过了大灰狼。"],m:"勤劳和踏实才能保护自己。"},
+  {id:7,t:"小红帽",c:"中国经典",e:"👧",p:["小红帽去森林里看外婆。","一只大灰狼骗了她，先跑到外婆家把外婆藏了起来。","大灰狼假装外婆躺在床上，想吃掉小红帽。","猎人来了，救出了外婆和小红帽。小红帽再也不跟陌生人说话了。"],m:"不要轻信陌生人，要注意安全。"},
+  {id:8,t:"狼来了",c:"中国经典",e:"👦",p:["放羊的小孩觉得无聊，大喊：狼来了！狼来了！","村民们跑来帮忙，却发现没有狼。","小孩又喊了一次狼来了，村民们又上当了。","后来狼真的来了，小孩大喊，但没人再来帮他了。"],m:"说谎会失去别人的信任。"},
+  {id:9,t:"拔萝卜",c:"中国经典",e:"🥕",p:["老爷爷种了一个大萝卜，萝卜长得好大好大。","老爷爷拔呀拔，拔不动。叫来老奶奶一起拔。","还是拔不动。小狗、小猫、小老鼠都来帮忙。","大家一起用力，终于把大萝卜拔出来了！"],m:"团结力量大，大家一起努力就能成功。"},
+  {id:10,t:"小猫钓鱼",c:"中国经典",e:"🐱",p:["猫妈妈带小猫去河边钓鱼。","一只蜻蜓飞来，小猫去追蜻蜓，没钓到鱼。","一只蝴蝶飞来，小猫又去追蝴蝶，还是没钓到鱼。","小猫学妈妈专心钓鱼，终于钓到了一条大鱼！"],m:"做事要专心，不能三心二意。"},
+  {id:11,t:"小蝌蚪找妈妈",c:"中国经典",e:"🐸",p:["小蝌蚪们看到小鸡有妈妈，也想找自己的妈妈。","它们问鲤鱼妈妈，鲤鱼说：你们的妈妈有四条腿。","它们问乌龟，乌龟说：你们的妈妈肚皮是白的。","最后它们找到了青蛙妈妈！小蝌蚪也慢慢变成了小青蛙。"],m:"遇到问题要勇敢去寻找答案。"},
+  {id:12,t:"井底之蛙",c:"中国经典",e:"🐸",p:["一只青蛙住在井里，它觉得井就是整个世界。","一只海龟告诉它：大海很大很大，一眼望不到边。","青蛙听了非常惊讶，原来世界这么大！","青蛙决定跳出井口，去看看外面的大世界。"],m:"要多看看外面的世界，不要目光短浅。"},
+  {id:13,t:"守株待兔",c:"中国经典",e:"🐰",p:["一个农夫在田里干活，一只兔子撞到树桩上死了。","农夫捡到兔子，觉得太幸运了。","从此他每天守在树桩旁，等着兔子来撞。","田里的庄稼都枯死了，再也没有兔子来过。"],m:"不要心存侥幸，要靠勤劳获得收获。"},
+  {id:14,t:"掩耳盗铃",c:"中国经典",e:"🔔",p:["一个小偷想去偷别人家的门铃。","他想：如果我碰门铃，会被听到。","于是他捂住自己的耳朵，去偷门铃。","结果门铃响了，主人跑出来把他抓住了。"],m:"不要自欺欺人，做了坏事瞒不住别人。"},
+  {id:15,t:"画蛇添足",c:"中国经典",e:"🐍",p:["几个人画蛇比赛，谁先画完谁喝酒。","一个人先画完了，得意地说：我还能给蛇画上脚呢！","他正在画脚的时候，另一个人画完了。","那人说：蛇本来就没有脚，你画的不是蛇！赢走了酒。"],m:"做事情做到恰到好处就好，多此一举反而不好。"},
+  // 世界经典 16-30
+  {id:16,t:"白雪公主",c:"世界童话",e:"👸",p:["白雪公主的继母嫉妒她的美丽。","白雪公主逃到森林里，和七个小矮人住在一起。","恶毒的王后变成老婆婆，给白雪公主吃了毒苹果。","王子路过，吻了白雪公主，她醒了过来。从此幸福地生活在一起。"],m:"善良的人最终会得到幸福。"},
+  {id:17,t:"灰姑娘",c:"世界童话",e:"👠",p:["灰姑娘的继母和姐姐们对她很不好。","仙女的魔法让她穿上了漂亮的裙子去参加舞会。","灰姑娘在舞会上和王子跳舞，但魔法在午夜消失。","她留下了一只水晶鞋。王子凭着鞋子找到了她，从此幸福生活。"],m:"善良和勇敢的人会有好报。"},
+  {id:18,t:"睡美人",c:"世界童话",e:"😴",p:["公主出生时被坏仙女施了魔法。","公主十六岁时手指被纺锤扎伤，沉睡了一百年。","整个城堡都沉睡了，长满了玫瑰藤。","一百年后，勇敢的王子穿过玫瑰藤，吻醒了公主。"],m:"勇敢和真爱可以战胜一切困难。"},
+  {id:19,t:"青蛙王子",c:"世界童话",e:"🐸",p:["小公主的金球掉进了井里，一只青蛙帮她捡了回来。","青蛙要求做公主的朋友，公主答应了。","公主起初不想和青蛙做朋友，但父亲说要守信。","公主亲吻了青蛙，青蛙变成了英俊的王子！"],m:"要信守承诺，善待每一个人。"},
+  {id:20,t:"拇指姑娘",c:"世界童话",e:"🌷",p:["一个女人种了一朵花，花里长出了一个小小的女孩，叫拇指姑娘。","拇指姑娘只有拇指那么大，非常可爱。","她被癞蛤蟆抓走，又逃了出来。","最后，燕子带她飞到了温暖的花国，她嫁给了花国的王子。"],m:"即使很小很弱，也要勇敢追求幸福。"},
+  {id:21,t:"卖火柴的小女孩",c:"世界童话",e:"🔥",p:["大年夜，一个小女孩在街上卖火柴。","她又冷又饿，没有人买她的火柴。","她擦亮火柴，看到了温暖的火炉和美味的食物。","最后一根火柴熄灭了，小女孩跟着奶奶飞向了天堂。"],m:"要珍惜幸福的生活，关爱身边的人。"},
+  {id:22,t:"皇帝的新装",c:"世界童话",e:"👑",p:"两个骗子说能织出世界上最美的衣服，笨人看不见。|皇帝穿着看不见的衣服游行，大家都说好看。|一个小孩说：他什么也没穿呀！|大家恍然大悟，皇帝才知道自己被骗了。".split("|"),m:"不要虚荣，要敢说真话。"},
+  {id:23,t:"丑小鸭",c:"世界童话",e:"🦢",p:["一只丑小鸭到处被人欺负和嘲笑。","它离开了家，经历了许多困难和孤独。","春天来了，丑小鸭看到水中的倒影——它变成了美丽的白天鹅！","其他天鹅欢迎它，丑小鸭终于找到了属于自己的地方。"],m:"不要看不起别人，每个人都有闪光的时刻。"},
+  {id:24,t:"海的女儿",c:"世界童话",e:"🧜",p:["美人鱼救了一个王子，爱上了他。","她用声音换了双腿，去找王子。","王子却以为是另一个公主救了他。","美人鱼不愿伤害王子，化成了海上的泡沫。"],m:"无私的爱是最珍贵的。"},
+  {id:25,t:"匹诺曹",c:"世界童话",e:"🤥",p:["老木匠做了一个木偶男孩，叫匹诺曹。","匹诺曹爱说谎，一说谎鼻子就会变长。","他经历了许多冒险，吃了不少苦头。","最后他变得诚实善良，变成了一个真正的男孩。"],m:"要诚实善良，不说谎话。"},
+  {id:26,t:"爱丽丝梦游仙境",c:"世界童话",e:"🐰",p:["爱丽丝追着一只白兔，掉进了一个兔子洞。","她来到了一个奇妙的世界，东西忽大忽小。","她遇到了会笑的猫、疯帽子和红心皇后。","最后爱丽丝醒了过来，原来是一场梦。"],m:"保持好奇心，世界充满了奇妙。"},
+  {id:27,t:"彼得潘",c:"世界童话",e:"🧚",p:["彼得潘是一个永远长不大的男孩。","他带着温蒂和弟弟们飞到了梦幻岛。","他们和海盗胡克船长斗智斗勇。","温蒂想家了，彼得潘送他们回了家，自己继续在梦幻岛冒险。"],m:"珍惜童年，也要勇敢面对成长。"},
+  {id:28,t:"绿野仙踪",c:"世界童话",e:"🌪️",p:["龙卷风把多萝西吹到了奥兹国。","她遇到了想要脑子的稻草人、想要心的铁皮人和想要勇气的狮子。","他们一起冒险去找奥兹大法师。","最后发现，他们想要的东西其实一直都在自己身上。"],m:"勇气、智慧和爱心就在我们自己心中。"},
+  {id:29,t:"木偶奇遇记",c:"世界童话",e:"🎭",p:["小木偶匹诺曹不想上学，去玩具国玩耍。","他变成了一头驴子，被卖到了马戏团。","他在海里被鱼吃掉了，在鱼肚子里找到了老木匠。","他勇敢地救出老木匠，仙女把他变成了真正的男孩。"],m:"要听父母的话，好好学习，知错能改。"},
+  {id:30,t:"阿里巴巴和四十大盗",c:"世界童话",e:"🗝️",p:["阿里巴巴发现强盗的宝库，说了咒语芝麻开门。","他拿了一些金币回家，过上了好日子。","强盗发现了阿里巴巴，想要害他。","聪明的女仆马尔基娜用计谋赶走了强盗。"],m:"智慧和勇敢可以战胜坏人。"},
+  // 世界经典（伊索/格林/安徒生/王尔德等公版）31-50
+  {id:31,t:"农夫和蛇",c:"世界童话",e:"🐍",p:["冬天，一个农夫在路上看到一条冻僵的蛇。", "农夫可怜它，把蛇放进怀里取暖。", "蛇暖和过来，醒来就咬了农夫一口。", "农夫临死前说：我可怜恶人，活该受害。"],m:"对坏人仁慈，反而会害了自己。"},
+  {id:32,t:"蚂蚁和蚱蜢",c:"世界童话",e:"🐜",p:["夏天，蚂蚁们忙着储存粮食，蚱蜢却一直唱歌玩耍。", "蚱蜢笑蚂蚁：这么热还干活，多傻呀！", "冬天来了，大雪覆盖大地，蚱蜢又冷又饿。", "它只好去求蚂蚁，蚂蚁说：夏天你唱歌，冬天你就挨饿吧。"],m:"勤劳准备，才能安稳过冬。"},
+  {id:33,t:"三只熊",c:"世界童话",e:"🐻",p:["一个小女孩走进森林，来到了三只熊的家。", "她喝了小熊的粥，坐了小熊的椅子，还睡了小熊的床。", "三只熊回来，发现东西被动过了。", "小熊说：有人睡过我的床！小女孩醒来吓跑了。"],m:"别人的东西不能随便动。"},
+  {id:34,t:"北风与太阳",c:"世界童话",e:"☀️",p:["北风和太阳争论谁更厉害。", "它们打赌：谁能让人脱下外套，谁就赢。", "北风拼命吹，人却把外套裹得更紧。", "太阳温暖地照着，人觉得热，主动脱下了外套。"],m:"温和比强横更有力量。"},
+  {id:35,t:"狐狸和乌鸦",c:"世界童话",e:"🦊",p:["乌鸦叼着一块奶酪站在树上。", "狐狸看见了，夸乌鸦：你的歌声真好听！", "乌鸦听了很得意，张开嘴唱歌。", "奶酪掉下来，狐狸叼起就跑：下次别被人奉承骗了。"],m:"不要因为奉承话就忘记分寸。"},
+  {id:36,t:"阿拉丁神灯",c:"世界童话",e:"🪔",p:["穷孩子阿拉丁得到了一盏旧油灯。", "他擦了擦灯，出来一个神通广大的灯神。", "灯神帮阿拉丁建成了宫殿，娶到了公主。", "邪恶的巫师想抢神灯，阿拉丁用智慧夺了回来。"],m:"善良和智慧能创造奇迹。"},
+  {id:37,t:"夜莺",c:"世界童话",e:"🐦",p:["皇帝听说花园里有一只歌声美妙的夜莺。", "他派人请夜莺来唱歌，被深深打动。", "后来有人送来一只镶宝石的机械鸟，夜莺悄悄飞走了。", "皇帝病重时，真夜莺回来唱歌，治好了他。"],m:"真实而真诚的东西最珍贵。"},
+  {id:38,t:"狮子与老鼠",c:"世界童话",e:"🦁",p:["狮子睡着时，被一只小老鼠吵醒了。", "狮子正要吃它，老鼠求饶：说不定哪天我能帮您。", "狮子笑了，放了它。", "后来狮子被猎人的网困住，老鼠咬断绳子救了它。"],m:"再弱小的人，也可能帮上大忙。"},
+  {id:39,t:"城里老鼠和乡下老鼠",c:"世界童话",e:"🐭",p:["乡下老鼠请城里老鼠来家里吃粗粮。", "城里老鼠说：跟我回城，吃山珍海味吧！", "它们溜进城里的仓库大吃大喝。", "突然猫来了，两只老鼠吓得逃命。乡下老鼠说：还是家里平安。"],m:"平安朴素的生活，胜过担惊受怕的富贵。"},
+  {id:40,t:"不来梅的音乐家",c:"世界童话",e:"🐴",p:["驴、狗、猫和公鸡老了，被主人赶出家门。", "它们决定去不来梅当音乐家。", "晚上，它们合伙吓跑了抢东西的强盗。", "四个伙伴住在强盗的房子里，快乐地生活。"],m:"团结起来，弱小也能战胜强大。"},
+  {id:41,t:"勇敢的小裁缝",c:"世界童话",e:"✂️",p:["小裁缝一下打死七只苍蝇，自豪地缝在腰带上。", "他出门闯荡，凭着聪明战胜了巨人。", "他又用计谋抓到了凶猛的独角兽。", "最后小裁缝成了国王，大家都佩服他的勇敢。"],m:"勇敢加智慧，小人物也能成大器。"},
+  {id:42,t:"渔夫和金鱼",c:"世界童话",e:"🐟",p:["老渔夫放生了一条会说话的金鱼。", "金鱼说：我可以满足你的愿望。", "老太婆先要新木盆，又要房子，越来越贪心。", "最后她要当女王，金鱼生气了，把一切变回原样。"],m:"贪得无厌，最终会一无所有。"},
+  {id:43,t:"大禹治水",c:"中国经典",e:"🌊",p:["洪水泛滥，大禹的父亲治水失败被罚。", "大禹接着治水，三过家门而不入。", "他开凿河道，把洪水引向大海。", "十三年后洪水退去，百姓安居乐业。"],m:"为大家着想、坚持不懈，才能成就大事。"},
+  {id:44,t:"蝙蝠和黄鼠狼",c:"世界童话",e:"🦇",p:["蝙蝠掉在地上，被黄鼠狼捉住。", "蝙蝠说：我是老鼠，不是鸟。黄鼠狼放了它。", "后来蝙蝠又被另一只黄鼠狼捉住。", "蝙蝠说：我是鸟，不是老鼠。又逃过一劫。"],m:"遇到危险要灵活应变。"},
+  {id:45,t:"自私的巨人",c:"世界童话",e:"🏰",p:["巨人的花园很美，但他不让孩子们进去。", "花园从此永远是冬天。", "一天，孩子们从墙洞钻进来，春天也回来了。", "巨人明白了，拆掉围墙和孩子们一起玩。"],m:"分享快乐，世界才会温暖。"},
+  {id:46,t:"快乐王子",c:"世界童话",e:"🗿",p:["快乐王子的雕像满身黄金，看到城市里的穷苦。", "他请小燕子把身上的宝石和金片送给穷人。", "燕子一片片送走，自己冻死在王子脚下。", "天使说：这只小鸟和这座心善的雕像最珍贵。"],m:"帮助别人，自己也会变得高贵。"},
+  {id:47,t:"穿靴子的猫",c:"世界童话",e:"🐱",p:["磨坊主的小儿子只分到一只猫。", "猫穿上靴子，自称伯爵的使者去见国王。", "它用计谋帮主人得到公主的青睐和巨人的财产。", "小儿子成了王子，猫也过上了好日子。"],m:"机智和胆量能改变命运。"},
+  {id:48,t:"美女与野兽",c:"世界童话",e:"🌹",p:["商人摘了野兽花园的玫瑰，被要求用女儿抵债。", "贝尔来到城堡，和野兽一起生活。", "她看到野兽善良的心，真心爱上了它。", "魔法解除，野兽变回了英俊的王子。"],m:"真正的美在心里，不在外表。"},
+  {id:49,t:"坚定的锡兵",c:"世界童话",e:"🎖️",p:["一个锡兵只有一条腿，却站得笔直。", "他爱上了纸做的小舞蹈家。", "一阵风吹来，锡兵经历了许多惊险旅行。", "最后锡兵被扔进火里，和小舞蹈家一起化成了心形。"],m:"无论遇到什么，都要坚定而勇敢。"},
+  {id:50,t:"雪皇后",c:"世界童话",e:"❄️",p:["魔鬼的镜子碎片飞进男孩加伊的眼睛，他变得冷酷。", "雪皇后把他带去了冰冷的北方。", "女孩格尔达不怕艰难，一路寻找好朋友。", "她的眼泪融化了加伊心里的冰块，两人一起回家了。"],m:"真挚的友谊能战胜一切寒冷。"}
+];
+
+// ==================== ENGLISH DATA (6主题90词) ====================
+var ENGLISH={
+  themes:[
+    {id:'animals',name:'Animals',cn:'动物',emoji:'🐾',color:'#FFB7C5',words:[
+      {w:'cat',e:'🐱',cn:'猫'},{w:'dog',e:'🐶',cn:'狗'},{w:'fish',e:'🐟',cn:'鱼'},
+      {w:'bird',e:'🐦',cn:'鸟'},{w:'rabbit',e:'🐰',cn:'兔子'},{w:'bear',e:'🐻',cn:'熊'},
+      {w:'lion',e:'🦁',cn:'狮子'},{w:'tiger',e:'🐯',cn:'老虎'},{w:'elephant',e:'🐘',cn:'大象'},
+      {w:'monkey',e:'🐵',cn:'猴子'},{w:'duck',e:'🦆',cn:'鸭子'},{w:'pig',e:'🐷',cn:'猪'},
+      {w:'cow',e:'🐮',cn:'牛'},{w:'sheep',e:'🐑',cn:'羊'},{w:'horse',e:'🐴',cn:'马'}
+    ]},
+    {id:'colors',name:'Colors',cn:'颜色',emoji:'🌈',color:'#A7D8FF',words:[
+      {w:'red',e:'🔴',cn:'红色'},{w:'blue',e:'🔵',cn:'蓝色'},{w:'green',e:'🟢',cn:'绿色'},
+      {w:'yellow',e:'🟡',cn:'黄色'},{w:'orange',e:'🟠',cn:'橙色'},{w:'purple',e:'🟣',cn:'紫色'},
+      {w:'pink',e:'💗',cn:'粉色'},{w:'white',e:'⚪',cn:'白色'},{w:'black',e:'⚫',cn:'黑色'},
+      {w:'brown',e:'🟤',cn:'棕色'},{w:'gray',e:'⬜',cn:'灰色'},{w:'gold',e:'🥇',cn:'金色'},
+      {w:'silver',e:'🥈',cn:'银色'},{w:'rainbow',e:'🌈',cn:'彩虹'},{w:'colorful',e:'🎨',cn:'彩色'}
+    ]},
+    {id:'fruits',name:'Fruits',cn:'水果',emoji:'🍎',color:'#FFF3A1',words:[
+      {w:'apple',e:'🍎',cn:'苹果'},{w:'banana',e:'🍌',cn:'香蕉'},{w:'orange',e:'🍊',cn:'橙子'},
+      {w:'grape',e:'🍇',cn:'葡萄'},{w:'strawberry',e:'🍓',cn:'草莓'},{w:'watermelon',e:'🍉',cn:'西瓜'},
+      {w:'pear',e:'🍐',cn:'梨'},{w:'peach',e:'🍑',cn:'桃子'},{w:'cherry',e:'🍒',cn:'樱桃'},
+      {w:'lemon',e:'🍋',cn:'柠檬'},{w:'mango',e:'🥭',cn:'芒果'},{w:'kiwi',e:'🥝',cn:'猕猴桃'},
+      {w:'pineapple',e:'🍍',cn:'菠萝'},{w:'coconut',e:'🥥',cn:'椰子'},{w:'blueberry',e:'🫐',cn:'蓝莓'}
+    ]},
+    {id:'body',name:'Body',cn:'身体',emoji:'🧒',color:'#B5EAD7',words:[
+      {w:'head',e:'🗣️',cn:'头'},{w:'eye',e:'👁️',cn:'眼睛'},{w:'nose',e:'👃',cn:'鼻子'},
+      {w:'mouth',e:'👄',cn:'嘴巴'},{w:'ear',e:'👂',cn:'耳朵'},{w:'hand',e:'✋',cn:'手'},
+      {w:'foot',e:'🦶',cn:'脚'},{w:'arm',e:'💪',cn:'胳膊'},{w:'leg',e:'🦵',cn:'腿'},
+      {w:'finger',e:'👆',cn:'手指'},{w:'tooth',e:'🦷',cn:'牙齿'},{w:'hair',e:'💇',cn:'头发'},
+      {w:'face',e:'😀',cn:'脸'},{w:'shoulder',e:'🤷',cn:'肩膀'},{w:'knee',e:'🦿',cn:'膝盖'}
+    ]},
+    {id:'food',name:'Food',cn:'食物',emoji:'🍽️',color:'#D4B5FF',words:[
+      {w:'bread',e:'🍞',cn:'面包'},{w:'milk',e:'🥛',cn:'牛奶'},{w:'egg',e:'🥚',cn:'鸡蛋'},
+      {w:'rice',e:'🍚',cn:'米饭'},{w:'cake',e:'🎂',cn:'蛋糕'},{w:'cookie',e:'🍪',cn:'饼干'},
+      {w:'candy',e:'🍬',cn:'糖果'},{w:'ice cream',e:'🍦',cn:'冰淇淋'},{w:'pizza',e:'🍕',cn:'披萨'},
+      {w:'hamburger',e:'🍔',cn:'汉堡'},{w:'noodle',e:'🍜',cn:'面条'},{w:'soup',e:'🍲',cn:'汤'},
+      {w:'cheese',e:'🧀',cn:'奶酪'},{w:'juice',e:'🧃',cn:'果汁'},{w:'chocolate',e:'🍫',cn:'巧克力'}
+    ]},
+    {id:'toys',name:'Toys',cn:'玩具',emoji:'🧸',color:'#FFB7C5',words:[
+      {w:'ball',e:'⚽',cn:'球'},{w:'doll',e:'🪆',cn:'娃娃'},{w:'car',e:'🚗',cn:'汽车'},
+      {w:'train',e:'🚂',cn:'火车'},{w:'blocks',e:'🧱',cn:'积木'},{w:'puzzle',e:'🧩',cn:'拼图'},
+      {w:'teddy',e:'🧸',cn:'泰迪熊'},{w:'robot',e:'🤖',cn:'机器人'},{w:'kite',e:'🪁',cn:'风筝'},
+      {w:'drum',e:'🥁',cn:'鼓'},{w:'balloon',e:'🎈',cn:'气球'},{w:'book',e:'📖',cn:'书'},
+      {w:'crayon',e:'🖍️',cn:'蜡笔'},{w:'bubble',e:'🫧',cn:'泡泡'},{w:'swing',e:'🏟️',cn:'秋千'}
+    ]}
+  ]
+};
+
+// ==================== LETTERS DATA ====================
+var LETTERS_DATA=[];
+for(var i=0;i<26;i++){
+  LETTERS_DATA.push({
+    upper:String.fromCharCode(65+i),
+    lower:String.fromCharCode(97+i)
+  });
+}
+
+// ==================== LOGIC SHAPES ====================
+var LOGIC_SHAPES=['⭐','🔶','🔵','🟢','🔺','🟡','🟣','⚪','🟥','🟦'];
+
+// ==================== STATE ====================
+var state={
+  stars:0,
+  currentTab:'letters',
+  badges:{},
+  letters:{matched:[],quizDone:0},
+  poems:{favorites:[],read:[]},
+  numbers:{quizDone:0,countDone:0,orderDone:0,difficulty:0,challengeDone:0,skills:{}},
+  logic:{level:0,patternLevel:0,sortLevel:0,memoryLevel:0,stars:0,completed:[]},
+  levels:{completed:[],currentLevel:1,sessions:{}},
+  english:{learned:{},themeStars:{},streak:0,lastStudy:null,lessons:{},review:{},lessonDecks:{}},
+  stories:{favorites:[],read:[],readDates:[],lastRead:null,currentStory:null,currentPage:0,autoRead:false,autoPlay:false,readingLevel:0,training:{},readingSteps:{}},
+  nightMode:false,
+  firstVisit:true,
+  audio:{volume:0.8,muted:false},
+  practice:{progress:{},rounds:{}},
+};
+
+var DEFAULT_STATE=JSON.parse(JSON.stringify(state));
+function normalizeState(input){
+  function object(v){return v!==null&&typeof v==='object'&&!Array.isArray(v);}
+  function merge(base,value,key){
+    if(value===undefined)return JSON.parse(JSON.stringify(base));
+    if(Array.isArray(base)){
+      if(!Array.isArray(value))throw new Error('Invalid '+key);
+      var strings=['matched','readDates'].indexOf(key)>=0;
+      if(value.some(function(v){return strings?typeof v!=='string':typeof v!=='number'||!Number.isFinite(v)||v<0;}))throw new Error('Invalid '+key);
+      return value.filter(function(v,i,a){return a.indexOf(v)===i;});
+    }
+    if(object(base)){
+      if(!object(value))throw new Error('Invalid '+key);
+      var result={};
+      if(Object.keys(base).length===0){
+        if(key==='sessions')return normalizeLevelSessions(value);
+        Object.keys(value).forEach(function(k){
+          if(['__proto__','constructor','prototype'].indexOf(k)>=0)throw new Error('Invalid key');
+          var v=value[k];
+          if(key==='learned'?typeof v!=='boolean':typeof v!=='number'||!Number.isFinite(v)||v<0)throw new Error('Invalid '+key);
+          result[k]=v;
+        });
+      }else Object.keys(base).forEach(function(k){result[k]=merge(base[k],value[k],k);});
+      return result;
+    }
+    if(base===null){
+      if(value!==null&&(key==='currentStory'?typeof value!=='number':typeof value!=='string'))throw new Error('Invalid '+key);
+      return value;
+    }
+    if(typeof value!==typeof base||(typeof value==='number'&&(!Number.isFinite(value)||value<0)))throw new Error('Invalid '+key);
+    return value;
+  }
+  var result=merge(DEFAULT_STATE,input,'state');
+  if(!TABS.some(function(t){return t.id===result.currentTab;}))throw new Error('Invalid tab');
+  if(!Number.isInteger(result.logic.level)||result.logic.level>2||result.audio.volume>1)throw new Error('Invalid settings');
+  if(['patternLevel','sortLevel','memoryLevel'].some(function(k){return !Number.isInteger(result.logic[k])||result.logic[k]>(k==='sortLevel'?1:2);}))throw new Error('Invalid logic difficulty');
+  if(![0,1].includes(result.numbers.difficulty)||![0,1].includes(result.stories.readingLevel))throw new Error('Invalid difficulty');
+  if(Object.values(result.practice.progress).some(function(v){return !Number.isInteger(v)||v>10;}))throw new Error('Invalid practice progress');
+  if(Object.values(result.english.lessons).some(function(v){return !Number.isInteger(v)||v>4;})||Object.values(result.stories.readingSteps).some(function(v){return !Number.isInteger(v)||v>2;})||Object.values(result.stories.training).some(function(v){return !Number.isInteger(v)||v>2;}))throw new Error('Invalid lesson progress');
+  if(Object.keys(result.english.lessons).some(function(k){return !validReviewKey(k+':1');})||Object.keys(result.english.review).some(function(k){return !validReviewKey(k)||result.english.review[k]!==1;}))throw new Error('Invalid lesson reference');
+  if(Object.keys(result.english.lessonDecks).some(function(k){return !validReviewKey(k+':1')||!validLessonDeck(Number(k),result.english.lessonDecks[k]);}))throw new Error('Invalid lesson deck');
+  var story=STORIES.filter(function(s){return s.id===result.stories.currentStory;})[0];
+  if(!story){result.stories.currentStory=null;result.stories.currentPage=0;}
+  else result.stories.currentPage=Math.min(Math.floor(result.stories.currentPage),story.p.length-1);
+  return result;
+}
+
+function normalizeLevelSessions(value){
+  var result={};
+  Object.keys(value).forEach(function(key){
+    var d=value[key];
+    if(!/^(?:[1-9]|10)$/.test(key)||!d||typeof d!=='object'||Array.isArray(d)||d.n!==Number(key)||!Array.isArray(d.questions)||d.questions.length!==10||!Number.isInteger(d.current)||d.current<0||d.current>10||!Number.isInteger(d.correct)||d.correct<0||d.correct>d.current||typeof d.settled!=='boolean'||d.settled&&d.current!==10)throw new Error('Invalid adventure session');
+    d.questions.forEach(function(q){
+      if(!q||typeof q!=='object'||!['letter','math','count','pattern','poem'].includes(q.type)||typeof q.q!=='string'||q.q.length>1000||typeof q.answer!=='string'||!Array.isArray(q.options)||q.options.length<2||q.options.length>4||q.options.some(function(o){return typeof o!=='string'&&(typeof o!=='number'||!Number.isFinite(o));})||!q.options.map(String).includes(q.answer)||new Set(q.options.map(String)).size!==q.options.length||q.visual!==undefined&&(typeof q.visual!=='string'||q.visual.length>1000)||q.emojis!==undefined&&(!Array.isArray(q.emojis)||q.emojis.some(function(e){return typeof e!=='string';})))throw new Error('Invalid adventure question');
+    });
+    result[key]={n:d.n,questions:JSON.parse(JSON.stringify(d.questions)),current:d.current,correct:d.correct,settled:d.settled};
+  });
+  return result;
+}
+
+// ==================== STORAGE ====================
+function saveState(){
+  checkBadges();
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){showToast('存储空间不足，请导出备份后清理');}
+}
+function loadState(){
+  try{
+    var s=localStorage.getItem(STORAGE_KEY),legacy=false;
+    if(!s){s=localStorage.getItem(LEGACY_STORAGE_KEY);legacy=!!s;}
+    if(s){
+      state=normalizeState(JSON.parse(s));
+      state.firstVisit=false;
+      if(legacy)saveState();
+    }
+  }catch(e){}
+}
+
+// ==================== AUDIO / SPEECH ====================
+// --- 语音引擎（SpeechSynthesis）：挑自然嗓音，配三种音色 ---
+var synth=window.speechSynthesis||null;
+var isWeChat=/MicroMessenger/i.test(navigator.userAgent||'');
+var voiceCache={};
+function loadVoices(){
+  if(!synth)return;
+  try{
+    var vs=synth.getVoices()||[];
+    voiceCache={};
+    vs.forEach(function(v){
+      var k=v.lang||'';
+      (voiceCache[k]||(voiceCache[k]=[])).push(v);
+    });
+  }catch(e){}
+}
+if(synth){ loadVoices(); try{synth.onvoiceschanged=loadVoices;}catch(e){} }
+function pickVoice(lang){
+  if(!synth)return null;
+  var pref=(lang||'').split('-')[0].toLowerCase();
+  var best=null,bestScore=-1;
+  for(var k in voiceCache){
+    if(k.toLowerCase().split('-')[0]!==pref)continue;
+    voiceCache[k].forEach(function(v){
+      var n=(v.name||'').toLowerCase();
+      var s=0;
+      if(n.indexOf('online')>=0||n.indexOf('neural')>=0||n.indexOf('natural')>=0)s+=6;
+      if(n.indexOf('google')>=0)s+=4;
+      if(n.indexOf('xiaoxiao')>=0||n.indexOf('yunxi')>=0||n.indexOf('tingting')>=0||n.indexOf('premium')>=0)s+=3;
+      if(n.indexOf('yaoyao')>=0||n.indexOf('huihui')>=0||n.indexOf('kangkang')>=0||n.indexOf('xiaoyi')>=0||n.indexOf('yue')>=0)s+=1;
+      if(s>bestScore){bestScore=s;best=v;}
+    });
+  }
+  return best;
+}
+// 三种语音音色：child 童声(高活泼) / recite 朗诵(清晰) / story 讲故事(温柔慢) / en 英文
+var VOICE_MODES={
+  child:{lang:'zh-CN',rate:0.95,pitch:1.35},
+  recite:{lang:'zh-CN',rate:0.78,pitch:1.15},
+  story:{lang:'zh-CN',rate:0.70,pitch:1.0},
+  en:{lang:'en-US',rate:0.88,pitch:1.15}
+};
+// Playback functions are defined in speech-player.js.
+
+// 数学演示短语 → 预生成音频映射（顺序与 audio_gen2 生成一致）
+var MATH_DEMO_AUDIO={};
+(function(){
+  var ph=[];
+  for(var a=1;a<=5;a++) ph.push("先有 "+a+" 个");
+  for(var b=1;b<=5;b++) ph.push("又来了 "+b+" 个");
+  for(var s=2;s<=10;s++) ph.push("合起来一共 "+s+" 个！");
+  for(var a=1;a<=5;a++) ph.push("原来有 "+a+" 个");
+  for(var b=1;b<=5;b++) ph.push("拿走 "+b+" 个");
+  for(var s=0;s<=4;s++) ph.push("还剩下 "+s+" 个！");
+  ph.forEach(function(p,i){ MATH_DEMO_AUDIO[p]='audio/math_'+(i+1)+'.mp3'; });
+})();
+// 英语单词 → 预生成音频映射（运行时由 ENGLISH 数据构建）
+var EN_WORD_AUDIO={};
+(function(){ try{ ENGLISH.themes.forEach(function(t){ t.words.forEach(function(w,idx){ EN_WORD_AUDIO[w.w]='audio/en_'+t.id+'_'+idx+'.mp3'; }); }); }catch(e){} })();
+function playMathDemo(text){
+  var f=MATH_DEMO_AUDIO[text];
+  if(f) playAudio(f, text, 'child');
+  else speak(text,'child');
+}
+function playEnWord(word){
+  var f=EN_WORD_AUDIO[word];
+  if(f) playAudio(f, word, 'en');
+  else speak(word,'en');
+}
+
+// --- 音效引擎：Web Audio API 合成，不加载任何外部音频 ---
+var audioCtx=null;
+function ensureAudio(){
+  if(!audioCtx){
+    var AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC)return null;
+    try{audioCtx=new AC();}catch(e){return null;}
+  }
+  if(audioCtx.state==='suspended'){ try{audioCtx.resume();}catch(e){} }
+  return audioCtx;
+}
+function playSFX(type){
+  if(state.audio.muted||state.audio.volume===0)return;
+  var ctx=ensureAudio(); if(!ctx)return;
+  var vol=state.audio.volume;
+  var now=ctx.currentTime;
+  function tone(freq,start,dur,wave,peak,glideTo){
+    var o=ctx.createOscillator(),g=ctx.createGain();
+    o.type=wave||'sine';
+    o.frequency.setValueAtTime(freq,now+start);
+    if(glideTo)o.frequency.exponentialRampToValueAtTime(glideTo,now+start+dur);
+    g.gain.setValueAtTime(0.0001,now+start);
+    g.gain.exponentialRampToValueAtTime(Math.max(0.0002,(peak||0.3)*vol),now+start+0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001,now+start+dur);
+    o.connect(g);g.connect(ctx.destination);
+    o.start(now+start);o.stop(now+start+dur+0.03);
+  }
+  switch(type){
+    case 'click': tone(680,0,0.05,'square',0.10); break;
+    case 'page': tone(900,0,0.05,'triangle',0.14); tone(1150,0.04,0.05,'triangle',0.11); break;
+    case 'correct': tone(523.25,0,0.11,'sine',0.30); tone(659.25,0.10,0.11,'sine',0.30); tone(783.99,0.20,0.16,'sine',0.30); break;
+    case 'wrong': tone(311.13,0,0.16,'sawtooth',0.22,180); break;
+    case 'celebrate': tone(523.25,0,0.12,'triangle',0.28); tone(659.25,0.10,0.12,'triangle',0.28); tone(783.99,0.20,0.12,'triangle',0.28); tone(1046.5,0.30,0.28,'triangle',0.28); break;
+  }
+}
+function toggleMute(){
+  state.audio.muted=!state.audio.muted;
+  saveState();syncAudioUI();
+  if(state.audio.muted)stopSpeak();
+  showToast(state.audio.muted?'🔇 已静音':'🔊 声音开启');
+}
+function setVolume(v){
+  v=parseInt(v,10); if(isNaN(v))v=80;
+  state.audio.volume=Math.max(0,Math.min(100,v))/100;
+  saveState();syncAudioUI();
+}
+function syncAudioUI(){
+  if(_audioEl){_audioEl.volume=state.audio.volume;_audioEl.muted=state.audio.muted;}
+  if(state.audio.muted||state.audio.volume===0)stopSpeak();
+  var b=document.getElementById('muteBtn'); if(b)b.textContent=state.audio.muted?'🔇':'🔊';
+  var r=document.getElementById('volRange'); if(r)r.value=Math.round(state.audio.volume*100);
+}
+// iOS Safari 需在用户手势中激活 AudioContext；全局点击/触摸统一激活并播放点击音效
+document.addEventListener('touchstart',function(){ensureAudio();},{passive:true});
+document.addEventListener('click',function(e){
+  ensureAudio();
+  if(state.audio.muted)return;
+  var t=e.target;
+  if(!t||!t.closest)return;
+  var sfxEl=t.closest('[data-sfx]');
+  if(sfxEl){ playSFX(sfxEl.getAttribute('data-sfx')); return; }
+  if(t.closest('.option-btn'))return; // 选项按钮由游戏逻辑播正确/错误音效
+  if(t.closest('.btn')||t.closest('.char-card')||t.closest('.word-card')||t.closest('.stat-box')||t.closest('.grid-5')||t.closest('.grid-2')||t.closest('.pill')){
+    playSFX('click');
+  }
+});
+
+
+var recognition=null;
+function initRecognition(){
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(SR){recognition=new SR();recognition.lang='en-US';recognition.interimResults=false;recognition.maxAlternatives=1;}
+}
+function startRecognition(cb){
+  function failed(message){
+    ['readStatus','srStatus'].forEach(function(id){var el=document.getElementById(id);if(el){el.textContent=message;el.style.background='var(--bg)';}});
+    var parent=document.getElementById('parentReadConfirm');if(parent)parent.hidden=false;
+    showToast(message);
+  }
+  if(!recognition){failed('此浏览器暂不支持识别，可以听示范后由家长确认跟读。');return false;}
+  stopSpeak();
+  var session=_modalGeneration,received=false;
+  recognition.onresult=function(e){if(session!==_modalGeneration)return;received=true;cb(e.results[0][0].transcript.toLowerCase().trim());};
+  recognition.onerror=function(e){if(session===_modalGeneration){received=true;failed(e.error==='not-allowed'?'请允许麦克风权限后重试':'没有听到声音，再试一次');}};
+  recognition.onend=function(){if(session===_modalGeneration&&!received)failed('没有听到声音，再试一次');};
+  try{recognition.start();return true;}catch(e){failed('请稍后重试，并检查麦克风权限');return false;}
+}
+
+
+// ==================== STARS & BADGES ====================
+function addStars(n){
+  state.stars+=n;
+  updateStarDisplay();
+  checkBadges();
+  saveState();
+}
+function updateStarDisplay(){document.getElementById('starCount').textContent=state.stars;}
+
+var BADGES_DEF=[
+  {id:'first_star',name:'初次得星',emoji:'⭐',desc:'获得第一颗星星',check:function(){return state.stars>=1;}},
+  {id:'star10',name:'星星收集者',emoji:'🌟',desc:'获得10颗星星',check:function(){return state.stars>=10;}},
+  {id:'star50',name:'星星达人',emoji:'✨',desc:'获得50颗星星',check:function(){return state.stars>=50;}},
+  {id:'star100',name:'星星大师',emoji:'💫',desc:'获得100颗星星',check:function(){return state.stars>=100;}},
+  {id:'letter_master',name:'字母小达人',emoji:'🔤',desc:'完成所有字母配对',check:function(){return state.letters.matched.length>=26;}},
+  {id:'poem_lover',name:'古诗小书童',emoji:'🌸',desc:'朗读10首古诗',check:function(){return state.poems.read.length>=10;}},
+  {id:'poem_collector',name:'古诗收藏家',emoji:'📖',desc:'收藏5首古诗',check:function(){return state.poems.favorites.length>=5;}},
+  {id:'number_whiz',name:'数字小能手',emoji:'🔢',desc:'完成10次数字练习',check:function(){return state.numbers.quizDone>=10;}},
+  {id:'logic_brain',name:'逻辑小天才',emoji:'🧩',desc:'完成10道逻辑题',check:function(){return state.logic.completed.length>=10;}},
+  {id:'level3',name:'闯关勇士',emoji:'🛡️',desc:'通过3关闯关',check:function(){return state.levels.completed.length>=3;}},
+  {id:'level10',name:'小学霸',emoji:'👑',desc:'通过全部10关',check:function(){return state.levels.completed.length>=10;}},
+  {id:'english_30',name:'英语小达人',emoji:'🌍',desc:'学会30个英语单词',check:function(){var n=0;for(var k in state.english.learned)n++;return n>=30;}},
+  {id:'english_90',name:'英语大师',emoji:'🏆',desc:'学会全部90个英语单词',check:function(){var n=0;for(var k in state.english.learned)n++;return n>=90;}},
+  {id:'story_10',name:'故事小听众',emoji:'📚',desc:'阅读10个故事',check:function(){return state.stories.read.length>=10;}},
+  {id:'story_50',name:'故事大王',emoji:'📖',desc:'读完所有50个故事',check:function(){return state.stories.read.length>=50;}},
+  {id:'streak7',name:'坚持学习',emoji:'🔥',desc:'连续学习7天',check:function(){return state.english.streak>=7||getStoryStreak()>=7;}},
+];
+
+function checkBadges(){
+  BADGES_DEF.forEach(function(b){
+    if(!state.badges[b.id]&&b.check()){
+      state.badges[b.id]=Date.now();
+      showBadgePopup(b);
+    }
+  });
+}
+function showBadgePopup(b){
+  var notice=document.createElement('div');
+  notice.setAttribute('role','status');
+  notice.style.cssText='position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:1200;background:var(--card);padding:12px 20px;border-radius:16px;box-shadow:var(--shadow);pointer-events:none;max-width:90vw';
+  notice.textContent=b.emoji+' 获得勋章：'+b.name;
+  document.body.appendChild(notice);
+  setTimeout(function(){notice.remove();},3000);
+}
+
+
+// ==================== UTILS ====================
+function shuffle(arr){
+  var a=arr.slice();
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i];a[i]=a[j];a[j]=t;
+  }
+  return a;
+}
+function showToast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},2000);
+}
+function celebrate(){
+  var c=document.getElementById('celebrate');
+  c.classList.add('show');
+  var praise=['太棒了！','你真厉害！','答对啦，好聪明！','真棒呀！','干得漂亮！'];
+  playPraise(praise[Math.floor(Math.random()*praise.length)]);
+  playSFX('celebrate');
+  var emojis=['🎉','⭐','🌟','✨','🎊','💫'];
+  for(var i=0;i<15;i++){
+    var conf=document.createElement('div');
+    conf.className='confetti';
+    conf.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+    conf.style.left=Math.random()*100+'%';
+    conf.style.animationDelay=Math.random()*.5+'s';
+    conf.style.animationDuration=(1+Math.random())+'s';
+    c.appendChild(conf);
+  }
+  setTimeout(function(){
+    c.classList.remove('show');
+    var confs=c.querySelectorAll('.confetti');
+    Array.prototype.forEach.call(confs, function(e){e.remove();});
+  },2000);
+}
+var _modalGeneration=0;
+var _modalTimers=[];
+var _modalCleanups=[];
+function resetModalSession(){
+  _modalGeneration++;
+  _modalCleanups.splice(0).forEach(function(cleanup){cleanup();});
+  _modalTimers.forEach(clearTimeout);_modalTimers=[];
+  stopSpeak();
+  if(recognition){recognition.onresult=null;recognition.onerror=null;recognition.onend=null;try{recognition.abort();}catch(e){}}
+}
+function modalTimeout(callback,delay){
+  var generation=_modalGeneration;
+  var timer=setTimeout(function(){
+    _modalTimers=_modalTimers.filter(function(t){return t!==timer;});
+    if(generation===_modalGeneration)callback();
+  },delay);
+  _modalTimers.push(timer);
+  return timer;
+}
+function lockAnswer(qid){
+  var root=document.getElementById(qid);
+  if(!root||root.dataset.locked==='1')return false;
+  root.dataset.locked='1';
+  root.querySelectorAll('.option-btn').forEach(function(b){b.disabled=true;});
+  return true;
+}
+function unlockAnswer(qid){
+  var root=document.getElementById(qid);if(!root)return;
+  delete root.dataset.locked;
+  root.querySelectorAll('.option-btn').forEach(function(b){b.disabled=false;b.classList.remove('correct','wrong');});
+}
+function showModal(content,actions){
+  resetModalSession();
+  var m=document.getElementById('modal');
+  m.innerHTML='<h3></h3>'+content+'<div class="modal-actions">'+(actions||'')+'</div>';
+  document.getElementById('modal-overlay').classList.add('show');
+}
+function closeModal(){resetModalSession();document.getElementById('modal-overlay').classList.remove('show');document.getElementById('modal').innerHTML='';renderModule();}
+function getStoryStreak(){
+  var dates=state.stories.readDates||[];
+  if(dates.length===0)return 0;
+  var streak=1;
+  for(var i=dates.length-1;i>0;i--){
+    var d1=new Date(dates[i]),d2=new Date(dates[i-1]);
+    var diff=(d1-d2)/(1000*60*60*24);
+    if(diff===1)streak++;else break;
+  }
+  return streak;
+}
+function todayStr(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+function formatDate(d){var dt=new Date(d);return dt.getMonth()+1+'月'+dt.getDate()+'日';}
+
+// ==================== NAVIGATION ====================
+function renderNav(){
+  var sidebar=document.getElementById('sidebar');
+  var bottom=document.getElementById('bottomNav');
+  var html='',bhtml='';
+  TABS.forEach(function(t){
+    var active=state.currentTab===t.id?'active':'';
+    var bg=active?'style="background:'+t.color+';color:#fff"':'';
+    html+='<button class="nav-item '+active+'" '+bg+' onclick="switchTab(\''+t.id+'\')">'+
+      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span></button>';
+    bhtml+='<button class="bottom-nav-item '+active+'" onclick="switchTab(\''+t.id+'\')">'+
+      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span></button>';
+  });
+  sidebar.innerHTML=html;
+  bottom.innerHTML=bhtml;
+}
+function switchTab(id){
+  closeModal();
+  state.currentTab=id;
+  saveState();
+  renderNav();
+  renderModule();
+  window.scrollTo(0,0);
+}
+
+// ==================== MODULE RENDER DISPATCHER ====================
+function renderModule(){
+  var main=document.getElementById('main');
+  var renderers={
+    letters:renderLetters,poems:renderPoems,numbers:renderNumbers,
+    logic:renderLogic,levels:renderLevels,english:renderEnglish,stories:renderStories,growth:renderGrowth
+  };
+  var fn=renderers[state.currentTab];
+  if(fn)main.innerHTML=fn();
+  addBackupBar();
+  // Apply night mode
+  if(state.nightMode)document.body.classList.add('night');else document.body.classList.remove('night');
+}
+
+// ==================== MODULE 1: LETTERS ====================
+function renderLetters(){
+  var matchedCount=state.letters.matched.length;
+  var html='<div class="section-title">🔤 字母乐园</div>'+
+    '<div class="subtitle">点击字母听发音，玩配对游戏得星星！</div>'+
+    '<div class="stats-row">'+
+    '<div class="stat-box"><div class="stat-num">'+matchedCount+'/26</div><div class="stat-label">已配对</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+state.letters.quizDone+'</div><div class="stat-label">配对次数</div></div>'+
+    '</div>'+
+    '<div class="backup-row">'+
+    '<button class="btn btn-blue btn-sm" onclick="startLetterMatch()">🎮 大小写配对游戏</button>'+
+    '</div>'+
+    '<div class="card"><div class="card-title">26个英文字母</div><div class="grid grid-5">';
+  LETTERS_DATA.forEach(function(l){
+    var done=state.letters.matched.indexOf(l.upper)>=0;
+    html+='<div class="char-card'+(done?' done':'')+'" id="lc-'+l.upper+'" onclick="playAudio(\'audio/letter_'+l.upper+'.mp3\',\''+l.upper+'\',\'en\')">'+
+      '<div class="big-char">'+l.upper+'</div><div class="small-char">'+l.lower+'</div></div>';
+  });
+  html+='</div></div>';
+  return html;
+}
+function startLetterMatch(){
+  practiceStart('letters_match','字母配对');
+  var available=LETTERS_DATA.filter(function(l){return state.letters.matched.indexOf(l.upper)<0;});
+  if(available.length===0)available=LETTERS_DATA.slice();
+  var target=available[Math.floor(Math.random()*available.length)];
+  var options=shuffle([target].concat(shuffle(LETTERS_DATA.filter(function(l){return l.upper!==target.upper;})).slice(0,2)));
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-question">大写字母 <span style="font-size:2rem;color:var(--pink-d)">'+target.upper+'</span> 对应哪个小写字母？</div>'+
+    '<button class="btn btn-blue btn-sm" onclick="speak(\''+target.upper+'\',\'en\')">🔊 听字母</button><div class="picture-options" id="letterOptions">'+
+    options.map(function(o,i){
+      return '<button class="option-btn" data-lower="'+o.lower+'" onclick="checkLetterMatch(\''+o.lower+'\',\''+target.lower+'\',\''+target.upper+'\')">'+o.lower+'</button>';
+    }).join('')+
+    '</div></div>',
+    '<button class="btn btn-sm" onclick="startLetterMatch()">换一题</button><button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  practiceAttach();
+}
+function checkLetterMatch(picked,correct,upper){
+  if(!lockAnswer('letterOptions'))return;
+  var btns=document.querySelectorAll('#letterOptions .option-btn');
+  btns.forEach(function(b){
+    b.style.pointerEvents='none';
+    if(picked===correct&&b.dataset.lower===correct){b.classList.add('correct');}
+    else if(b.dataset.lower===picked){b.classList.add('wrong');}
+  });
+  if(picked===correct){
+    celebrate();
+    addStars(2);
+    if(state.letters.matched.indexOf(upper)<0)state.letters.matched.push(upper);
+    state.letters.quizDone++;
+    saveState();
+    showToast('答对了！+2⭐');
+    practiceRecord();
+    offerAutoNext(function(){practiceContinue(startLetterMatch);});
+  }else{
+    playSFX('wrong');showToast('再试一次～');
+    modalTimeout(function(){unlockAnswer('letterOptions');btns.forEach(function(b){b.style.pointerEvents='';b.classList.remove('wrong');});},800);
+  }
+}
+
+// ==================== MODULE 2: POEMS ====================
+function renderPoems(){
+  var authors=[];
+  POEMS.forEach(function(p){if(authors.indexOf(p.a)<0)authors.push(p.a);});
+  var html='<div class="section-title">🌸 古诗花园</div>'+
+    '<div class="subtitle">听一句、跟一句，再玩补词和看图理解；每首一轮10题，可随时休息。</div>'+
+    '<div class="stats-row">'+
+    '<div class="stat-box"><div class="stat-num">'+state.poems.read.length+'/20</div><div class="stat-label">已朗读</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+state.poems.favorites.length+'</div><div class="stat-label">已收藏</div></div>'+
+    '</div>'+
+    '<div class="pills" id="poemFilters">'+
+    '<span class="pill active" onclick="filterPoems(\'all\',this)">全部</span>'+
+    '<span class="pill" onclick="filterPoems(\'fav\',this)">⭐ 收藏</span>'+
+    authors.map(function(a){return '<span class="pill" onclick="filterPoems(\''+a+'\',this)">'+a+'</span>';}).join('')+
+    '</div>'+
+    '<div class="grid grid-2" id="poemList">';
+  html+=renderPoemList('all');
+  html+='</div>';
+  return html;
+}
+function renderPoemList(filter){
+  var list=POEMS;
+  if(filter==='fav')list=POEMS.filter(function(p){return state.poems.favorites.indexOf(p.id)>=0;});
+  else if(filter!=='all')list=POEMS.filter(function(p){return p.a===filter;});
+  return list.map(function(p){
+    var isFav=state.poems.favorites.indexOf(p.id)>=0;
+    var isRead=state.poems.read.indexOf(p.id)>=0;
+    return '<div class="poem-card" onclick="showPoem('+p.id+')">'+
+      '<span class="poem-emoji">'+p.e+'</span>'+
+      '<div class="poem-info"><div class="poem-title">'+p.t+(isRead?' ✓':'')+'</div>'+
+      '<div class="poem-meta">'+p.a+' · '+p.d+'</div></div>'+
+      '<span class="fav-star'+(isFav?' active':'')+'" onclick="event.stopPropagation();toggleFavPoem('+p.id+')">'+(isFav?'⭐':'☆')+'</span>'+
+      '</div>';
+  }).join('');
+}
+function filterPoems(filter,el){
+  Array.prototype.forEach.call(document.querySelectorAll('#poemFilters .pill'), function(p){p.classList.remove('active');});
+  el.classList.add('active');
+  document.getElementById('poemList').innerHTML=renderPoemList(filter);
+}
+function toggleFavPoem(id){
+  var i=state.poems.favorites.indexOf(id);
+  if(i>=0)state.poems.favorites.splice(i,1);else state.poems.favorites.push(id);
+  saveState();checkBadges();
+  renderModule();
+}
+function showPoem(id){
+  var p=POEMS.filter(function(x){return x.id===id;})[0];
+  if(state.poems.read.indexOf(id)<0){state.poems.read.push(id);addStars(1);}
+  saveState();
+  var isFav=state.poems.favorites.indexOf(id)>=0;
+  var html='<div class="story-reader">'+
+    '<div class="sr-emoji">'+p.e+'</div>'+
+    '<h2 style="font-size:1.5rem">'+p.t+'</h2>'+
+    '<p style="color:var(--text-l);margin:4px 0 16px">'+p.a+' · '+p.d+([8,12,13].includes(id)?' · 节选':'')+'</p>'+
+    '<div style="background:var(--bg);border-radius:12px;padding:20px;margin:12px 0">';
+  p.l.forEach(function(line,i){
+    html+='<div style="margin:10px 0">'+
+      '<div style="font-size:.8rem;color:var(--text-l)">'+p.py[i]+'</div>'+
+      '<button class="poem-line-button" onclick="recitePoemLine('+id+','+i+')">'+line+' <small>🔊</small></button></div>';
+  });
+  html+='</div>'+
+    '<div class="sr-moral">📖 '+p.tr+'</div>'+
+    '<div class="sr-nav">'+
+    '<button class="btn btn-sm" onclick="startPoemPlay('+id+')">亲子小练习</button>'+
+    '<button class="btn btn-blue" onclick="recitePoem('+id+')">🔊 朗读全诗</button>'+
+    '<button class="btn '+(isFav?'btn-yellow':'btn-pink')+'" onclick="toggleFavPoem('+id+');closeModal();">'+(isFav?'已收藏':'收藏')+'</button>'+
+    '</div></div>';
+  showModal(html,'');
+}
+function recitePoem(id){
+  var p=POEMS.filter(function(x){return x.id===id;})[0];
+  if(!p)return;
+  // 朗诵先念标题、朝代、作者，再念全诗；优先播预生成音频，失败回退 TTS
+  var text=p.t+'，'+p.d+'，'+p.a+'。'+p.l.join('，');
+  playAudio('audio/poem_'+id+'.mp3', text, 'recite');
+}
+
+// ==================== MODULE 3: NUMBERS ====================
+var SENTENCES=[
+  {en:"Hello!", cn:"你好", w:["hello"], e:"👋"},
+  {en:"Thank you!", cn:"谢谢", w:["thank","you"], e:"🙏"},
+  {en:"I love you.", cn:"我爱你", w:["i","love","you"], e:"❤️"},
+  {en:"Good morning!", cn:"早上好", w:["good","morning"], e:"🌅"},
+  {en:"Good night!", cn:"晚安", w:["good","night"], e:"🌙"},
+  {en:"I am happy.", cn:"我很开心", w:["i","am","happy"], e:"😄"},
+  {en:"This is a cat.", cn:"这是一只猫", w:["this","is","a","cat"], e:"🐱"},
+  {en:"I like apples.", cn:"我喜欢苹果", w:["i","like","apples"], e:"🍎"},
+  {en:"What is this?", cn:"这是什么", w:["what","is","this"], e:"❓"},
+  {en:"I can see a dog.", cn:"我看见一只狗", w:["i","can","see","a","dog"], e:"🐶"},
+  {en:"How are you?", cn:"你好吗", w:["how","are","you"], e:"🤗"},
+  {en:"Bye bye!", cn:"再见", w:["bye","bye"], e:"👋"}
+];
+
+function renderNumbers(){
+  return renderNumberPlay();
+}
+function startMathQuiz(){
+  var a=Math.floor(Math.random()*10)+1;
+  var b=Math.floor(Math.random()*10)+1;
+  var op=Math.random()<0.5?'+':'-';
+  if(op==='-'&&b>a){var t=a;a=b;b=t;}
+  var answer=op==='+'?a+b:a-b;
+  var options=shuffle([answer].concat(generateWrongAnswers(answer,4,0,20))).slice(0,4);
+  if(options.indexOf(answer)<0)options[0]=answer;
+  options=shuffle(options);
+  window._mathQ={a:a,op:op,b:b,answer:answer};
+  var qid='mq'+Date.now();
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-question">'+a+' '+op+' '+b+' = ?</div>'+
+    '<div style="text-align:center;margin:6px 0 14px"><button class="btn btn-purple btn-sm" onclick="showMathDemo()">👀 看演示</button></div>'+
+    '<div class="grid grid-2" id="'+qid+'">'+
+    options.map(function(o){return '<button class="option-btn" data-val="'+o+'" onclick="checkMath(\''+qid+'\','+o+','+answer+')">'+o+'</button>';}).join('')+
+    '</div></div>',
+    '<button class="btn btn-sm" onclick="startMathQuiz()">换一题</button><button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+}
+function generateWrongAnswers(correct,count,min,max){
+  var arr=[];
+  while(arr.length<count){
+    var v=Math.floor(Math.random()*(max-min+1))+min;
+    if(v!==correct&&arr.indexOf(v)<0)arr.push(v);
+  }
+  return arr;
+}
+function checkMath(qid,picked,answer){
+  if(!lockAnswer(qid))return;
+  var btns=document.querySelectorAll('#'+qid+' .option-btn');
+  btns.forEach(function(b){b.style.pointerEvents='none';if(+b.dataset.val===answer)b.classList.add('correct');else if(+b.dataset.val===picked)b.classList.add('wrong');});
+  if(picked===answer){celebrate();addStars(2);state.numbers.quizDone++;saveState();showToast('算对啦！+2⭐');modalTimeout(function(){closeModal();modalTimeout(startMathQuiz,500);},1500);}
+  else{showToast('再想一想～');modalTimeout(function(){unlockAnswer(qid);btns.forEach(function(b){b.style.pointerEvents='';b.classList.remove('wrong');});},800);}
+}
+// ===== 加减过程可视化演示（帮助孩子理解）=====
+function repEmoji(s,n){return new Array(n+1).join(s+' ');}
+function startMathDemo(){
+  var a=Math.floor(Math.random()*5)+1;
+  var b=Math.floor(Math.random()*5)+1;
+  var op=Math.random()<0.5?'+':'-';
+  if(op==='-'&&b>a){var t=a;a=b;b=t;}
+  var answer=op==='+'?a+b:a-b;
+  window._mathQ={a:a,op:op,b:b,answer:answer};
+  showMathDemo();
+}
+function showMathDemo(){
+  var q=window._mathQ; if(!q)return;
+  var a=q.a,op=q.op,b=q.b,answer=q.answer;
+  var emoji='🍎';
+  var steps=[];
+  if(op==='+'){
+    steps=[
+      {v:repEmoji(emoji,a), t:'先有 '+a+' 个'},
+      {v:repEmoji(emoji,a)+' ＋ '+repEmoji(emoji,b), t:'又来了 '+b+' 个'},
+      {v:repEmoji(emoji,answer), t:'合起来一共 '+answer+' 个！'}
+    ];
+  }else{
+    steps=[
+      {v:repEmoji(emoji,a), t:'原来有 '+a+' 个'},
+      {v:repEmoji(emoji,a)+' － '+repEmoji(emoji,b), t:'拿走 '+b+' 个'},
+      {v:repEmoji(emoji,answer), t:'还剩下 '+answer+' 个！'}
+    ];
+  }
+  window._demoSteps=steps;window._demoIdx=0;
+  mathDemoRender();
+}
+function mathDemoRender(){
+  var s=window._demoSteps[window._demoIdx];
+  var isLast=window._demoIdx>=window._demoSteps.length-1;
+  var html='<div style="text-align:center">'+
+    '<div style="font-size:2.2rem;min-height:64px;margin:8px 0;letter-spacing:3px;line-height:1.7">'+s.v+'</div>'+
+    '<div style="font-size:1.3rem;color:var(--text-l);margin-bottom:18px">'+s.t+'</div>'+
+    '<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">'+
+    (window._demoIdx>0?'<button class="btn btn-sm" onclick="mathDemoPrev()">← 上一步</button>':'')+
+    '<button class="btn '+(isLast?'btn-yellow':'btn-green')+'" onclick="mathDemoNext()">'+(isLast?'🎉 我知道了':'下一步 →')+'</button>'+
+    '<button class="btn btn-sm" onclick="playMathDemo(\''+s.t+'\')">🔊 再听</button>'+
+    '</div></div>';
+  showModal(html,'<button class="btn btn-sm" onclick="closeModal();startMathQuiz()">返回做题</button><button class="btn btn-sm" onclick="closeModal()">关闭</button>');
+  playMathDemo(s.t);
+}
+function mathDemoNext(){ if(window._demoIdx<window._demoSteps.length-1){window._demoIdx++;mathDemoRender();} else {closeModal();startMathQuiz();} }
+function mathDemoPrev(){ if(window._demoIdx>0){window._demoIdx--;mathDemoRender();} }
+function startCountGame(){
+  var count=Math.floor(Math.random()*10)+1;
+  var fruits=['🍎','🍌','🍇','🍊','🍓','🍉','🍑'];
+  var fruit=fruits[Math.floor(Math.random()*fruits.length)];
+  var display='';
+  for(var i=0;i<count;i++)display+=fruit+' ';
+  var options=shuffle([count].concat(generateWrongAnswers(count,3,1,12))).slice(0,4);
+  if(options.indexOf(count)<0)options[0]=count;
+  options=shuffle(options);
+  var qid='cq'+Date.now();
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-question">数一数有几个？</div>'+
+    '<div class="quiz-visual">'+display.trim()+'</div>'+
+    '<div class="grid grid-2" id="'+qid+'">'+
+    options.map(function(o){return '<button class="option-btn" data-val="'+o+'" onclick="checkCount(\''+qid+'\','+o+','+count+')">'+o+'</button>';}).join('')+
+    '</div></div>',
+    '<button class="btn btn-sm" onclick="startCountGame()">换一题</button><button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+}
+function checkCount(qid,picked,answer){
+  if(!lockAnswer(qid))return;
+  var btns=document.querySelectorAll('#'+qid+' .option-btn');
+  btns.forEach(function(b){b.style.pointerEvents='none';if(+b.dataset.val===answer)b.classList.add('correct');else if(+b.dataset.val===picked)b.classList.add('wrong');});
+  if(picked===answer){celebrate();addStars(2);state.numbers.countDone++;saveState();showToast('数对啦！+2⭐');modalTimeout(function(){closeModal();modalTimeout(startCountGame,500);},1500);}
+  else{playSFX('wrong');showToast('再数数看～');modalTimeout(function(){unlockAnswer(qid);btns.forEach(function(b){b.style.pointerEvents='';b.classList.remove('wrong');});},800);}
+}
+function startOrderGame(){
+  var start=Math.floor(Math.random()*8)+1;
+  var nums=[start,start+1,start+2].slice();
+  var shuffled=shuffle(nums);
+  var correct=nums.join(',');
+  var qid='oq'+Date.now();
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-question">按从小到大排列数字</div>'+
+    '<div id="'+qid+'" style="display:flex;justify-content:center;gap:12px;margin:20px 0">'+
+    shuffled.map(function(n,i){return '<button class="option-btn" data-val="'+n+'" style="width:80px" onclick="pickOrder(\''+qid+'\','+n+',\''+correct+'\')">'+n+'</button>';}).join('')+
+    '</div><div id="'+qid+'_seq" style="font-size:1.5rem;font-weight:700;text-align:center;min-height:40px"></div></div>',
+    '<button class="btn btn-sm" onclick="startOrderGame()">换一题</button><button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  window._orderSeq=[];
+}
+function pickOrder(qid,val,correct){
+  var seqEl=document.getElementById(qid+'_seq');
+  window._orderSeq=window._orderSeq||[];
+  window._orderSeq.push(val);
+  seqEl.textContent=window._orderSeq.join(' → ');
+  // Disable clicked button
+  document.querySelectorAll('#'+qid+' .option-btn').forEach(function(b){
+    if(+b.dataset.val===val)b.style.visibility='hidden';
+  });
+  if(window._orderSeq.length>=3){
+    var isCorrect=window._orderSeq.join(',')===correct;
+    var btns=document.querySelectorAll('#'+qid+' .option-btn');
+    if(isCorrect){
+      btns.forEach(function(b){b.style.visibility='';b.classList.add('correct');b.style.visibility='visible';});
+      celebrate();addStars(3);state.numbers.orderDone++;saveState();
+      showToast('排对了！+3⭐');
+      modalTimeout(function(){closeModal();modalTimeout(startOrderGame,800);},1500);
+    }else{
+      playSFX('wrong');showToast('再试一次～');
+      modalTimeout(function(){
+        window._orderSeq=[];
+        seqEl.textContent='';
+        btns.forEach(function(b){b.style.visibility='visible';b.classList.remove('correct','wrong');});
+      },1000);
+    }
+  }
+}
+
+// ==================== MODULE 4: LOGIC ====================
+function renderLogic(){return renderLogicPlay();}
+function setLogicLevel(i){if(![0,1,2].includes(i))return;state.logic.level=i;saveState();renderModule();}
+function startPattern(){startLogicPattern();}
+function checkPattern(qid,picked,answer){answerLogicPattern(picked);}
+function startShapeMatch(){
+  practiceStart('logic_memory','记忆配对');
+  var level=state.logic.level;
+  var pairCount=level===0?3:level===1?4:5;
+  var pool=shuffle(LOGIC_SHAPES).slice(0,pairCount);
+  var allItems=shuffle(pool.concat(pool));
+  var qid='sm'+Date.now();
+  window._matched=0;window._matchPairs=pairCount;window._firstPick=null;
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-question">找出相同的图形配对！</div>'+
+    '<div class="grid grid-4" id="'+qid+'">'+
+    allItems.map(function(s,i){return '<button class="option-btn" data-shape="'+s+'" data-idx="'+i+'" onclick="flipCard(this,\''+qid+'\','+pairCount+')" style="font-size:2rem">❓</button>';}).join('')+
+    '</div><p id="'+qid+'_status" style="text-align:center;margin-top:12px">已配对: 0/'+pairCount+'</p></div>',
+    '<button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  practiceAttach();
+}
+function flipCard(btn,qid,pairCount){
+  var board=document.getElementById(qid);
+  if(!board||!board.contains(btn)||board.dataset.busy==='1'||board.dataset.solved==='1'||btn.dataset.flipped==='1')return;
+  if(window._firstPick&&window._firstPick.dataset.matched==='1')return;
+  btn.textContent=btn.dataset.shape;btn.dataset.flipped='1';btn.style.background='var(--yellow)';
+  if(!window._firstPick){
+    window._firstPick=btn;
+  }else{
+    var first=window._firstPick;
+    if(first.dataset.shape===btn.dataset.shape){
+      first.dataset.matched='1';btn.dataset.matched='1';
+      first.disabled=true;btn.disabled=true;
+      first.style.background='var(--green)';btn.style.background='var(--green)';
+      window._matched++;
+      document.getElementById(qid+'_status').textContent='已配对: '+window._matched+'/'+pairCount;
+      if(window._matched>=pairCount){
+        board.dataset.solved='1';
+        celebrate();var stars=state.logic.level+2;addStars(stars);
+        state.logic.completed.push(Date.now());state.logic.stars+=stars;
+        saveState();showToast('全部配对成功！+'+stars+'⭐');
+        practiceRecord();
+        offerAutoNext(function(){practiceContinue(startShapeMatch);});
+      }
+    }else{
+      board.dataset.busy='1';
+      board.querySelectorAll('button').forEach(function(b){b.disabled=true;});
+      playSFX('wrong');
+      modalTimeout(function(){
+        first.textContent='❓';btn.textContent='❓';
+        first.dataset.flipped='0';btn.dataset.flipped='0';
+        first.style.background='';btn.style.background='';
+        delete board.dataset.busy;
+        board.querySelectorAll('button').forEach(function(b){b.disabled=b.dataset.matched==='1';});
+      },800);
+    }
+    window._firstPick=null;
+  }
+}
+function startSizeSort(){showSortMenu();}
+
+// ==================== MODULE 5: LEVELS ====================
+function renderLevels(){
+  var completed=state.levels.completed.length;
+  var progress=Math.round(completed/10*100);
+  var html='<div class="section-title">🗺️ 闯关冒险</div>'+
+    '<div class="subtitle">综合挑战10关，每关10道题，通关得勋章！</div>'+
+    '<div class="card">'+
+    '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'+
+    '<span style="font-weight:700">总进度</span><span>'+completed+'/10关 ('+progress+'%)</span></div>'+
+    '<div class="progress-bar"><div class="progress-fill" style="width:'+progress+'%"></div></div>'+
+    '</div>'+
+    '<div class="card"><div class="card-title">🏅 成就徽章墙</div><div style="display:flex;flex-wrap:wrap;gap:12px">';
+  BADGES_DEF.forEach(function(b){
+    var earned=state.badges[b.id];
+    html+='<div class="badge'+(earned?'':' locked')+'"><span class="badge-icon">'+b.emoji+'</span><span class="badge-name">'+b.name+'</span></div>';
+  });
+  html+='</div></div>'+
+    '<div class="card"><div class="card-title">关卡地图</div><div class="level-map">';
+  for(var i=1;i<=10;i++){
+    var isCompleted=state.levels.completed.indexOf(i)>=0;
+    var isAvailable=i===1||state.levels.completed.indexOf(i-1)>=0;
+    var cls=isCompleted?'completed':(isAvailable?'available':'locked');
+    var session=state.levels.sessions[i],medal=session&&!session.settled?'继续 '+session.current+'/10':isCompleted?'⭐':'';
+    html+='<div class="level-node '+cls+'" onclick="'+(isAvailable?'startLevel('+i+')':'')+'">'+
+      '<span>'+i+'</span><span class="level-medal">'+medal+'</span></div>';
+  }
+  html+='</div></div>';
+  if(completed>=10){
+    html+='<div class="card" style="text-align:center;background:linear-gradient(135deg,var(--yellow),var(--pink))">'+
+      '<div style="font-size:3rem">👑</div><h3>恭喜通关！你获得了"小学霸"终极勋章！</h3></div>';
+  }
+  return html;
+}
+function startLevel(n,restart){
+  if(!Number.isInteger(n)||n<1||n>10)return;
+  var d=state.levels.sessions[n];
+  if(!d||restart===true){d={n:n,questions:generateLevelQuestions(n),current:0,correct:0,settled:false};state.levels.sessions[n]=d;}
+  window._levelData=d;state.levels.currentLevel=n;saveState();
+  if(d.current>=d.questions.length)showLevelResult(d);else showLevelQuestion();
+}
+function generateLevelQuestions(n){
+  var qs=[];
+  for(var batch=0;batch<2;batch++){
+  // Mix of letter, number, poem, logic
+  // Q1: Letter match
+  var lt=LETTERS_DATA[Math.floor(Math.random()*26)];
+  var lopts=shuffle([lt].concat(shuffle(LETTERS_DATA.filter(function(l){return l.upper!==lt.upper;})).slice(0,3)));
+  qs.push({type:'letter',q:'大写 '+lt.upper+' 的小写是？',visual:lt.upper,answer:lt.lower,options:lopts.map(function(l){return l.lower;}),emojis:lopts.map(function(l){return l.lower;})});
+  // Q2: Math
+  var a=Math.floor(Math.random()*Math.min(n*2+3,10))+1,b=Math.floor(Math.random()*Math.min(n*2+3,10))+1;
+  var op=Math.random()<0.5?'+':'-';if(op==='-'&&b>a){var t=a;a=b;b=t;}
+  var ans=op==='+'?a+b:a-b;
+  qs.push({type:'math',q:a+' '+op+' '+b+' = ?',answer:ans.toString(),options:shuffle([ans].concat(generateWrongAnswers(ans,3,0,20))).slice(0,4)});
+  // Q3: Counting
+  var cnt=Math.floor(Math.random()*10)+1;
+  var fr=['🍎','🍌','🍇','🍊','🍓'][Math.floor(Math.random()*5)];
+  var vis='';for(var i=0;i<cnt;i++)vis+=fr+' ';
+  qs.push({type:'count',q:'数一数有几个？',visual:vis.trim(),answer:cnt.toString(),options:shuffle([cnt].concat(generateWrongAnswers(cnt,3,1,12))).slice(0,4)});
+  // Q4: Pattern
+  var pool=shuffle(LOGIC_SHAPES).slice(0,4);
+  var seq=[];for(var j=0;j<8;j++)seq.push(pool[j%4]);
+  var pAns=pool[0];
+  qs.push({type:'pattern',q:'接下来是？',visual:seq.join(' ')+' ?',answer:pAns,options:shuffle([pAns].concat(shuffle(pool.filter(function(s){return s!==pAns;})).slice(0,3)))});
+  // Q5: Poem (which poet)
+  var p=POEMS[Math.floor(Math.random()*POEMS.length)];
+  var authors=shuffle(POEMS.map(function(x){return x.a;})).filter(function(v,i,arr){return arr.indexOf(v)===i;}).slice(0,3);
+  if(authors.indexOf(p.a)<0)authors[0]=p.a;
+  authors=shuffle(authors);
+  qs.push({type:'poem',q:'"'+p.l[0]+'" 是谁写的？',visual:p.e,answer:p.a,options:authors});
+  }
+  return qs;
+}
+function showLevelQuestion(){
+  var d=window._levelData;
+  if(!d||state.levels.sessions[d.n]!==d)return;
+  if(d.current>=d.questions.length){showLevelResult(d);return;}
+  var q=d.questions[d.current];
+  var qid='lv'+Date.now();
+  var html='<div style="text-align:center;margin-bottom:12px">'+
+    '<span style="background:var(--purple);color:#fff;padding:4px 16px;border-radius:20px;font-weight:700">第'+d.n+'关</span> '+
+    '<span style="margin-left:8px">第'+(d.current+1)+'/'+d.questions.length+'题</span></div>'+
+    '<div class="progress-bar" style="margin-bottom:16px"><div class="progress-fill" style="width:'+((d.current)/d.questions.length*100)+'%"></div></div>'+
+    '<div class="quiz-area">'+
+    '<div class="quiz-question">'+learningEscape(q.q)+'</div>'+
+    (q.visual?'<div class="quiz-visual">'+learningEscape(q.visual)+'</div>':'')+
+    '<div class="grid grid-2" id="'+qid+'">'+
+    q.options.map(function(o){var ov=String(o);return '<button class="option-btn" data-val="'+learningEscape(ov)+'" onclick="checkLevelAnswer(\''+qid+'\','+learningEscape(JSON.stringify(ov))+','+learningEscape(JSON.stringify(String(q.answer)))+')">'+learningEscape(ov)+'</button>';}).join('')+
+    '</div></div>';
+  showModal(html,'<button class="btn btn-sm" onclick="closeModal()">先休息 · 进度已保存</button>');
+  document.getElementById(qid).dataset.question=d.current;
+}
+function settleLevelRun(d){
+  if(d.settled||d.current<d.questions.length)return;
+  d.settled=true;
+  if(d.correct>=Math.ceil(d.questions.length*0.6)){
+    if(state.levels.completed.indexOf(d.n)<0)state.levels.completed.push(d.n);
+    addStars(d.correct*3);
+  }else saveState();
+}
+function showLevelResult(d){
+  if(!d||state.levels.sessions[d.n]!==d||d.current<d.questions.length)return;
+  settleLevelRun(d);
+  var needed=Math.ceil(d.questions.length*0.6),passed=d.correct>=needed;
+  if(passed){
+    var medal=d.correct===d.questions.length?'🥇':d.correct>=d.questions.length*0.8?'🥈':'🥉';
+    showModal('<div style="text-align:center"><div style="font-size:4rem;margin:12px">'+medal+'</div><h3>第'+d.n+'关通关！</h3><p style="font-size:1.2rem;margin:8px">答对 '+d.correct+'/'+d.questions.length+' 题</p><p style="color:var(--text-l)">本轮已获得 '+d.correct*3+' 颗星星！</p></div>','<button class="btn btn-lg" onclick="closeModal()">太棒了！</button><button class="btn btn-sm" onclick="startLevel('+d.n+',true)">再玩一轮</button>');
+  }else{
+    showModal('<div style="text-align:center"><div style="font-size:3rem;margin:12px">💪</div><h3>差一点点！</h3><p style="margin:8px">答对 '+d.correct+'/'+d.questions.length+' 题，答对'+needed+'题才能通关</p><p style="color:var(--text-l)">再试一次吧！</p></div>','<button class="btn btn-lg" onclick="startLevel('+d.n+',true)">再试一次</button><button class="btn btn-sm" onclick="closeModal()">返回</button>');
+  }
+}
+function checkLevelAnswer(qid,picked,answer){
+  var d=window._levelData,board=document.getElementById(qid);
+  if(!d||state.levels.sessions[d.n]!==d||d.settled||!board||Number(board.dataset.question)!==d.current||!lockAnswer(qid))return;
+  var correct=(picked===String(d.questions[d.current].answer));
+  d.current++;
+  if(correct)d.correct++;
+  if(d.current>=d.questions.length)settleLevelRun(d);else saveState();
+  // 先安排切换：放在最前，确保即使下方反馈逻辑在老旧浏览器报错，也一定能切到下一题
+  offerAutoNext(function(){
+    if(state.levels.sessions[d.n]!==d)return;
+    if(d.current>=d.questions.length)showLevelResult(d);else showLevelQuestion();
+  },correct);
+  // 视觉反馈与音效（出错也不影响上面已排好的切换）
+  try{
+    var btns=document.querySelectorAll('#'+qid+' .option-btn');
+    Array.prototype.forEach.call(btns,function(b){
+      b.style.pointerEvents='none';
+      if(b.dataset.val===answer)b.classList.add('correct');
+      else if(b.dataset.val===picked)b.classList.add('wrong');
+    });
+    if(correct){ celebrate(); showToast('答对了！'); }
+    else { playSFX('wrong'); showToast('没关系，继续加油！'); }
+  }catch(e){}
+}
+
+// ==================== MODULE 6: ENGLISH ====================
+var _englishMode='themes';
+var _englishCurrentTheme=null;
+function renderEnglish(){
+  if(updateEnglishThemeStars())saveState();
+  if(_englishMode==='theme'&&_englishCurrentTheme){
+    return renderEnglishTheme(_englishCurrentTheme);
+  }
+  if(_englishMode==='sentences'){
+    return renderEnglishSentences();
+  }
+  var totalLearned=0;
+  ENGLISH.themes.forEach(function(t){t.words.forEach(function(w){if(state.english.learned[w.w])totalLearned++;});});
+  var html='<div class="section-title">🌍 英语小镇</div>'+
+    '<div class="subtitle">听一听、指一指、说一句 · 亲子一起玩英语</div>'+renderEnglishPath()+
+    '<details class="learning-library"><summary>更多单词与短句 · 亲子选学</summary>'+
+    '<div class="stats-row">'+
+    '<div class="stat-box"><div class="stat-num">'+totalLearned+'/90</div><div class="stat-label">已学单词</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+state.english.streak+'</div><div class="stat-label">连续天数</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+Object.keys(state.english.themeStars||{}).length+'/6</div><div class="stat-label">主题勋章</div></div>'+
+    '</div>'+
+    '<div class="card" style="text-align:center">'+
+    '<div class="card-title">💬 短句练习</div>'+
+    '<div class="subtitle" style="margin:6px 0 12px">日常英语小短句，跟读 + 填空</div>'+
+    '<button class="btn btn-purple btn-lg" onclick="_englishMode=\'sentences\';renderModule()">开始练习 →</button></div>'+
+    '<div class="card"><div class="card-title">📊 学习报告</div>'+
+    '<div style="margin-top:8px">';
+  ENGLISH.themes.forEach(function(t){
+    var learned=t.words.filter(function(w){return state.english.learned[w.w];}).length;
+    var pct=Math.round(learned/t.words.length*100);
+    html+='<div style="margin:8px 0"><div style="display:flex;justify-content:space-between;font-size:.9rem">'+
+      '<span>'+t.emoji+' '+t.cn+'</span><span>'+learned+'/'+t.words.length+' ('+pct+'%)</span></div>'+
+      '<div class="progress-bar" style="height:8px;margin-top:4px"><div class="progress-fill" style="width:'+pct+'%;background:'+t.color+'"></div></div></div>';
+  });
+  html+='<div style="margin-top:12px;text-align:center;font-size:.9rem;color:var(--text-l)">⭐ 总星星: '+state.stars+' | 🔥 连续学习: '+state.english.streak+'天</div></div></div>'+
+    '<div class="card"><div class="card-title">选择主题</div><div class="grid grid-3">';
+  ENGLISH.themes.forEach(function(t){
+    var learned=t.words.filter(function(w){return state.english.learned[w.w];}).length;
+    var pct=Math.round(learned/t.words.length*100);
+    var hasStar=state.english.themeStars&&state.english.themeStars[t.id];
+    html+='<div class="theme-card" onclick="enterEnglishTheme(\''+t.id+'\')" style="border:3px solid '+t.color+'">'+
+      '<div class="theme-emoji">'+t.emoji+(hasStar?'⭐':'')+'</div>'+
+      '<div class="theme-name">'+t.cn+' '+t.name+'</div>'+
+      '<div class="theme-progress">'+learned+'/'+t.words.length+'</div>'+
+      '<div class="theme-bar"><div class="theme-bar-fill" style="width:'+pct+'%;background:'+t.color+'"></div></div></div>';
+  });
+  html+='</div></div></details>';
+  return html;
+}
+function enterEnglishTheme(id){
+  _englishMode='theme';_englishCurrentTheme=id;
+  // Update streak
+  var today=todayStr();
+  if(state.english.lastStudy!==today){
+    var yesterday=new Date(Date.now()-86400000);
+    var yStr=yesterday.getFullYear()+'-'+(yesterday.getMonth()+1)+'-'+yesterday.getDate();
+    if(state.english.lastStudy===yStr)state.english.streak++;
+    else state.english.streak=1;
+    state.english.lastStudy=today;
+    saveState();
+  }
+  renderModule();
+}
+function backToEnglishThemes(){
+  _englishMode='themes';_englishCurrentTheme=null;renderModule();
+}
+function renderEnglishTheme(id){
+  var theme=ENGLISH.themes.filter(function(t){return t.id===id;})[0];
+  var learned=theme.words.filter(function(w){return state.english.learned[w.w];}).length;
+  var html='<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">'+
+    '<button class="btn btn-sm" onclick="backToEnglishThemes()">← 返回</button>'+
+    '<span style="font-size:1.3rem">'+theme.emoji+'</span>'+
+    '<span class="section-title" style="margin:0">'+theme.cn+' '+theme.name+'</span></div>'+
+    '<div class="subtitle">已学 '+learned+'/'+theme.words.length+' 个单词</div>'+
+    '<div class="backup-row">'+
+    '<button class="btn btn-pink btn-sm" onclick="startFlashcard(\''+id+'\')">🎴 闪卡模式</button>'+
+    '<button class="btn btn-blue btn-sm" onclick="startReadAlong(\''+id+'\')">🎤 跟读练习</button>'+
+    '<button class="btn btn-green btn-sm" onclick="startListenPick(\''+id+'\')">👂 选一选</button>'+
+    '<button class="btn btn-yellow btn-sm" onclick="startEnglishLessonForTheme(\''+id+'\')">🌱 主题小课堂</button>'+
+    '</div>'+
+    '<div class="card"><div class="card-title">单词卡片墙</div><div class="grid grid-5">';
+  theme.words.forEach(function(w){
+    var isLearned=state.english.learned[w.w];
+    html+='<div class="word-card'+(isLearned?' learned':'')+'" onclick="playEnWord(\''+w.w+'\')">'+
+      '<div class="word-emoji">'+w.e+'</div><div class="word-en">'+w.w+'</div><div class="word-cn">'+w.cn+'</div></div>';
+  });
+  html+='</div></div>';
+  return html;
+}
+function renderEnglishSentences(){
+  var html='<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">'+
+    '<button class="btn btn-sm" onclick="backToEnglishThemes()">← 返回</button>'+
+    '<span class="section-title" style="margin:0">💬 短句练习</span></div>'+
+    '<div class="subtitle">学一学日常英语小短句，点发音、跟读、填空！</div>'+
+    '<div class="card"><div class="card-title">短句卡片墙</div><div class="grid grid-2">';
+  SENTENCES.forEach(function(s,idx){
+    html+='<div class="word-card" style="padding:12px">'+
+      '<div class="word-emoji">'+s.e+'</div>'+
+      '<div class="word-en" style="font-size:1.05rem" onclick="playAudio(\'audio/sen_'+idx+'.mp3\',\''+s.en+'\',\'en\')">'+s.en+'</div>'+
+      '<div class="word-cn" style="font-size:.82rem">'+s.cn+'</div>'+
+      '<div style="display:flex;gap:6px;justify-content:center;margin-top:10px;flex-wrap:wrap">'+
+      '<button class="btn btn-blue btn-sm" onclick="playAudio(\'audio/sen_'+idx+'.mp3\',\''+s.en+'\',\'en\')">🔊</button>'+
+      '<button class="btn btn-green btn-sm" onclick="startSentenceRead('+idx+')">🎤 跟读</button>'+
+      '<button class="btn btn-yellow btn-sm" onclick="startSentenceFill('+idx+')">✏️ 填空</button>'+
+      '</div></div>';
+  });
+  html+='</div></div>';
+  return html;
+}
+function startSentenceRead(idx){
+  practiceStart('english_sentence_read','英语短句跟读');
+  var s=SENTENCES[idx];
+  var html='<div style="text-align:center">'+
+    '<div style="font-size:3rem;margin:10px">'+s.e+'</div>'+
+    '<div style="font-size:1.5rem;font-weight:700">'+s.en+'</div>'+
+    '<div style="color:var(--text-l);margin:6px">'+s.cn+'</div>'+
+    '<button class="btn btn-blue btn-lg" onclick="playAudio(\'audio/sen_'+idx+'.mp3\',\''+s.en+'\',\'en\')" style="margin:14px">🔊 听发音</button>'+
+    '<div id="srStatus" style="margin:14px;padding:14px;background:var(--bg);border-radius:12px;font-size:.95rem">点下面按钮，跟着读一遍整句！</div>'+
+    '<div id="srResult" style="font-size:1.2rem;font-weight:700;min-height:28px"></div><p class="learning-meta">这里只比较识别出的文字，不是发音评分。家长可以陪孩子一起读。</p></div>';
+  showModal(html,
+    '<button class="btn btn-green btn-lg" onclick="doSentenceRead('+idx+')">🎤 开始跟读</button>'+
+    '<button class="btn btn-yellow" id="parentReadConfirm" hidden onclick="confirmParentRead(\'sentence\','+idx+')">孩子已跟读 · 家长确认</button>'+
+    '<button class="btn btn-sm" onclick="playAudio(\'audio/sen_'+idx+'.mp3\',\''+s.en+'\',\'en\')">再听一遍</button>'+
+    '<button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  document.getElementById('srStatus').dataset.next=String((idx+1)%SENTENCES.length);practiceAttach();speak(s.en,'en',{rate:0.65});
+}
+function doSentenceRead(idx){
+  var s=SENTENCES[idx];
+  var status=document.getElementById('srStatus');
+  var result=document.getElementById('srResult');
+  status.textContent='🎤 正在聆听...请大声读出来！';
+  status.style.background='var(--green)';
+  startRecognition(function(heard){
+    status.textContent='听到: "'+heard+'"';
+    var target=s.en.toLowerCase().replace(/[^a-z ]/g,'');
+    var sim=calcSimilarity(heard,target);
+    if(sim>=0.8){
+      var first=!result.dataset.awarded;result.dataset.awarded='1';
+      if(first){celebrate();addStars(2);}
+      result.textContent=first?'👍 识别到这句话了！+2⭐':'👍 又读了一遍！本题奖励已经领过啦。';result.style.color='var(--green-d)';if(first)creditReadPractice('sentence');
+    }
+    else { playSFX('wrong'); result.textContent='识别出的文字还不太一样，可以和家长再读一次。'; result.style.color='var(--pink-d)'; }
+  });
+}
+function startSentenceFill(idx){
+  practiceStart('english_sentence_fill','英语短句填空');
+  var s=SENTENCES[idx];
+  var allWords=[];
+  SENTENCES.forEach(function(x){x.w.forEach(function(w){if(allWords.indexOf(w)<0)allWords.push(w);});});
+  var pickIndex=Math.floor(Math.random()*s.w.length);
+  var blankWord=s.w[pickIndex];
+  var options=shuffle([blankWord].concat(pickFromWords(allWords,blankWord,3))).slice(0,4);
+  if(options.indexOf(blankWord)<0)options[0]=blankWord;
+  options=shuffle(options);
+  var display=s.w.map(function(w,i){return i===pickIndex?'_____':w;}).join(' ');
+  var qid='sf'+Date.now();
+  var html='<div style="text-align:center">'+
+    '<div style="font-size:1.1rem;color:var(--text-l);margin:6px">'+s.cn+'</div>'+
+    '<div style="font-size:1.5rem;font-weight:700;margin:16px;line-height:1.9;letter-spacing:1px">'+display+'</div>'+
+    '<div class="grid grid-2" id="'+qid+'">'+
+    options.map(function(o){return '<button class="option-btn" data-val="'+o+'" onclick="checkSentenceFill(\''+qid+'\',\''+o+'\',\''+blankWord+'\')">'+o+'</button>';}).join('')+
+    '</div></div>';
+  showModal(html,
+    '<button class="btn btn-sm" onclick="startSentenceFill('+idx+')">换一空</button>'+
+    '<button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  practiceAttach();
+}
+function checkSentenceFill(qid,picked,answer){
+  if(!lockAnswer(qid))return;
+  var btns=document.querySelectorAll('#'+qid+' .option-btn');
+  btns.forEach(function(b){b.style.pointerEvents='none';if(b.dataset.val===answer)b.classList.add('correct');else if(b.dataset.val===picked)b.classList.add('wrong');});
+  if(picked===answer){celebrate();addStars(2);showToast('填对啦！+2⭐');practiceRecord();offerAutoNext(function(){practiceContinue(function(){startSentenceFill(Math.floor(Math.random()*SENTENCES.length));});});}
+  else{playSFX('wrong');showToast('再想想～');modalTimeout(function(){unlockAnswer(qid);btns.forEach(function(b){b.style.pointerEvents='';b.classList.remove('wrong');});},800);}
+}
+function pickFromWords(arr,exclude,count){
+  var pool=arr.filter(function(x){return x!==exclude;});
+  var res=[];
+  while(res.length<count&&pool.length){var i=Math.floor(Math.random()*pool.length);res.push(pool.splice(i,1)[0]);}
+  return res;
+}
+var _flashcard=null;
+function startFlashcard(id){
+  var theme=ENGLISH.themes.find(function(t){return t.id===id;});
+  if(!theme||!theme.words.length)return;
+  _flashcard={theme:theme,index:0,finished:false};renderFlashcard();
+}
+function renderFlashcard(){
+  var deck=_flashcard;if(!deck||deck.finished)return;
+  var idx=deck.index,theme=deck.theme,w=theme.words[idx];if(!w)return;
+  var html='<h3>🎴 闪卡模式</h3><div class="flashcard" id="fc">'+
+    '<div class="fc-emoji">'+w.e+'</div><div class="fc-en">'+w.w+'</div><div class="fc-cn">'+w.cn+'</div></div>'+
+    '<div style="text-align:center;margin:12px">'+(idx+1)+' / '+theme.words.length+
+    ' <button class="btn btn-sm" aria-label="再听一次" onclick="playEnWord(\''+w.w+'\')">🔊</button></div>';
+  showModal(html,
+    '<button class="btn btn-sm" id="fcPrevious" '+(idx===0?'disabled ':'')+'onclick="moveFlashcard(-1)">← 上一个</button>'+
+    '<button class="btn btn-sm" onclick="markLearned(\''+w.w+'\')">学会了 ⭐</button>'+
+    (idx===theme.words.length-1?'<button class="btn btn-green" onclick="finishFlashcard()">完成本组</button>':'<button class="btn btn-sm" onclick="moveFlashcard(1)">下一个 →</button>')+
+    '<button class="btn btn-sm" onclick="closeModal()">退出</button>');
+  playEnWord(w.w);
+}
+function moveFlashcard(step){
+  var deck=_flashcard;if(!deck||deck.finished||!document.getElementById('fc')||![-1,1].includes(step))return;
+  var next=deck.index+step;if(next<0)return;if(next>=deck.theme.words.length){finishFlashcard();return;}
+  deck.index=next;renderFlashcard();
+}
+function finishFlashcard(){
+  var deck=_flashcard;if(!deck||deck.finished||!document.getElementById('fc')||deck.index!==deck.theme.words.length-1)return;
+  deck.finished=true;
+  showModal('<div class="phrase-card"><span class="learning-icon">🌟</span><h2>这一组看完啦！</h2><p>已经看过 '+deck.theme.words.length+' 张单词卡片，休息一下吧。</p><p class="learning-meta">想巩固时，可以再看一遍。</p></div>',
+    learningFooter()+learningButton('再看一遍',"startFlashcard('"+deck.theme.id+"')",'btn-green'));
+}
+function markLearned(word){
+  if(!state.english.learned[word]){state.english.learned[word]=true;updateEnglishThemeStars();addStars(1);saveState();showToast('学会了！+1⭐');}
+  else showToast('已经学会啦！');
+}
+function updateEnglishThemeStars(){
+  var changed=false;
+  ENGLISH.themes.forEach(function(theme){
+    if(!state.english.themeStars[theme.id]&&theme.words.every(function(word){return state.english.learned[word.w]===true;})){
+      state.english.themeStars[theme.id]=Date.now();changed=true;
+    }
+  });
+  return changed;
+}
+function startReadAlong(id){
+  var progress=practiceStart('english_read_'+id,'英语单词跟读');
+  var theme=ENGLISH.themes.filter(function(t){return t.id===id;})[0];
+  var w=theme.words[(progress+(state.practice.rounds['english_read_'+id]||0)*10)%theme.words.length];
+  var html='<div style="text-align:center">'+
+    '<div style="font-size:4rem;margin:16px">'+w.e+'</div>'+
+    '<div style="font-size:1.8rem;font-weight:700">'+w.w+'</div>'+
+    '<div style="color:var(--text-l);margin:4px">'+w.cn+'</div>'+
+    '<button class="btn btn-blue btn-lg" onclick="playEnWord(\''+w.w+'\')" style="margin:16px">🔊 听发音</button>'+
+    '<div id="readStatus" style="margin:16px;padding:16px;background:var(--bg);border-radius:12px;font-size:.95rem">'+
+    '点击下方按钮，跟着读一遍！</div>'+
+    '<div id="readResult" style="font-size:1.2rem;font-weight:700;min-height:30px"></div><p class="learning-meta">这里只比较识别出的文字，不是发音评分。家长可以陪孩子一起读。</p></div>';
+  showModal(html,
+    '<button class="btn btn-green btn-lg" onclick="doReadAlong(\''+w.w+'\')">🎤 开始跟读</button>'+
+    '<button class="btn btn-yellow" id="parentReadConfirm" hidden onclick="confirmParentRead(\'word\',\''+w.w+'\')">孩子已跟读 · 家长确认</button>'+
+    '<button class="btn btn-sm" onclick="startReadAlong(\''+id+'\')">换一个</button>'+
+    '<button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  document.getElementById('readStatus').dataset.theme=id;practiceAttach();playEnWord(w.w);
+}
+function doReadAlong(target){
+  var status=document.getElementById('readStatus');
+  var result=document.getElementById('readResult');
+  status.textContent='🎤 正在聆听...请大声读出来！';
+  status.style.background='var(--green)';
+  startRecognition(function(heard){
+    status.textContent='听到: "'+heard+'"';
+    var similarity=calcSimilarity(heard,target.toLowerCase());
+    if(similarity>=0.8){
+      var first=!result.dataset.awarded;result.dataset.awarded='1';
+      result.textContent=first?'识别到这个单词了！+2⭐':'又读了一遍！本题奖励已经领过啦。';
+      result.style.color='var(--green-d)';
+      if(first){celebrate();addStars(2);creditReadPractice('word');}
+      if(!state.english.learned[target])state.english.learned[target]=true;
+      updateEnglishThemeStars();
+      saveState();
+    }else{
+      playSFX('wrong');result.textContent='识别出的文字还不太一样，可以和家长再读一次。';
+      result.style.color='#c33';
+    }
+  });
+}
+function confirmParentRead(kind,value){
+  var prefix=kind==='sentence'?'sr':'read',status=document.getElementById(prefix+'Status'),result=document.getElementById(prefix+'Result');
+  if(!status||!result)return;
+  var first=!result.dataset.awarded;result.dataset.awarded='1';
+  status.textContent='家长已确认完成跟读';result.textContent=first?'愿意开口真棒！+2⭐（家长确认）':'这次跟读已经记录啦。';
+  if(kind==='word'){state.english.learned[value]=true;updateEnglishThemeStars();}
+  if(first){addStars(2);creditReadPractice(kind);}saveState();
+}
+function creditReadPractice(kind){
+  if(!practiceRecord())return;
+  var status=document.getElementById(kind==='sentence'?'srStatus':'readStatus'),next=kind==='sentence'?'startSentenceRead('+Number(status.dataset.next)+')':"startReadAlong('"+status.dataset.theme+"')";
+  document.querySelector('#modal .modal-actions').innerHTML=learningFooter()+learningButton('下一题','practiceContinue(function(){'+next+'})','btn-green');armNextButton(document.querySelector('#modal .modal-actions .btn-green'));
+}
+function calcSimilarity(a,b){
+  if(!a||!b)return 0;
+  function normalize(text){return text.toLowerCase().replace(/[^a-z0-9\s]/g,'').trim().replace(/\s+/g,' ');}
+  a=normalize(a);b=normalize(b);
+  if(!a||!b)return 0;
+  if(a===b)return 1;
+  var previous=Array.from({length:b.length+1},function(_,i){return i;});
+  for(var i=1;i<=a.length;i++){
+    var current=[i];
+    for(var j=1;j<=b.length;j++)current[j]=Math.min(current[j-1]+1,previous[j]+1,previous[j-1]+(a[i-1]===b[j-1]?0:1));
+    previous=current;
+  }
+  return 1-previous[b.length]/Math.max(a.length,b.length);
+}
+function startListenPick(id){
+  practiceStart('english_listen_'+id,'英语听音选图');
+  var theme=ENGLISH.themes.filter(function(t){return t.id===id;})[0];
+  var correct=theme.words[Math.floor(Math.random()*theme.words.length)];
+  var options=shuffle([correct].concat(shuffle(theme.words.filter(function(w){return w.w!==correct.w;})).slice(0,3)));
+  var qid='lp'+Date.now();
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-question">🔊 听一听，选出正确的图片</div>'+
+    '<button class="btn btn-blue btn-lg" onclick="playEnWord(\''+correct.w+'\')" style="margin:12px auto;display:flex">🔊 再听一次</button>'+
+    '<div class="grid grid-2" id="'+qid+'">'+
+    options.map(function(o){return '<button class="option-btn" data-w="'+o.w+'" onclick="checkListenPick(\''+qid+'\',\''+o.w+'\',\''+correct.w+'\')" style="font-size:2.5rem">'+o.e+'</button>';}).join('')+
+    '</div></div>',
+    '<button class="btn btn-sm" onclick="startListenPick(\''+id+'\')">换一题</button><button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  document.getElementById(qid).dataset.theme=id;
+  practiceAttach();
+  modalTimeout(function(){playEnWord(correct.w);},300);
+}
+function checkListenPick(qid,picked,answer){
+  if(!lockAnswer(qid))return;
+  var themeId=document.getElementById(qid).dataset.theme;
+  var btns=document.querySelectorAll('#'+qid+' .option-btn');
+  btns.forEach(function(b){b.style.pointerEvents='none';if(b.dataset.w===answer)b.classList.add('correct');else if(b.dataset.w===picked)b.classList.add('wrong');});
+  if(picked===answer){celebrate();addStars(2);if(!state.english.learned[answer])state.english.learned[answer]=true;updateEnglishThemeStars();saveState();showToast('选对了！+2⭐');practiceRecord();offerAutoNext(function(){practiceContinue(function(){startListenPick(themeId);});});}
+  else{playSFX('wrong');showToast('再听一次～');modalTimeout(function(){unlockAnswer(qid);btns.forEach(function(b){b.style.pointerEvents='';b.classList.remove('wrong');});speak(answer,'en',{rate:0.7});},800);}
+}
+function startSpellChallenge(id){
+  practiceStart('english_spell_'+id,'英语拼字');
+  var theme=ENGLISH.themes.filter(function(t){return t.id===id;})[0];
+  var correct=theme.words[Math.floor(Math.random()*theme.words.length)];
+  var letters=correct.w.split('');
+  var shuffled=shuffle(letters.concat(generateWrongLetters(letters.length,letters)));
+  // Keep repeated letters: every tile can be selected once.
+  var unique=shuffled;
+  var qid='sp'+Date.now();
+  window._spellPicked=[];window._spellTarget=correct.w;
+  showModal(
+    '<div class="quiz-area" style="box-shadow:none;padding:0">'+
+    '<div class="quiz-visual">'+correct.e+'</div>'+
+    '<div class="quiz-question">拼出这个单词！</div>'+
+    '<div id="'+qid+'_answer" style="font-size:1.8rem;font-weight:700;text-align:center;min-height:40px;letter-spacing:4px;margin:8px 0"></div>'+
+    '<div id="'+qid+'" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">'+
+    unique.map(function(l,i){return '<button class="option-btn" data-l="'+l+'" data-i="'+i+'" onclick="pickLetter(this,\''+qid+'\')" style="width:50px;height:50px;font-size:1.2rem">'+(l===' '?'空格':l)+'</button>';}).join('')+
+    '</div></div>',
+    '<button class="btn btn-sm" onclick="resetSpelling(\''+qid+'\')">重置</button>'+
+    '<button class="btn btn-sm" onclick="startSpellChallenge(\''+id+'\')">换一个</button>'+
+    '<button class="btn btn-sm" onclick="closeModal()">退出</button>'
+  );
+  document.getElementById(qid).dataset.theme=id;
+  practiceAttach();
+}
+function generateWrongLetters(count,existing){
+  var all='abcdefghijklmnopqrstuvwxyz'.split('');
+  var extra=[];
+  while(extra.length<count){var l=all[Math.floor(Math.random()*26)];if(existing.indexOf(l)<0)extra.push(l);}
+  return extra;
+}
+function resetSpelling(qid){
+  var board=document.getElementById(qid);if(!board||board.dataset.solved)return;
+  if(board._retryTimer){clearTimeout(board._retryTimer);_modalTimers=_modalTimers.filter(function(t){return t!==board._retryTimer;});board._retryTimer=null;}
+  window._spellPicked=[];
+  var answer=document.getElementById(qid+'_answer');answer.textContent='';answer.style.color='';
+  unlockAnswer(qid);
+  board.querySelectorAll('.option-btn').forEach(function(b){b.style.visibility='visible';});
+}
+function pickLetter(btn,qid){
+  var board=document.getElementById(qid);
+  if(!board||!board.contains(btn)||board.dataset.solved||board.dataset.locked==='1')return;
+  if(btn.style.visibility==='hidden')return;
+  window._spellPicked.push(btn.dataset.l);
+  btn.style.visibility='hidden';
+  document.getElementById(qid+'_answer').textContent=window._spellPicked.join('');
+  if(window._spellPicked.length>=window._spellTarget.length){
+    var result=window._spellPicked.join('');
+    if(result===window._spellTarget){
+      document.getElementById(qid).dataset.solved='1';
+      lockAnswer(qid);
+      document.getElementById(qid+'_answer').style.color='var(--green-d)';
+      celebrate();addStars(3);
+      if(!state.english.learned[window._spellTarget])state.english.learned[window._spellTarget]=true;
+      updateEnglishThemeStars();
+      saveState();showToast('拼对了！+3⭐');
+      playEnWord(window._spellTarget);
+      practiceRecord();
+      var themeId=board.dataset.theme;
+      offerAutoNext(function(){practiceContinue(function(){startSpellChallenge(themeId);});});
+    }else{
+      lockAnswer(qid);
+      document.getElementById(qid+'_answer').style.color='#c33';
+      showToast('再拼拼看～');
+      board._retryTimer=modalTimeout(function(){resetSpelling(qid);},1000);
+    }
+  }
+}
+
+// ==================== MODULE 7: STORIES ====================
+var _storyFilter='all';
+var _storyReader=null;
+function renderStories(){
+  var html='<div class="section-title">📚 童话故事屋</div>'+
+    '<div class="subtitle">听一个故事，说一句自己的话 · 亲子共读</div>'+renderReadingPath()+
+    '<div class="stats-row">'+
+    '<div class="stat-box"><div class="stat-num">'+state.stories.read.length+'/50</div><div class="stat-label">已读故事</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+getStoryStreak()+'</div><div class="stat-label">阅读天数</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+state.stories.favorites.length+'</div><div class="stat-label">收藏数</div></div>'+
+    '</div>'+
+    '<div class="backup-row">'+
+    '<button class="btn btn-purple btn-sm" onclick="randomStory()">🎲 随机推荐</button>'+
+    '<button class="btn '+(state.stories.autoRead?'btn-green':'btn-sm')+' btn-sm" onclick="toggleAutoRead()">'+(state.stories.autoRead?'🔊 自动朗读:开':'🔇 自动朗读:关')+'</button>'+
+    '<button class="btn '+(state.nightMode?'btn-yellow':'btn-blue')+' btn-sm" onclick="toggleNightMode()">'+(state.nightMode?'☀️ 日间模式':'🌙 夜间模式')+'</button>'+
+    '</div>'+
+    '<div class="pills" id="storyFilters">'+
+    '<span class="pill'+(_storyFilter==='all'?' active':'')+'" onclick="filterStories(\'all\',this)">全部</span>'+
+    '<span class="pill'+(_storyFilter==='中国经典'?' active':'')+'" onclick="filterStories(\'中国经典\',this)">🏮 中国经典</span>'+
+    '<span class="pill'+(_storyFilter==='世界童话'?' active':'')+'" onclick="filterStories(\'世界童话\',this)">🏰 世界童话</span>'+
+    '<span class="pill'+(_storyFilter==='fav'?' active':'')+'" onclick="filterStories(\'fav\',this)">⭐ 收藏</span>'+
+    '</div>'+
+    '<div class="grid grid-2" id="storyList">'+
+    renderStoryList(_storyFilter)+
+    '</div>';
+  return html;
+}
+function renderStoryList(filter){
+  var list=STORIES;
+  if(filter==='fav')list=STORIES.filter(function(s){return state.stories.favorites.indexOf(s.id)>=0;});
+  else if(filter!=='all')list=STORIES.filter(function(s){return s.c===filter;});
+  return list.map(function(s){
+    var isFav=state.stories.favorites.indexOf(s.id)>=0;
+    var isRead=state.stories.read.indexOf(s.id)>=0;
+    return '<div class="story-card" onclick="showStory('+s.id+')">'+
+      '<span class="story-emoji">'+s.e+'</span>'+
+      '<div class="story-info"><div class="story-title">'+s.t+(isRead?' ✓':'')+'</div>'+
+      '<div class="story-meta">'+s.c+'</div></div>'+
+      '<span class="fav-star'+(isFav?' active':'')+'" onclick="event.stopPropagation();toggleFavStory('+s.id+')">'+(isFav?'⭐':'☆')+'</span>'+
+      '</div>';
+  }).join('');
+}
+function filterStories(filter,el){
+  _storyFilter=filter;
+  Array.prototype.forEach.call(document.querySelectorAll('#storyFilters .pill'), function(p){p.classList.remove('active');});
+  el.classList.add('active');
+  document.getElementById('storyList').innerHTML=renderStoryList(filter);
+}
+function toggleNightMode(){
+  state.nightMode=!state.nightMode;
+  saveState();renderModule();
+}
+function toggleAutoRead(){
+  state.stories.autoRead=!state.stories.autoRead;
+  saveState();renderModule();
+  if(state.stories.autoRead){renderStoryPage();showToast('已开启自动朗读');}
+  else{stopSpeak();showToast('已关闭自动朗读');}
+}
+function toggleAutoPlay(){
+  state.stories.autoPlay=!state.stories.autoPlay;
+  saveState();
+  var ab=document.getElementById('autoPlayBtn');
+  if(ab){
+    if(state.stories.autoPlay){ab.textContent='▶️ 连续:开';ab.style.background='var(--green)';ab.style.color='#2a6b4f';}
+    else{ab.textContent='⏸ 连续:关';ab.style.background='';ab.style.color='';}
+  }
+  if(state.stories.autoPlay){
+    renderStoryPage();
+    showToast('连续播放已开启，自动翻页～');
+  }else{
+    stopSpeak();
+    showToast('已关闭连续播放');
+  }
+}
+function toggleFavStory(id){
+  var i=state.stories.favorites.indexOf(id);
+  if(i>=0)state.stories.favorites.splice(i,1);else state.stories.favorites.push(id);
+  saveState();renderModule();
+}
+function randomStory(){
+  var unread=STORIES.filter(function(s){return state.stories.read.indexOf(s.id)<0;});
+  var pool=unread.length>0?unread:STORIES;
+  showStory(pool[Math.floor(Math.random()*pool.length)].id);
+}
+function showStory(id){
+  var s=STORIES.filter(function(x){return x.id===id;})[0];
+  if(!s)return;
+  if(state.stories.currentStory!==id)state.stories.currentPage=0;
+  state.stories.currentStory=id;
+  saveState();
+  renderStoryPage();
+}
+function renderStoryPage(){
+  var s=STORIES.filter(function(x){return x.id===state.stories.currentStory;})[0];
+  if(!s){closeModal();return;}
+  var page=state.stories.currentPage;
+  var isFav=state.stories.favorites.indexOf(s.id)>=0;
+  var isLast=page>=s.p.length-1;
+  var html='<div class="story-reader" id="storyReader">'+
+    '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">'+
+    '<span style="font-size:.85rem;color:var(--text-l)">'+s.c+'</span>'+
+    '<button class="btn btn-sm" onclick="toggleFavStory('+s.id+');renderStoryPage()">'+(isFav?'⭐ 已收藏':'☆ 收藏')+'</button></div>'+
+    '<h2 style="font-size:1.5rem">'+s.t+'</h2>'+
+    '<div class="reading-prompt">👀 带着小任务听：'+readingPrompt(s.id)+'</div>'+
+    '<div style="font-size:.8rem;color:var(--text-l);margin:4px 0 12px">第 '+(page+1)+'/'+s.p.length+' 页</div>'+
+    '<div class="sr-emoji">'+s.e+'</div>'+
+    '<div class="sr-text" id="storyText">'+s.p[page]+'</div>'+
+    '<div class="progress-bar" style="margin:8px 0"><div class="progress-fill" style="width:'+((page+1)/s.p.length*100)+'%"></div></div>'+
+    (isLast?'<div class="sr-moral">💡 '+s.m+'</div>':'')+
+    '<div class="sr-nav">'+
+    '<button class="btn btn-sm" onclick="closeModal()">关闭</button>'+
+    '<button class="btn btn-blue" id="readBtn" onclick="speakStoryPage()">🔊 朗读</button>'+
+    '<button class="btn btn-sm" id="autoPlayBtn" onclick="toggleAutoPlay()" style="'+(state.stories.autoPlay?'background:var(--green);color:#2a6b4f':'')+'">'+(state.stories.autoPlay?'▶️ 连续:开':'⏸ 连续:关')+'</button>'+
+    '<div>'+
+    (page>0?'<button class="btn btn-sm" data-sfx="page" onclick="prevStoryPage()">← 上一页</button>':'')+
+    (!isLast?'<button class="btn btn-green" data-sfx="page" onclick="nextStoryPage()">下一页 →</button>':
+    '<button class="btn btn-yellow" onclick="showStoryQuiz('+s.id+')">读完啦，玩一玩 🌱</button>')+
+    '</div></div></div>';
+  showModal(html,'');
+  if(state.stories.autoRead||state.stories.autoPlay){speakStoryPage();}
+}
+function nextStoryPage(){state.stories.currentPage++;saveState();renderStoryPage();}
+function prevStoryPage(){state.stories.currentPage--;saveState();renderStoryPage();}
+function speakStoryPage(){
+  var s=STORIES.filter(function(x){return x.id===state.stories.currentStory;})[0];
+  if(!s)return;
+  var page=state.stories.currentPage;
+  var text=s.p[page];
+  // 优先播预生成音频（微信/自带浏览器靠这个；无 TTS 也能响）
+  playAudio('audio/story_'+s.id+'_'+page+'.mp3', text, 'story', {
+    onstart:function(){var b=document.getElementById('readBtn');if(b){b.textContent='🔊 朗读中…';b.style.background='var(--green)';}},
+    onend:function(){
+      var b=document.getElementById('readBtn');if(b){b.textContent='🔊 朗读';b.style.background='';}
+      if(state.stories.autoPlay){
+        if(page < s.p.length-1){
+          modalTimeout(function(){
+            try{synth&&synth.resume();}catch(e){}
+            if(state.stories.autoPlay && state.stories.currentStory===s.id && state.stories.currentPage===page && document.getElementById('storyReader') && document.getElementById('modal-overlay').classList.contains('show') && state.currentTab==='stories'){
+              nextStoryPage();
+            }
+          },900);
+        }else{
+          state.stories.autoPlay=false;saveState();
+          var ab=document.getElementById('autoPlayBtn');
+          if(ab){ab.textContent='⏸ 连续:关';ab.style.background='';ab.style.color='';}
+          showToast('故事读完啦！🎉');
+        }
+      }
+    },
+    onerror:function(){var b=document.getElementById('readBtn');if(b){b.textContent='🔊 朗读';b.style.background='';}}
+  });
+}
+function checkStoryQuiz(qid,picked,answer){
+  if(!lockAnswer(qid))return;
+  var btns=document.querySelectorAll('#'+qid+' .option-btn');
+  btns.forEach(function(b){b.style.pointerEvents='none';if(b.dataset.t===answer)b.classList.add('correct');else if(b.dataset.t===picked)b.classList.add('wrong');});
+  if(picked===answer){celebrate();addStars(1);showToast('答对了！+1⭐');}
+  else{showToast('没关系，下次加油！');}
+}
+
+// ==================== BACKUP ====================
+function exportData(){
+  var data=JSON.stringify(state);
+  var blob=new Blob([data],{type:'application/json'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;a.download='baole_learning_'+todayStr()+'.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('已导出备份文件！');
+}
+function importData(event){
+  var input=event.target,file=input.files[0];
+  if(!file)return;
+  var reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      var imported=JSON.parse(e.target.result);
+      if(!imported||typeof imported.stars!=='number')throw new Error('Invalid backup');
+      var restored=normalizeState(imported);
+      restored.firstVisit=false;
+      // Validate and persist before replacing the current working state.
+      localStorage.setItem(STORAGE_KEY,JSON.stringify(restored));
+      closeModal();state=restored;
+      _englishMode='themes';_englishCurrentTheme=null;
+      updateStarDisplay();renderNav();renderModule();syncAudioUI();
+      showToast('导入成功！');
+    }catch(err){showToast('文件格式不对或无法保存，原有数据未更改');}
+    input.value='';
+  };
+  reader.onerror=function(){input.value='';showToast('文件读取失败');};
+  reader.readAsText(file);
+}
+
+function clearData(){
+  showModal(
+    '<div style="text-align:center"><div style="font-size:3rem;margin:12px">⚠️</div>'+
+    '<h3>确认清空所有数据？</h3>'+
+    '<p style="color:var(--text-l);margin:8px">星星、进度、收藏将全部清空，无法恢复！</p></div>',
+    '<button class="btn btn-pink" onclick="doClearData()">确认清空</button>'+
+    '<button class="btn" onclick="closeModal()">取消</button>'
+  );
+}
+function doClearData(){
+  var tab=state.currentTab;
+  closeModal();state=JSON.parse(JSON.stringify(DEFAULT_STATE));
+  state.currentTab=tab;state.firstVisit=false;
+  _englishMode='themes';_englishCurrentTheme=null;
+  saveState();updateStarDisplay();renderNav();renderModule();syncAudioUI();
+  showToast('已清空，重新开始！');
+}
+
+
+// ==================== INIT ====================
+function init(){
+  loadState();
+  initRecognition();
+  updateStarDisplay();
+  syncAudioUI();
+  renderNav();
+  // Add backup buttons at top of every module
+  renderModule();
+  // Check if first visit
+  if(state.firstVisit){
+    state.firstVisit=false;saveState();
+    modalTimeout(function(){
+      showModal(
+        '<div style="text-align:center">'+
+        '<div style="font-size:3rem;margin:12px">🌈</div>'+
+        '<h3>欢迎来到宝贝学习乐园！</h3>'+
+        '<p style="margin:12px;color:var(--text-l)">这里有7个好玩的模块，学字母、读古诗、做算术、听故事……每完成一项都能获得星星哦！</p>'+
+        '<p style="margin:8px;color:var(--text-l)">数据保存在手机/电脑本地，不会丢失。记得定期导出备份！</p></div>',
+        '<button class="btn btn-lg" onclick="closeModal()">开始玩吧！</button>'
+      );
+    },500);
+  }
+  // Add global backup bar
+  addBackupBar();
+}
+function addBackupBar(){
+  var main=document.getElementById('main');
+  if(!main||document.getElementById('backupBar'))return;
+  var bar=document.createElement('div');bar.id='backupBar';bar.className='backup-row';
+  bar.innerHTML='<button class="btn btn-purple btn-sm" onclick="exportData()">💾 导出备份</button>'+
+    '<button class="btn btn-green btn-sm" onclick="document.getElementById(\'importFile\').click()">📂 导入恢复</button>'+
+    '<button class="btn btn-pink btn-sm" onclick="clearData()">🗑️ 清空数据</button>'+
+    '<input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">';
+  main.insertBefore(bar,main.firstChild);
+}
+
+
+</script>
+<script src="speech-catalog.js"></script>
+<script src="speech-player.js"></script>
+<script src="practice.js"></script>
+<script src="learning.js"></script>
+<script src="logic-play.js"></script>
+<script src="enrichment.js"></script>
+<script src="logic-hub.js"></script>
+<script src="life-play.js"></script>
+<script>init();</script>
+</body>
+</html>
