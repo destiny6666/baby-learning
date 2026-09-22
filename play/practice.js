@@ -10,7 +10,7 @@ function practiceAttach(){
   if(!_practiceCurrent)return;var modal=document.getElementById('modal'),bar=document.getElementById('practiceProgress');
   if(!bar){bar=document.createElement('div');bar.id='practiceProgress';bar.className='practice-progress';modal.insertBefore(bar,modal.firstChild);}
   var done=state.practice.progress[_practiceCurrent.key]||0;
-  bar.innerHTML='<span>'+learningEscape(_practiceCurrent.title)+'</span><strong>'+(_practiceCurrent.recorded?'已完成 '+done:'第 '+Math.min(done+1,PRACTICE_LENGTH))+' / '+PRACTICE_LENGTH+' 题</strong><div class="progress-bar"><div class="progress-fill" style="width:'+(done/PRACTICE_LENGTH*100)+'%"></div></div>';
+  bar.innerHTML='<span>'+learningEscape(_practiceCurrent.title)+'</span><strong>'+(_practiceCurrent.recorded||_practiceCurrent.countCompleted?'已完成 '+done:'第 '+Math.min(done+1,PRACTICE_LENGTH))+' / '+PRACTICE_LENGTH+' '+learningEscape(_practiceCurrent.unit||'题')+'</strong><div class="progress-bar"><div class="progress-fill" style="width:'+(done/PRACTICE_LENGTH*100)+'%"></div></div>';
 }
 function practiceRecord(){
   if(!_practiceCurrent||_practiceCurrent.recorded)return false;_practiceCurrent.recorded=true;
@@ -23,7 +23,7 @@ function practiceContinue(next){
   var done=state.practice.progress[_practiceCurrent.key]||0;
   if(done<PRACTICE_LENGTH){next();return;}
   _practiceRestart=next;
-  showModal('<div class="phrase-card"><span class="learning-icon">🌟</span><h2>这一轮完成啦！</h2><p>'+learningEscape(_practiceCurrent.title)+' · '+PRACTICE_LENGTH+' / '+PRACTICE_LENGTH+' 题</p><p>动脑筋也需要休息，和家长拍拍手吧。</p></div>',learningFooter()+learningButton('再来一轮','restartPractice()','btn-green'));
+  showModal('<div class="phrase-card"><span class="learning-icon">🌟</span><h2>这一轮完成啦！</h2><p>'+learningEscape(_practiceCurrent.title)+' · '+PRACTICE_LENGTH+' / '+PRACTICE_LENGTH+' '+learningEscape(_practiceCurrent.unit||'题')+'</p><p>动脑筋也需要休息，和家长拍拍手吧。</p></div>',learningFooter()+learningButton('再来一轮','restartPractice()','btn-green'));
 }
 function restartPractice(){if(_practiceRestart){var next=_practiceRestart;_practiceRestart=null;next();}}
 

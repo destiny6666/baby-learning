@@ -465,6 +465,301 @@
     "file": "audio/prompts/9ee4f6e7964a5aa2f4d0.wav"
   },
   {
+    "text": "frog",
+    "lang": "en",
+    "file": "audio/prompts/aff850a22270ac106ca8.wav"
+  },
+  {
+    "text": "goat",
+    "lang": "en",
+    "file": "audio/prompts/e4c8f0d557f565a10fe2.wav"
+  },
+  {
+    "text": "mouse",
+    "lang": "en",
+    "file": "audio/prompts/380836f660a15e0ffc87.wav"
+  },
+  {
+    "text": "chicken",
+    "lang": "en",
+    "file": "audio/prompts/d2fa200a51672a63f82f.wav"
+  },
+  {
+    "text": "giraffe",
+    "lang": "en",
+    "file": "audio/prompts/3a591d90a129a1bae9f1.wav"
+  },
+  {
+    "text": "hippo",
+    "lang": "en",
+    "file": "audio/prompts/c143fb0297922d332b0b.wav"
+  },
+  {
+    "text": "snake",
+    "lang": "en",
+    "file": "audio/prompts/fa2296f3ebddb36ba339.wav"
+  },
+  {
+    "text": "crocodile",
+    "lang": "en",
+    "file": "audio/prompts/9b366d3207c5cb93945c.wav"
+  },
+  {
+    "text": "turtle",
+    "lang": "en",
+    "file": "audio/prompts/f67d67f3812b125b2fd6.wav"
+  },
+  {
+    "text": "butterfly",
+    "lang": "en",
+    "file": "audio/prompts/0484dd195edbad5892ce.wav"
+  },
+  {
+    "text": "light blue",
+    "lang": "en",
+    "file": "audio/prompts/0393a74d73cc025dff50.wav"
+  },
+  {
+    "text": "dark blue",
+    "lang": "en",
+    "file": "audio/prompts/b58c558233372b466816.wav"
+  },
+  {
+    "text": "light green",
+    "lang": "en",
+    "file": "audio/prompts/5e8cd8b8edca052acb21.wav"
+  },
+  {
+    "text": "dark green",
+    "lang": "en",
+    "file": "audio/prompts/194d1b1c678f7308ea2c.wav"
+  },
+  {
+    "text": "light pink",
+    "lang": "en",
+    "file": "audio/prompts/b6cba2135c4f062c05cd.wav"
+  },
+  {
+    "text": "dark pink",
+    "lang": "en",
+    "file": "audio/prompts/811743089603e0a88176.wav"
+  },
+  {
+    "text": "light purple",
+    "lang": "en",
+    "file": "audio/prompts/0b2bd7db3696306040fb.wav"
+  },
+  {
+    "text": "dark purple",
+    "lang": "en",
+    "file": "audio/prompts/1848e68e05360f17c5fc.wav"
+  },
+  {
+    "text": "black and white",
+    "lang": "en",
+    "file": "audio/prompts/b7e13842fefed53a1819.wav"
+  },
+  {
+    "text": "red and yellow",
+    "lang": "en",
+    "file": "audio/prompts/56a1ae5664555dcd903c.wav"
+  },
+  {
+    "text": "melon",
+    "lang": "en",
+    "file": "audio/prompts/215bb24751834d9f6836.wav"
+  },
+  {
+    "text": "avocado",
+    "lang": "en",
+    "file": "audio/prompts/dcd88272154d6b16764e.wav"
+  },
+  {
+    "text": "lime",
+    "lang": "en",
+    "file": "audio/prompts/02593c992484020e33bc.wav"
+  },
+  {
+    "text": "mandarin",
+    "lang": "en",
+    "file": "audio/prompts/0c8069019ad622072498.wav"
+  },
+  {
+    "text": "plum",
+    "lang": "en",
+    "file": "audio/prompts/29df4b9cbdbc45a535d6.wav"
+  },
+  {
+    "text": "apricot",
+    "lang": "en",
+    "file": "audio/prompts/aed8008828da70ae8103.wav"
+  },
+  {
+    "text": "raspberry",
+    "lang": "en",
+    "file": "audio/prompts/3d984b9ee3074d661fd3.wav"
+  },
+  {
+    "text": "blackberry",
+    "lang": "en",
+    "file": "audio/prompts/cf0905b177323c78f52d.wav"
+  },
+  {
+    "text": "papaya",
+    "lang": "en",
+    "file": "audio/prompts/0422ca6cd410da66c1df.wav"
+  },
+  {
+    "text": "dragon fruit",
+    "lang": "en",
+    "file": "audio/prompts/ebce00cbd65a5bb4578c.wav"
+  },
+  {
+    "text": "eyebrow",
+    "lang": "en",
+    "file": "audio/prompts/7d4cf09711e2034545a9.wav"
+  },
+  {
+    "text": "eyelashes",
+    "lang": "en",
+    "file": "audio/prompts/1150509a7790fd183efe.wav"
+  },
+  {
+    "text": "tongue",
+    "lang": "en",
+    "file": "audio/prompts/3c35bbe2fd83c11759b9.wav"
+  },
+  {
+    "text": "cheek",
+    "lang": "en",
+    "file": "audio/prompts/aea935960c366f289117.wav"
+  },
+  {
+    "text": "chin",
+    "lang": "en",
+    "file": "audio/prompts/78d3b816b4f88ddbeaec.wav"
+  },
+  {
+    "text": "belly",
+    "lang": "en",
+    "file": "audio/prompts/d68e356b80aea032db3a.wav"
+  },
+  {
+    "text": "back",
+    "lang": "en",
+    "file": "audio/prompts/a1a50bd17ca515dc4818.wav"
+  },
+  {
+    "text": "elbow",
+    "lang": "en",
+    "file": "audio/prompts/0b200764045637c64f9a.wav"
+  },
+  {
+    "text": "toe",
+    "lang": "en",
+    "file": "audio/prompts/ccc82bda519c2f9331ab.wav"
+  },
+  {
+    "text": "thumb",
+    "lang": "en",
+    "file": "audio/prompts/e81ed7d64469cc9c0e43.wav"
+  },
+  {
+    "text": "water",
+    "lang": "en",
+    "file": "audio/prompts/c03e5a1cb7ba75bdb946.wav"
+  },
+  {
+    "text": "carrot",
+    "lang": "en",
+    "file": "audio/prompts/a5c6b4a84cb6f065456c.wav"
+  },
+  {
+    "text": "potato",
+    "lang": "en",
+    "file": "audio/prompts/6f64aaf0092d8987d799.wav"
+  },
+  {
+    "text": "tomato",
+    "lang": "en",
+    "file": "audio/prompts/7d50718d9b9016ed88b1.wav"
+  },
+  {
+    "text": "corn",
+    "lang": "en",
+    "file": "audio/prompts/befbe0775fb3201e9c08.wav"
+  },
+  {
+    "text": "broccoli",
+    "lang": "en",
+    "file": "audio/prompts/e080cbfc4689e144efb7.wav"
+  },
+  {
+    "text": "cucumber",
+    "lang": "en",
+    "file": "audio/prompts/ea90e8b6fa8d0f7e0cc8.wav"
+  },
+  {
+    "text": "sandwich",
+    "lang": "en",
+    "file": "audio/prompts/e228d21fc85587fb5379.wav"
+  },
+  {
+    "text": "pancake",
+    "lang": "en",
+    "file": "audio/prompts/771827c349f202c5aa66.wav"
+  },
+  {
+    "text": "dumpling",
+    "lang": "en",
+    "file": "audio/prompts/5a62f48b9a31a8ea0933.wav"
+  },
+  {
+    "text": "bus",
+    "lang": "en",
+    "file": "audio/prompts/9029ae20246ef5fca76e.wav"
+  },
+  {
+    "text": "boat",
+    "lang": "en",
+    "file": "audio/prompts/27ce4660399340b6c6bf.wav"
+  },
+  {
+    "text": "plane",
+    "lang": "en",
+    "file": "audio/prompts/c705646ab3ecc0208e07.wav"
+  },
+  {
+    "text": "bike",
+    "lang": "en",
+    "file": "audio/prompts/fb1f40ebbd1896cc8204.wav"
+  },
+  {
+    "text": "scooter",
+    "lang": "en",
+    "file": "audio/prompts/af2e23501f90ff1f7393.wav"
+  },
+  {
+    "text": "truck",
+    "lang": "en",
+    "file": "audio/prompts/4ca8d91a505ea6b51148.wav"
+  },
+  {
+    "text": "dinosaur",
+    "lang": "en",
+    "file": "audio/prompts/a0f893bd6df54406914f.wav"
+  },
+  {
+    "text": "yo-yo",
+    "lang": "en",
+    "file": "audio/prompts/0340745ed73444ec626c.wav"
+  },
+  {
+    "text": "rocket",
+    "lang": "en",
+    "file": "audio/prompts/2b0fda154bc5ba54a6ab.wav"
+  },
+  {
     "text": "小马要帮妈妈送麦子到磨坊去。",
     "lang": "zh",
     "file": "audio/prompts/2c1f4afed83298129256.wav"
@@ -4270,14 +4565,34 @@
     "file": "audio/prompts/a691d7f77793f8ac3d2f.wav"
   },
   {
-    "text": "篮子要装5个苹果，已经有1个，还差几个？",
+    "text": "篮子要装3个苹果，已经有1个，还差几个？",
     "lang": "zh",
-    "file": "audio/prompts/9165ae0bfcc5830d357d.wav"
+    "file": "audio/prompts/6540cfa503a22cdbe81f.wav"
   },
   {
     "text": "一个空位放一个苹果，数一数还有几个空位。",
     "lang": "zh",
     "file": "audio/prompts/bfcf8b3ed43b369a057e.wav"
+  },
+  {
+    "text": "1 个苹果，再放 2 个，就有 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/7f1807cfecb4c668f1d1.wav"
+  },
+  {
+    "text": "篮子要装4个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/f0552f77c6f19a78473c.wav"
+  },
+  {
+    "text": "1 个苹果，再放 3 个，就有 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/07b6cd0a30213fbe0431.wav"
+  },
+  {
+    "text": "篮子要装5个苹果，已经有1个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/9165ae0bfcc5830d357d.wav"
   },
   {
     "text": "1 个苹果，再放 4 个，就有 5 个。",
@@ -4295,6 +4610,26 @@
     "file": "audio/prompts/c8151c1ed759786f1363.wav"
   },
   {
+    "text": "篮子要装4个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/881f571b9ef526e287c8.wav"
+  },
+  {
+    "text": "2 个苹果，再放 2 个，就有 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/8454e5d20c0fc32cf04f.wav"
+  },
+  {
+    "text": "篮子要装3个苹果，已经有2个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/8d07c9400b5cfb58cae2.wav"
+  },
+  {
+    "text": "2 个苹果，再放 1 个，就有 3 个。",
+    "lang": "zh",
+    "file": "audio/prompts/f0edc81430bad4eca2df.wav"
+  },
+  {
     "text": "篮子要装5个苹果，已经有3个，还差几个？",
     "lang": "zh",
     "file": "audio/prompts/5fe079a4150927cce3cf.wav"
@@ -4303,6 +4638,16 @@
     "text": "3 个苹果，再放 2 个，就有 5 个。",
     "lang": "zh",
     "file": "audio/prompts/077fc8b57b361c603700.wav"
+  },
+  {
+    "text": "篮子要装4个苹果，已经有3个，还差几个？",
+    "lang": "zh",
+    "file": "audio/prompts/8526908744d2ec6557e3.wav"
+  },
+  {
+    "text": "3 个苹果，再放 1 个，就有 4 个。",
+    "lang": "zh",
+    "file": "audio/prompts/d79ec8f582881c936d97.wav"
   },
   {
     "text": "篮子要装5个苹果，已经有4个，还差几个？",
@@ -5625,6 +5970,56 @@
     "file": "audio/prompts/8f9110f6d286666b6f1c.wav"
   },
   {
+    "text": "Hello, frog!",
+    "lang": "en",
+    "file": "audio/prompts/e321d708fccf96388527.wav"
+  },
+  {
+    "text": "Hello, goat!",
+    "lang": "en",
+    "file": "audio/prompts/bd7f937917ce620622f2.wav"
+  },
+  {
+    "text": "Hello, mouse!",
+    "lang": "en",
+    "file": "audio/prompts/c465f2a354e780e8a25c.wav"
+  },
+  {
+    "text": "Hello, chicken!",
+    "lang": "en",
+    "file": "audio/prompts/aec93b09c33f122f984e.wav"
+  },
+  {
+    "text": "Hello, giraffe!",
+    "lang": "en",
+    "file": "audio/prompts/cb3b5bc5d3da724ea4c1.wav"
+  },
+  {
+    "text": "Hello, hippo!",
+    "lang": "en",
+    "file": "audio/prompts/ba0867d46f702f8837b3.wav"
+  },
+  {
+    "text": "Hello, snake!",
+    "lang": "en",
+    "file": "audio/prompts/5f7030c075981ead6a3a.wav"
+  },
+  {
+    "text": "Hello, crocodile!",
+    "lang": "en",
+    "file": "audio/prompts/47a1e5c4172197d1a71e.wav"
+  },
+  {
+    "text": "Hello, turtle!",
+    "lang": "en",
+    "file": "audio/prompts/94bfd76479ad203a3672.wav"
+  },
+  {
+    "text": "Hello, butterfly!",
+    "lang": "en",
+    "file": "audio/prompts/36f9f6abf5bc634d79fb.wav"
+  },
+  {
     "text": "It is green.",
     "lang": "en",
     "file": "audio/prompts/b88e97488810542b073b.wav"
@@ -5685,6 +6080,56 @@
     "file": "audio/prompts/7dae4a6181aa56efb958.wav"
   },
   {
+    "text": "It is light blue.",
+    "lang": "en",
+    "file": "audio/prompts/7414d0eb6f1b8c61e34a.wav"
+  },
+  {
+    "text": "It is dark blue.",
+    "lang": "en",
+    "file": "audio/prompts/51603948f009911fbe9a.wav"
+  },
+  {
+    "text": "It is light green.",
+    "lang": "en",
+    "file": "audio/prompts/114270202b65bdad5489.wav"
+  },
+  {
+    "text": "It is dark green.",
+    "lang": "en",
+    "file": "audio/prompts/45f9958dd85a063074a1.wav"
+  },
+  {
+    "text": "It is light pink.",
+    "lang": "en",
+    "file": "audio/prompts/eba2bae6f86a5c67f47a.wav"
+  },
+  {
+    "text": "It is dark pink.",
+    "lang": "en",
+    "file": "audio/prompts/d962e8c4161d33d464a2.wav"
+  },
+  {
+    "text": "It is light purple.",
+    "lang": "en",
+    "file": "audio/prompts/05957c3b83d5c41d87da.wav"
+  },
+  {
+    "text": "It is dark purple.",
+    "lang": "en",
+    "file": "audio/prompts/b6895c0f7a0bdd1f5732.wav"
+  },
+  {
+    "text": "It is black and white.",
+    "lang": "en",
+    "file": "audio/prompts/5a09f93f17da0f164b39.wav"
+  },
+  {
+    "text": "It is red and yellow.",
+    "lang": "en",
+    "file": "audio/prompts/10562f83ca2a22dfd419.wav"
+  },
+  {
     "text": "I like grapes.",
     "lang": "en",
     "file": "audio/prompts/fabbbe4110b3b2c8afdd.wav"
@@ -5743,6 +6188,56 @@
     "text": "I like blueberries.",
     "lang": "en",
     "file": "audio/prompts/4cb354a0b3f4ffd93974.wav"
+  },
+  {
+    "text": "I like melons.",
+    "lang": "en",
+    "file": "audio/prompts/05c3f41a1f82fc28cae0.wav"
+  },
+  {
+    "text": "I like avocados.",
+    "lang": "en",
+    "file": "audio/prompts/95544473df4e653abd12.wav"
+  },
+  {
+    "text": "I like limes.",
+    "lang": "en",
+    "file": "audio/prompts/cb0b1d6507742456d0fb.wav"
+  },
+  {
+    "text": "I like mandarins.",
+    "lang": "en",
+    "file": "audio/prompts/dffa5af3ed7b1297a798.wav"
+  },
+  {
+    "text": "I like plums.",
+    "lang": "en",
+    "file": "audio/prompts/8a00e635232d40101fa6.wav"
+  },
+  {
+    "text": "I like apricots.",
+    "lang": "en",
+    "file": "audio/prompts/042c4678a7e6e808da3f.wav"
+  },
+  {
+    "text": "I like raspberries.",
+    "lang": "en",
+    "file": "audio/prompts/50e42d982b12a6a33e94.wav"
+  },
+  {
+    "text": "I like blackberries.",
+    "lang": "en",
+    "file": "audio/prompts/6c2eac96960f8dcdbba3.wav"
+  },
+  {
+    "text": "I like papayas.",
+    "lang": "en",
+    "file": "audio/prompts/b2cfe2db8beaf22d9c71.wav"
+  },
+  {
+    "text": "I like dragon fruits.",
+    "lang": "en",
+    "file": "audio/prompts/6e56344381f70d48fed4.wav"
   },
   {
     "text": "Point to your head.",
@@ -5820,6 +6315,56 @@
     "file": "audio/prompts/0ae2c8b7e99086d114bb.wav"
   },
   {
+    "text": "Point to your eyebrow.",
+    "lang": "en",
+    "file": "audio/prompts/6f8c3a8a577df5557415.wav"
+  },
+  {
+    "text": "Point to your eyelashes.",
+    "lang": "en",
+    "file": "audio/prompts/2942956d9469345e756d.wav"
+  },
+  {
+    "text": "Point to your tongue.",
+    "lang": "en",
+    "file": "audio/prompts/891941432bf0bb4fafed.wav"
+  },
+  {
+    "text": "Point to your cheek.",
+    "lang": "en",
+    "file": "audio/prompts/c497f5095be6a55bc1f6.wav"
+  },
+  {
+    "text": "Point to your chin.",
+    "lang": "en",
+    "file": "audio/prompts/d2816477d122e553570d.wav"
+  },
+  {
+    "text": "Point to your belly.",
+    "lang": "en",
+    "file": "audio/prompts/49c7440b7f33677e1c82.wav"
+  },
+  {
+    "text": "Point to your back.",
+    "lang": "en",
+    "file": "audio/prompts/17248d01f2f4fc03c4c0.wav"
+  },
+  {
+    "text": "Point to your elbow.",
+    "lang": "en",
+    "file": "audio/prompts/03a29657755a6d9db37a.wav"
+  },
+  {
+    "text": "Point to your toe.",
+    "lang": "en",
+    "file": "audio/prompts/9fde5a98f690e7e08c65.wav"
+  },
+  {
+    "text": "Point to your thumb.",
+    "lang": "en",
+    "file": "audio/prompts/b255a9ab516d2a92b677.wav"
+  },
+  {
     "text": "Rice, please.",
     "lang": "en",
     "file": "audio/prompts/de5ba3de50d9e38fe44b.wav"
@@ -5880,6 +6425,56 @@
     "file": "audio/prompts/923580c4972b9d3eb25e.wav"
   },
   {
+    "text": "Water, please.",
+    "lang": "en",
+    "file": "audio/prompts/8ccc394a7bbf42adbde3.wav"
+  },
+  {
+    "text": "A carrot, please.",
+    "lang": "en",
+    "file": "audio/prompts/83420886b1a5f23a4943.wav"
+  },
+  {
+    "text": "A potato, please.",
+    "lang": "en",
+    "file": "audio/prompts/d908542d22929c8e3083.wav"
+  },
+  {
+    "text": "A tomato, please.",
+    "lang": "en",
+    "file": "audio/prompts/550c4e4d4a60670783c0.wav"
+  },
+  {
+    "text": "Corn, please.",
+    "lang": "en",
+    "file": "audio/prompts/83fbda39b19669cd7bfc.wav"
+  },
+  {
+    "text": "Broccoli, please.",
+    "lang": "en",
+    "file": "audio/prompts/3176d1e3f11fc1dcfc5d.wav"
+  },
+  {
+    "text": "A cucumber, please.",
+    "lang": "en",
+    "file": "audio/prompts/3ed441701163dbf2fc10.wav"
+  },
+  {
+    "text": "A sandwich, please.",
+    "lang": "en",
+    "file": "audio/prompts/b20949d5a36f477b6af8.wav"
+  },
+  {
+    "text": "A pancake, please.",
+    "lang": "en",
+    "file": "audio/prompts/7ea4cf121182e7949c04.wav"
+  },
+  {
+    "text": "A dumpling, please.",
+    "lang": "en",
+    "file": "audio/prompts/b94cddcfbcc74ca04186.wav"
+  },
+  {
     "text": "A doll, please.",
     "lang": "en",
     "file": "audio/prompts/6addbc1a9a2411ceb2ba.wav"
@@ -5938,6 +6533,56 @@
     "text": "A swing, please.",
     "lang": "en",
     "file": "audio/prompts/cb99ef794fdbc006717a.wav"
+  },
+  {
+    "text": "A bus, please.",
+    "lang": "en",
+    "file": "audio/prompts/813818995a02fd1c06df.wav"
+  },
+  {
+    "text": "A boat, please.",
+    "lang": "en",
+    "file": "audio/prompts/f3afc30b4fe739f3683b.wav"
+  },
+  {
+    "text": "A plane, please.",
+    "lang": "en",
+    "file": "audio/prompts/76fd47ae3bbd6a7c9a85.wav"
+  },
+  {
+    "text": "A bike, please.",
+    "lang": "en",
+    "file": "audio/prompts/2557d1082ad58b762ea6.wav"
+  },
+  {
+    "text": "A scooter, please.",
+    "lang": "en",
+    "file": "audio/prompts/9c63aa755d2f9dd29076.wav"
+  },
+  {
+    "text": "A truck, please.",
+    "lang": "en",
+    "file": "audio/prompts/1acd1fb4d0495c6e5e43.wav"
+  },
+  {
+    "text": "A dinosaur, please.",
+    "lang": "en",
+    "file": "audio/prompts/d6e4036c0406d5fe3416.wav"
+  },
+  {
+    "text": "A yo-yo, please.",
+    "lang": "en",
+    "file": "audio/prompts/2f84fee4a0676a37263e.wav"
+  },
+  {
+    "text": "A duck, please.",
+    "lang": "en",
+    "file": "audio/prompts/b5dac16abce1ddfd14b7.wav"
+  },
+  {
+    "text": "A rocket, please.",
+    "lang": "en",
+    "file": "audio/prompts/54a66b30553bbaae015a.wav"
   },
   {
     "text": "是谁要去帮妈妈送麦子？",

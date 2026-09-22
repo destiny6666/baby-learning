@@ -8,6 +8,8 @@
 <title>宝贝学习乐园 Pro</title>
 <link rel="stylesheet" href="learning.css">
 <link rel="stylesheet" href="life-play.css">
+<link rel="stylesheet" href="play-hub.css">
+<link rel="stylesheet" href="math-play.css">
 <style>
 /* ===== RESET & BASE ===== */
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
@@ -422,42 +424,62 @@ var ENGLISH={
       {w:'bird',e:'🐦',cn:'鸟'},{w:'rabbit',e:'🐰',cn:'兔子'},{w:'bear',e:'🐻',cn:'熊'},
       {w:'lion',e:'🦁',cn:'狮子'},{w:'tiger',e:'🐯',cn:'老虎'},{w:'elephant',e:'🐘',cn:'大象'},
       {w:'monkey',e:'🐵',cn:'猴子'},{w:'duck',e:'🦆',cn:'鸭子'},{w:'pig',e:'🐷',cn:'猪'},
-      {w:'cow',e:'🐮',cn:'牛'},{w:'sheep',e:'🐑',cn:'羊'},{w:'horse',e:'🐴',cn:'马'}
+      {w:'cow',e:'🐮',cn:'牛'},{w:'sheep',e:'🐑',cn:'羊'},{w:'horse',e:'🐴',cn:'马'},
+      {w:'frog',e:'🐸',cn:'青蛙'},{w:'goat',e:'🐐',cn:'山羊'},{w:'mouse',e:'🐭',cn:'老鼠'},
+      {w:'chicken',e:'🐔',cn:'鸡'},{w:'giraffe',e:'🦒',cn:'长颈鹿'},{w:'hippo',e:'🦛',cn:'河马'},
+      {w:'snake',e:'🐍',cn:'蛇'},{w:'crocodile',e:'🐊',cn:'鳄鱼'},{w:'turtle',e:'🐢',cn:'乌龟'},{w:'butterfly',e:'🦋',cn:'蝴蝶'}
     ]},
     {id:'colors',name:'Colors',cn:'颜色',emoji:'🌈',color:'#A7D8FF',words:[
       {w:'red',e:'🔴',cn:'红色'},{w:'blue',e:'🔵',cn:'蓝色'},{w:'green',e:'🟢',cn:'绿色'},
       {w:'yellow',e:'🟡',cn:'黄色'},{w:'orange',e:'🟠',cn:'橙色'},{w:'purple',e:'🟣',cn:'紫色'},
       {w:'pink',e:'💗',cn:'粉色'},{w:'white',e:'⚪',cn:'白色'},{w:'black',e:'⚫',cn:'黑色'},
       {w:'brown',e:'🟤',cn:'棕色'},{w:'gray',e:'⬜',cn:'灰色'},{w:'gold',e:'🥇',cn:'金色'},
-      {w:'silver',e:'🥈',cn:'银色'},{w:'rainbow',e:'🌈',cn:'彩虹'},{w:'colorful',e:'🎨',cn:'彩色'}
+      {w:'silver',e:'🥈',cn:'银色'},{w:'rainbow',e:'🌈',cn:'彩虹'},{w:'colorful',e:'🎨',cn:'彩色'},
+      {w:'light blue',e:'🔵',cn:'浅蓝色'},{w:'dark blue',e:'🔵',cn:'深蓝色'},
+      {w:'light green',e:'🟢',cn:'浅绿色'},{w:'dark green',e:'🟢',cn:'深绿色'},
+      {w:'light pink',e:'💗',cn:'浅粉色'},{w:'dark pink',e:'💗',cn:'深粉色'},
+      {w:'light purple',e:'🟣',cn:'浅紫色'},{w:'dark purple',e:'🟣',cn:'深紫色'},
+      {w:'black and white',e:'⚫⚪',cn:'黑白相间'},{w:'red and yellow',e:'🔴🟡',cn:'红黄相间'}
     ]},
     {id:'fruits',name:'Fruits',cn:'水果',emoji:'🍎',color:'#FFF3A1',words:[
       {w:'apple',e:'🍎',cn:'苹果'},{w:'banana',e:'🍌',cn:'香蕉'},{w:'orange',e:'🍊',cn:'橙子'},
       {w:'grape',e:'🍇',cn:'葡萄'},{w:'strawberry',e:'🍓',cn:'草莓'},{w:'watermelon',e:'🍉',cn:'西瓜'},
       {w:'pear',e:'🍐',cn:'梨'},{w:'peach',e:'🍑',cn:'桃子'},{w:'cherry',e:'🍒',cn:'樱桃'},
       {w:'lemon',e:'🍋',cn:'柠檬'},{w:'mango',e:'🥭',cn:'芒果'},{w:'kiwi',e:'🥝',cn:'猕猴桃'},
-      {w:'pineapple',e:'🍍',cn:'菠萝'},{w:'coconut',e:'🥥',cn:'椰子'},{w:'blueberry',e:'🫐',cn:'蓝莓'}
+      {w:'pineapple',e:'🍍',cn:'菠萝'},{w:'coconut',e:'🥥',cn:'椰子'},{w:'blueberry',e:'🫐',cn:'蓝莓'},
+      {w:'melon',e:'🍈',cn:'甜瓜'},{w:'avocado',e:'🥑',cn:'牛油果'},{w:'lime',e:'🍋‍🟩',cn:'青柠'},
+      {w:'mandarin',e:'🍊',cn:'橘子'},{w:'plum',e:'🟣',cn:'李子'},{w:'apricot',e:'🟠',cn:'杏'},
+      {w:'raspberry',e:'🔴',cn:'树莓'},{w:'blackberry',e:'⚫',cn:'黑莓'},{w:'papaya',e:'🍈',cn:'木瓜'},{w:'dragon fruit',e:'🌵',cn:'火龙果'}
     ]},
     {id:'body',name:'Body',cn:'身体',emoji:'🧒',color:'#B5EAD7',words:[
       {w:'head',e:'🗣️',cn:'头'},{w:'eye',e:'👁️',cn:'眼睛'},{w:'nose',e:'👃',cn:'鼻子'},
       {w:'mouth',e:'👄',cn:'嘴巴'},{w:'ear',e:'👂',cn:'耳朵'},{w:'hand',e:'✋',cn:'手'},
       {w:'foot',e:'🦶',cn:'脚'},{w:'arm',e:'💪',cn:'胳膊'},{w:'leg',e:'🦵',cn:'腿'},
       {w:'finger',e:'👆',cn:'手指'},{w:'tooth',e:'🦷',cn:'牙齿'},{w:'hair',e:'💇',cn:'头发'},
-      {w:'face',e:'😀',cn:'脸'},{w:'shoulder',e:'🤷',cn:'肩膀'},{w:'knee',e:'🦿',cn:'膝盖'}
+      {w:'face',e:'😀',cn:'脸'},{w:'shoulder',e:'🤷',cn:'肩膀'},{w:'knee',e:'🦿',cn:'膝盖'},
+      {w:'eyebrow',e:'🤨',cn:'眉毛'},{w:'eyelashes',e:'👁️',cn:'睫毛'},{w:'tongue',e:'👅',cn:'舌头'},
+      {w:'cheek',e:'😊',cn:'脸颊'},{w:'chin',e:'🙂',cn:'下巴'},{w:'belly',e:'🧒',cn:'肚子'},
+      {w:'back',e:'🚶',cn:'背'},{w:'elbow',e:'💪',cn:'手肘'},{w:'toe',e:'🦶',cn:'脚趾'},{w:'thumb',e:'👍',cn:'拇指'}
     ]},
     {id:'food',name:'Food',cn:'食物',emoji:'🍽️',color:'#D4B5FF',words:[
       {w:'bread',e:'🍞',cn:'面包'},{w:'milk',e:'🥛',cn:'牛奶'},{w:'egg',e:'🥚',cn:'鸡蛋'},
       {w:'rice',e:'🍚',cn:'米饭'},{w:'cake',e:'🎂',cn:'蛋糕'},{w:'cookie',e:'🍪',cn:'饼干'},
       {w:'candy',e:'🍬',cn:'糖果'},{w:'ice cream',e:'🍦',cn:'冰淇淋'},{w:'pizza',e:'🍕',cn:'披萨'},
       {w:'hamburger',e:'🍔',cn:'汉堡'},{w:'noodle',e:'🍜',cn:'面条'},{w:'soup',e:'🍲',cn:'汤'},
-      {w:'cheese',e:'🧀',cn:'奶酪'},{w:'juice',e:'🧃',cn:'果汁'},{w:'chocolate',e:'🍫',cn:'巧克力'}
+      {w:'cheese',e:'🧀',cn:'奶酪'},{w:'juice',e:'🧃',cn:'果汁'},{w:'chocolate',e:'🍫',cn:'巧克力'},
+      {w:'water',e:'💧',cn:'水'},{w:'carrot',e:'🥕',cn:'胡萝卜'},{w:'potato',e:'🥔',cn:'土豆'},
+      {w:'tomato',e:'🍅',cn:'番茄'},{w:'corn',e:'🌽',cn:'玉米'},{w:'broccoli',e:'🥦',cn:'西兰花'},
+      {w:'cucumber',e:'🥒',cn:'黄瓜'},{w:'sandwich',e:'🥪',cn:'三明治'},{w:'pancake',e:'🥞',cn:'松饼'},{w:'dumpling',e:'🥟',cn:'饺子'}
     ]},
     {id:'toys',name:'Toys',cn:'玩具',emoji:'🧸',color:'#FFB7C5',words:[
       {w:'ball',e:'⚽',cn:'球'},{w:'doll',e:'🪆',cn:'娃娃'},{w:'car',e:'🚗',cn:'汽车'},
       {w:'train',e:'🚂',cn:'火车'},{w:'blocks',e:'🧱',cn:'积木'},{w:'puzzle',e:'🧩',cn:'拼图'},
       {w:'teddy',e:'🧸',cn:'泰迪熊'},{w:'robot',e:'🤖',cn:'机器人'},{w:'kite',e:'🪁',cn:'风筝'},
       {w:'drum',e:'🥁',cn:'鼓'},{w:'balloon',e:'🎈',cn:'气球'},{w:'book',e:'📖',cn:'书'},
-      {w:'crayon',e:'🖍️',cn:'蜡笔'},{w:'bubble',e:'🫧',cn:'泡泡'},{w:'swing',e:'🏟️',cn:'秋千'}
+      {w:'crayon',e:'🖍️',cn:'蜡笔'},{w:'bubble',e:'🫧',cn:'泡泡'},{w:'swing',e:'🏟️',cn:'秋千'},
+      {w:'bus',e:'🚌',cn:'玩具巴士'},{w:'boat',e:'⛵',cn:'玩具船'},{w:'plane',e:'✈️',cn:'玩具飞机'},
+      {w:'bike',e:'🚲',cn:'自行车'},{w:'scooter',e:'🛴',cn:'滑板车'},{w:'truck',e:'🚚',cn:'玩具卡车'},
+      {w:'dinosaur',e:'🦕',cn:'恐龙玩具'},{w:'yo-yo',e:'🪀',cn:'悠悠球'},{w:'duck',e:'🦆',cn:'小鸭玩具'},{w:'rocket',e:'🚀',cn:'玩具火箭'}
     ]}
   ]
 };
@@ -634,7 +656,7 @@ function playMathDemo(text){
   else speak(text,'child');
 }
 function playEnWord(word){
-  var f=EN_WORD_AUDIO[word];
+  var clips=recordedSpeechClips(word,'en'),f=clips?clips[0]:EN_WORD_AUDIO[word];
   if(f) playAudio(f, word, 'en');
   else speak(word,'en');
 }
@@ -750,7 +772,7 @@ var BADGES_DEF=[
   {id:'level3',name:'闯关勇士',emoji:'🛡️',desc:'通过3关闯关',check:function(){return state.levels.completed.length>=3;}},
   {id:'level10',name:'小学霸',emoji:'👑',desc:'通过全部10关',check:function(){return state.levels.completed.length>=10;}},
   {id:'english_30',name:'英语小达人',emoji:'🌍',desc:'学会30个英语单词',check:function(){var n=0;for(var k in state.english.learned)n++;return n>=30;}},
-  {id:'english_90',name:'英语大师',emoji:'🏆',desc:'学会全部90个英语单词',check:function(){var n=0;for(var k in state.english.learned)n++;return n>=90;}},
+  {id:'english_90',name:'英语大师',emoji:'🏆',desc:'学会全部主题词卡',check:function(){return ENGLISH.themes.every(function(t){return t.words.every(function(w){return !!state.english.learned[w.w];});});}},
   {id:'story_10',name:'故事小听众',emoji:'📚',desc:'阅读10个故事',check:function(){return state.stories.read.length>=10;}},
   {id:'story_50',name:'故事大王',emoji:'📖',desc:'读完所有50个故事',check:function(){return state.stories.read.length>=50;}},
   {id:'streak7',name:'坚持学习',emoji:'🔥',desc:'连续学习7天',check:function(){return state.english.streak>=7||getStoryStreak()>=7;}},
@@ -866,17 +888,15 @@ function formatDate(d){var dt=new Date(d);return dt.getMonth()+1+'月'+dt.getDat
 function renderNav(){
   var sidebar=document.getElementById('sidebar');
   var bottom=document.getElementById('bottomNav');
-  var html='',bhtml='';
+  var html='';
   TABS.forEach(function(t){
     var active=state.currentTab===t.id?'active':'';
     var bg=active?'style="background:'+t.color+';color:#fff"':'';
     html+='<button class="nav-item '+active+'" '+bg+' onclick="switchTab(\''+t.id+'\')">'+
       '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span></button>';
-    bhtml+='<button class="bottom-nav-item '+active+'" onclick="switchTab(\''+t.id+'\')">'+
-      '<span class="nav-emoji">'+t.emoji+'</span><span>'+t.name+'</span></button>';
   });
   sidebar.innerHTML=html;
-  bottom.innerHTML=bhtml;
+  bottom.innerHTML=renderMobileNav();
 }
 function switchTab(id){
   closeModal();
@@ -896,6 +916,7 @@ function renderModule(){
   };
   var fn=renderers[state.currentTab];
   if(fn)main.innerHTML=fn();
+  addQuickStart();
   addBackupBar();
   // Apply night mode
   if(state.nightMode)document.body.classList.add('night');else document.body.classList.remove('night');
@@ -1221,9 +1242,10 @@ function setLogicLevel(i){if(![0,1,2].includes(i))return;state.logic.level=i;sav
 function startPattern(){startLogicPattern();}
 function checkPattern(qid,picked,answer){answerLogicPattern(picked);}
 function startShapeMatch(){
-  practiceStart('logic_memory','记忆配对');
+  var completed=practiceStart('logic_memory_pairs','记忆配对');
+  _practiceCurrent.unit='对';_practiceCurrent.countCompleted=true;
   var level=state.logic.level;
-  var pairCount=level===0?3:level===1?4:5;
+  var pairCount=Math.min(level===0?3:level===1?4:5,PRACTICE_LENGTH-completed);
   var pool=shuffle(LOGIC_SHAPES).slice(0,pairCount);
   var allItems=shuffle(pool.concat(pool));
   var qid='sm'+Date.now();
@@ -1233,7 +1255,7 @@ function startShapeMatch(){
     '<div class="quiz-question">找出相同的图形配对！</div>'+
     '<div class="grid grid-4" id="'+qid+'">'+
     allItems.map(function(s,i){return '<button class="option-btn" data-shape="'+s+'" data-idx="'+i+'" onclick="flipCard(this,\''+qid+'\','+pairCount+')" style="font-size:2rem">❓</button>';}).join('')+
-    '</div><p id="'+qid+'_status" style="text-align:center;margin-top:12px">已配对: 0/'+pairCount+'</p></div>',
+    '</div><p id="'+qid+'_status" style="text-align:center;margin-top:12px">这盘已配对: 0/'+pairCount+' · 本轮目标10对</p></div>',
     '<button class="btn btn-sm" onclick="closeModal()">退出</button>'
   );
   practiceAttach();
@@ -1252,13 +1274,15 @@ function flipCard(btn,qid,pairCount){
       first.disabled=true;btn.disabled=true;
       first.style.background='var(--green)';btn.style.background='var(--green)';
       window._matched++;
-      document.getElementById(qid+'_status').textContent='已配对: '+window._matched+'/'+pairCount;
+      // A matched card stays locked; only a new pair can record another unit.
+      if((state.practice.progress.logic_memory_pairs||0)<PRACTICE_LENGTH){_practiceCurrent.recorded=false;practiceRecord();}
+      document.getElementById(qid+'_status').textContent='这盘已配对: '+window._matched+'/'+pairCount+' · 本轮目标10对';
       if(window._matched>=pairCount){
         board.dataset.solved='1';
-        celebrate();var stars=state.logic.level+2;addStars(stars);
-        state.logic.completed.push(Date.now());state.logic.stars+=stars;
-        saveState();showToast('全部配对成功！+'+stars+'⭐');
-        practiceRecord();
+        celebrate();
+        if(state.practice.progress.logic_memory_pairs===PRACTICE_LENGTH){
+          addStars(3);state.logic.completed.push(Date.now());state.logic.stars+=3;saveState();showToast('完成10对！+3⭐');
+        }else showToast('这盘配好啦！接着找下一组小伙伴。');
         offerAutoNext(function(){practiceContinue(startShapeMatch);});
       }
     }else{
@@ -1424,31 +1448,31 @@ function renderEnglish(){
   if(_englishMode==='sentences'){
     return renderEnglishSentences();
   }
-  var totalLearned=0;
-  ENGLISH.themes.forEach(function(t){t.words.forEach(function(w){if(state.english.learned[w.w])totalLearned++;});});
+  var totalLearned=0,totalWords=0;
+  ENGLISH.themes.forEach(function(t){t.words.forEach(function(w){totalWords++;if(state.english.learned[w.w])totalLearned++;});});
   var html='<div class="section-title">🌍 英语小镇</div>'+
     '<div class="subtitle">听一听、指一指、说一句 · 亲子一起玩英语</div>'+renderEnglishPath()+
-    '<details class="learning-library"><summary>更多单词与短句 · 亲子选学</summary>'+
+    '<section class="learning-library"><h2 class="card-title">更多单词与短句 · 亲子选学</h2>'+
     '<div class="stats-row">'+
-    '<div class="stat-box"><div class="stat-num">'+totalLearned+'/90</div><div class="stat-label">已学单词</div></div>'+
+    '<div class="stat-box"><div class="stat-num">'+totalLearned+'/'+totalWords+'</div><div class="stat-label">已学主题词卡</div></div>'+
     '<div class="stat-box"><div class="stat-num">'+state.english.streak+'</div><div class="stat-label">连续天数</div></div>'+
     '<div class="stat-box"><div class="stat-num">'+Object.keys(state.english.themeStars||{}).length+'/6</div><div class="stat-label">主题勋章</div></div>'+
     '</div>'+
     '<div class="card" style="text-align:center">'+
     '<div class="card-title">💬 短句练习</div>'+
     '<div class="subtitle" style="margin:6px 0 12px">日常英语小短句，跟读 + 填空</div>'+
-    '<button class="btn btn-purple btn-lg" onclick="_englishMode=\'sentences\';renderModule()">开始练习 →</button></div>'+
-    '<div class="card"><div class="card-title">📊 学习报告</div>'+
+    '<button class="btn btn-purple btn-lg" onclick="_englishMode=\'sentences\';renderModule()">开始练习 →</button></div>';
+  var report='<div class="card"><div class="card-title">📊 学习报告</div>'+
     '<div style="margin-top:8px">';
   ENGLISH.themes.forEach(function(t){
     var learned=t.words.filter(function(w){return state.english.learned[w.w];}).length;
     var pct=Math.round(learned/t.words.length*100);
-    html+='<div style="margin:8px 0"><div style="display:flex;justify-content:space-between;font-size:.9rem">'+
+    report+='<div style="margin:8px 0"><div style="display:flex;justify-content:space-between;font-size:.9rem">'+
       '<span>'+t.emoji+' '+t.cn+'</span><span>'+learned+'/'+t.words.length+' ('+pct+'%)</span></div>'+
       '<div class="progress-bar" style="height:8px;margin-top:4px"><div class="progress-fill" style="width:'+pct+'%;background:'+t.color+'"></div></div></div>';
   });
-  html+='<div style="margin-top:12px;text-align:center;font-size:.9rem;color:var(--text-l)">⭐ 总星星: '+state.stars+' | 🔥 连续学习: '+state.english.streak+'天</div></div></div>'+
-    '<div class="card"><div class="card-title">选择主题</div><div class="grid grid-3">';
+  report+='<div style="margin-top:12px;text-align:center;font-size:.9rem;color:var(--text-l)">⭐ 总星星: '+state.stars+' | 🔥 连续学习: '+state.english.streak+'天</div><p class="learning-meta">同一个词出现在不同主题时，会在各主题词卡中显示已学。</p></div></div>';
+  html+='<div class="card"><div class="card-title">选择主题 · 每个主题25张词卡</div><div class="grid grid-3">';
   ENGLISH.themes.forEach(function(t){
     var learned=t.words.filter(function(w){return state.english.learned[w.w];}).length;
     var pct=Math.round(learned/t.words.length*100);
@@ -1459,7 +1483,7 @@ function renderEnglish(){
       '<div class="theme-progress">'+learned+'/'+t.words.length+'</div>'+
       '<div class="theme-bar"><div class="theme-bar-fill" style="width:'+pct+'%;background:'+t.color+'"></div></div></div>';
   });
-  html+='</div></div></details>';
+  html+='</div></div></section>'+report;
   return html;
 }
 function enterEnglishTheme(id){
@@ -1497,7 +1521,7 @@ function renderEnglishTheme(id){
   theme.words.forEach(function(w){
     var isLearned=state.english.learned[w.w];
     html+='<div class="word-card'+(isLearned?' learned':'')+'" onclick="playEnWord(\''+w.w+'\')">'+
-      '<div class="word-emoji">'+w.e+'</div><div class="word-en">'+w.w+'</div><div class="word-cn">'+w.cn+'</div></div>';
+      '<div class="word-emoji">'+wordPicture(w)+'</div><div class="word-en">'+w.w+'</div><div class="word-cn">'+w.cn+'</div></div>';
   });
   html+='</div></div>';
   return html;
@@ -1605,7 +1629,7 @@ function renderFlashcard(){
   var deck=_flashcard;if(!deck||deck.finished)return;
   var idx=deck.index,theme=deck.theme,w=theme.words[idx];if(!w)return;
   var html='<h3>🎴 闪卡模式</h3><div class="flashcard" id="fc">'+
-    '<div class="fc-emoji">'+w.e+'</div><div class="fc-en">'+w.w+'</div><div class="fc-cn">'+w.cn+'</div></div>'+
+    '<div class="fc-emoji">'+wordPicture(w)+'</div><div class="fc-en">'+w.w+'</div><div class="fc-cn">'+w.cn+'</div></div>'+
     '<div style="text-align:center;margin:12px">'+(idx+1)+' / '+theme.words.length+
     ' <button class="btn btn-sm" aria-label="再听一次" onclick="playEnWord(\''+w.w+'\')">🔊</button></div>';
   showModal(html,
@@ -1644,7 +1668,7 @@ function startReadAlong(id){
   var theme=ENGLISH.themes.filter(function(t){return t.id===id;})[0];
   var w=theme.words[(progress+(state.practice.rounds['english_read_'+id]||0)*10)%theme.words.length];
   var html='<div style="text-align:center">'+
-    '<div style="font-size:4rem;margin:16px">'+w.e+'</div>'+
+    '<div style="font-size:4rem;margin:16px">'+wordPicture(w)+'</div>'+
     '<div style="font-size:1.8rem;font-weight:700">'+w.w+'</div>'+
     '<div style="color:var(--text-l);margin:4px">'+w.cn+'</div>'+
     '<button class="btn btn-blue btn-lg" onclick="playEnWord(\''+w.w+'\')" style="margin:16px">🔊 听发音</button>'+
@@ -1719,7 +1743,7 @@ function startListenPick(id){
     '<div class="quiz-question">🔊 听一听，选出正确的图片</div>'+
     '<button class="btn btn-blue btn-lg" onclick="playEnWord(\''+correct.w+'\')" style="margin:12px auto;display:flex">🔊 再听一次</button>'+
     '<div class="grid grid-2" id="'+qid+'">'+
-    options.map(function(o){return '<button class="option-btn" data-w="'+o.w+'" onclick="checkListenPick(\''+qid+'\',\''+o.w+'\',\''+correct.w+'\')" style="font-size:2.5rem">'+o.e+'</button>';}).join('')+
+    options.map(function(o){return '<button class="option-btn" data-w="'+o.w+'" onclick="checkListenPick(\''+qid+'\',\''+o.w+'\',\''+correct.w+'\')" style="font-size:2.5rem">'+wordPicture(o)+'</button>';}).join('')+
     '</div></div>',
     '<button class="btn btn-sm" onclick="startListenPick(\''+id+'\')">换一题</button><button class="btn btn-sm" onclick="closeModal()">退出</button>'
   );
@@ -1738,16 +1762,17 @@ function checkListenPick(qid,picked,answer){
 function startSpellChallenge(id){
   practiceStart('english_spell_'+id,'英语拼字');
   var theme=ENGLISH.themes.filter(function(t){return t.id===id;})[0];
-  var correct=theme.words[Math.floor(Math.random()*theme.words.length)];
+  var words=theme.words.filter(function(word){return /^[a-z]{1,8}$/.test(word.w);});
+  var correct=words[Math.floor(Math.random()*words.length)];
   var letters=correct.w.split('');
-  var shuffled=shuffle(letters.concat(generateWrongLetters(letters.length,letters)));
+  var shuffled=shuffle(letters.concat(generateWrongLetters(Math.min(3,letters.length),letters)));
   // Keep repeated letters: every tile can be selected once.
   var unique=shuffled;
   var qid='sp'+Date.now();
   window._spellPicked=[];window._spellTarget=correct.w;
   showModal(
     '<div class="quiz-area" style="box-shadow:none;padding:0">'+
-    '<div class="quiz-visual">'+correct.e+'</div>'+
+    '<div class="quiz-visual">'+wordPicture(correct)+'</div>'+
     '<div class="quiz-question">拼出这个单词！</div>'+
     '<div id="'+qid+'_answer" style="font-size:1.8rem;font-weight:700;text-align:center;min-height:40px;letter-spacing:4px;margin:8px 0"></div>'+
     '<div id="'+qid+'" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">'+
@@ -2046,12 +2071,12 @@ function init(){
 function addBackupBar(){
   var main=document.getElementById('main');
   if(!main||document.getElementById('backupBar'))return;
-  var bar=document.createElement('div');bar.id='backupBar';bar.className='backup-row';
-  bar.innerHTML='<button class="btn btn-purple btn-sm" onclick="exportData()">💾 导出备份</button>'+
+  var bar=document.createElement('details');bar.id='backupBar';bar.className='parent-tools';
+  bar.innerHTML='<summary>⚙️ 家长工具</summary><div class="backup-row"><button class="btn btn-purple btn-sm" onclick="exportData()">💾 导出备份</button>'+
     '<button class="btn btn-green btn-sm" onclick="document.getElementById(\'importFile\').click()">📂 导入恢复</button>'+
     '<button class="btn btn-pink btn-sm" onclick="clearData()">🗑️ 清空数据</button>'+
-    '<input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">';
-  main.insertBefore(bar,main.firstChild);
+    '<input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)"></div>';
+  main.appendChild(bar);
 }
 
 
@@ -2064,6 +2089,7 @@ function addBackupBar(){
 <script src="enrichment.js"></script>
 <script src="logic-hub.js"></script>
 <script src="life-play.js"></script>
+<script src="play-hub.js"></script>
 <script>init();</script>
 </body>
 </html>
