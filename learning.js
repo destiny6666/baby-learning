@@ -6,7 +6,7 @@ function learningFeedback(text,success){var el=document.getElementById('learning
 function learningSpeak(text,english){var session=_modalGeneration;speak(text,english?'en':'child',{onerror:function(e){if(session===_modalGeneration&&e.error!=='canceled'&&e.error!=='interrupted')learningFeedback('暂时无法朗读，请重试，或请家长打开文字提示。');}});}
 function learningFooter(){return learningButton('先休息一下','closeModal()','btn-blue');}
 function learningDots(n){return n?new Array(n+1).join('●'):'空空的';}
-function learningOptions(options,action,pictures){return '<div class="picture-options" id="learningOptions">'+options.map(function(o,i){var icon=o==='小兔这边'?'🐰':o==='小熊这边'?'🐻':o==='一样多'?'＝':'';return '<button class="option-btn" onclick="'+action+'('+i+')">'+(pictures?'<span class="picture">'+learningEscape(o.e)+'</span><strong>'+learningEscape(o.cn)+'</strong>':(icon?'<span class="picture">'+icon+'</span>':'')+'<strong>'+learningEscape(o)+'</strong>'+(typeof o==='number'?'<span class="quantity-dots">'+learningDots(o)+'</span>':''))+'</button>';}).join('')+'</div>';}
+function learningOptions(options,action,pictures){return '<div class="picture-options" id="learningOptions">'+options.map(function(o,i){var icon=o==='小兔这边'?'🐰':o==='小熊这边'?'🐻':o==='一样多'?'＝':'';return '<button class="option-btn" onclick="'+action+'('+i+')">'+(pictures?'<span class="picture">'+wordPicture(o)+'</span><strong>'+learningEscape(o.cn)+'</strong>':(icon?'<span class="picture">'+icon+'</span>':'')+'<strong>'+learningEscape(o)+'</strong>'+(typeof o==='number'?'<span class="quantity-dots">'+learningDots(o)+'</span>':''))+'</button>';}).join('')+'</div>';}
 function learningLock(){document.querySelectorAll('#learningOptions button').forEach(function(b){b.disabled=true;});}
 function learningMark(index,correct){var el=document.querySelectorAll('#learningOptions button')[index];if(el)el.classList.add(correct?'correct':'wrong');}
 
@@ -28,17 +28,19 @@ function setMathDifficulty(n){if(n!==0&&n!==1)return;state.numbers.difficulty=n;
 function randomInt(min,max){return min+Math.floor(Math.random()*(max-min+1));}
 function numberChoices(answer,cap){var pool=[];for(var i=0;i<=cap;i++)if(i!==answer)pool.push(i);return shuffle([answer].concat(shuffle(pool).slice(0,2)));}
 function fruitGroup(n){return '<span class="object-group">'+(n?new Array(n+1).join('🍎 '):'空篮子')+'</span>';}
-function makeChallengeQuestion(kind,level){
+function makeChallengeQuestion(kind,level,index){
   var cap=level?10:5,a,b,answer,q={quantities:[],firstTry:true,solved:false};
   if(kind==='combine'){
     a=randomInt(1,cap-1);b=randomInt(1,cap-a);var plus=Math.random()<.5;
     q.quantities=[a,b,a+b];answer=plus?a+b:a;
+    q.scene={mode:plus?'add':'take',start:a,change:b,total:a+b};
     q.prompt=plus?'有'+a+'个苹果，又来了'+b+'个。一共有几个？':'有'+(a+b)+'个苹果，拿走'+b+'个。还剩几个？';
     q.visual=plus?fruitGroup(a)+'<span>＋</span>'+fruitGroup(b):fruitGroup(a+b)+'<span>拿走 '+b+' 个</span>';
     q.hint=plus?'把两组苹果放在一起，从1开始慢慢数。':'用手遮住要拿走的苹果，再数一数剩下的。';
     q.explain=plus?a+' 加 '+b+'，一共 '+answer+' 个。':(a+b)+' 拿走 '+b+'，还剩 '+answer+' 个。';
   }else if(kind==='make'){
-    var total=level?randomInt(6,10):5;a=randomInt(1,total-1);answer=total-a;q.quantities=[total,a,answer];
+    var total=level?randomInt(6,10):3+(Number.isInteger(index)?index%3:0);a=randomInt(1,total-1);answer=total-a;q.quantities=[total,a,answer];
+    q.scene={mode:'fill',start:a,change:answer,total:total};
     q.prompt='篮子要装'+total+'个苹果，已经有'+a+'个，还差几个？';
     q.visual=fruitGroup(a)+'<span>＋</span><span class="object-group">'+new Array(answer+1).join('◯ ')+'</span>';
     q.hint='一个空位放一个苹果，数一数还有几个空位。';q.explain=a+' 个苹果，再放 '+answer+' 个，就有 '+total+' 个。';
@@ -54,11 +56,25 @@ function makeChallengeQuestion(kind,level){
   }
   q.answer=answer;q.options=q.options||numberChoices(answer,cap);return q;
 }
+function mathIllustration(q){
+  var s=q.scene,slots='';
+  for(var i=0;i<s.total;i++){
+    var changed=i>=s.start,delay=changed?Math.min(i-s.start,4)*100:0;
+    slots+='<span class="math-apple-slot'+(changed?' is-change':'')+'" style="--fruit-delay:'+delay+'ms"><span class="math-apple" aria-hidden="true">🍎</span>'+(changed&&s.mode!=='take'?'<span class="math-new-mark" aria-hidden="true">＋</span>':'')+'</span>';
+  }
+  var taken=s.mode==='take'?'<div class="math-taken"><span>🖐️ 拿走的</span><span class="math-taken-pile">'+new Array(s.change+1).join('<span class="math-taken-fruit" aria-hidden="true">🍎</span>')+'</span></div>':'';
+  return '<div id="mathIllustration" class="math-illustration math-'+s.mode+' math-motion" role="img" aria-label="'+learningEscape(q.prompt)+'"><div class="math-basket"><span class="math-basket-label">'+(s.mode==='take'?'🧺 留在篮子里':s.mode==='fill'?'🧺 一个空位，放一个':'🧺 苹果来集合')+'</span><div class="math-apple-grid">'+slots+'</div></div>'+taken+(s.mode==='fill'?'<div class="math-visual-note">虚线格里，是还要补上的苹果</div>':'')+'</div>';
+}
+function replayMathIllustration(){
+  var illustration=document.getElementById('mathIllustration');
+  if(!_challenge||!illustration||!document.getElementById('modal-overlay').classList.contains('show'))return;
+  illustration.classList.remove('math-motion');void illustration.offsetWidth;illustration.classList.add('math-motion');
+}
 function startChallenge(kind){if(!MATH_PLAY.some(function(m){return m.id===kind;}))return;var index=practiceStart('math_'+kind,'数学小挑战');_challenge={kind:kind,level:state.numbers.difficulty,index:index,score:0,finished:false};renderChallenge();}
 function renderChallenge(){
   practiceStart('math_'+_challenge.kind,'数学小挑战');
-  _challenge.question=makeChallengeQuestion(_challenge.kind,_challenge.level);var q=_challenge.question;
-  showModal('<div id="mathChallenge"><p class="learning-meta">'+(_challenge.level?'10':'5')+'以内 · 想好了再选</p><h2 class="learning-question">'+q.prompt+'</h2><div class="learning-visual">'+q.visual+'</div>'+learningOptions(q.options,'answerChallenge',false)+'<div class="learning-actions">'+learningButton('🔊 听题目','speakChallenge()','btn-blue')+learningButton('💡 小提示','hintChallenge()','btn-yellow')+'</div><div class="learning-feedback" id="learningFeedback" aria-live="polite"></div><div class="learning-actions" id="learningNext"></div></div>',learningFooter());practiceAttach();
+  _challenge.question=makeChallengeQuestion(_challenge.kind,_challenge.level,_challenge.index);var q=_challenge.question;
+  showModal('<div id="mathChallenge"><p class="learning-meta">'+(_challenge.level?'10':'5')+'以内 · 想好了再选</p><h2 class="learning-question">'+q.prompt+'</h2>'+(q.scene?mathIllustration(q):'<div class="learning-visual">'+q.visual+'</div>')+learningOptions(q.options,'answerChallenge',false)+'<div class="learning-actions math-tools">'+learningButton('🔊 听题目','speakChallenge()','btn-blue')+learningButton('💡 小提示','hintChallenge()','btn-yellow')+(q.scene?'<button class="btn btn-purple" id="mathReplay" onclick="replayMathIllustration()">↻ 再看一遍</button>':'')+'</div><div class="learning-feedback" id="learningFeedback" aria-live="polite"></div><div class="learning-actions" id="learningNext"></div></div>',learningFooter());practiceAttach();
   speakChallenge();
 }
 function speakChallenge(){if(_challenge)learningSpeak(_challenge.question.prompt);}
@@ -77,6 +93,25 @@ function nextChallenge(){
 }
 
 // ==================== ENGLISH MINI LESSONS ====================
+// Pictures stay recognizable without relying on written English or platform emoji shades.
+function wordPicture(word){
+  var colors={'red':'#e73535','blue':'#2471e8','green':'#29a64a','yellow':'#ffe03b','orange':'#ff8b22','purple':'#9845cb','pink':'#ef82bc','white':'#fff','black':'#161616','brown':'#88502d','gray':'#8b929c','gold':'linear-gradient(135deg,#a97709,#ffe78c,#bd8a11)','silver':'linear-gradient(135deg,#77818c,#f4f7fb,#9aa5b1)','light blue':'#a5dcff','dark blue':'#173775','light green':'#b9efaa','dark green':'#165831','light pink':'#ffd0e7','dark pink':'#b91c68','light purple':'#dbbafa','dark purple':'#542078','black and white':'linear-gradient(90deg,#161616 50%,#fff 50%)','red and yellow':'linear-gradient(90deg,#e73535 50%,#ffe03b 50%)'};
+  if(colors[word.w]&&(/色|相间/.test(word.cn)))return '<span role="img" aria-label="'+learningEscape(word.cn)+'" style="display:inline-block;width:1em;height:1em;min-width:42px;min-height:42px;border:2px solid #667085;border-radius:22%;background:'+colors[word.w]+'"></span>';
+  var fruit={mandarin:['#ff921d','round'],plum:['#773b85','round'],apricot:['#ffbd74','round'],raspberry:['#dd3355','berry'],blackberry:['#33263e','berry'],papaya:['#ff962e','slice'],'dragon fruit':['#f9f5f3','slice']};
+  var part={eyebrow:[32,30],eyelashes:[32,40],cheek:[23,57],chin:[50,79],belly:[50,58],back:[50,49],elbow:[22,49],toe:[40,91]};
+  var art='',spec=fruit[word.w],point=part[word.w];
+  if(spec){
+    if(spec[1]==='berry')art='<g fill="'+spec[0]+'" stroke="#fff" stroke-width="1">'+[[40,32],[58,32],[30,47],[49,47],[67,47],[39,63],[58,63],[49,76]].map(function(p){return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="13"/>';}).join('')+'</g>';
+    else if(spec[1]==='slice')art='<ellipse cx="50" cy="54" rx="30" ry="42" fill="'+(word.w==='papaya'?'#669f40':'#e53c85')+'"/><ellipse cx="50" cy="54" rx="24" ry="36" fill="'+spec[0]+'"/>'+[30,42,54,66,78].map(function(y){return '<circle cx="46" cy="'+y+'" r="2" fill="#312b27"/><circle cx="55" cy="'+(y+4)+'" r="2" fill="#312b27"/>';}).join('');
+    else art='<ellipse cx="50" cy="57" rx="36" ry="30" fill="'+spec[0]+'"/><path d="M50 29 Q64 54 50 84" fill="none" stroke="#ffffff80" stroke-width="3"/>';
+    art+='<path d="M49 27 Q36 6 64 15 Q60 28 49 27" fill="#3b8c42"/>';
+  }else if(point){
+    if(['eyebrow','eyelashes','cheek','chin'].includes(word.w))art='<ellipse cx="50" cy="47" rx="32" ry="35" fill="#ffdab7"/><path d="M24 32 Q32 26 41 31 M59 31 Q68 26 76 32" fill="none" stroke="#68442f" stroke-width="4"/><path d="M25 40 Q32 47 40 40 M60 40 Q68 47 75 40 M38 64 Q50 72 62 64" fill="none" stroke="#68442f" stroke-width="3"/><path d="M26 42 L23 38 M31 44 L30 39 M36 43 L38 38" stroke="#68442f" stroke-width="2"/>';
+    else art='<circle cx="50" cy="16" r="12" fill="#ffdab7"/><path d="M50 34 L50 63 M50 38 L24 49 L18 36 M50 38 L76 54 M50 63 L38 89 M50 63 L65 89" fill="none" stroke="'+(word.w==='back'?'#8177b8':'#4797ce')+'" stroke-width="13" stroke-linecap="round"/>'+(word.w==='back'?'<path d="M50 34 L50 60" stroke="#fff" stroke-width="2"/>':'<circle cx="46" cy="15" r="1.5"/><circle cx="54" cy="15" r="1.5"/>');
+    art+='<circle cx="'+point[0]+'" cy="'+point[1]+'" r="8" fill="none" stroke="#e32845" stroke-width="3"/><path d="M'+(point[0]+10)+' '+point[1]+' h16" stroke="#e32845" stroke-width="3"/>';
+  }
+  return art?'<svg viewBox="0 0 100 100" role="img" aria-label="'+learningEscape(word.cn)+'" style="display:inline-block;width:1.2em;height:1.2em;min-width:56px;min-height:56px;vertical-align:middle">'+art+'</svg>':learningEscape(word.e);
+}
 var ENGLISH_LESSONS=[
   {theme:'animals',e:'🐶',title:'和小动物打招呼',words:[{w:'cat',e:'🐱',cn:'小猫'},{w:'dog',e:'🐶',cn:'小狗'},{w:'rabbit',e:'🐰',cn:'小兔'}],phrase:'Hello, dog!',cn:'小狗，你好！',tip:'拿起小狗玩偶，一起挥挥手说 Hello, dog!'},
   {theme:'fruits',e:'🍌',title:'水果野餐会',words:[{w:'apple',e:'🍎',cn:'苹果'},{w:'banana',e:'🍌',cn:'香蕉'},{w:'orange',e:'🍊',cn:'橙子'}],phrase:'I like bananas.',cn:'我喜欢香蕉。',tip:'指一指香蕉，说 I like bananas. 也可以先说 banana。'},
@@ -87,12 +122,12 @@ var ENGLISH_LESSONS=[
 ];
 var _lesson=null;
 function lessonTheme(id){return ENGLISH.themes.find(function(t){return t.id===ENGLISH_LESSONS[id].theme;});}
-function decodeLessonDeck(code){return [Math.floor(code/225),Math.floor(code/15)%15,code%15];}
-function validLessonDeck(id,code){return !!ENGLISH_LESSONS[id]&&Number.isInteger(code)&&code>=0&&code<3375&&new Set(decodeLessonDeck(code)).size===3&&decodeLessonDeck(code).every(function(i){return i<lessonTheme(id).words.length;});}
+function decodeLessonDeck(code){var base=code>=10000?25:15,n=code>=10000?code-10000:code;return [Math.floor(n/(base*base)),Math.floor(n/base)%base,n%base];}
+function validLessonDeck(id,code){return !!ENGLISH_LESSONS[id]&&Number.isInteger(code)&&(code>=0&&code<3375||code>=10000&&code<25625)&&new Set(decodeLessonDeck(code)).size===3&&decodeLessonDeck(code).every(function(i){return i>=0&&i<lessonTheme(id).words.length;});}
 function chooseLessonDeck(id,renew){
   var previous=state.english.lessonDecks[id];if(!renew&&validLessonDeck(id,previous))return previous;
   var old=validLessonDeck(id,previous)?decodeLessonDeck(previous):[],pool=lessonTheme(id).words.map(function(_,i){return i;}).filter(function(i){return !old.includes(i);}),indices=shuffle(pool).slice(0,3);
-  var code=indices.reduce(function(total,i){return total*15+i;},0);state.english.lessonDecks[id]=code;saveState();return code;
+  var code=10000+indices.reduce(function(total,i){return total*25+i;},0);state.english.lessonDecks[id]=code;saveState();return code;
 }
 function lessonPhrase(theme,word){
   var w=word.w,capital=w.charAt(0).toUpperCase()+w.slice(1);
@@ -100,7 +135,7 @@ function lessonPhrase(theme,word){
   if(theme==='fruits'){var plural=w.endsWith('y')?w.slice(0,-1)+'ies':w==='mango'?'mangoes':w==='peach'?'peaches':w+'s';return {en:'I like '+plural+'.',cn:'我喜欢'+word.cn+'。'};}
   if(theme==='colors')return {en:w==='rainbow'?'A rainbow!':'It is '+w+'.',cn:w==='rainbow'?'一道彩虹！':'它是'+word.cn+'的。'};
   if(theme==='body')return {en:'Point to your '+w+'.',cn:'指一指你的'+word.cn+'。'};
-  if(theme==='food')return {en:(w==='egg'?'An egg':['cookie','hamburger'].includes(w)?'A '+w:w==='noodle'?'Noodles':capital)+', please.',cn:'请给我'+word.cn+'。'};
+  if(theme==='food')return {en:(w==='egg'?'An egg':['cookie','hamburger','carrot','potato','tomato','cucumber','sandwich','pancake','dumpling'].includes(w)?'A '+w:w==='noodle'?'Noodles':capital)+', please.',cn:'请给我'+word.cn+'。'};
   return {en:(w==='blocks'?'Blocks':'A '+w)+', please.',cn:'请给我'+word.cn+'。'};
 }
 function lessonData(id,code){
@@ -132,13 +167,13 @@ function renderLesson(){
   if(!_lesson.reviewOnly)practiceStart('english_lesson_'+_lesson.id,ENGLISH_LESSONS[_lesson.id].title);
   var l=_lesson.data,step=_lesson.step,html=learningSteps(['听一听','选图片','听短句','亲子说'],step)+'<div id="englishLesson"><h2 class="learning-question">'+l.e+' '+l.title+'</h2>';
   if(step===0){
-    html+='<p class="learning-meta">点一张图，听一个词。一起用手指一指。</p><div class="picture-options">'+l.words.map(function(w,i){return '<button class="option-btn" onclick="lessonWord('+i+')"><span class="picture">'+w.e+'</span>'+w.cn+'<small style="display:block">'+w.w+'</small></button>';}).join('')+'</div><p class="reading-prompt">家长陪玩：一次听一个词，再请孩子找一找图片。</p><div class="learning-actions">'+learningButton('听好了，选一选','advanceLesson()','btn-green')+'</div>';
+    html+='<p class="learning-meta">点一张图，听一个词。一起用手指一指。</p><div class="picture-options">'+l.words.map(function(w,i){return '<button class="option-btn" onclick="lessonWord('+i+')"><span class="picture">'+wordPicture(w)+'</span>'+w.cn+'<small style="display:block">'+w.w+'</small></button>';}).join('')+'</div><p class="reading-prompt">家长陪玩：一次听一个词，再请孩子找一找图片。</p><div class="learning-actions">'+learningButton('听好了，选一选','advanceLesson()','btn-green')+'</div>';
   }else if(step===1||step===2){
     var wordIndex=step===1?[0,1,2,2,0,1][_lesson.index]:_lesson.index-6;
     var options=shuffle(l.words.slice()),target=l.words[wordIndex];_lesson.question={options:options,answer:options.indexOf(target),solved:false};
     html+='<p class="learning-question">'+(step===1?'听到的是哪一位朋友？':'这句话说的是哪张图？')+'</p><div class="learning-actions">'+learningButton('🔊 再听一次','lessonAudio()','btn-blue')+'</div>'+learningOptions(options,'answerLesson',true)+'<details class="reading-prompt"><summary>家长提示 · 看文字</summary><p>'+learningEscape(step===1?target.w:l.phrases[_lesson.index-6])+'</p><p>'+learningEscape(target.cn)+'</p></details><div class="learning-feedback" id="learningFeedback" aria-live="polite"></div><div class="learning-actions" id="learningNext"></div>';
   }else{
-    html+='<div class="phrase-card"><span class="learning-icon">'+l.words[1].e+'</span><strong>'+l.phrase+'</strong><p>'+l.cn+'</p></div><div class="learning-actions">'+learningButton('🔊 听一遍','lessonAudio()','btn-blue')+'</div><p class="reading-prompt">'+l.tip+'<br>先说一个词也很好，愿意开口就值得鼓励。</p><p class="learning-meta">亲子跟读由家长确认，进度不代表发音评分。</p><div class="learning-feedback" id="learningFeedback" aria-live="polite"></div><div class="learning-actions">'+learningButton('孩子说过了 · 家长确认','finishLesson()','btn-green')+'</div>';
+    html+='<div class="phrase-card"><span class="learning-icon">'+wordPicture(l.words[1])+'</span><strong>'+l.phrase+'</strong><p>'+l.cn+'</p></div><div class="learning-actions">'+learningButton('🔊 听一遍','lessonAudio()','btn-blue')+'</div><p class="reading-prompt">'+l.tip+'<br>先说一个词也很好，愿意开口就值得鼓励。</p><p class="learning-meta">亲子跟读由家长确认，进度不代表发音评分。</p><div class="learning-feedback" id="learningFeedback" aria-live="polite"></div><div class="learning-actions">'+learningButton('孩子说过了 · 家长确认','finishLesson()','btn-green')+'</div>';
   }
   showModal(html+'</div>',learningFooter());if(!_lesson.reviewOnly)practiceAttach();if(step===1||step===2)lessonAudio();
 }

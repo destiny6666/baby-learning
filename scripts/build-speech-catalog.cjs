@@ -8,7 +8,7 @@ const inline=[...fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/
 vm.runInContext(inline,sandbox);for(const f of ['practice.js','learning.js','logic-play.js','enrichment.js','life-play.js'])vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),sandbox);
 const catalog={},pending=new Map();
 function key(text,mode){return (mode==='en'?'en':'zh')+'|'+text.trim().replace(/\s+/g,' ');}
-function add(text,mode='child',reuse){if(!text)return;const k=key(text,mode);if(catalog[k])return;const url=reuse||'audio/prompts/'+crypto.createHash('sha256').update(k).digest('hex').slice(0,20)+'.wav',mp3=url.replace(/\.wav$/,'.mp3');catalog[k]=!reuse&&fs.existsSync(path.join(root,mp3))?mp3:url;if(!reuse)pending.set(k,{text,lang:mode==='en'?'en':'zh',file:url});}
+function add(text,mode='child',reuse){if(!text)return;if(reuse&&!fs.existsSync(path.join(root,reuse)))reuse=null;const k=key(text,mode);if(catalog[k])return;const url=reuse||'audio/prompts/'+crypto.createHash('sha256').update(k).digest('hex').slice(0,20)+'.wav',mp3=url.replace(/\.wav$/,'.mp3');catalog[k]=!reuse&&fs.existsSync(path.join(root,mp3))?mp3:url;if(!reuse)pending.set(k,{text,lang:mode==='en'?'en':'zh',file:url});}
 for(const text of sandbox.GROWTH_PROMPTS)add(text);
 for(const theme of sandbox.ENGLISH.themes)for(let i=0;i<theme.words.length;i++)add(theme.words[i].w,'en','audio/en_'+theme.id+'_'+i+'.mp3');
 for(const l of sandbox.LETTERS_DATA)add(l.upper,'en','audio/letter_'+l.upper+'.mp3');
@@ -25,7 +25,9 @@ add('数一数有几个？');
 for(const [text,file] of Object.entries(sandbox.MATH_DEMO_AUDIO))add(text,'child',file);
 sandbox.learningSpeak=(text,en)=>add(text,en?'en':'child');sandbox.learningFeedback=()=>{};sandbox.showModal=()=>{};sandbox.saveState=()=>{};sandbox.awardLogicPlay=()=>{};sandbox.practiceAttach=()=>{};sandbox.practiceRecord=()=>{};sandbox.armNextButton=()=>{};
 for(const kind of ['combine','make','compare','pattern'])for(const level of [0,1])for(let a=0;a<10;a++)for(let b=0;b<10;b++)for(let c=0;c<10;c++){
-  let i=0;const vals=[(a+.1)/10,(b+.1)/10,(c+.1)/10];sandbox.Math.random=()=>vals[i++%3];const q=sandbox.makeChallengeQuestion(kind,level);for(const t of [q.prompt,q.hint,q.explain])add(t);
+  for(let index=0;index<(kind==='make'&&level===0?3:1);index++){
+    let i=0;const vals=[(a+.1)/10,(b+.1)/10,(c+.1)/10];sandbox.Math.random=()=>vals[i++%3];const q=sandbox.makeChallengeQuestion(kind,level,index);for(const t of [q.prompt,q.hint,q.explain])add(t);
+  }
 }
 for(const dimension of ['color','shape','size'])for(let level=0;level<3;level++)for(let a=0;a<4;a++)for(let b=0;b<4;b++)for(let c=0;c<4;c++)for(let d=0;d<4;d++){
   let i=0;const vals=[(a+.1)/4,(b+.1)/4,(c+.1)/4,(d+.1)/4];sandbox.Math.random=()=>vals[i++%4];sandbox.state.logic.level=level;sandbox.startLogicPattern(dimension);sandbox.hintLogicPattern();sandbox.answerLogicPattern(sandbox._logicPattern.answer);

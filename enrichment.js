@@ -68,10 +68,15 @@ generateLevelQuestions=function(n){var questions=[],cap=state.numbers.difficulty
 };
 var _showLevelQuestionBase=showLevelQuestion;
 showLevelQuestion=function(){
-  _showLevelQuestionBase();var d=window._levelData;
+  var d=window._levelData;if(!d||state.levels.sessions[d.n]!==d)return;
+  _showLevelQuestionBase();
   if(d&&d.current<d.questions.length){
     document.querySelector('#modal .modal-actions').insertAdjacentHTML('afterbegin',learningButton('🔊 听题目','speakLevelQuestion()','btn-blue'));
     document.querySelectorAll('#modal .option-btn').forEach(function(button){if(button.textContent==='🦟 蜻蜓')button.innerHTML=poemPicture('🦟')+' '+learningEscape('蜻蜓');});
+    speakLevelQuestion();
   }
 };
-function speakLevelQuestion(){var d=window._levelData;if(d&&d.questions[d.current])learningSpeak(d.questions[d.current].q);}
+function speakLevelQuestion(){
+  var d=window._levelData,board=document.querySelector('#modal [id^="lv"]');
+  if(d&&state.levels.sessions[d.n]===d&&d.questions[d.current]&&board&&Number(board.dataset.question)===d.current&&document.getElementById('modal-overlay').classList.contains('show'))learningSpeak(d.questions[d.current].q);
+}

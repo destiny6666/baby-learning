@@ -90,16 +90,16 @@ test('sort rounds compare all dimensions, reject incomplete and wrong order, all
  assert.equal(w.state.practice.rounds.logic_sort_mixed,1);assert.match(document.querySelector('#modal').textContent,/这一轮完成/);w.restartPractice();assert.equal(w._logicSort.dimension,'height');w.closeModal();w.resetLogicSort();w.pickLogicSort(1);w.checkLogicSort();
 });
 
-test('memory board locks during mismatches, preserves matches and completes ten games',t=>{
- const {w,document,advance}=createApp(t);let earned=0;
- for(let i=0;i<10;i++){
-  w.state.logic.level=i%3;w.startShapeMatch();const board=choiceBoard(document,'sm'),buttons=[...board.querySelectorAll('button')],pairs=i%3+3;
+test('memory board locks during mismatches, preserves matches and completes ten pairs',t=>{
+ const {w,document,advance}=createApp(t);let completed=0;
+ for(let i=0;completed<10;i++){
+  w.state.logic.level=i%3;w.startShapeMatch();const board=choiceBoard(document,'sm'),buttons=[...board.querySelectorAll('button')],pairs=Math.min(i%3+3,10-completed);
   assert.equal(buttons.length,pairs*2);w.flipCard(document.createElement('button'),board.id,pairs);w.flipCard(buttons[0],'missing',pairs);
   const first=buttons[0],wrong=buttons.find(b=>b.dataset.shape!==first.dataset.shape);first.click();first.click();wrong.click();assert.equal(board.dataset.busy,'1');const third=buttons.find(b=>b!==first&&b!==wrong);w.flipCard(third,board.id,pairs);assert.notEqual(third.dataset.flipped,'1');advance(800);assert.equal(first.textContent,'❓');assert.ok(buttons.every(b=>!b.disabled));
-  const groups=Map.groupBy(buttons,b=>b.dataset.shape);for(const [a,b]of groups.values()){a.click();b.click();assert.equal(a.dataset.matched,'1');}
-  earned+=i%3+2;assert.equal(w.state.logic.stars,earned);assert.equal(board.dataset.solved,'1');w.flipCard(first,board.id,pairs);assert.equal(w.state.practice.progress.logic_memory,i+1);advance(3000);
+  const groups=Map.groupBy(buttons,b=>b.dataset.shape);for(const [a,b]of groups.values()){a.click();b.click();completed++;assert.equal(a.dataset.matched,'1');assert.equal(w.state.practice.progress.logic_memory_pairs,completed);}
+  assert.equal(w.state.logic.stars,completed===10?3:0);assert.equal(board.dataset.solved,'1');w.flipCard(first,board.id,pairs);assert.equal(w.state.practice.progress.logic_memory_pairs,completed);advance(3000);
  }
- assert.equal(w.state.practice.rounds.logic_memory,1);assert.match(document.querySelector('#modal').textContent,/这一轮完成/);
+ assert.equal(w.state.practice.rounds.logic_memory_pairs,1);assert.match(document.querySelector('#modal').textContent,/这一轮完成/);
 });
 
 test('legacy math and counting choices support retry and automatic follow-up',t=>{

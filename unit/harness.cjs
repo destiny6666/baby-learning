@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const {JSDOM,VirtualConsole}=require('jsdom');
 const {createInstrumenter}=require('istanbul-lib-instrument');
 const root=path.resolve(__dirname,'..');
-const files=['speech-player.js','practice.js','learning.js','logic-play.js','enrichment.js','logic-hub.js','life-play.js'];
+const files=['speech-player.js','practice.js','learning.js','logic-play.js','enrichment.js','logic-hub.js','life-play.js','play-hub.js'];
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const main=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].find(m=>m[1].includes('var POEMS='));
 const prefix='\n'.repeat(html.slice(0,main.index+main[0].indexOf('>')+1).split('\n').length-1);
