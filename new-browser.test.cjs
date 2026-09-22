@@ -42,12 +42,12 @@ test('legacy storage migrates once and later v2 changes stay isolated from v1',a
 });
 
 for(const kind of ['life','emotions'])test('growth '+kind+' supports wrong answers, paused progress and exactly ten credited activities',async t=>{
-  const p=await setup(t);await p.clock.install();await p.evaluate(kind=>{switchTab('growth');startGrowthPlay(kind);},kind);const prompts=[];
+  const p=await setup(t);await p.clock.install({time:new Date('2026-01-01T00:00:00Z')});await p.clock.pauseAt(new Date('2026-01-01T00:01:00Z'));await p.evaluate(kind=>{switchTab('growth');startGrowthPlay(kind);},kind);const prompts=[];
   const wrong=await p.evaluate(()=>{const q=_practiceCurrent.growth;document.querySelector('[data-growth-listen="0"]').click();answerGrowth(q.options.findIndex(o=>o!==q.activity.options[0]));return {key:'growth-'+q.kind,prompt:q.activity.prompt};});await p.clock.fastForward(3500);assert.equal(await p.evaluate(()=>_practiceCurrent.growth.index),0);assert.equal(await p.evaluate(key=>state.practice.progress[key]||0,wrong.key),0);assert.equal(await p.locator('[data-auto-next]').count(),0);
   for(let n=0;n<10;n++){
     prompts.push(await p.evaluate(()=>_practiceCurrent.growth.activity.prompt));
     await p.evaluate(()=>{const q=_practiceCurrent.growth,index=q.options.indexOf(q.activity.options[0]);answerGrowth(index);answerGrowth(index);});assert.equal(await p.evaluate(key=>state.practice.progress[key],wrong.key),n+1);
-    if(n===2){await p.evaluate(()=>closeModal());await p.reload();await p.evaluate(kind=>{closeModal();state.audio.muted=true;startGrowthPlay(kind);},kind);assert.equal(await p.evaluate(()=>_practiceCurrent.growth.index),3);}else{await p.clock.fastForward(2999);assert.equal(await p.evaluate(()=>_practiceCurrent.growth.index),n);await p.clock.fastForward(1);}
+    if(n===2){await p.evaluate(()=>closeModal());await p.reload();await p.evaluate(kind=>{closeModal();state.audio.muted=true;startGrowthPlay(kind);},kind);assert.equal(await p.evaluate(()=>_practiceCurrent.growth.index),3);}else{await p.clock.runFor(2999);assert.equal(await p.evaluate(()=>_practiceCurrent.growth.index),n);await p.clock.runFor(1);}
   }
   assert.equal(new Set(prompts).size,10);assert.equal(await p.locator('#growthPlay').count(),0);assert.equal(await p.evaluate(key=>state.practice.progress[key],wrong.key),10);assert.equal(await p.evaluate(key=>state.practice.rounds[key],wrong.key),1);assert.equal(await p.evaluate(()=>state.stars),3);await p.evaluate(kind=>startGrowthPlay(kind),kind);assert.equal(await p.evaluate(()=>_practiceCurrent.growth.index),0);assert.equal(await p.evaluate(()=>state.stars),3);
 });
